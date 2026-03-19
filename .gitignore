@@ -1,0 +1,5 @@
+# Large binary data files
+*.rds
+*.h5ad
+*.pkl
+

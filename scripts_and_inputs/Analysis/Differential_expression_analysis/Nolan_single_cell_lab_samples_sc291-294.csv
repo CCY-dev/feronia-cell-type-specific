@@ -1,0 +1,5 @@
+sample,Use for Atlas? / MISC Comments Based on COPILOT,name,source,geno,genotype,transgene,treatment,concentration,age,timepoint,rep,target_cells,date,seq_run,index,sample_type,species,species_2,species_mix,accession_mix,library_conc,library_avg_fragment_size,cDNA_frag_size,cDNA_input_ng,cDNA_cycles,index_PCR_cycles,10X_chemistry,description,notes,seq_notes,owner/contact
+sc_291,has suspicious cluster,WT Mock 3h scRNA-seq,Benfey Lab,WT,WT,,Control,,5 day,3h,1,,20240116,,SI-TT-F9,protoplast,Arabidopsis,,,,27.0,464,1189,98.883,11,13,Chromium Next GEM 3.1 High Throughput,,,,
+sc_292,good,fer-4 Mock 3h scRNA-seq,Benfey Lab,fer-4,fer-4,,Control,,5 day,3h,1,,20240116,,SI-TT-G9,protoplast,Arabidopsis,,,,22.2,459,1230,64.938,11,13,Chromium Next GEM 3.1 High Throughput,,,,
+sc_293,good,WT Mock 3h scRNA-seq,Benfey Lab,WT,WT,,Control,,5 day,3h,2,,20240116,,SI-TT-H9,protoplast,Arabidopsis,,,,28.7,459,1243,101.077,11,13,Chromium Next GEM 3.1 High Throughput,,,,
+sc_294,good,fer-4 Mock 3h scRNA-seq,Benfey Lab,fer-4,fer-4,,Control,,5 day,3h,2,,20240116,,SI-TT-A10,protoplast,Arabidopsis,,,,30.9,464,1216,102.359,11,13,Chromium Next GEM 3.1 High Throughput,,Load,,cDNA concentration
