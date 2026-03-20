@@ -10,6 +10,6 @@ This repository contains scripts and input/output files for the analysis of cell
 
 All scripts, inputs, and outputs are organized under `scripts_and_inputs/`, which is divided into two main sections:
 
-- **Preprocessing**: notebooks and input files for sample annotation and integration. Note: the raw Seurat objects (`sc_291`–`sc_294` COPILOT seu3 `.rds` files) are too large to include here and are deposited in the GEO repository instead.
+- **Preprocessing**: notebooks and input files for sample annotation and integration. Note: the raw Seurat objects (`sc_291`–`sc_294` COPILOT seu3 `.rds` files) are too large to include here and are deposited in the GEO repository (GSE325470) instead.
 - **Analysis**: scripts, inputs, and outputs for downstream analyses, including differential expression and CellOracle gene regulatory network (GRN) inference.
 
