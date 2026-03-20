@@ -4,7 +4,7 @@ Scripts and data for the paper: **Cell type-specific gene manipulation uncovers 
 
 ## Overview
 
-This repository contains scripts and input/output files for the analysis of cell type-specific transcriptional responses in *fer-4* and wild-type (WT) Arabidopsis roots under salinity stress, using single-cell RNA-seq data.
+This repository contains scripts and input/output files for the analysis of cell type-specific transcriptional responses in *fer-4* and wild-type (WT) Arabidopsis roots, using single-cell RNA-seq data.
 
 ## Repository Structure
 
