@@ -8,23 +8,10 @@ This repository contains scripts and input/output files for the analysis of cell
 
 ## Repository Structure
 
-```
-scripts_and_inputs/
-├── Preprocessing/
-│   ├── scripts/       # Notebooks for data preprocessing
-│   └── inputs/        # Input files for preprocessing
-└── Analysis/
-    ├── Differential_expression_analysis/
-    │   ├── scripts/   # Notebooks for DE analysis and hormone gene overlap
-    │   ├── inputs/    # Seurat object (.rds), gene feature list, hormone gene sets, sample metadata
-    │   └── outputs/   # Filtered significant DE gene table
-    └── CellOracle_GRN_analysis/
-        ├── scripts/   # Scripts for running CellOracle GRN inference and TF selection
-        ├── inputs/    # Gene feature list, TF annotations (Kay et al., ThaleMine)
-        └── outputs/   # Per-cell-type CellOracle objects, inferred GRN networks, gene scores, TF summary tables
-```
+All scripts, inputs, and outputs are organized under `scripts_and_inputs/`, which is divided into two main sections:
 
-> Note: Large binary files (`.rds`, `.h5ad`) are gitignored and not tracked in this repository.
+- **Preprocessing**: notebooks and input files for sample integration and metadata assignment.
+- **Analysis**: scripts, inputs, and outputs for downstream analyses, including differential expression and CellOracle gene regulatory network (GRN) inference. Each analysis subdirectory contains `scripts/`, `inputs/`, and `outputs/` folders.
 
 ## Preprocessing
 
