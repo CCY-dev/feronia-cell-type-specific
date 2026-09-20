@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" class="svglite" width="240.94pt" height="130.39pt" viewBox="0 0 240.94 130.39">
+<defs>
+  <style type="text/css">
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  </style>
+</defs>
+<rect width="100%" height="100%" style="stroke: none; fill: #FFFFFF;" />
+<defs>
+  <clipPath id="cpMC4wMHwyNDAuOTR8MC4wMHwxMzAuMzk=">
+    <rect x="0.00" y="0.00" width="240.94" height="130.39" />
+  </clipPath>
+</defs>
+<g clip-path="url(#cpMC4wMHwyNDAuOTR8MC4wMHwxMzAuMzk=)" id="evidence-bars-region-0">
+<g id="title-0-0"><text x="2.83" y="11.88" style="font-size: 9.43px; font-weight: bold;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="107.40px" lengthAdjust="spacingAndGlyphs">37 DOF family members</text>
+</g><g id="evidence-bars-and-key-0-1"><rect x="2.83" y="24.09" width="7.09" height="7.09" style="stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #B65F91;" />
+<rect x="76.54" y="24.09" width="7.09" height="7.09" style="stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #D6DCE0;" />
+</g><g id="evidence-key-0-2"><text x="14.17" y="30.78" style="font-size: 8.39px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="33.10px" lengthAdjust="spacingAndGlyphs">DEG call</text>
+<text x="87.87" y="30.78" style="font-size: 8.39px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="46.15px" lengthAdjust="spacingAndGlyphs">No DEG call</text>
+</g><g id="nomination-row-labels-0-3"><text x="2.83" y="52.05" style="font-size: 8.51px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="18.90px" lengthAdjust="spacingAndGlyphs">GRN</text>
+<text x="2.83" y="61.75" style="font-size: 8.51px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="39.72px" lengthAdjust="spacingAndGlyphs">nominated</text>
+<text x="2.83" y="83.23" style="font-size: 8.51px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="34.50px" lengthAdjust="spacingAndGlyphs">Not GRN</text>
+<text x="2.83" y="92.94" style="font-size: 8.51px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="39.72px" lengthAdjust="spacingAndGlyphs">nominated</text>
+</g><g id="evidence-bars-and-key-0-4"><rect x="85.04" y="44.22" width="58.96" height="19.28" style="stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #B65F91;" />
+<rect x="144.00" y="44.22" width="68.79" height="19.28" style="stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #D6DCE0;" />
+<rect x="85.04" y="75.40" width="54.05" height="19.28" style="stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #D6DCE0;" />
+</g><g id="counts-and-axis-0-5"><text x="114.52" y="57.15" text-anchor="middle" style="font-size: 9.20px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textLength="10.22px" lengthAdjust="spacingAndGlyphs">12</text>
+<text x="178.39" y="57.15" text-anchor="middle" style="font-size: 9.20px; font-weight: bold;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="10.22px" lengthAdjust="spacingAndGlyphs">14</text>
+<text x="112.06" y="88.33" text-anchor="middle" style="font-size: 9.20px; font-weight: bold;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="9.72px" lengthAdjust="spacingAndGlyphs">11</text>
+<text x="144.76" y="88.00" style="font-size: 8.28px;fill: #B65F91; font-family: &quot;Arial&quot;;" textLength="28.94px" lengthAdjust="spacingAndGlyphs">0 DEGs</text>
+<line x1="85.04" y1="104.88" x2="232.44" y2="104.88" style="stroke-width: 0.53; stroke: #64717A; stroke-linecap: butt;" />
+<line x1="85.04" y1="104.88" x2="85.04" y2="107.15" style="stroke-width: 0.53; stroke: #64717A; stroke-linecap: butt;" />
+<line x1="134.17" y1="104.88" x2="134.17" y2="107.15" style="stroke-width: 0.53; stroke: #64717A; stroke-linecap: butt;" />
+<line x1="183.31" y1="104.88" x2="183.31" y2="107.15" style="stroke-width: 0.53; stroke: #64717A; stroke-linecap: butt;" />
+<line x1="232.44" y1="104.88" x2="232.44" y2="107.15" style="stroke-width: 0.53; stroke: #64717A; stroke-linecap: butt;" />
+<text x="85.04" y="116.35" text-anchor="middle" style="font-size: 8.28px;fill: #64717A; font-family: &quot;Arial&quot;;" textLength="4.59px" lengthAdjust="spacingAndGlyphs">0</text>
+<text x="134.17" y="116.35" text-anchor="middle" style="font-size: 8.28px;fill: #64717A; font-family: &quot;Arial&quot;;" textLength="9.19px" lengthAdjust="spacingAndGlyphs">10</text>
+<text x="183.31" y="116.35" text-anchor="middle" style="font-size: 8.28px;fill: #64717A; font-family: &quot;Arial&quot;;" textLength="9.19px" lengthAdjust="spacingAndGlyphs">20</text>
+<text x="232.44" y="116.35" text-anchor="middle" style="font-size: 8.28px;fill: #64717A; font-family: &quot;Arial&quot;;" textLength="9.19px" lengthAdjust="spacingAndGlyphs">30</text>
+<text x="158.74" y="128.34" text-anchor="middle" style="font-size: 8.51px;fill: #28343C; font-family: &quot;Arial&quot;;" textLength="43.49px" lengthAdjust="spacingAndGlyphs">DOF genes</text>
+</g></g>
+</svg>

@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Metaphloem and",
+    "horizontal_shift_mm": -0.9984
+  },
+  {
+    "label": "companion cell",
+    "horizontal_shift_mm": -0.9984
+  },
+  {
+    "label": "Protoxylem",
+    "horizontal_shift_mm": 0.0
+  },
+  {
+    "label": "Protophloem",
+    "horizontal_shift_mm": 0.0
+  }
+]

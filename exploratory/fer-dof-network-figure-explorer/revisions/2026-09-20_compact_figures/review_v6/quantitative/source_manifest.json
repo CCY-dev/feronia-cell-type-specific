@@ -1,0 +1,25 @@
+{
+  "status": "PROTOTYPE: not yet carefully vetted",
+  "data_checks": [
+    {
+      "file": "source_celltype_summary_all37.csv",
+      "byte_identical_to_review_v5": true,
+      "sha256": "fe0216b30c8b731482948e8a19a8977e37d63e67fe3ebe5193fc5b80835fa9bb"
+    },
+    {
+      "file": "plot_source_celltype_tested10.csv",
+      "byte_identical_to_review_v5": true,
+      "sha256": "084ea51dea06d1a12046feb88d81ea0e0daac418ced881f7f8106fcf21eb8886"
+    }
+  ],
+  "rows": 130,
+  "genes": 10,
+  "tissues": 13,
+  "width_mm": 110.0,
+  "height_mm": 90.0,
+  "tile_width_mm": 7.094,
+  "tile_height_mm": 4.762,
+  "number_1_over_4_width_mm": 4.17,
+  "minimum_font_pt": 8.0,
+  "PDF_no_Type3_fonts": true
+}

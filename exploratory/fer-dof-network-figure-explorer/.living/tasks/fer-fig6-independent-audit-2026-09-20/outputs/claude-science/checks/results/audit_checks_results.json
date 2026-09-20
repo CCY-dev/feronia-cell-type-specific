@@ -1,0 +1,240 @@
+{
+ "sets": {
+  "WT_TF": 355,
+  "fer4_TF": 343,
+  "GRN_union": 512,
+  "nonTF_nominee_excluded": 1,
+  "WT_matches_public_export": true,
+  "fer4_matches_public_export": true,
+  "DEG": 5466,
+  "DOF": 37,
+  "union": 5805,
+  "intersections_recomputed": {
+   "(False, False, True)": 5282,
+   "(False, True, False)": 314,
+   "(False, True, True)": 172,
+   "(True, False, False)": 11,
+   "(True, True, False)": 14,
+   "(True, True, True)": 12
+  },
+  "intersections_match_frozen": true,
+  "membership_flags_match": true
+ },
+ "family_enrichment": {
+  "universe_genes": 1292,
+  "families": 55,
+  "multi_family_genes": 0,
+  "WT_classifiable": 344,
+  "WT_unclassifiable": 11,
+  "fer4_classifiable": 337,
+  "fer4_unclassifiable": 6,
+  "counts_match": true,
+  "max_abs_p_diff": 7.771561172376096e-16,
+  "max_abs_BH_diff": 1.9984014443252818e-15,
+  "eligible_families_ge10": 31,
+  "top10_recomputed": [
+   "Dof",
+   "WRKY",
+   "HD-ZIP",
+   "MIKC_MADS",
+   "ERF",
+   "HSF",
+   "G2-like",
+   "WOX",
+   "NAC",
+   "TCP"
+  ],
+  "top10_frozen": [
+   "Dof",
+   "WRKY",
+   "HD-ZIP",
+   "MIKC_MADS",
+   "ERF",
+   "HSF",
+   "G2-like",
+   "WOX",
+   "NAC",
+   "TCP"
+  ],
+  "rank10_vs_rank11_OR": [
+   1.42533524737162,
+   1.4240503709793
+  ],
+  "significant_families": [
+   "Dof",
+   "ERF",
+   "HD-ZIP",
+   "WRKY"
+  ],
+  "CI_clipping": {
+   "min_nonzero_lower": 0.346832086337813,
+   "max_upper": 16.4431742724897,
+   "axis": [
+    0.125,
+    24
+   ]
+  }
+ },
+ "edge_score_consistency": {
+  "genotype_contexts": 87,
+  "all_20000_edges": true,
+  "any_duplicate_edges": false,
+  "max_p": 0.0099985026123076,
+  "inconsistent_clusters": [
+   "Maturation_Endodermis_fer4_untreated",
+   "Proliferation Domain_Endodermis_fer4_untreated",
+   "Transition Domain_Endodermis_fer4_untreated"
+  ],
+  "inconsistent_degree_out_sums": [
+   20000,
+   20000,
+   20000
+  ],
+  "inconsistent_outdegree_corr": [
+   0.438,
+   0.588,
+   0.387
+  ],
+  "json_definition_counts": [
+   {
+    "cluster": "Maturation_Endodermis_fer4_untreated",
+    "json_def_edge_sources_absent_from_scores": 225,
+    "json_def_scored_sources_count_mismatch": 777
+   },
+   {
+    "cluster": "Proliferation Domain_Endodermis_fer4_untreated",
+    "json_def_edge_sources_absent_from_scores": 108,
+    "json_def_scored_sources_count_mismatch": 940
+   },
+   {
+    "cluster": "Transition Domain_Endodermis_fer4_untreated",
+    "json_def_edge_sources_absent_from_scores": 65,
+    "json_def_scored_sources_count_mismatch": 971
+   }
+  ]
+ },
+ "exposure_to_inconsistent_contexts": {
+  "TF_nomination_rows_total": 1105,
+  "rows_in_bad_contexts": 325,
+  "TFs_nominated_only_in_bad_contexts": 78,
+  "WT_TFs_all": 355,
+  "WT_TFs_excluding_bad": 283,
+  "fer4_TFs_all": 343,
+  "fer4_TFs_excluding_bad": 276,
+  "WT_DOF_all": 19,
+  "WT_DOF_excluding_bad": 17,
+  "fer4_DOF_all": 23,
+  "fer4_DOF_excluding_bad": 22,
+  "DOF_context_nominations_total": 96,
+  "DOF_context_nominations_in_bad": 23,
+  "tested10_endodermal_nominations": 12,
+  "tested10_endodermal_in_bad": 11,
+  "tested10_endodermis_tiles": 8,
+  "tested10_endodermis_tiles_entirely_bad": 7,
+  "top5_contexts_by_nominations": {
+   "Proliferation Domain_Endodermis": 114,
+   "Transition Domain_Endodermis": 108,
+   "Maturation_Endodermis": 103,
+   "Transition Domain_Protophloem": 82,
+   "Transition Domain_Phloem Pole Pericycle": 55
+  },
+  "median_context_nominations": 20.0
+ },
+ "matrix": {
+  "score_contexts": 44,
+  "rank_table_contexts": 43,
+  "context_only_scored_one_genotype": [
+   "Proliferation Domain_Procambium"
+  ],
+  "paired_status_matches_public_scores": true,
+  "nominations_match_rank_table": true,
+  "nominated_always_paired": true,
+  "tiles": 130,
+  "tiles_K0": 0,
+  "both_direction_tiles": 3,
+  "any_gene_context_metric_with_both_labels": 0,
+  "identities": {
+   "AT1G07640": "OBP2",
+   "AT1G29160": "COG1",
+   "AT2G28810": "DOF2.2",
+   "AT2G34140": "CDF4",
+   "AT3G45610": "DOF6",
+   "AT3G50410": "OBP1",
+   "AT3G55370": "OBP3",
+   "AT3G61850": "DAG1",
+   "AT4G00940": "DOF4.1",
+   "AT4G24060": "DOF4.6"
+  }
+ },
+ "phloem_xylem_feature_selection": {
+  "phloem": {
+   "universe": 3359,
+   "universe_subset_of_TF_union_substringDE": true,
+   "substring_DE_clusters": [
+    "Elongation_Metaphloem & Companion Cell",
+    "Elongation_Phloem Pole Pericycle",
+    "Proliferation Domain_Metaphloem & Companion Cell",
+    "Transition Domain_Metaphloem & Companion Cell"
+   ],
+   "admitted_only_via_pole_pericycle": 349,
+   "clean_universe": 3010,
+   "YUC5_in_universe": true,
+   "YUC5_in_clean": true
+  },
+  "xylem": {
+   "universe": 3635,
+   "universe_subset_of_TF_union_substringDE": true,
+   "substring_DE_clusters": [
+    "Elongation_Metaxylem",
+    "Elongation_Protoxylem",
+    "Elongation_Xylem Pole Pericycle",
+    "Maturation_Protoxylem",
+    "Maturation_Xylem Pole Pericycle",
+    "Proliferation Domain_Xylem Pole Pericycle",
+    "Transition Domain_Protoxylem",
+    "Transition Domain_Xylem Pole Pericycle"
+   ],
+   "admitted_only_via_pole_pericycle": 650,
+   "clean_universe": 2985,
+   "YUC5_in_universe": true,
+   "YUC5_in_clean": false
+  }
+ },
+ "inventory_and_union": {
+  "inventory_rows": 41726,
+  "rebuilt_rows": 41726,
+  "edge_keys_identical": true,
+  "mismatch_flag_clusters": [
+   "Maturation_Endodermis_fer4_untreated",
+   "Proliferation Domain_Endodermis_fer4_untreated",
+   "Transition Domain_Endodermis_fer4_untreated"
+  ],
+  "union_pairs": 180,
+  "union_targets": 37,
+  "source_rows": 935,
+  "contexts": 43,
+  "genotype_contexts": 83,
+  "supported_seven": 147,
+  "additions": 33,
+  "additions_with_phloem_xylem": 32,
+  "additions_other_endodermis_only": 1,
+  "additions_solely_mismatch": 0,
+  "pairs_with_any_mismatch_support": 4,
+  "pairs_with_any_phloem_xylem_support": 88,
+  "targets_AGI_only_names": 906,
+  "regex_possible_misses": [
+   {
+    "target": "AT5G51470",
+    "export_name": "AT5G51470",
+    "gaf_symbol": "At5g51470",
+    "gaf_name": "Auxin-responsive GH3 family protein"
+   },
+   {
+    "target": "AT5G20730",
+    "export_name": "NPH4",
+    "gaf_symbol": "ARF7",
+    "gaf_name": "Auxin response factor 7"
+   }
+  ]
+ }
+}

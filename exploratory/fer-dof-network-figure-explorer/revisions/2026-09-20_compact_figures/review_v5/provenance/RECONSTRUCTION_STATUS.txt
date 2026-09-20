@@ -1,0 +1,10 @@
+Prototype; not yet carefully vetted.
+Pinned public clone: 5649a9485de0d50d03c8135c5ff254bdaa8d0a1a
+Existing score-derived nomination sources retained; no score reconciliation or refit.
+Membership is reconstructed before historical output tables are read for comparison.
+Unique genes, not gene-context rows, define all sets. Nominations use degree_centrality_out only.
+DOFs use coauthor_DOF TRUE. DEGs use unique gene IDs in pinned sig_de_fil.csv.
+No new DE threshold is applied to the already-filtered DE source.
+Core membership comparison: PASS
+Seven exclusive intersections: PASS
+Optional metadata comparison: DIFFERENCES RECORDED

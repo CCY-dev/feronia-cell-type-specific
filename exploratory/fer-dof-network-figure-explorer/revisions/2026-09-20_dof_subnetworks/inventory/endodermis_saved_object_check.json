@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "path": "/resnick/groups/NolanLab/cchen/Feronia/analysis/CellOracle/CellOracle_output/20260317_feronia_salinity_timecourse_WT_untreated_fer4_untreated_newIntegratedSeurat3_NoSuspiciousCluster/endodermis_rawRNA_p01_20k.links.celloracle.links",
+    "model_method": "bagging_ridge",
+    "alpha": 10
+  },
+  "checks": [
+    {
+      "cluster": "Elongation_Endodermis_WT_untreated",
+      "edges": 20000,
+      "score_genes": 1987,
+      "edge_sources_absent_from_scores": 0,
+      "scored_sources_count_mismatch": 0
+    },
+    {
+      "cluster": "Elongation_Endodermis_fer4_untreated",
+      "edges": 20000,
+      "score_genes": 1936,
+      "edge_sources_absent_from_scores": 0,
+      "scored_sources_count_mismatch": 0
+    },
+    {
+      "cluster": "Maturation_Endodermis_WT_untreated",
+      "edges": 20000,
+      "score_genes": 1997,
+      "edge_sources_absent_from_scores": 0,
+      "scored_sources_count_mismatch": 0
+    },
+    {
+      "cluster": "Maturation_Endodermis_fer4_untreated",
+      "edges": 20000,
+      "score_genes": 1296,
+      "edge_sources_absent_from_scores": 225,
+      "scored_sources_count_mismatch": 777
+    },
+    {
+      "cluster": "Proliferation Domain_Endodermis_WT_untreated",
+      "edges": 20000,
+      "score_genes": 1606,
+      "edge_sources_absent_from_scores": 0,
+      "scored_sources_count_mismatch": 0
+    },
+    {
+      "cluster": "Proliferation Domain_Endodermis_fer4_untreated",
+      "edges": 20000,
+      "score_genes": 1549,
+      "edge_sources_absent_from_scores": 108,
+      "scored_sources_count_mismatch": 940
+    },
+    {
+      "cluster": "Transition Domain_Endodermis_WT_untreated",
+      "edges": 20000,
+      "score_genes": 1550,
+      "edge_sources_absent_from_scores": 0,
+      "scored_sources_count_mismatch": 0
+    },
+    {
+      "cluster": "Transition Domain_Endodermis_fer4_untreated",
+      "edges": 20000,
+      "score_genes": 1457,
+      "edge_sources_absent_from_scores": 65,
+      "scored_sources_count_mismatch": 971
+    }
+  ]
+}

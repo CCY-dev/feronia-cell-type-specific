@@ -1,0 +1,175 @@
+{
+  "status": "Prototype; not yet carefully vetted",
+  "source_pdf": "revisions/2026-09-20_compact_figures/review_v7/review_with_sources_v7.pdf",
+  "source_pdf_sha256": "164799a4ab30ef9c8f5a95ad109e84859bd5de14c330eff4b26d18fde6295bb2",
+  "output_pdf": "FER_DOF_Network_Figure_Explorer.pdf",
+  "output_pdf_sha256": "c59a25fba9bc60ace43d91e0cc6fba835da7b7ca23d3db3c10bc0ac14443651e",
+  "pages": 7,
+  "converted_local_links": 32,
+  "total_uri_links": 37,
+  "local_uri_links_remaining": 0,
+  "six_original_page_content_streams_and_text_unchanged": true,
+  "linked_package_files_exist": true,
+  "mapping": [
+    {
+      "page": 4,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v2/SOURCE_AVAILABILITY.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v2/SOURCE_AVAILABILITY.md"
+    },
+    {
+      "page": 5,
+      "package_path": ".living/tasks/fer-fig6-independent-audit-2026-09-20/outputs/claude-science/AUDIT_REPORT.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/.living/tasks/fer-fig6-independent-audit-2026-09-20/outputs/claude-science/AUDIT_REPORT.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/AUDIT_RECEIPT_VERIFICATION.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/AUDIT_RECEIPT_VERIFICATION.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/VALIDATION_STATUS.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/VALIDATION_STATUS.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v2/SOURCE_AVAILABILITY.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v2/SOURCE_AVAILABILITY.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v2/audit_response/ENDODERMIS_TRIAGE.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v2/audit_response/ENDODERMIS_TRIAGE.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v7/provenance/CURRENT_INPUT_OUTPUT_CODE.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v7/provenance/CURRENT_INPUT_OUTPUT_CODE.csv"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v7/README.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v7/README.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v3/code_reference/README.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v3/code_reference/README.md"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v3/code_reference/source_copy_manifest.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v3/code_reference/source_copy_manifest.csv"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v5/provenance/reconstruct_memberships.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v5/provenance/reconstruct_memberships.R"
+    },
+    {
+      "page": 5,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v5/provenance/README.md",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v5/provenance/README.md"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/quantitative/source_top10_family.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/quantitative/source_top10_family.csv"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v5/quantitative/make_review_v5_forest.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v5/quantitative/make_review_v5_forest.R"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v5/quantitative/top10_aligned_forest_review_v5.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v5/quantitative/top10_aligned_forest_review_v5.pdf"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_fig6_brainstorm/overlap_story/dot_membership.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_fig6_brainstorm/overlap_story/dot_membership.csv"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_fig6_brainstorm/fig6_full_intersections.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_fig6_brainstorm/fig6_full_intersections.csv"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/overlap/make_dof_evidence.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/overlap/make_dof_evidence.R"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/overlap/dof_evidence_bars.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/overlap/dof_evidence_bars.pdf"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_fig6_brainstorm/celltype_prototypes/celltype_summary_all37.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_fig6_brainstorm/celltype_prototypes/celltype_summary_all37.csv"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/quantitative/make_review_v6_matrix.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/quantitative/make_review_v6_matrix.R"
+    },
+    {
+      "page": 6,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v6/quantitative/celltype_tested10_review_v6.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v6/quantitative/celltype_tested10_review_v6.pdf"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v2/all_contexts/all_contexts_as_exported_union_edges.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v2/all_contexts/all_contexts_as_exported_union_edges.csv"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v7/networks/make_panel_d.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v7/networks/make_panel_d.R"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/review_v7/networks/all_contexts_panel_d.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/review_v7/networks/all_contexts_panel_d.pdf"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_dof_subnetworks/inventory/tested10_retained_edges_seven_unaffected_consistent_tissues.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_dof_subnetworks/inventory/tested10_retained_edges_seven_unaffected_consistent_tissues.csv"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_dof_subnetworks/annotations/clean_programme_target_edges.tsv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_dof_subnetworks/annotations/clean_programme_target_edges.tsv"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/networks/make_overviews.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/networks/make_overviews.R"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/networks/vascular_overview_compact.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/networks/vascular_overview_compact.pdf"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_fig6_brainstorm/fig6_full_intersections.csv",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_fig6_brainstorm/fig6_full_intersections.csv"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/upset/make_compact_upset.R",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/upset/make_compact_upset.R"
+    },
+    {
+      "page": 7,
+      "package_path": "revisions/2026-09-20_compact_figures/upset/compact_upset.pdf",
+      "url": "https://gitlab.caltech.edu/nolan_lab/feronia-cell-type-specific/-/blob/codex/fer-dof-figure-explorer/exploratory/fer-dof-network-figure-explorer/revisions/2026-09-20_compact_figures/upset/compact_upset.pdf"
+    }
+  ]
+}

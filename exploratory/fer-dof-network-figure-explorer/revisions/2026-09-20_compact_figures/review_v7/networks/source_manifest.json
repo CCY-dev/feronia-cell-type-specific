@@ -1,0 +1,36 @@
+{
+  "status": "PROTOTYPE: not yet carefully vetted",
+  "source_path": "/Users/tmn23/projects/fer-sc-manuscript-2026/revisions/2026-09-20_compact_figures/review_v2/all_contexts/all_contexts_as_exported_union_edges.csv",
+  "source_sha256": "0ee10299bae02fe053342bdb0613d072f21deb6760e81be531cc314b84d58f8b",
+  "source_byte_identical": true,
+  "all_original_edge_columns_identical": true,
+  "n_pairs": 180,
+  "n_dofs": 10,
+  "n_targets": 37,
+  "support_classes": {
+    "supported_in_current_seven": 147,
+    "additional_excluded_contexts_only": 33
+  },
+  "pdf_width_mm": 135.0,
+  "pdf_height_mm": 90.0,
+  "pdf_pages": 1,
+  "smallest_text_pt": 8.5,
+  "network_stroke_pt": 0.32,
+  "network_alpha": 0.5,
+  "dof_point_diameter_mm": 2.985,
+  "target_point_diameter_mm": 2.131,
+  "all_dofs_above_all_targets": true,
+  "editable_text_elements": 53,
+  "named_groups": {
+    "network-seven-fit-pairs": 1,
+    "network-additional-pairs": 1,
+    "target-family-nodes": 2,
+    "target-labels": 1,
+    "dof-nodes": 1,
+    "dof-labels": 1,
+    "family-key-labels": 1,
+    "support-key-seven-fit-pairs": 1,
+    "support-key-additional-pairs": 1,
+    "support-key-labels": 1
+  }
+}

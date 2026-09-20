@@ -1,0 +1,11 @@
+{
+  "status": "Packaging checks passed; not scientific validation",
+  "copied_source_files": 231,
+  "original_source_hashes_checked": true,
+  "panels": 6,
+  "unique_immediate_input_tables": 7,
+  "panel_output_files": 18,
+  "editable_SVGs": 6,
+  "root_navigation_local_links": 55,
+  "forbidden_large_objects_or_document_types": []
+}

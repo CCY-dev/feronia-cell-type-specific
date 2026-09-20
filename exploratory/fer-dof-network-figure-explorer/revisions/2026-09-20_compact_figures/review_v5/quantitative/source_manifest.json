@@ -1,0 +1,57 @@
+{
+  "status": "PROTOTYPE: not yet carefully vetted",
+  "data_checks": [
+    {
+      "file": "source_celltype_summary_all37.csv",
+      "byte_identical_to_review_v3": true,
+      "sha256": "fe0216b30c8b731482948e8a19a8977e37d63e67fe3ebe5193fc5b80835fa9bb"
+    },
+    {
+      "file": "plot_source_celltype_tested10.csv",
+      "byte_identical_to_review_v3": true,
+      "sha256": "084ea51dea06d1a12046feb88d81ea0e0daac418ced881f7f8106fcf21eb8886"
+    },
+    {
+      "file": "source_top10_family.csv",
+      "byte_identical_to_review_v3": true,
+      "sha256": "deba062c826d4e21e0a0d1123a09e1c721d4756b5078b8776755ca11bbaecfd8"
+    },
+    {
+      "file": "plot_source_four_significant_families.csv",
+      "byte_identical_to_review_v3": true,
+      "sha256": "f835b7039620070528bbd3aafca3e2fb669eb9ee27705fbe6449e57f231e9063"
+    }
+  ],
+  "figures": [
+    {
+      "stem": "top10_aligned_forest_review_v5",
+      "width_mm": 110.0,
+      "height_mm": 80.0001,
+      "minimum_font_pt": 8.0,
+      "PDF_no_Type3_fonts": true
+    },
+    {
+      "stem": "celltype_tested10_review_v5",
+      "width_mm": 110.0,
+      "height_mm": 90.0,
+      "minimum_font_pt": 8.0,
+      "PDF_no_Type3_fonts": true
+    },
+    {
+      "stem": "four_families_review_v5",
+      "width_mm": 110.0,
+      "height_mm": 43.0001,
+      "minimum_font_pt": 8.0,
+      "PDF_no_Type3_fonts": true
+    }
+  ],
+  "matrix": {
+    "rows": 130,
+    "genes": 10,
+    "tissues": 13,
+    "tile_width_mm": 7.094,
+    "tile_height_mm": 4.762,
+    "number_1_over_4_width_mm": 4.413,
+    "side_padding_mm": 1.34
+  }
+}

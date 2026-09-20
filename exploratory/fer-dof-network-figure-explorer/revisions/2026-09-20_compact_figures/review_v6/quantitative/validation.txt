@@ -1,0 +1,10 @@
+PROTOTYPE: not yet carefully vetted. Layout/data checks only.
+PDF dimensions: 110.000 x 90.000 mm.
+Actual SVG tile width: 7.094 mm; 1/4 text width: 4.170 mm.
+Actual SVG tile height: 4.762 mm. Minimum text: 8.0 pt.
+Both source/plot CSVs are byte-identical to review v5; 130 rows, 10 DOFs, 13 tissues.
+Full names appear below at 60 degrees; two-line key below the labels. Only the wrapped Metaphloem and companion cell label shifts left 1 mm; 600 dpi crop inspected against v5.
+Counts are 8.5 pt, tissue labels 8.5 pt, gene labels 9 pt, key 8 pt. All 130 K values are positive; unused x key omitted, conditional code retained.
+The 600 dpi PDF label crop and full PDF, native-size preview and all three CVD previews were visually inspected.
+PDF uses embedded TrueType Arial fonts; SVG retains editable text and named groups.
+Previous versions and frozen source inputs remain unchanged.

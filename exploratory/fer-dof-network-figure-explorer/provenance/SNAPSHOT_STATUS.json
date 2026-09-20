@@ -1,0 +1,23 @@
+{
+  "title": "FER-DOF Network Figure Explorer",
+  "status": "Prototype; not yet carefully vetted",
+  "source_zip_sha256": "77e33ed99c67a7d9f89768b166762689e9feadca22764f69b70eaa7c4b125ae3",
+  "copied_files": 231,
+  "copied_bytes": 39517379,
+  "panel_types": 6,
+  "audit_output_hashes_checked": 41,
+  "audit_outputs_included": 24,
+  "scope": "Saved outputs and selected sources; not a self-contained portable raw-analysis pipeline",
+  "omitted": [
+    "raw HPC objects",
+    "complete public source checkout",
+    "Git metadata",
+    "full manuscript",
+    "task histories and prompts",
+    "older proof rasters",
+    "historical audit scratch rasters"
+  ],
+  "source_changes": false,
+  "analysis_rerun": false,
+  "published": false
+}

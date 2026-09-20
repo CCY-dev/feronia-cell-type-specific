@@ -1,0 +1,24 @@
+symbol,gene,cell_type,Label
+DOF4.6,AT4G24060,Maturation_Endodermis,fer4_specific
+DOF1.2,AT1G21340,Maturation_Endodermis,fer4_specific
+DAG1,AT3G61850,Maturation_Endodermis,fer4_specific
+CDF4,AT2G34140,Maturation_Endodermis,WT_specific
+COG1,AT1G29160,Maturation_Endodermis,WT_specific
+CDF5,AT1G69570,Maturation_Endodermis,WT_specific
+DOF5.4,AT5G60850,Proliferation Domain_Endodermis,fer4_specific
+COG1,AT1G29160,Proliferation Domain_Endodermis,WT_specific
+DOF1.2,AT1G21340,Proliferation Domain_Endodermis,WT_specific
+DOF4.6,AT4G24060,Proliferation Domain_Endodermis,WT_specific
+DOF2.2,AT2G28810,Proliferation Domain_Endodermis,WT_specific
+OBP2,AT1G07640,Proliferation Domain_Endodermis,WT_specific
+DOF2.1,AT2G28510,Proliferation Domain_Endodermis,WT_specific
+CDF5,AT1G69570,Proliferation Domain_Endodermis,WT_specific
+OBP3,AT3G55370,Proliferation Domain_Endodermis,WT_specific
+CDF3,AT3G47500,Proliferation Domain_Endodermis,WT_specific
+DOF5.4,AT5G60850,Transition Domain_Endodermis,fer4_specific
+DOF5.1,AT5G02460,Transition Domain_Endodermis,fer4_specific
+AT3G52440,AT3G52440,Transition Domain_Endodermis,WT_specific
+DOF2.5,AT2G46590,Transition Domain_Endodermis,WT_specific
+AT1G28310,AT1G28310,Transition Domain_Endodermis,WT_specific
+DOF2.2,AT2G28810,Transition Domain_Endodermis,WT_specific
+OBP3,AT3G55370,Transition Domain_Endodermis,WT_specific

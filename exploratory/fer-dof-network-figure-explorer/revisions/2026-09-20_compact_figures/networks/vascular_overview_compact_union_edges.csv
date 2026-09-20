@@ -1,0 +1,82 @@
+source,source_symbol,target,target_name,n_contexts,contexts,contexts_WT,contexts_fer4,n_context_genotype_links
+AT2G34140,CDF4,AT4G28640,IAA11,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,5
+AT2G34140,CDF4,AT3G23030,IAA2,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT2G34140,CDF4,AT5G25890,IAA28,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G29160,COG1,AT3G23030,IAA2,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT1G29160,COG1,AT5G20820,SAUR76,2,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,4
+AT1G29160,COG1,AT5G25890,IAA28,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,4
+AT1G29160,COG1,AT5G43700,IAA4,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,4
+AT1G29160,COG1,AT5G43890,YUC5,2,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,3
+AT1G29160,COG1,AT1G75590,SAUR52,1,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle,"",1
+AT1G29160,COG1,AT4G28640,IAA11,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G29160,COG1,AT1G04240,IAA3,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G29160,COG1,AT5G65670,IAA9,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G29160,COG1,AT1G04550,IAA12,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G29160,COG1,AT2G33310,IAA13,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT1G29160,COG1,AT3G23050,IAA7,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT1G29160,COG1,AT4G27260,GH3.5,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT3G61850,DAG1,AT3G23030,IAA2,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT3G61850,DAG1,AT4G28640,IAA11,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT3G61850,DAG1,AT5G43890,YUC5,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT3G61850,DAG1,AT5G25890,IAA28,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium,4
+AT3G61850,DAG1,AT4G27260,GH3.5,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium,Elongation_Xylem Pole Pericycle,2
+AT3G61850,DAG1,AT5G43700,IAA4,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G61850,DAG1,AT3G15540,IAA19,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G61850,DAG1,AT2G33310,IAA13,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G61850,DAG1,AT1G04550,IAA12,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G61850,DAG1,AT5G65670,IAA9,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G61850,DAG1,AT4G14550,IAA14,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT3G61850,DAG1,AT1G04250,IAA17,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT2G28810,DOF2.2,AT5G25890,IAA28,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT2G28810,DOF2.2,AT2G22670,IAA8,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,4
+AT2G28810,DOF2.2,AT5G43700,IAA4,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle,3
+AT2G28810,DOF2.2,AT3G23030,IAA2,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Procambium,Elongation_Phloem Pole Pericycle,2
+AT2G28810,DOF2.2,AT5G20820,SAUR76,1,Elongation_Phloem Pole Pericycle,"",Elongation_Phloem Pole Pericycle,1
+AT2G28810,DOF2.2,AT4G27260,GH3.5,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT2G28810,DOF2.2,AT3G17600,IAA31,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT2G28810,DOF2.2,AT1G04240,IAA3,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT3G45610,DOF3.2,AT5G25890,IAA28,2,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,4
+AT3G45610,DOF3.2,AT3G23030,IAA2,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G45610,DOF3.2,AT4G14550,IAA14,1,Elongation_Procambium,Elongation_Procambium,"",1
+AT3G45610,DOF3.2,AT1G04250,IAA17,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT4G00940,DOF4.1,AT4G27260,GH3.5,1,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,2
+AT4G00940,DOF4.1,AT2G33310,IAA13,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,3
+AT4G00940,DOF4.1,AT3G15540,IAA19,1,Elongation_Procambium,Elongation_Procambium,"",1
+AT4G24060,DOF4.6,AT3G23030,IAA2,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT4G24060,DOF4.6,AT4G28640,IAA11,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,4
+AT4G24060,DOF4.6,AT5G25890,IAA28,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,4
+AT4G24060,DOF4.6,AT1G04250,IAA17,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,4
+AT4G24060,DOF4.6,AT3G15540,IAA19,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT4G24060,DOF4.6,AT4G14560,IAA1,1,Elongation_Procambium,Elongation_Procambium,"",1
+AT4G24060,DOF4.6,AT2G23170,GH3.3,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT3G50410,OBP1,AT4G28640,IAA11,2,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,4
+AT3G50410,OBP1,AT5G43700,IAA4,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium,3
+AT3G50410,OBP1,AT3G23030,IAA2,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium,3
+AT3G50410,OBP1,AT2G46690,SAUR32,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G50410,OBP1,AT4G27260,GH3.5,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT1G07640,OBP2,AT5G43890,YUC5,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT1G07640,OBP2,AT5G43700,IAA4,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,6
+AT1G07640,OBP2,AT5G25890,IAA28,3,Elongation_Phloem Pole Pericycle; Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Xylem Pole Pericycle,3
+AT1G07640,OBP2,AT4G27260,GH3.5,2,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,Elongation_Phloem Pole Pericycle; Elongation_Xylem Pole Pericycle,4
+AT1G07640,OBP2,AT2G33310,IAA13,1,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,2
+AT1G07640,OBP2,AT3G23030,IAA2,1,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,"",1
+AT1G07640,OBP2,AT4G28640,IAA11,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G07640,OBP2,AT3G15540,IAA19,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G07640,OBP2,AT1G04250,IAA17,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT1G07640,OBP2,AT1G04550,IAA12,1,Elongation_Procambium,Elongation_Procambium,"",1
+AT1G07640,OBP2,AT4G14550,IAA14,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT1G07640,OBP2,AT4G14560,IAA1,1,Elongation_Procambium,"",Elongation_Procambium,1
+AT3G55370,OBP3,AT3G23030,IAA2,1,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle,2
+AT3G55370,OBP3,AT5G20820,SAUR76,1,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle,Elongation_Phloem Pole Pericycle,2
+AT3G55370,OBP3,AT5G43700,IAA4,2,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle; Elongation_Procambium,Elongation_Phloem Pole Pericycle,3
+AT3G55370,OBP3,AT1G04250,IAA17,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,4
+AT3G55370,OBP3,AT4G14550,IAA14,1,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,2
+AT3G55370,OBP3,AT5G25890,IAA28,2,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium; Elongation_Xylem Pole Pericycle,Elongation_Procambium,3
+AT3G55370,OBP3,AT4G31320,SAUR37,1,Elongation_Xylem Pole Pericycle,Elongation_Xylem Pole Pericycle,"",1
+AT3G55370,OBP3,AT3G23050,IAA7,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G55370,OBP3,AT2G33310,IAA13,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G55370,OBP3,AT1G04240,IAA3,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G55370,OBP3,AT5G65670,IAA9,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G55370,OBP3,AT5G43890,YUC5,1,Elongation_Procambium,Elongation_Procambium,"",1
+AT3G55370,OBP3,AT3G15540,IAA19,1,Elongation_Procambium,Elongation_Procambium,Elongation_Procambium,2
+AT3G55370,OBP3,AT3G04730,IAA16,1,Elongation_Procambium,"",Elongation_Procambium,1

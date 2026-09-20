@@ -1,0 +1,10 @@
+PROTOTYPE: not yet carefully vetted. Layout/data checks only.
+PDF dimensions: top-ten forest 110 x 80 mm; matrix 110 x 90 mm; four-family companion 110 x 43 mm.
+Minimum SVG text is 8 pt; matrix fractions and gene labels 9 pt, tissue labels 8.5 pt.
+Actual matrix tile: 7.094 x 4.762 mm; 1/4 width: 4.413 mm; horizontal side padding 1.340 mm.
+Four source/plot CSVs are byte-identical to review v3. Matrix: 130 rows, 10 DOFs, 13 tissues. Forest: 20 rows, 10 families, six BH-significant estimates, one zero odds ratio.
+DOF family label is bold without added color meaning. Full tissue names below at 60 degrees; Metaphloem and companion cell wraps across two lines.
+PDFs use embedded TrueType Arial fonts without Type 3; SVGs retain editable text and named groups.
+PDF rasters generated at 240 dpi and 96 dpi. CVD simulations use colorspace deutan, protan and tritan.
+PDF rasters and all three CVD simulations of both primary figures were visually inspected: no visible clipping or text collisions. Native display-size check is approximate, not a physical print proof.
+Previous versions and frozen source inputs remain unchanged.

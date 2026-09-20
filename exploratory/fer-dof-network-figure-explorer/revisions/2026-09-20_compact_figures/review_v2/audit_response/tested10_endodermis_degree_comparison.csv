@@ -1,0 +1,78 @@
+gene,cluster,name,degree_out,degree_centrality_out,edge_out,symbol,alias
+AT1G07640,Elongation_Endodermis_WT_untreated,OBP2,44,0.0221550855991944,44,OBP2,""
+AT1G07640,Elongation_Endodermis_fer4_untreated,OBP2,33,0.0170542635658915,33,OBP2,""
+AT1G07640,Maturation_Endodermis_WT_untreated,OBP2,38,0.0190380761523046,38,OBP2,""
+AT1G07640,Maturation_Endodermis_fer4_untreated,OBP2,96,0.0741312741312741,120,OBP2,""
+AT1G07640,Proliferation Domain_Endodermis_WT_untreated,OBP2,109,0.0679127725856698,109,OBP2,""
+AT1G07640,Proliferation Domain_Endodermis_fer4_untreated,OBP2,12,0.0077519379844961,36,OBP2,""
+AT1G07640,Transition Domain_Endodermis_WT_untreated,OBP2,46,0.0296965784377017,46,OBP2,""
+AT1G07640,Transition Domain_Endodermis_fer4_untreated,OBP2,51,0.0350274725274725,39,OBP2,""
+AT1G29160,Elongation_Endodermis_WT_untreated,DOF1.5,39,0.0196374622356495,39,COG1,DOF1.5
+AT1G29160,Elongation_Endodermis_fer4_untreated,DOF1.5,37,0.0191214470284238,37,COG1,DOF1.5
+AT1G29160,Maturation_Endodermis_WT_untreated,DOF1.5,72,0.0360721442885772,72,COG1,DOF1.5
+AT1G29160,Maturation_Endodermis_fer4_untreated,DOF1.5,7,0.0054054054054054,62,COG1,DOF1.5
+AT1G29160,Proliferation Domain_Endodermis_WT_untreated,DOF1.5,82,0.0510903426791277,82,COG1,DOF1.5
+AT1G29160,Proliferation Domain_Endodermis_fer4_untreated,DOF1.5,33,0.0213178294573643,58,COG1,DOF1.5
+AT1G29160,Transition Domain_Endodermis_WT_untreated,DOF1.5,41,0.026468689477082,41,COG1,DOF1.5
+AT1G29160,Transition Domain_Endodermis_fer4_untreated,DOF1.5,47,0.0322802197802198,43,COG1,DOF1.5
+AT2G28810,Elongation_Endodermis_WT_untreated,DOF2.2,8,0.0040281973816717,8,DOF2.2,""
+AT2G28810,Elongation_Endodermis_fer4_untreated,DOF2.2,23,0.0118863049095607,23,DOF2.2,""
+AT2G28810,Maturation_Endodermis_WT_untreated,DOF2.2,67,0.0335671342685371,67,DOF2.2,""
+AT2G28810,Maturation_Endodermis_fer4_untreated,DOF2.2,70,0.0540540540540541,90,DOF2.2,""
+AT2G28810,Proliferation Domain_Endodermis_WT_untreated,DOF2.2,108,0.0672897196261682,108,DOF2.2,""
+AT2G28810,Proliferation Domain_Endodermis_fer4_untreated,DOF2.2,13,0.0083979328165374,102,DOF2.2,""
+AT2G28810,Transition Domain_Endodermis_WT_untreated,DOF2.2,226,0.145900581020013,226,DOF2.2,""
+AT2G28810,Transition Domain_Endodermis_fer4_untreated,DOF2.2,14,0.0096153846153846,118,DOF2.2,""
+AT2G34140,Elongation_Endodermis_WT_untreated,CDF4,19,0.0095669687814702,19,CDF4,""
+AT2G34140,Elongation_Endodermis_fer4_untreated,CDF4,5,0.0025839793281653,5,CDF4,""
+AT2G34140,Maturation_Endodermis_WT_untreated,CDF4,50,0.0250501002004008,50,CDF4,""
+AT2G34140,Maturation_Endodermis_fer4_untreated,CDF4,7,0.0054054054054054,72,CDF4,""
+AT2G34140,Proliferation Domain_Endodermis_WT_untreated,CDF4,52,0.032398753894081,52,CDF4,""
+AT2G34140,Proliferation Domain_Endodermis_fer4_untreated,CDF4,26,0.0167958656330749,28,CDF4,""
+AT2G34140,Transition Domain_Endodermis_WT_untreated,CDF4,67,0.0432537120723047,67,CDF4,""
+AT2G34140,Transition Domain_Endodermis_fer4_untreated,CDF4,29,0.0199175824175824,117,CDF4,""
+AT3G45610,Elongation_Endodermis_WT_untreated,DOF3.2,10,0.0050352467270896,10,DOF3.2,DOF6
+AT3G45610,Elongation_Endodermis_fer4_untreated,DOF3.2,4,0.0020671834625323,4,DOF3.2,DOF6
+AT3G45610,Maturation_Endodermis_WT_untreated,DOF3.2,57,0.0285571142284569,57,DOF3.2,DOF6
+AT3G45610,Maturation_Endodermis_fer4_untreated,DOF3.2,130,0.1003861003861,97,DOF3.2,DOF6
+AT3G45610,Proliferation Domain_Endodermis_WT_untreated,DOF3.2,38,0.0236760124610592,38,DOF3.2,DOF6
+AT3G45610,Proliferation Domain_Endodermis_fer4_untreated,DOF3.2,3,0.001937984496124,23,DOF3.2,DOF6
+AT3G45610,Transition Domain_Endodermis_WT_untreated,DOF3.2,34,0.0219496449322143,34,DOF3.2,DOF6
+AT3G45610,Transition Domain_Endodermis_fer4_untreated,DOF3.2,5,0.0034340659340659,30,DOF3.2,DOF6
+AT3G50410,Elongation_Endodermis_WT_untreated,DOF3.4,32,0.0161127895266868,32,OBP1,DOF3.4
+AT3G50410,Elongation_Endodermis_fer4_untreated,DOF3.4,27,0.013953488372093,27,OBP1,DOF3.4
+AT3G50410,Maturation_Endodermis_WT_untreated,DOF3.4,10,0.0050100200400801,10,OBP1,DOF3.4
+AT3G50410,Maturation_Endodermis_fer4_untreated,DOF3.4,30,0.0231660231660232,6,OBP1,DOF3.4
+AT3G50410,Proliferation Domain_Endodermis_WT_untreated,DOF3.4,3,0.0018691588785046,3,OBP1,DOF3.4
+AT3G50410,Proliferation Domain_Endodermis_fer4_untreated,DOF3.4,3,0.001937984496124,11,OBP1,DOF3.4
+AT3G50410,Transition Domain_Endodermis_fer4_untreated,DOF3.4,5,0.0034340659340659,0,OBP1,DOF3.4
+AT3G55370,Elongation_Endodermis_WT_untreated,OBP3,13,0.0065458207452165,13,OBP3,""
+AT3G55370,Elongation_Endodermis_fer4_untreated,OBP3,21,0.0108527131782946,21,OBP3,""
+AT3G55370,Maturation_Endodermis_WT_untreated,OBP3,46,0.0230460921843687,46,OBP3,""
+AT3G55370,Maturation_Endodermis_fer4_untreated,OBP3,74,0.0571428571428571,56,OBP3,""
+AT3G55370,Proliferation Domain_Endodermis_WT_untreated,OBP3,84,0.0523364485981308,84,OBP3,""
+AT3G55370,Proliferation Domain_Endodermis_fer4_untreated,OBP3,5,0.0032299741602067,64,OBP3,""
+AT3G55370,Transition Domain_Endodermis_WT_untreated,OBP3,92,0.0593931568754035,92,OBP3,""
+AT3G55370,Transition Domain_Endodermis_fer4_untreated,OBP3,5,0.0034340659340659,64,OBP3,""
+AT3G61850,Elongation_Endodermis_WT_untreated,DAG1,88,0.0443101711983887,88,DAG1,""
+AT3G61850,Elongation_Endodermis_fer4_untreated,DAG1,111,0.0573643410852713,111,DAG1,""
+AT3G61850,Maturation_Endodermis_WT_untreated,DAG1,31,0.0155310621242485,31,DAG1,""
+AT3G61850,Maturation_Endodermis_fer4_untreated,DAG1,81,0.0625482625482626,15,DAG1,""
+AT3G61850,Proliferation Domain_Endodermis_WT_untreated,DAG1,13,0.0080996884735202,13,DAG1,""
+AT3G61850,Proliferation Domain_Endodermis_fer4_untreated,DAG1,20,0.0129198966408269,45,DAG1,""
+AT3G61850,Transition Domain_Endodermis_WT_untreated,DAG1,1,0.0006455777921239,1,DAG1,""
+AT3G61850,Transition Domain_Endodermis_fer4_untreated,DAG1,30,0.0206043956043956,0,DAG1,""
+AT4G00940,Elongation_Endodermis_WT_untreated,DOF4.1,79,0.0397784491440081,79,DOF4.1,""
+AT4G00940,Elongation_Endodermis_fer4_untreated,DOF4.1,7,0.0036175710594315,7,DOF4.1,""
+AT4G00940,Maturation_Endodermis_WT_untreated,DOF4.1,208,0.104208416833667,208,DOF4.1,""
+AT4G00940,Maturation_Endodermis_fer4_untreated,DOF4.1,74,0.0571428571428571,162,DOF4.1,""
+AT4G00940,Proliferation Domain_Endodermis_fer4_untreated,DOF4.1,14,0.0090439276485788,0,DOF4.1,""
+AT4G00940,Transition Domain_Endodermis_fer4_untreated,DOF4.1,31,0.0212912087912088,0,DOF4.1,""
+AT4G24060,Elongation_Endodermis_WT_untreated,DOF4.6,118,0.0594159113796576,118,DOF4.6,""
+AT4G24060,Elongation_Endodermis_fer4_untreated,DOF4.6,126,0.0651162790697674,126,DOF4.6,""
+AT4G24060,Maturation_Endodermis_WT_untreated,DOF4.6,24,0.0120240480961924,24,DOF4.6,""
+AT4G24060,Maturation_Endodermis_fer4_untreated,DOF4.6,76,0.0586872586872587,15,DOF4.6,""
+AT4G24060,Proliferation Domain_Endodermis_WT_untreated,DOF4.6,119,0.0741433021806854,119,DOF4.6,""
+AT4G24060,Proliferation Domain_Endodermis_fer4_untreated,DOF4.6,21,0.0135658914728682,205,DOF4.6,""
+AT4G24060,Transition Domain_Endodermis_WT_untreated,DOF4.6,253,0.16333118140736,253,DOF4.6,""
+AT4G24060,Transition Domain_Endodermis_fer4_untreated,DOF4.6,65,0.0446428571428571,247,DOF4.6,""

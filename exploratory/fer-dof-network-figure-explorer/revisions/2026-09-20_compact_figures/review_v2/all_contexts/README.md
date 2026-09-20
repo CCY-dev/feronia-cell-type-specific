@@ -1,0 +1,19 @@
+# As-exported all-context auxin-family overview
+
+This is a new descriptive union from the existing ten-DOF inventory. No original object, score, edge or previous deliverable was changed. All 44 available context labels and 87 genotype-context exports were considered. Selected edges occur in 43 context labels and 83 genotype-contexts: 935 source rows, 180 unique source-target pairs, ten DOFs and 37 targets across all ten tissue fits.
+
+The source filter is unchanged: normalized gene symbols matching `^(IAA[0-9]|SAUR[0-9]|GH3[.]|TAA[0-9]|TAR[0-9]|YUC[0-9])`. The three target labels added to the seven-fit overview are IAA6, IAA18 and IAA29. Elongating cortex has no selected target-family links from these ten DOFs in either genotype; the other zero-selected-edge genotype-contexts are transition atrichoblast WT and transition cortex fer-4. Absence under this filter is not biological absence of regulation.
+
+`all_contexts_as_exported_union_edges.csv` is the exact plotting table. Its `support_class` is `supported_in_current_seven` for 147 pairs and `additional_excluded_contexts_only` for 33. The fine counts `n_current_seven`, `n_phloem_xylem_map_issue`, `n_endodermis_score_mismatch` and `n_other_endodermis` retain nonexclusive source provenance. The 33 additions include 32 with phloem/xylem support and one with other endodermal support; none is supplied solely by one of the three endodermal mismatch contexts. Support outside the seven-fit set is not proof that an individual edge is wrong or that it would survive corrected fitting.
+
+`all_contexts_as_exported_source_context_edges.csv` retains exact contexts, genotypes, coefficients and the original independent integrity flags. `context_support_counts.csv`, `union_support_counts.csv`, `validation.csv` and `input_provenance.txt` record counts and sources. Run `Rscript build_all_context_union.R` to reproduce these tables.
+
+Interpret as an exploratory union of retained modeled associations in basal WT and fer-4, not a repaired all-context network, simultaneous interactions, activation/repression or significant differential connectivity. No pooled expression or genotype-specific edge effect is computed.
+
+## Figure and caption
+
+`all_contexts_overview_compact.pdf/.svg/.png` is the single primary rendering, 170 × 100 mm. Run `Rscript make_all_context_overview.R`, then `python3 tag_svg_groups.py`. Target labels are 7.25 pt, TF labels 7.4 pt. The actual PDF render and deutan/protan/tritan simulations were visually inspected; labels do not overlap, and line style redundantly identifies additional pairs. Editable SVG text and named layers are retained. The dense union supports relationship overview, while the accompanying CSVs are needed to trace exact context support.
+
+**Suggested caption:** Exploratory overview of retained DOF-target connections across all exported basal WT and fer-4 cellular contexts. Ten tested DOFs connect to 37 targets in the prespecified YUC/TAA, GH3, Aux/IAA and SAUR families through 180 distinct pairs. All 44 available context labels and 87 genotype-context exports were considered; the selected links occur in 43 context labels and 83 genotype-contexts. Solid gray lines indicate 147 pairs also supported in the seven-fit subset; dashed gray lines indicate 33 additional pairs found only in the previously excluded fits. Colors identify gene families. Endodermal edge/score and phloem/xylem target-selection issues remain unresolved, so this is an as-exported union, not a corrected network. Connections do not imply simultaneous interactions, activation or a significant genotype difference.
+
+Further reading: [Nolan et al., Science (2023), Fig. 6](https://doi.org/10.1126/science.adf4721), the TF-to-functional-target subnetwork design reference. That reference displayed a selected biological context; this figure explicitly combines contexts.

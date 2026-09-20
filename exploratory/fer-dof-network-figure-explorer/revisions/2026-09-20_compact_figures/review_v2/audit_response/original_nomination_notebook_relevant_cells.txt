@@ -1,0 +1,322 @@
+CELL 7 (zero-based), code
+1: extract_top_genes <- function(gene_score, # Data frame containing centrality scores for each gene. Note that
+2:                               top_genes_number = 100, # Number of top genes to select per cluster/treatment/time point
+3:                               file_tag, # Tag for output file names (e.g., date and study name)
+4:                               metrics = c("degree_centrality_all", "degree_centrality_in", "degree_centrality_out", 
+5:                                           "betweenness_centrality", "closeness_centrality", "eigenvector_centrality"), # Character vector of centrality metrics to analyze
+6:                               comparisons # List of groups to compare rank differences
+7: ) {
+8:   cell_types <- unique(gene_score$cell_type) # Get unique cell types
+9:   
+10:   # Initialize a list to store the concatenated data for each cell type
+11:   concatenated_top_genes_df_list <- list()
+12:   concatenated_rank_diff_df_list <- list()
+13:   
+14:   # Loop over each cell type and metric
+15:   for (i in 1:length(cell_types)) { # loop over cell types
+16:     this_celltype <- cell_types[i]
+17:     print(this_celltype)
+18: 
+19:     # Check if this cell type has less than two unique groups
+20:       unique_groups <- unique(gene_score$group[gene_score$cell_type == this_celltype])
+21:       if (length(unique_groups) < 2) {
+22:         print(paste0("Skipping cell type: ", this_celltype, " (only 1 group present)"))
+23:           # Skip this cell type and move to the next one
+24:           # "Next" skips the current iteration of the loop and moves to the next one. 
+25:           # It doesn’t exit the loop completely, it just skips the rest of the code for the current iteration.
+26:         next  
+27:       }
+28:       
+29:     # Initialize lists for concatenating top genes and rank differences for each cell type
+30:     top_genes_df_list <- list()
+31:     rank_diff_df_list <- list()
+32:     
+33:     for (k in 1:length(metrics)) {  # loop over metrics
+34:       this_metric <- metrics[k]
+35:       print(paste0(this_metric, ": ", this_celltype))
+36:       
+37:       # Subset the genes to each cell type and rank the genes
+38:       sub_gene_score <- gene_score %>%
+39:         filter(cell_type == this_celltype) %>%
+40:         dplyr::select(c(1, 2, 22:24, str_which(string = colnames(.), pattern = this_metric))) %>%
+41:         group_by(cluster) %>% # group by cluster
+42:         mutate(gene_rank = rank(-get(this_metric), ties.method = "min")) %>% # rank genes (higher metric = lower rank)
+43:         ungroup()
+44: 
+45:       ## Run through each cluster within a cell type
+46:       clusters <- unique(sub_gene_score$cluster)
+47:       top_genes_list <- list()  # Initialize an empty list to store top genes and their ranks
+48:       
+49:       for (j in 1:length(clusters)) {  # loop over clusters
+50:         this_cluster <- clusters[j]
+51:         
+52:         # Filter and get the top genes based on the selected metric
+53:         top_gene <- sub_gene_score %>%
+54:           filter(cluster == this_cluster) %>%  # Keep only rows belonging to the current cluster
+55:           slice_max(order_by = get(this_metric), n = top_genes_number, with_ties = TRUE)   # Select top genes
+56:         
+57:         # Store as a dataframe with gene name and rank
+58:         top_genes_list[[this_cluster]] <- top_gene %>% select(gene, name, cluster,  all_of(this_metric), gene_rank)
+59:         colnames(top_genes_list[[this_cluster]])[4] <- "metric_value"
+60:       }
+61:       
+62:       # dplyr::bind_rows is more convenient than rbind!
+63:       top_genes_df <- bind_rows(top_genes_list) %>% 
+64:         mutate(cell_type = this_celltype, .after = 2) %>% 
+65:         mutate(metric = this_metric, .after = 4)
+66:       
+67:       # Append to the list for concatenation
+68:       top_genes_df_list[[this_metric]] <- top_genes_df
+69:       
+70:       # Write top_genes_df as output table
+71:       #file_name <- paste0(file_tag, "_top", top_genes_number, "_", this_celltype, "_", this_metric, "_selected_genes.txt")
+72:       #file_name <- gsub(x = file_name, pattern = " ", replacement = "_")    
+73:       #write.table(top_genes_df, file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+74:       
+75:       # Extracts only the gene names from each dataframe and unlist it
+76:       unique_genes <- unique(unlist(lapply(top_genes_list, function(df) df$gene))) 
+77:       
+78:       # Subset genes cuz we only want genes among top n in at least 1 cluster
+79:       sub_gene_score_top <- sub_gene_score %>%
+80:         filter(gene %in% unique_genes)
+81:       
+82:       # Initialize an empty list to store the rank differences
+83:       rank_diff_list <- list()
+84:       
+85:       for (p in 1:length(comparisons)) {
+86:         comp <- comparisons[[p]]
+87:         group1 <- comp[1]  # First group in comparison, the experiment group
+88:         group2 <- comp[2]  # Second group in comparison
+89:         
+90:         # Subset for each group
+91:         df1 <- sub_gene_score_top %>% filter(group == group1) %>% select(gene, name, gene_rank)
+92:         df2 <- sub_gene_score_top %>% filter(group == group2) %>% select(gene, name, gene_rank)
+93: 
+94:         # Check if either df1 or df2 has no rows (i.e., one or both of the groups are missing in this cell type, so skip it)
+95:           if (nrow(df1) == 0 | nrow(df2) == 0) {
+96:             # If either dataframe is empty, skip this comparison. 
+97:             #"Next" skips the current iteration of the loop and moves to the next one. 
+98:             # It doesn’t exit the loop completely, it just skips the rest of the code for the current iteration.
+99:               print(paste0("Skipping comparison: ", group1, " vs ", group2, " (one or both groups have no data)"))
+100:                 next
+101:               }
+102:           
+103:         # Merge based on gene name
+104:         merged_df <- inner_join(df1, df2, by = "gene", suffix = c("_1", "_2")) #%>% # Suffix is to tag duplicated columns
+105:            # filter(gene_rank_1 <= top_genes_number | gene_rank_2 <= top_genes_number) # The gene should be ranked top top_genes_number in at least one group (group = cluster here)
+106:         
+107:           
+108:         # Calculate rank difference (group1 rank - group2 rank, i.e., experimental - control)  
+109:         # Lower rank number indicates higher importance  
+110:         # group1 rank - group2 rank < 0 means the gene became more important in group1 (experimental)
+111:         merged_df <- merged_df %>%
+112:           mutate(rank_diff = gene_rank_1 - gene_rank_2) %>%
+113:           mutate(comparison = paste0(group1, "-", group2), .after = 1) %>% 
+114:           arrange(rank_diff) %>% 
+115:           mutate(rank_diff_rank = rank(rank_diff, ties.method = "min")) %>% 
+116:           dplyr::select(-c("name_2")) %>% 
+117:           rename(name = name_1) %>% 
+118:           dplyr::select(c(gene, name, everything()))
+119:         
+120:         # Store in list
+121:         rank_diff_list[[paste0(group1, "-", group2)]] <- merged_df
+122:       }
+123:       
+124:       # dplyr::bind_rows is more convenient than rbind!
+125:       rank_diff_df <- bind_rows(rank_diff_list) %>% 
+126:         mutate(cell_type = this_celltype, .after = 2) %>% 
+127:         mutate(metric = this_metric, .after = 4) %>% 
+128:         arrange(comparison, rank_diff_rank)
+129:       
+130:       # Append to the list for concatenation
+131:       rank_diff_df_list[[this_metric]] <- rank_diff_df
+132:       
+133:       # Write rank_diff_df as output table
+134:       #file_name <- paste0(file_tag, "_top", top_genes_number, "_", this_celltype, "_", "this_metric_change.txt")
+135:       #file_name <- gsub(x = file_name, pattern = " ", replacement = "_")                                     
+136:       #write.table(rank_diff_df, file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+137:     }
+138:     
+139:     # Concatenate all metrics for this cell type
+140:     concatenated_top_genes_df <- bind_rows(top_genes_df_list) %>% 
+141:       mutate(cell_type = this_celltype, .after = 2)
+142:     concatenated_rank_diff_df <- bind_rows(rank_diff_df_list) %>% 
+143:       mutate(cell_type = this_celltype, .after = 2)
+144:     
+145:     # Save concatenated tables
+146:     #concatenated_top_genes_file_name <- paste0(file_tag, "_top", top_genes_number, "_", this_celltype, "_all_metrics_selected_genes.txt")
+147:     #concatenated_rank_diff_file_name <- paste0(file_tag, "_top", top_genes_number, "_", this_celltype, "_all_metrics_selected_genes_change.txt")
+148:     
+149:     #concatenated_top_genes_file_name <- gsub(x = concatenated_top_genes_file_name, pattern = " ", replacement = "_")
+150:     #concatenated_rank_diff_file_name <- gsub(x = concatenated_rank_diff_file_name, pattern = " ", replacement = "_")
+151:     
+152:     #write.table(concatenated_top_genes_df, concatenated_top_genes_file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+153:     #write.table(concatenated_rank_diff_df, concatenated_rank_diff_file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+154:     
+155:     # Add to the list for final concatenation of all cell types
+156:     concatenated_top_genes_df_list[[this_celltype]] <- concatenated_top_genes_df
+157:     concatenated_rank_diff_df_list[[this_celltype]] <- concatenated_rank_diff_df
+158:   }
+159:   
+160:   # Concatenate across all cell types
+161:   final_concatenated_top_genes_df <- bind_rows(concatenated_top_genes_df_list)
+162:   final_concatenated_rank_diff_df <- bind_rows(concatenated_rank_diff_df_list)
+163:   
+164:   # Save final concatenated tables
+165:   final_concatenated_top_genes_file_name <- paste0(file_tag, "_top", top_genes_number, "_all_cell_types_all_metrics_selected_genes.txt")
+166:   final_concatenated_rank_diff_file_name <- paste0(file_tag, "_top", top_genes_number, "_all_cell_types_all_metrics_selected_genes_change.txt")
+167:   
+168:   final_concatenated_top_genes_file_name <- gsub(x = final_concatenated_top_genes_file_name, pattern = " ", replacement = "_")
+169:   final_concatenated_rank_diff_file_name <- gsub(x = final_concatenated_rank_diff_file_name, pattern = " ", replacement = "_")
+170:   
+171:   write.table(final_concatenated_top_genes_df, final_concatenated_top_genes_file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+172:   write.table(final_concatenated_rank_diff_df, final_concatenated_rank_diff_file_name, sep = "\t", row.names = F, col.names = T, quote = F)
+173: }
+174: 
+
+CELL 29 (zero-based), code
+1: # Loop over each cell type and run the analysis
+2: for (celltype_crude in unique_celltype_crude) {
+3:   
+4:   # Read the gene_score data file for the current cell type (assuming different files per cell type)
+5:   file_path <- paste0("../../../", celltype_crude, "_rawRNA_celloracle_gene_score_iGRN.csv")
+6:   gene_score <- read.csv(file = file_path, header = T)
+7: 
+8:   colnames(gene_score)[1] <- "gene"
+9:     
+10:   # The column "name" contains some special characters like ' or ()!!
+11:   # Remove punctuation, whitespace, control chars in the name column, which causes error later
+12:   # Clean the "name" column in gene_score by removing special characters
+13:   # [[:punct:]] matches punctuation marks like !, ?, ', (, ), etc.
+14:   # [[:space:]] matches whitespace characters like space, tab (\t), newline (\n), etc.
+15:   # [[:cntrl:]] matches control characters like carriage return (\r), form feed (\f), etc.
+16:   # gsub() replaces all matches with an empty string ("")
+17:   gene_score$name <- gsub(x = as.character(gene_score$name), pattern = "[[:punct:][:space:][:cntrl:]]", replacement = "")  
+18: 
+19:   # Some names match multiple genes, so make it unique or will cause problem when merging tables later
+20:   gene_score$name <- paste0(gene_score$gene, "_", gene_score$name) 
+21:   
+22:   # Add columns for cell type and group
+23:   gene_score <- gene_score %>%
+24:   mutate(
+25:     cell_type = str_remove(cluster, "_(WT|fer4)_.*"),  # Extract cell type
+26:     group = sub(pattern = ".*((WT|fer4)_.*)", replacement = "\\1", cluster) # Extract time points
+27:     )
+28: 
+29:   # Create the subfolder for each cell type
+30:   system(paste("mkdir", celltype_crude))  # Create folder
+31: 
+32:   # The comparisons you want to make
+33:   # Make sure that the experimental group goes first, and the control goes second!!
+34:   # c(Group1, Group2) Group 1 is experiment group, while Group2 is the control group!!
+35:  my_comparisons <- list(c("fer4_untreated", "WT_untreated"))
+36:   
+37:   # Execute the function for the current cell type
+38:   extract_top_genes(gene_score = gene_score, # Filtered data frame by cell type
+39:                     top_genes_number = 100, # Number of top genes to select per cluster/treatment/time point
+40:                     file_tag = paste0("./", celltype_crude,  "/20260317_feronia_salinity_WT_untreated_fer4_untreated_", celltype_crude), # Tag for output file names
+41:                     metrics = c("degree_centrality_all", "degree_centrality_in", "degree_centrality_out", 
+42:                                 "betweenness_centrality"), # Character vector of centrality metrics to analyze
+43:                     comparisons = my_comparisons # List of groups to compare rank differences
+44:   )
+45: }
+
+CELL 35 (zero-based), code
+1: # Initialize an empty list to store all_tbl for each cell type
+2: all_tbl_list <- list()
+3: 
+4: # Loop through each cell type directory
+5: for (cell_type in cell_types) {
+6:   # Extract the cell type name (remove "./")
+7:   cell_name <- sub(".//", "", cell_type)
+8:   
+9:   # Construct the file path
+10:   file_path <- paste0(cell_type, "/20260317_feronia_salinity_WT_untreated_fer4_untreated_", cell_name, "_top100_all_cell_types_all_metrics_selected_genes_change.txt")
+11:   
+12:   # Check if the file exists before proceeding
+13:   if (file.exists(file_path)) {
+14:     # Read the file
+15:     long <- read.table(file_path, sep = "\t", header = TRUE)
+16:     long$top_change <- NULL 
+17:     
+18:     
+19:     # Split into separate data frames for each comparison
+20:     c1 <- long %>% filter(comparison == comparisons[1])
+21:     
+22:     # Rename columns with comparison prefixes
+23:     colnames(c1)[6:9] <- paste0(unique(c1$comparison), ": ", colnames(c1)[6:9])
+24: 
+25:     c1$comparison <- NULL
+26: 
+27:     
+28:     # Join all comparisons into one table for this cell type
+29:     all_tbl <- c1
+30: 
+31:     # Add crude cell type column
+32:     all_tbl <- all_tbl %>% 
+33:       mutate(crude_cell_type = cell_name, .before = 3)
+34:       
+35:     # Store the result in the list with the cell type name as the key
+36:     all_tbl_list[[cell_name]] <- all_tbl
+37:   } else {
+38:     warning(paste("File not found for cell type:", cell_name))
+39:   }
+40: }
+
+CELL 42 (zero-based), code
+1: # Pivot rank_diff longer so calculate the quantile of each metric
+2: combined_all_tbl_long <- combined_all_tbl %>%
+3:     dplyr::select(1, 2, 3, 4, 5, matches("rank_diff(?!_rank)", perl = TRUE)) %>%
+4:     pivot_longer(6:ncol(.), names_to = "contrast", values_to = "rank_diff")
+5: 
+6: head(combined_all_tbl_long)
+
+CELL 47 (zero-based), code
+1: # Define the top rank_diff values and variance of each metric
+2: metric_threshold <- combined_all_tbl_long %>%
+3:   group_by(metric) %>%
+4:   summarise(
+5:     low = quantile(rank_diff, 0.10, na.rm = TRUE),  # Bottom 10% (10th percentile)
+6:     high = quantile(rank_diff, 0.90, na.rm = TRUE),  # Top 10% (90th percentile)
+7:     std_dev = round(0.05 * sd(rank_diff, na.rm = TRUE)) # 0.05 * std
+8:   )
+
+CELL 50 (zero-based), code
+1: # Define the metric names and their corresponding thresholds in a named list
+2: low_thresholds <- list(
+3:   "betweenness_centrality" = betweenness_low,
+4:   "degree_centrality_all" = degreeAll_low,
+5:   "degree_centrality_in" = degreeIn_low,
+6:   "degree_centrality_out" = degreeOut_low
+7: )
+8: 
+9: high_thresholds <- list(
+10:   "betweenness_centrality" = betweenness_high,
+11:   "degree_centrality_all" = degreeAll_high,
+12:   "degree_centrality_in" = degreeIn_high,
+13:   "degree_centrality_out" = degreeOut_high
+14: )
+15: 
+16: 
+17: #metric_std <- list(
+18: #  "betweenness_centrality" = betweenness_std,
+19: #  "degree_centrality_all" = degreeAll_std,
+20: #  "degree_centrality_in" = degreeIn_std,
+21: #  "degree_centrality_out" = degreeOut_std
+22: #)
+
+CELL 93 (zero-based), code
+1: # Now we have all data combined: celloracle importance ranking, gene expression DE, marker, TF
+2: fer4_specific_TF <- combined_all_tbl_addLabel_TF_GE %>%
+3:                 filter(metric == "degree_centrality_out" & 
+4:                        Is_TF == "Yes" &
+5:                        Label == "fer4_specific") %>%
+6:                 arrange(cell_type, desc(log2FC))
+
+CELL 98 (zero-based), code
+1: # Now we have all data combined: celloracle importance ranking, gene expression DE, marker, TF
+2: WT_specific_TF <- combined_all_tbl_addLabel_TF_GE %>%
+3:                 filter(metric == "degree_centrality_out" & 
+4:                        Is_TF == "Yes" &
+5:                        Label == "WT_specific") %>%
+6:                 arrange(cell_type, desc(log2FC))

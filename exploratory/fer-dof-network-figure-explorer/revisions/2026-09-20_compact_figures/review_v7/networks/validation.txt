@@ -1,0 +1,13 @@
+PROTOTYPE: not yet carefully vetted. Display and source-identity checks only.
+One-page PDF: 135 x 90 mm, matching the requested panel-d slot.
+Source CSV byte-identical to v2 union: SHA256 0ee10299bae02fe053342bdb0613d072f21deb6760e81be531cc314b84d58f8b.
+All original edge columns match exactly by source-target key: 180 pairs, ten DOFs, 37 targets.
+Support classes unchanged: 147 supported in the seven-fit reference subset; 33 found only in other previously excluded fits.
+SVG explicitly contains 180 network lines, including 33 dashed lines; network stroke 0.32 pt and opacity 0.50. Two stronger support-key strokes are separate.
+All DOF nodes are above all targets. Same TF order and target family/numeric order as v2.
+DOF labels 9 pt; target/key labels 8.5 pt. Minimum SVG text 8.5 pt; 53 editable text elements and semantic groups.
+SVG circle diameters: DOFs approximately 2.985 mm; targets approximately 2.131 mm.
+Embedded Arial TrueType fonts; no Type 3.
+Full preview, native-size display preview, 600 dpi target-label crops and deutan/protan/tritan previews inspected without visible label collisions or clipping.
+Dense crossings remain a limitation for tracing exact pairs; source and plotted CSVs retain all pairs for inspection.
+No prior outputs, source data or analysis code altered; inherited source-analysis issues are unresolved.

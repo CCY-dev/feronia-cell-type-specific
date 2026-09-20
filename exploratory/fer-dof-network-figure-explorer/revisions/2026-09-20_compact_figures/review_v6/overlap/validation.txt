@@ -1,0 +1,3 @@
+12 nominated + DEG; 14 nominated without DEG; 0 DEG without nomination; 11 neither.
+37 unique gene identifiers; 26 nominated; 12 DEG-called; no inference or selection rerun.
+Bars share a linear axis starting at 0. Minimum type 8.28 pt; 85 x 46 mm.

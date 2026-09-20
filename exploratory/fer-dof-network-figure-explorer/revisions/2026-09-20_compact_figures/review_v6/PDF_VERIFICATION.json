@@ -1,0 +1,13 @@
+{
+  "proof_pages": 3,
+  "with_sources_pages": 6,
+  "local_pdf_links_checked": 32,
+  "external_links_recorded": [
+    "https://github.com/tmnolan/feronia-cell-type-specific/tree/5649a9485de0d50d03c8135c5ff254bdaa8d0a1a",
+    "https://github.com/tmnolan/feronia-cell-type-specific/tree/5649a9485de0d50d03c8135c5ff254bdaa8d0a1a"
+  ],
+  "visual_check": "All three proof pages and all three appendix pages inspected; no clipping or label collision observed.",
+  "source_repairs_performed": false,
+  "status": "Prototype; not yet carefully vetted",
+  "pdf_sha256": "2c4edff28561444ec720fd5b91832251fbfa9c3ab55e8198c3d08bdc9a925111"
+}

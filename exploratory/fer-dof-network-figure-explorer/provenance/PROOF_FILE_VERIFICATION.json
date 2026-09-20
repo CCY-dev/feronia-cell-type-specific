@@ -1,0 +1,10 @@
+{
+  "original_pdf_page_counts": {
+    "review_at_print_size_v7.pdf": 3,
+    "review_with_sources_v7.pdf": 6
+  },
+  "local_URI_annotations": 32,
+  "all_targets_present_after_code_reference_mapping": true,
+  "original_pdf_bytes_preserved": true,
+  "PDF_modified": false
+}

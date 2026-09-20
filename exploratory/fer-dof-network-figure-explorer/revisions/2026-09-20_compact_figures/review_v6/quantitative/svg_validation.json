@@ -1,0 +1,14 @@
+[
+  {
+    "file": "celltype_tested10_review_v6.svg",
+    "width_mm": 109.99963888888888,
+    "height_mm": 90.00066666666666,
+    "smallest_text_pt": 8.0,
+    "editable_text_elements": 70,
+    "named_groups": {
+      "generated-region": 3,
+      "celltype-tiles-and-zone-counts": 1,
+      "dof-labels": 1
+    }
+  }
+]

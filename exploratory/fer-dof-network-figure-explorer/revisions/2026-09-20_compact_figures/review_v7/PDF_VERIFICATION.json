@@ -1,0 +1,16 @@
+{
+  "pages": 6,
+  "local_links_checked": 32,
+  "panel_d_mm": [
+    135,
+    90
+  ],
+  "tf_nodes": 10,
+  "target_nodes": 37,
+  "retained_pairs": 180,
+  "source_and_support_class_identity": "passed",
+  "visual_review": "All six pages inspected; no clipping or label collision observed.",
+  "prototype_status_retained": true,
+  "git_publication": "Deferred at user request; no commit or push performed.",
+  "pdf_sha256": "164799a4ab30ef9c8f5a95ad109e84859bd5de14c330eff4b26d18fde6295bb2"
+}

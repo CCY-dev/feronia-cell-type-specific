@@ -1,0 +1,10 @@
+{
+  "status": "Prototype; not yet carefully vetted",
+  "panels": 6,
+  "referenced_local_files_exist": 85,
+  "source_scripts_inspected": true,
+  "local_pinned_commit": "5649a9485de0d50d03c8135c5ff254bdaa8d0a1a",
+  "remote_verification": "Recorded v2 SOURCE_AVAILABILITY.md check; no new SSH or remote checksum in this provenance task",
+  "plot_or_analysis_rerun": false,
+  "original_source_modified": false
+}

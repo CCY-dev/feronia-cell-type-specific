@@ -1,0 +1,54 @@
+[
+  {
+    "file": "celltype_tested10_review_v5.svg",
+    "width_mm": 109.99963888888888,
+    "height_mm": 90.00066666666666,
+    "smallest_text_pt": 8.0,
+    "editable_text_elements": 70,
+    "named_groups": {
+      "generated-region": 3,
+      "celltype-tiles-and-zone-counts": 1,
+      "dof-labels": 1
+    }
+  },
+  {
+    "file": "four_families_review_v5.svg",
+    "width_mm": 109.99963888888888,
+    "height_mm": 43.00008333333333,
+    "smallest_text_pt": 8.0,
+    "editable_text_elements": 29,
+    "named_groups": {
+      "generated-region": 7,
+      "family-labels": 1,
+      "family-heading": 1,
+      "wt-estimates-and-confidence-intervals": 1,
+      "wt-axis-and-heading": 1,
+      "wt-counts": 1,
+      "wt-count-heading": 1,
+      "fer4-estimates-and-confidence-intervals": 1,
+      "fer4-axis-and-heading": 1,
+      "fer4-counts": 1,
+      "shared-axis-label": 1
+    }
+  },
+  {
+    "file": "top10_aligned_forest_review_v5.svg",
+    "width_mm": 109.99963888888888,
+    "height_mm": 79.99941666666668,
+    "smallest_text_pt": 8.0,
+    "editable_text_elements": 48,
+    "named_groups": {
+      "generated-region": 7,
+      "family-labels": 1,
+      "family-heading": 1,
+      "wt-estimates-and-confidence-intervals": 1,
+      "wt-axis-and-heading": 1,
+      "wt-counts": 1,
+      "wt-count-heading": 1,
+      "fer4-estimates-and-confidence-intervals": 1,
+      "fer4-axis-and-heading": 1,
+      "fer4-counts": 1,
+      "shared-axis-label": 1
+    }
+  }
+]

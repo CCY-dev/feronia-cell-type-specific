@@ -1,0 +1,9 @@
+cluster,edge_rows,edge_nodes,duplicate_pairs,self_edges,score_genes,sum_stored_degree_out
+Elongation_Endodermis_WT_untreated,20000,1987,0,0,1987,20000
+Elongation_Endodermis_fer4_untreated,20000,1936,0,0,1936,20000
+Maturation_Endodermis_WT_untreated,20000,1997,0,0,1997,20000
+Maturation_Endodermis_fer4_untreated,20000,1847,0,0,1296,20000
+Proliferation Domain_Endodermis_WT_untreated,20000,1606,0,0,1606,20000
+Proliferation Domain_Endodermis_fer4_untreated,20000,1696,0,0,1549,20000
+Transition Domain_Endodermis_WT_untreated,20000,1550,0,0,1550,20000
+Transition Domain_Endodermis_fer4_untreated,20000,1505,0,0,1457,20000
