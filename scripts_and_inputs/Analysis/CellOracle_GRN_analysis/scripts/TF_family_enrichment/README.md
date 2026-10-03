@@ -1,0 +1,62 @@
+# TF-family enrichment and DOF → auxin network (CellOracle, WT vs *fer-4*)
+
+Scripts behind Fig X1, Fig X2, Supplementary Fig SX and the TF-family enrichment supplementary table.
+They start from the CellOracle output (per-cell-type, per-genotype gene regulatory networks).
+
+## Run order
+
+Run every script **from this folder**. Paths are set once in `00_paths.R` (R) and at the top of `04_…py`. By default
+they read this repository's `../../inputs/` and `../../outputs/` and write to `../../outputs/TF_family_enrichment/`;
+each can be overridden with an environment variable (`CELLORACLE_DIR`, `PLANTTFDB_LIST`, `KAY_TF_LIST`,
+`FEATURES_TSV_GZ`, `OUT_DIR`).
+
+| Script | Does | Writes | Used for |
+|---|---|---|---|
+| `01_TF_family_enrichment.R` | Genotype-specific TFs (Δrank thresholds), the 1,292-TF background, Fisher's exact test per family × genotype, BH over 110 tests | `TF_family_enrichment_all_tests.csv`, `enrichment_background_TFs.csv` | Fig X1, supplementary table |
+| `02_FigX1_TF_family_forest.R` | Forest plot of the 10 families with the largest odds ratio (≥10 eligible TFs) | `FigX1_TF_family_forest.{pdf,png}` | Fig X1 |
+| `03_SupplFigSX_method_scheme.R` | Graphical method scheme; Δrank density, thresholds and counts are computed, network glyphs are schematic | `SupplFigSX_method_scheme.{pdf,png}` | Supplementary Fig SX (base version; the published figure was simplified by hand) |
+| `04_extract_DOF_auxin_edges.py` | Every DOF → auxin-gene link in the CellOracle links objects, per cell type × genotype | `DOF_auxin_edges_all_contexts.csv`, `DOF_auxin_pair_states.csv` | input for 05 |
+| `05_FigX2_DOF_auxin_network.R` | Bipartite network of the seven DOFs named in the text and their auxin targets | `FigX2_DOF_auxin_network.{pdf,png}` | Fig X2 |
+
+01 must run before 02 and 03; 04 before 05.
+
+## Method in brief
+
+1. CellOracle networks per cell type and genotype (43 cell types × 2 genotypes = 86 networks); every gene scored by
+   out-degree centrality.
+2. Genes ranked by out-degree within each network; genes in the top 100 of at least one network enter the ranking (715 TFs).
+3. Δrank = rank(*fer-4*) − rank(WT) per TF and cell type. Below the 10th percentile (Δrank < −123) → *fer-4*-specific
+   (343 TFs); above the 90th (Δrank > +132) → WT-specific (355 TFs); 186 TFs are in both (different cell types).
+4. Families from PlantTFDB (`Ath_TF_list.txt`, https://planttfdb.gao-lab.org/download/TF_list/Ath_TF_list.txt.gz).
+   Background = every TF that could have entered the ranking:
+
+   | Step | TFs |
+   |---|---|
+   | TF list used to build the CellOracle networks (Kay list) | 2,484 |
+   | …scored for out-degree in both WT and *fer-4*, in at least one cell type | 1,723 |
+   | …and assigned a family by PlantTFDB = **background** (33 DOFs, 55 families) | **1,292** |
+   | …of which reach the top 100 in at least one network (can be nominated) | 715 |
+
+5. One-sided Fisher's exact test per family × genotype (two-sided 95% CI; conditional MLE odds ratio), Benjamini–Hochberg
+   across all 110 tests (55 families × 2 genotypes). Families with ≥10 eligible TFs are displayed (filter after correction).
+
+## Inputs
+
+- `../../outputs/`: `*_gene_score_iGRN.csv` (centrality scores), `*_all_metrics_rank_change_wide_TF_GE.txt` (ranks,
+  Δrank, genotype-specific labels), and `*_p01_20k.links.celloracle.links` (links, for 04). The `.links` files are
+  not stored in this repository (size; see `.gitignore`); they are written by the CellOracle run script in `../`.
+- `../../inputs/`: `Ath_TF_list.txt` (PlantTFDB), `Kay_TF_thalemine_annotations.csv` (TF list used by CellOracle),
+  `features.tsv.gz` (AGI → gene symbol).
+
+Supplementary Tables S6 / S7 (WT- and *fer-4*-specific TFs) are the CellOracle `*_WT_specific_TF.txt` and
+`*_fer4_specific_TF.txt` tables (one row per TF × cell type); no further calculation is involved.
+
+## Environment
+
+- R 4.3.3: dplyr 1.1.4, tidyr 1.3.1, ggplot2 3.5.1, patchwork 1.3.0, scales 1.3.0 (ggrepel optional).
+- Python 3.10.14 for 04: pandas 1.5.3, celloracle 0.20.0 (the links objects are CellOracle objects).
+
+## Reproducibility check
+
+Re-running 01 → 05 from scratch reproduces the published numbers and figures exactly (all tables and statistics
+identical; Fig X1 and Fig X2 PNGs pixel-identical).
