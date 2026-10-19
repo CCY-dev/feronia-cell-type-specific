@@ -7,8 +7,9 @@
 #             levels and cell types"), keyed by AGI. The paper uses COMMON names and the gene annotation uses
 #             SYSTEMATIC ones (DOF6 = DOF3.2, OBP1 = DOF3.4, COG1 = DOF1.5), so never join on a symbol.
 #   groups  = genotype-specific nomination (Δrank of out-degree), as in Fig. 6a: WT only / fer-4 only / Both.
-#   targets = every YUC/TAA1 and GH3 gene, the 6 Aux/IAA and 3 SAUR genes reached by the most of the 10 DOFs.
-#             Ties at either cut-off would make the choice arbitrary, so they stop the script.
+#   targets = every YUC/TAA1 and GH3 gene, the 5 Aux/IAA genes reached by the most of the 10 DOFs INCLUDING ties at
+#             the cut-off (IAA28 and IAA7 tie for 5th, so 6 are shown), and the 3 SAUR genes reached by the most DOFs
+#             (a tie at the SAUR cut-off would make the choice arbitrary, so it stops the script). Same rule as the Methods.
 #   order   = targets by pathway class, then by number of DOFs reaching them (desc), then name; DOFs within a
 #             group with a YUC5 link first, then by name.
 # Encoding: DOF node size = number of the displayed targets it reaches; YUC5 edges dark, all others light grey.
@@ -37,12 +38,14 @@ stopifnot("not every tested DOF has an auxin edge" = setequal(unique(k$source), 
           "a tested DOF was not nominated in either genotype" = !anyNA(grp_of(names(DOF10))))
 
 ind <- k %>% count(tsym, class, name="indeg") %>% arrange(desc(indeg), tsym)
-topn <- function(cl, n) {
+topn <- function(cl, n, ties) {
   x <- ind %>% filter(class == cl)
-  stopifnot("tie at a target cut-off" = nrow(x) <= n || x$indeg[n] > x$indeg[n + 1])
+  if (nrow(x) <= n) return(x$tsym)
+  if (ties) return(x$tsym[x$indeg >= x$indeg[n]])           # keep every gene tied with the n-th
+  stopifnot("tie at a target cut-off" = x$indeg[n] > x$indeg[n + 1])
   head(x$tsym, n)
 }
-keep <- c(ind$tsym[ind$class %in% c("YUC/TAA1","GH3")], topn("Aux/IAA", 6), topn("SAUR", 3))
+keep <- c(ind$tsym[ind$class %in% c("YUC/TAA1","GH3")], topn("Aux/IAA", 5, ties=TRUE), topn("SAUR", 3, ties=FALSE))
 ks <- k %>% filter(tsym %in% keep)
 
 ## ---- layout: rows from the top, with a gap between groups; both tiers span the same height ----
