@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## 01 — TF-family enrichment among genotype-specific CellOracle regulators (Fig X1, Supplementary Table).
+## 01 — TF-family enrichment among genotype-specific CellOracle regulators (Fig. 6a, Supplementary Table).
 ##
 ## Genotype-specific TFs come from the CellOracle rank-change table: genes are ranked by out-degree centrality within
 ## each network; genes in the top 100 of at least one network (per cell type, either genotype) enter the ranking;

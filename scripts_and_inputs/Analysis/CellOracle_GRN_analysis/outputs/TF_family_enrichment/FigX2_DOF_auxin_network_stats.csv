@@ -1,2 +1,0 @@
-"n_dof","n_tar_kept","n_tar_all","n_edge_kept","n_edge_all","n_edge_everything","n_dof_dropped","n_edge_dropped","named","yuc5_indeg","yuc9_indeg","taa1_indeg","max_target_indeg","yuc5_rank_overall","n_fer","n_wt","n_both","n_none","min_outdeg","max_outdeg","med_outdeg"
-7,14,29,63,119,458,24,339,"DOF1.5 (COG1); OBP2; DOF3.4 (OBP1); DAG1; DOF4.6; OBP3; CDF4",6,2,1,7,5,1,1,5,0,6,13,9

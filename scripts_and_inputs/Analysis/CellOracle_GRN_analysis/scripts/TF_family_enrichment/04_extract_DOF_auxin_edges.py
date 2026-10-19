@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# 04 — extract every DOF -> auxin-gene link from the CellOracle links objects (input for Fig X2). Run in the CellOracle environment.
+# 04 — extract every DOF -> auxin-gene link from the CellOracle links objects (input for Fig. 6b). Run in the CellOracle environment.
 """
 20260924 - Rebuild the panel-d edge set from OUR CellOracle links (Trevor's
 `all_contexts_as_exported_union_edges.csv` was not shipped in from_Trevor/).

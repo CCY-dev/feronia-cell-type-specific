@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## 02 — Fig X1: TF-family forest plot. Needs 01 to have run (reads TF_family_enrichment_all_tests.csv).
+## 02 — Fig. 6a: TF-family forest plot. Needs 01 to have run (reads TF_family_enrichment_all_tests.csv).
 # 20260923 — Panel A: TF-family enrichment among genotype-specific TFs, ANALYSIS 1 (gene level).
 # Odds ratio on a LOG scale (a ratio scale must be log or 4x and 1/4x look unequal), 95% CI whiskers,
 # reference line at OR = 1, nominated/eligible on the right, DOF bold.
@@ -123,9 +123,9 @@ build <- function(figw) {
   ((pF + pN + plot_layout(widths=c(1, 0.36))) / strip) + plot_layout(heights=c(1, 0.17))
 }
 
-ggsave(file.path(OUT_DIR,"FigX1_TF_family_forest.pdf"), build(110), width=110, height=78, units="mm", device=cairo_pdf)
-ggsave(file.path(OUT_DIR,"FigX1_TF_family_forest.png"), build(110), width=110, height=78, units="mm", dpi=400, bg="white")
-ggsave(file.path(OUT_DIR,"FigX1_TF_family_forest_large.png"), build(176), width=176, height=125, units="mm", dpi=300, bg="white")
+ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest.pdf"), build(110), width=110, height=78, units="mm", device=cairo_pdf)
+ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest.png"), build(110), width=110, height=78, units="mm", dpi=400, bg="white")
+ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest_large.png"), build(176), width=176, height=125, units="mm", dpi=300, bg="white")
 cat("wrote panelA forest (pdf, png, large png)\n\n")
 print(d %>% arrange(desc(row), genotype) %>%
       mutate(across(c(OR,lo,hi),~round(.,2)), q=signif(q,3)) %>%
