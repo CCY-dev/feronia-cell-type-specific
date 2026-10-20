@@ -1,0 +1,23 @@
+name: scKB_copilot
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - bioconductor-bsgenome=1.62.0
+  - bioconductor-busparse=1.8.0
+  - bioconductor-dropletutils=1.14.2
+  - bustools=0.41.0
+  - jupyterlab
+  - kallisto=0.48.0
+  - pyscaffold
+  - python=3.8
+  - r-base=4.1.3
+  - r-devtools=2.4.3
+  - r-r2html=2.3.2
+  - r-rjson=0.2.21
+  - conda-forge::r-ape
+  - conda-forge::r-reticulate
+  - conda-forge::umap-learn
+  - conda-forge::leidenalg
+  - anaconda::pandas
+prefix: /resnick/groups/NolanLab/cchen/miniconda3/envs/scKB_copilot

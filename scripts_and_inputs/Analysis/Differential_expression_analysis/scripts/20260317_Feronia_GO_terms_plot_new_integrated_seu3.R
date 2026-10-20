@@ -4,16 +4,17 @@ library(ggrepel)
 library(readxl)
 library(ComplexHeatmap)
 library(circlize)
-setwd('/Users/Jessica/Documents/Nolan_lab/Feronia/analysis/')
+# Inputs are read from this repository; set FERONIA_REPO to your clone (default: current directory).
+repo <- Sys.getenv("FERONIA_REPO", ".")
 
 ### Up-regulated
 # Read in the GO terms Michelle selected
-up_tbl_terms_tbl <- read_xlsx(path = "../From_Michelle/Upregulated_genes_GO_table-15 GO terms.xlsx")
+up_tbl_terms_tbl <- read_xlsx(path = file.path(repo, "scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/GO_term_selection/Upregulated_genes_GO_table-15 GO terms.xlsx"))
 up_tbl_terms <- up_tbl_terms_tbl$Go_term[up_tbl_terms_tbl$`Selected?` %in% c("Yes", "yes")]
 length(up_tbl_terms)
 
 # Read in the GO table from the results of the newly integrated Seurat 3 obj
-up_tbl <- read.table("/Users/Jessica/Documents/Nolan_lab/Feronia/analysis/muscat_result/20260317_salinity_timecourse_useDateT_noSuspiciousClusters/group_timecelltypeannoLi/fer_4-WT/paper_figs/Upregulated_genes_GO_table.txt",
+up_tbl <- read.table(file.path(repo, "scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/GO/Upregulated_genes_GO_table.txt"),
                      sep = "\t", header = T, check.names = F)
 
 
@@ -73,12 +74,12 @@ dev.off()
 
 ### Down-regulated
 # Read in the GO terms Michelle selected
-down_tbl_terms_tbl <- read_xlsx(path = "../From_Michelle/Downregulated_genes_GO_table-15 GO term.xlsx")
+down_tbl_terms_tbl <- read_xlsx(path = file.path(repo, "scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/GO_term_selection/Downregulated_genes_GO_table-15 GO term.xlsx"))
 down_tbl_terms <- down_tbl_terms_tbl$Go_term[down_tbl_terms_tbl$`Selected?` %in% c("Yes", "yes")]
 length(down_tbl_terms)
 
 # Read in the GO table from the results of the newly integrated Seurat 3 obj
-down_tbl <- read.table("/Users/Jessica/Documents/Nolan_lab/Feronia/analysis/muscat_result/20260317_salinity_timecourse_useDateT_noSuspiciousClusters/group_timecelltypeannoLi/fer_4-WT/paper_figs/Downregulated_genes_GO_table.txt",
+down_tbl <- read.table(file.path(repo, "scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/GO/Downregulated_genes_GO_table.txt"),
                      sep = "\t", header = T, check.names = F)
 
 down_tbl_sel <- down_tbl %>%

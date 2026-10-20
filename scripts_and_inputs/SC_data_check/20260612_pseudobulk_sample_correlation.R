@@ -16,7 +16,7 @@ suppressMessages({
   library(tidyverse); library(Seurat); library(Matrix)
   library(ComplexHeatmap); library(circlize)
 })
-out_dir <- "/resnick/groups/NolanLab/cchen/Feronia/claude_result"
+out_dir <- Sys.getenv("OUT_DIR", ".")   # outputs (was the analyst's cluster folder)
 
 read_seu <- function(dir) {
   seu <- readRDS(dir)

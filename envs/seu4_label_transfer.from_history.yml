@@ -1,0 +1,26 @@
+name: seu4_label_transfer
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - jupyterlab
+  - python=3.8
+  - r-base
+  - r-data.table
+  - r-devtools
+  - r-ggpubr
+  - r-hdf5r
+  - r-httpuv
+  - r-igraph
+  - r-irkernel
+  - r-leiden
+  - r-leidenbase
+  - r-miniui
+  - r-plotly
+  - r-png
+  - r-remotes
+  - r-shiny
+  - r-tidyverse
+  - bioconda::bioconductor-tricycle
+  - importlib-metadata=4.13
+prefix: /resnick/groups/NolanLab/cchen/miniconda3/envs/seu4_label_transfer

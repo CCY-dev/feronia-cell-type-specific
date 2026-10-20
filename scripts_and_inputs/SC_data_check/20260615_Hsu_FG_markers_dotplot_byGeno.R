@@ -61,7 +61,7 @@ Idents(seu_sub) <- "ct_geno"
 cat("n cells per celltype x genotype:\n"); print(table(seu_sub$ct, seu_sub$geno))
 
 # --- markers (finalized F+G union, 55) --------------------------------------
-m <- read.csv("/resnick/groups/NolanLab/cchen/Feronia/claude_result/20260615_Hsu_FG_union_celltype_mapping.csv",
+m <- read.csv(file.path(Sys.getenv("FERONIA_REPO", "."), "scripts_and_inputs/SC_data_check/inputs/20260615_Hsu_FG_union_celltype_mapping.csv"),
               check.names = FALSE)
 m$primary <- trimws(sub(";.*", "", m$proposed_celltype.anno.Li))
 m$label   <- ifelse(m$Gene != m$Locus, paste0(m$Locus, " (", m$Gene, ")"), m$Locus)
@@ -103,14 +103,14 @@ p <- ggplot(d, aes(x = gene, y = celltype)) +
         strip.background = element_rect(fill = "grey95", color = NA),
         plot.title = element_text(face = "bold", size = 12))
 
-out_pdf <- "/resnick/groups/NolanLab/cchen/Feronia/claude_result/20260615_Hsu_FG_markers_dotplot_byGeno.pdf"
+out_pdf <- file.path(Sys.getenv("OUT_DIR", "."), "20260615_Hsu_FG_markers_dotplot_byGeno.pdf")
 w <- max(10, 1.8 + 0.21 * length(genes))
 h <- max(9, 3.2 + 0.34 * length(ct_order) * 2)        # two stacked facets + repeated x axis
 ggsave(out_pdf, p, width = w, height = h, limitsize = FALSE)
 cat(sprintf("Saved dot plot (%.1f x %.1f in): %s\n", w, h, out_pdf))
 
 d$gene_label <- labvec[as.character(d$features.plot)]
-out_csv <- "/resnick/groups/NolanLab/cchen/Feronia/claude_result/20260615_Hsu_FG_markers_dotplot_byGeno_data.csv"
+out_csv <- file.path(Sys.getenv("OUT_DIR", "."), "20260615_Hsu_FG_markers_dotplot_byGeno_data.csv")
 write.csv(d, out_csv, row.names = FALSE)
 cat("Saved dot-plot data:", out_csv, "\n")
 cat("DONE\n")

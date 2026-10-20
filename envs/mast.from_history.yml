@@ -1,0 +1,22 @@
+name: mast
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - anndata
+  - bioconductor-genomicranges
+  - bioconductor-mast
+  - bioconductor-singlecellexperiment
+  - bioconductor-summarizedexperiment
+  - bioconductor-xvector
+  - jupyterlab
+  - loompy
+  - r-biocmanager
+  - r-sceasy
+  - conda-forge::igraph
+  - bioconda::r-leidenbase
+  - conda-forge::shiny
+  - conda-forge::r-tidyverse
+  - r-gprofiler2
+  - conda-forge::umap-learn
+prefix: /resnick/groups/NolanLab/cchen/miniconda3/envs/mast

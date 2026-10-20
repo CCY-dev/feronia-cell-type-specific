@@ -152,7 +152,7 @@ plot_gene_page <- function(current_gene) {
 }
 
 # --- one multi-page PDF per direction (up / down) ---------------------------
-out_dir <- "/resnick/groups/NolanLab/cchen/Feronia/claude_result"
+out_dir <- Sys.getenv("OUT_DIR", ".")   # outputs (was the analyst's cluster folder)
 out_files <- c(
   upregulated   = file.path(out_dir, "20260615_feronia_umap_upregulated_q95.pdf"),
   downregulated = file.path(out_dir, "20260615_feronia_umap_downregulated_q95.pdf")

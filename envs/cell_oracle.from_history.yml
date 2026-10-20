@@ -1,0 +1,19 @@
+name: cell_oracle
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - jupyterlab
+  - python=3.10
+  - r-base
+  - r-devtools
+  - r-irkernel
+  - r-remotes
+  - r-tidyverse
+  - meme
+  - homer
+  - gadem
+  - r::r-igraph
+  - conda-forge::r-linkcomm
+  - r::r-rnetcarto
+prefix: /resnick/groups/NolanLab/cchen/miniconda3/envs/cell_oracle

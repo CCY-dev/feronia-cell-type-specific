@@ -29,9 +29,10 @@ suppressMessages({
 })
 
 # --- inputs -----------------------------------------------------------------
-de_path  <- "/resnick/groups/NolanLab/cchen/Feronia/analysis/muscat_result/20260317_salinity_timecourse_useDateT_noSuspiciousClusters/group_timecelltypeannoLi/fer_4-WT/sig_de.csv"
-feat_tsv <- "/resnick/groups/NolanLab/shared_resources/source_files/features.tsv"
-out_dir  <- "/resnick/groups/NolanLab/cchen/Feronia/claude_result"
+# Inputs from this repository (FERONIA_REPO = your clone; default current directory). Outputs go to OUT_DIR (default current directory).
+de_path  <- file.path(Sys.getenv("FERONIA_REPO", "."), "scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/sig_de.csv.gz")   # gzipped copy of the full muscat result
+feat_tsv <- file.path(Sys.getenv("FERONIA_REPO", "."), "scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/features.tsv")
+out_dir  <- Sys.getenv("OUT_DIR", ".")
 
 pdf_path    <- file.path(out_dir, "20260615_feronia_13genes_muscat_logFC_heatmap.pdf")
 matrix_csv  <- file.path(out_dir, "20260615_feronia_13genes_muscat_logFC_matrix.csv")
