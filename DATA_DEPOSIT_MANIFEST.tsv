@@ -1,0 +1,31 @@
+file	bytes	sha256	role
+Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds	19549746309	9aa2e9016fbfe45f6b166842a5e3664e4768c794c6fe74606320d9e603eed0da	Integrated, annotated Seurat object (Stages 2-4)
+20250509_4S_feronia_salinity_time_course_untreated_celloracle_input.h5ad	5384390704	077bd8d9be1c2ccce73853347ea4d2bed2f5aca64d46a002693791ed59aff9cb	CellOracle input AnnData (Stage 4)
+base_GRN_TG_to_TF_dictionary.pkl	1298496421	53732c2bb0d8881778548db541ab260944d71185c03bba14538cf24d17143791	Base GRN, target gene to TF dictionary (Stage 4)
+Kay_TF_thalemine_annotations.csv	139599	cc4fbf939b35e5806714f0fde10fc62a87c0a2342318843209e7e3720c6d4485	Input table (also in this repository)
+features.tsv.gz	229574	4f84dd0b0a95a0cd27cabaa07990b4eb68904406b82878eebbf5ea552ca6e7cb	Input table (also in this repository)
+atrichoblast_rawRNA.links.celloracle.links	309766543	487a1d7eb6d43a86d22e2742c7af91e0d706f06912be2aba830b470ed2eea7b2	CellOracle links object (Stage 5 script 04)
+atrichoblast_rawRNA_p01_20k.links.celloracle.links	316748691	ddfecb0e74e37bd3eddff6625876666cf727dfe86bcafd0aa90b8a91463e538f	CellOracle links object (Stage 5 script 04)
+columella_rawRNA.links.celloracle.links	129712004	c20de35708f70cc1f490273a5ce5ec9cca2a4361dd39b2cba189048d7f68e09e	CellOracle links object (Stage 5 script 04)
+columella_rawRNA_p01_20k.links.celloracle.links	133242260	5342ebb003dd9a697a60c2700ca3f0bc24e4084d5739e2717526425cc9af6376	CellOracle links object (Stage 5 script 04)
+cortex_rawRNA.links.celloracle.links	476516248	f91b9246ba721c7f9942eee1e2bb64c07c3765d67a571546bb59c96b3516abbb	CellOracle links object (Stage 5 script 04)
+cortex_rawRNA_p01_20k.links.celloracle.links	483555025	a5a04c346845cf08af221c875599b284c717ad22fcfe75cb66b803a38aa2f5b0	CellOracle links object (Stage 5 script 04)
+endodermis_rawRNA.links.celloracle.links	507433272	3145bb98433c2311312a9757c10bb37abdfe44e6b33ee68babcc75ca3db3c28c	CellOracle links object (Stage 5 script 04)
+endodermis_rawRNA_p01_20k.links.celloracle.links	514497638	fdf5ce1e9c922730bb17b5e5804c31cec9e7b1d672dd6ae77e2e32c0d373fb97	CellOracle links object (Stage 5 script 04)
+lrc_rawRNA.links.celloracle.links	144477650	1915e45de7f235d0ef52fbd48e4810349c7fd04c01fb4db5b0f75e53baceb381	CellOracle links object (Stage 5 script 04)
+lrc_rawRNA_p01_20k.links.celloracle.links	147973517	c3d5d0d212bb295f8bab86e3ebc320e72c92ff0b8b2dea79cf32de08a2ca6708	CellOracle links object (Stage 5 script 04)
+pericycle_rawRNA.links.celloracle.links	750925591	bfecc37d63be78a8eccd8a6928534308a1d646a187740f546f17d7b6357dde55	CellOracle links object (Stage 5 script 04)
+pericycle_rawRNA_p01_20k.links.celloracle.links	764935538	f8ca944986b477006b234848d80ba49c9f6a966f8768e67fa6872f7ffbb24241	CellOracle links object (Stage 5 script 04)
+phloem_rawRNA.links.celloracle.links	466739095	958335dc6627c507ae9eae03a9be5266fffde9e04c1b5c0cd6f6b5499141d03b	CellOracle links object (Stage 5 script 04)
+phloem_rawRNA_p01_20k.links.celloracle.links	477250298	90afdfa57b734797690879f9d8f05ca8c4c0d5cd346db6d7577e00891b07efd6	CellOracle links object (Stage 5 script 04)
+procambium_rawRNA.links.celloracle.links	250036202	c2f28975303aaa3a68093cec568ab492ee89f62c372ace6e132fb89ae27bc6fb	CellOracle links object (Stage 5 script 04)
+procambium_rawRNA_p01_20k.links.celloracle.links	256157858	5ba176d0e8039027dccd029b5dbad59be98e7e3da099db5084cd718dc7b5b0ef	CellOracle links object (Stage 5 script 04)
+trichoblast_rawRNA.links.celloracle.links	389432603	e2e2554d3e3617a670e73f656a4d57533c277bd5dd0cbf262af323475ada1fe1	CellOracle links object (Stage 5 script 04)
+trichoblast_rawRNA_p01_20k.links.celloracle.links	396493086	8ee45db5387ae3eee273be32ddc066bc74c9ad3089e4ad265f2b912269b4f458	CellOracle links object (Stage 5 script 04)
+xylem_rawRNA.links.celloracle.links	560333758	a53972e54ff41cb478f28328fd35f9793c2f2b9b0c967f89dd70eba3b421d324	CellOracle links object (Stage 5 script 04)
+xylem_rawRNA_p01_20k.links.celloracle.links	570887923	bc7305ae953337ed675ec2cf36cc78e7a33986bcf8a5691230d9e3f7fe801ef9	CellOracle links object (Stage 5 script 04)
+cell_oracle.linux-64.condapack.tar.gz	1141543174	d9a2f489fb3be464bf5581fc137c7d2c8e3fb6c418b87e40276bedd9de6892af	Exact conda-pack environment archive, linux-64
+mast.linux-64.condapack.tar.gz	1202331625	ff057c1617063541b9807c5f8e55ab620e17e793d1a47e7868eda9654fa3fddf	Exact conda-pack environment archive, linux-64
+muscat.linux-64.condapack.tar.gz	895061541	6bc9d7401ad3c51ded720e570963846146aa9eda1cbead0fa2e4e9d2d6c0f489	Exact conda-pack environment archive, linux-64
+scKB_copilot.linux-64.condapack.tar.gz	973313171	20652cf904d3d6dcd178097080e08702b9a46271e6e796eec1ac041d67b5f1d1	Exact conda-pack environment archive, linux-64
+seu4_label_transfer.linux-64.condapack.tar.gz	855902601	5172b9b3a58a86d712993f9170de15181bcb7843ef9be52dccddc867e781fee0	Exact conda-pack environment archive, linux-64

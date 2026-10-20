@@ -106,6 +106,8 @@ Folder: [`scripts_and_inputs/Analysis/CellOracle_GRN_analysis/`](scripts_and_inp
    - nominates genotype-specific TFs.
    - Outputs: [`…_all_metrics_rank_change_wide_TF_GE.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20260317_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_all_metrics_rank_change_wide_TF_GE.txt), [`…_WT_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20260317_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_WT_specific_TF.txt) and [`…_fer4_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20260317_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_fer4_specific_TF.txt) (supplementary tables).
 
+**Reproducibility note.** Link coefficients from CellOracle depend on Python's string-hash seed (see [`envs/README.md`](envs/README.md#celloracle-set-pythonhashseed)); run the script with `export PYTHONHASHSEED=0`. The published networks were made without a fixed seed, so they cannot be regenerated exactly. In a rerun of columella from the same input, code and environment (20 Oct 2026), 87.9–89.1% of the top-20,000 links per network were the same, out-degree centrality agreed with Spearman ρ = 0.997 in all four networks, and 44–47 of the 50 genes with the highest out-degree were shared.
+
 Inputs in [`inputs/`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs): [`Kay_TF_thalemine_annotations.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs/Kay_TF_thalemine_annotations.csv) (the TF list used to build the networks) and [`features.tsv.gz`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs/features.tsv.gz) (AGI → gene symbol).
 
 ## Stage 5 – TF-family enrichment and the DOF → auxin network (Fig. 6a, b)
@@ -154,3 +156,5 @@ PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/An
 | Base GRN (`base_GRN_TG_to_TF_dictionary.pkl`; built as in Methods from scATAC-seq GSE155304 and DAP-seq) | 1.3 GB | Stage 4 step 1 | data deposit (DOI to be added) |
 | CellOracle links objects (`*_rawRNA.links.celloracle.links`, `*_p01_20k.links.celloracle.links`) | 11 GB with the per-cell-type outputs | Stage 5 script 04 | data deposit (DOI to be added) |
 | Exact environment archives (conda-pack, linux-64) | | all stages | data deposit (DOI to be added) |
+
+Sizes and SHA-256 checksums of the 30 files to deposit (39.3 GB in total) are in [`DATA_DEPOSIT_MANIFEST.tsv`](DATA_DEPOSIT_MANIFEST.tsv).

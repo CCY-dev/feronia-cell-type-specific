@@ -40,3 +40,16 @@ conda create -p ./muscat --file envs/muscat.linux-64.explicit.txt
 ```
 
 The recipe needs linux-64. On macOS or Windows, run it in a Linux container or on a cluster.
+
+**Rebuild test (20 Oct 2026).** The `muscat` environment was rebuilt on Resnick from `muscat.linux-64.explicit.txt` and `install_R_packages_muscat.R` in an empty `HOME` with no access to the original environment. All 411 of 411 recorded R packages were installed at the recorded version (about 55 minutes with 8 compile jobs). The install scripts in this folder are the version used in that test: they remove stale `00LOCK` folders and reinstall, at the recorded version, packages that R had installed over a conda copy.
+
+## CellOracle: set `PYTHONHASHSEED`
+
+CellOracle 0.20.0 fixes `random_state = 123` in its bagging ridge models, but it orders each target gene's candidate regulators with a Python `set` (`celloracle.utility.intersect`). In Python 3 the iteration order of a set of strings changes from one interpreter start to the next unless `PYTHONHASHSEED` is fixed. The random feature subsets (`max_features = 0.8`) are drawn by column position, so a different order selects different regulators and gives different coefficients. To make GRN inference repeat exactly, start Python with a fixed seed:
+
+```bash
+export PYTHONHASHSEED=0
+python 20260317_..._slurmArray_run_celloracle_grn.py
+```
+
+We checked this on the columella input: with `PYTHONHASHSEED=0` two runs gave identical coefficients, and with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run.
