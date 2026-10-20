@@ -14,6 +14,7 @@
 # ---------------------------------------------------------------------------
 
 rm(list = ls())
+# NOTE: lab cluster path below -- change it to your own path
 setwd("/resnick/groups/NolanLab/cchen/Feronia/analysis")
 suppressMessages({ library(Seurat); library(tidyverse); library(scales) })
 cat("Seurat version:", as.character(packageVersion("Seurat")), "\n")
@@ -30,6 +31,7 @@ read_seu <- function(dir) {
 }
 
 cat("Reading integrated object ...\n")
+# NOTE: lab cluster path below -- change it to your own path
 seu <- read_seu("/resnick/groups/NolanLab/shared_resources/annotated_objects/rds/integrated/Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds")
 seu_sub <- subset(seu, subset = orig.ident %in% c("sc_291", "sc_292", "sc_293", "sc_294"))
 rm(seu); gc()

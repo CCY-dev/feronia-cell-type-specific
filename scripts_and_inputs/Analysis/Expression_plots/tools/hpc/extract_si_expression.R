@@ -6,6 +6,7 @@
 #   then SCT data-slot values for the 11 genes (columns named <SYMBOL>_<AGI>),
 # plus si_expression_object_summary.txt and si_expression_sessionInfo.txt.
 suppressMessages(library(Seurat))
+# NOTE: lab cluster path below -- change it to your own path
 f <- "/resnick/groups/NolanLab/shared_resources/annotated_objects/rds/integrated/Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds"
 samples <- c("sc_291", "sc_292", "sc_293", "sc_294")
 genotype_of <- c(sc_291 = "WT", sc_293 = "WT", sc_292 = "fer4", sc_294 = "fer4")   # task brief; checked below

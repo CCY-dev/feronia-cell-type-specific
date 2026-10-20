@@ -14,6 +14,7 @@ import seaborn as sns
 
 # Set the working dir
 # Change to your own directory
+# NOTE: lab cluster path below -- change it to your own path
 os.chdir("/resnick/groups/NolanLab/cchen/Feronia/analysis/")
 
 # Import and check CellOracle
@@ -23,6 +24,7 @@ co.__version__
 
 # Don't change anything here
 # Read in an input needed by CellOracle
+# NOTE: lab cluster path below -- change it to your own path
 id2name = pd.read_table('/resnick/groups/NolanLab/shared_resources/source_files/celloracle_inputs/features.tsv.gz', 
                         compression='gzip', header=None)
 
@@ -31,12 +33,14 @@ id2name = pd.read_table('/resnick/groups/NolanLab/shared_resources/source_files/
 ADATA = sc.read_h5ad('CellOracle/CellOracle_input/20250509_4S_feronia_salinity_time_course_untreated_celloracle_input.h5ad')
 # Load TF info
 # Don't change anything here
+# NOTE: lab cluster path below -- change it to your own path
 wanted_TFs = pd.read_csv("/resnick/groups/NolanLab/shared_resources/source_files/celloracle_inputs/Kay_TF_thalemine_annotations.csv")
 
 # Load base_GRN
 # Don't change anything here
 import pickle
 
+# NOTE: lab cluster path below -- change it to your own path
 with open("/resnick/groups/NolanLab/shared_resources/source_files/celloracle_inputs/base_GRN_TG_to_TF_dictionary.pkl", 'rb') as file_handle:
     TG_to_TF_dictionary = pickle.load(file_handle)
     
@@ -162,6 +166,7 @@ celltypes = {
 }
 
 # Define the directory where all the output will be stored
+# NOTE: lab cluster path below -- change it to your own path
 output_dir = '/resnick/groups/NolanLab/cchen/Feronia/analysis/CellOracle/CellOracle_output/20260317_feronia_salinity_timecourse_WT_untreated_fer4_untreated_newIntegratedSeurat3_NoSuspiciousCluster'
 os.makedirs(output_dir, exist_ok=True)  # Create output directory if it doesn’t exist
 os.chdir(output_dir)  # Change the current working directory

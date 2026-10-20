@@ -19,6 +19,7 @@
 # ---------------------------------------------------------------------------
 
 rm(list = ls())
+# NOTE: lab cluster path below -- change it to your own path
 setwd("/resnick/groups/NolanLab/cchen/Feronia/analysis")
 
 suppressMessages({
@@ -43,6 +44,7 @@ read_seu <- function(dir) {
 }
 
 cat("Reading integrated Seurat object ...\n")
+# NOTE: lab cluster path below -- change it to your own path
 seu <- read_seu("/resnick/groups/NolanLab/shared_resources/annotated_objects/rds/integrated/Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds")
 
 # --- subset to the 4 timecourse samples -------------------------------------
@@ -94,6 +96,7 @@ cat("Number of genes:", length(selected_genes),
     "(", length(gene_groups$upregulated), "up,", length(gene_groups$downregulated), "down )\n")
 
 # --- common names from features.tsv (falls back to gene ID if no symbol) ----
+# NOTE: lab cluster path below -- change it to your own path
 feature_names <- read.delim("/resnick/groups/NolanLab/shared_resources/source_files/features.tsv",
                             sep = "\t", header = FALSE)
 feature_names <- feature_names[, 1:2]
