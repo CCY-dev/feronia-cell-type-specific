@@ -61,7 +61,7 @@ Each stage below lists its inputs, the scripts in run order, and its outputs.
 
 Folder: [`scripts_and_inputs/Preprocessing/`](scripts_and_inputs/Preprocessing)
 
-Reads were demultiplexed with Cell Ranger `mkfastq` (v3.1.0) and quality-filtered with the scKB-COPILOT pipeline. Both steps run upstream of this repository, and their outputs are on GEO. Cell type and developmental stage were assigned by label transfer from the published Arabidopsis root atlas (GEO [GSE152766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152766)).
+Reads were demultiplexed with Cell Ranger `mkfastq` (v3.1.0) and quality-filtered with the scKB-COPILOT pipeline. Both steps run upstream of this repository, and their outputs are on GEO. Cell type and developmental stage were assigned by label transfer from the published Arabidopsis root atlas (GEO [GSE152766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152766)). The integration maps the four samples onto three reference samples: `sc_12` = GSM4625997 (GSE152766; Shahan et al. 2022, *Dev Cell*) and `dc1`/`dc2` = GSM3511858/GSM3511859, WT rep1/rep2 (GEO [GSE123818](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123818); Denyer et al. 2019, *Dev Cell*). Each was identified by matching its read count to SRA.
 
 1. [`202501226_feronia_salinity_time_course_update_metadata.ipynb`](scripts_and_inputs/Preprocessing/scripts/202501226_feronia_salinity_time_course_update_metadata.ipynb) (conda env `seu4_label_transfer`). Exports the label-transfer annotations from the Seurat 4 objects so they can be added to the Seurat 3 objects.
 2. [`202501226_Ref_integration_feronia_salinity_time_course_seu3.ipynb`](scripts_and_inputs/Preprocessing/scripts/202501226_Ref_integration_feronia_salinity_time_course_seu3.ipynb) (conda env `scKB_copilot`, Seurat v3.1.5). Updates the metadata, integrates the four samples with the reference atlas, and runs PCA, UMAP and clustering. It then removes the reference cells and draws the UMAPs (**Fig. 1a**). One cluster found only in `sc_291` was flagged as suspicious and removed. All downstream analyses use this object (`…_seu3_sc291suspiciousClusterRemoved.rds`, "NoSuspiciousCluster" in file names).
@@ -161,12 +161,13 @@ PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/An
 
 | Item | Size | Needed by | Where |
 |---|---|---|---|
-| Per-sample Seurat objects (`sc_291`–`sc_294`) and FASTQ | | Stage 1 | GEO GSE325470 |
+| Per-sample Seurat objects with label-transfer annotations (`sc_291`–`sc_294`, `*_COPILOT_seu3.rds`) and FASTQ | | Stage 1 | GEO GSE325470 |
 | Integrated, annotated Seurat object (`Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds`) | 19.5 GB | Stages 2–4 | data deposit (DOI to be added) |
 | CellOracle input (`20250509_4S_feronia_salinity_time_course_untreated_celloracle_input.h5ad`) | 5.4 GB | Stage 4 step 1 | data deposit (DOI to be added) |
 | Base GRN (`base_GRN_TG_to_TF_dictionary.pkl`; built as in Methods from scATAC-seq GSE155304 and DAP-seq) | 1.3 GB | Stage 4 step 1 | data deposit (DOI to be added) |
 | CellOracle links objects (`*_rawRNA.links.celloracle.links`, `*_p01_20k.links.celloracle.links`) | 11 GB with the per-cell-type outputs | Stage 5 script 04 | data deposit (DOI to be added) |
 | Exact environment archives (conda-pack, linux-64) | | all stages | data deposit (DOI to be added) |
-| Stage 1 inputs: reference atlas objects `sc_12`, `dc1`, `dc2` (`*_COPILOT.rds`), per-sample `*_COPILOT_seu4.rds` objects and `seu4_metadata/*_seu4_metadata.csv` | | Stage 1 | not yet deposited; sources to be listed |
+| Stage 1 reference objects `sc_12`, `dc1`, `dc2` (`*_COPILOT_seu3.rds`; lab-processed copies of GSM4625997, GSM3511858, GSM3511859, see Stage 1) | 9.6 GB | Stage 1 | data deposit (DOI to be added) |
+| Stage 1 label-transfer metadata (`seu4_metadata/sc_29{1..4}_seu4_metadata.csv`) | 46 MB | Stage 1 | data deposit (DOI to be added) |
 
-Sizes and SHA-256 checksums of the 30 files to deposit (39.3 GB in total) are in [`DATA_DEPOSIT_MANIFEST.tsv`](DATA_DEPOSIT_MANIFEST.tsv).
+Sizes and SHA-256 checksums of the 37 files to deposit (49.0 GB in total) are in [`DATA_DEPOSIT_MANIFEST.tsv`](DATA_DEPOSIT_MANIFEST.tsv).

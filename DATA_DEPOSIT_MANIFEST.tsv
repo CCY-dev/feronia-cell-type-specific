@@ -29,3 +29,10 @@ mast.linux-64.condapack.tar.gz	1202331625	ff057c1617063541b9807c5f8e55ab620e17e7
 muscat.linux-64.condapack.tar.gz	895061541	6bc9d7401ad3c51ded720e570963846146aa9eda1cbead0fa2e4e9d2d6c0f489	Exact conda-pack environment archive, linux-64
 scKB_copilot.linux-64.condapack.tar.gz	973313171	20652cf904d3d6dcd178097080e08702b9a46271e6e796eec1ac041d67b5f1d1	Exact conda-pack environment archive, linux-64
 seu4_label_transfer.linux-64.condapack.tar.gz	855902601	5172b9b3a58a86d712993f9170de15181bcb7843ef9be52dccddc867e781fee0	Exact conda-pack environment archive, linux-64
+sc_12_COPILOT_seu3.rds	6049673137	be4175d3ca590851414c026f1deae387273622682cdfafb113d96f8046b412bb	Stage 1 reference: lab-processed copy of GSM4625997 (GSE152766, Shahan et al. 2022) with root-atlas annotations
+dc1_COPILOT_seu3.rds	1781052740	050dbf204b61d94d9ee3ce06614c6a4245b102c3d6eee9cc33c403d0b8cf5dc7	Stage 1 reference: lab-processed copy of GSM3511858 (GSE123818, Denyer et al. 2019)
+dc2_COPILOT_seu3.rds	1743225051	c6be4510597eb1d873d878c1e1ddbb062cfbfce204792d0f429c2c3ee3225270	Stage 1 reference: lab-processed copy of GSM3511859 (GSE123818, Denyer et al. 2019)
+sc_291_seu4_metadata.csv	14400196	ccb25eecfb947634c54233a757dd06c2a9e3751abbcd26fc3bf9c8236b064954	Stage 1 label-transfer metadata for sc_291 (read by the integration notebook)
+sc_292_seu4_metadata.csv	9673221	dff09830c7c9955842a9f12da449567cfa3b9d960d7e0560cfc8697069cfb36d	Stage 1 label-transfer metadata for sc_292 (read by the integration notebook)
+sc_293_seu4_metadata.csv	10030286	ecc3aaf31326094e2d71c99fc70525900a9de2400cc43ea5ead9a0404d74e894	Stage 1 label-transfer metadata for sc_293 (read by the integration notebook)
+sc_294_seu4_metadata.csv	11933341	bc666cc66fbc1c35032725b6bcc4445924c2069ac9e43ab878fc4c62538cc286	Stage 1 label-transfer metadata for sc_294 (read by the integration notebook)
