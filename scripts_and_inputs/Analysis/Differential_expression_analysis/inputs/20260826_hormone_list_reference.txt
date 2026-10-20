@@ -1,0 +1,169 @@
+================================================================================
+HORMONE GENE LISTS - REFERENCES, GROUPED BY SOURCE PUBLICATION
+Written 2026-08-26. Supplements README_hormone_reference.md; does not replace it.
+================================================================================
+
+Every attribution below marked [VERIFIED] was checked GENE-FOR-GENE against the
+paper's own supplementary tables, not merely by matching gene counts.
+
+--------------------------------------------------------------------------------
+1. Nemhauser JL, Hong F, Chory J (2006)                              [VERIFIED]
+   "Different plant hormones regulate similar processes through largely
+    nonoverlapping transcriptional responses."
+   Cell 126(3):467-475.  DOI 10.1016/j.cell.2006.05.050   PMID 16901781
+
+   Covers FIVE hormones -- ABA, ACC, CK, GA, IAA:
+
+     file          genes   = UP  + DN    Nemhauser table
+     ABA.csv        2914   = 1438 + 1476   Table S1 (mmc2)
+     ACC.csv         532   =  167 +  365   Table S2 (mmc3)
+     GA.csv          122   =   40 +   82   Table S4 (mmc5)
+     IAA.csv         785   =  430 +  355   Table S5 (mmc6)
+     CK.csv          495   =  332 +  163   Table S7 (mmc8)
+
+   The matching X_UP.csv / X_DN.csv files are identical to that table's "up" and
+   "down" columns respectively.
+
+   CONSTRUCTION RULE: X.csv = X_UP union X_DN, and EXCLUDES Nemhauser's small
+   "complex" category (genes up at some timepoints and down at others: ABA 20,
+   ACC 8, GA 3, IAA 6, CK 3). So X.csv is the linear-model p<0.01 set with
+   complex dropped -- e.g. ABA 2914, not 2934.
+
+   NOTE ON NAMING: "ACC" and "IAA" are Nemhauser's own treatment names (the
+   ethylene precursor, and indole-3-acetic acid). Do not read ACC.csv as a
+   general ethylene list -- see Zhang_2018_ET.csv below.
+
+--------------------------------------------------------------------------------
+2. Pajerowska-Mukhtar KM, Wang W, Tada Y, Oka N, Tucker CL, Fonseca JP,
+   Dong X (2012)                                                     [VERIFIED]
+   "The HSF-like Transcription Factor TBF1 Is a Major Molecular Switch for
+    Plant Growth-to-Defense Transition."
+   Curr Biol 22(2):103-112.  DOI 10.1016/j.cub.2011.12.015   PMID 22244999
+
+   Covers SA:
+
+     file          genes   = UP  + DN    source sheet in Table S1 (mmc2.xls)
+     SA.csv         1051   =  518 +  533   "SA induced only" / "SA repressed only"
+
+   *** IMPORTANT INTERPRETATION CAVEAT ***
+   Those sheets are "induced/repressed ONLY". Genes co-regulated by the MAMP
+   elf18 are held in SEPARATE sheets ("SA and elf18 induced" 37, "elf18 induced
+   only" 475, "elf18 repressed only" 1092, etc). SA.csv therefore contains
+   SA-SPECIFIC responsive genes -- it is NOT a complete SA-responsive gene set.
+   This is why PR1 (AT2G14610) and PR2 (AT3G57260) are ABSENT from SA.csv: both
+   sit in "elf18 repressed only". Do not describe this list as "SA-responsive"
+   in a figure legend without that qualifier.
+
+--------------------------------------------------------------------------------
+3. Hickman R, Van Verk MC, Van Dijken AJH, Mendes MP, Vroegop-Vos IA,
+   Caarls L, Steenbergen M, Van der Nagel I, Wesselink GJ, Jironkin A,
+   Talbot A, Rhodes J, De Vries M, Schuurink RC, Denby K, Pieterse CMJ,
+   Van Wees SCM (2017)                                               [VERIFIED]
+   "Architecture and Dynamics of the Jasmonic Acid Gene Regulatory Network."
+   Plant Cell 29(9):2086-2105.  DOI 10.1105/tpc.16.00958
+
+   Covers JA:
+
+     file                    genes
+     Hickman_2017_JA.csv      3611     (matches the published figure exactly)
+
+--------------------------------------------------------------------------------
+4. Nolan TM, Brennan B, Yang M, Chen J, Zhang M, Li Z, Wang X, Bassham DC,
+   Walley J, Yin Y (2017)
+   "Selective Autophagy of BES1 Mediated by DSK2 Balances Plant Growth and
+    Survival."
+   Dev Cell 41(1):33-46.e7.  DOI 10.1016/j.devcel.2017.03.013   PMID 28399398
+
+   AND
+
+   Wang X, Chen J, Xie Z, Liu S, Nolan T, Ye H, Zhang M, Guo H, Schnable PS,
+   Li Z, Yin Y (2014)
+   "Histone lysine methyltransferase SDG8 is involved in brassinosteroid-
+    regulated gene expression in Arabidopsis thaliana."
+   Mol Plant 7(8):1303-1315.  DOI 10.1093/mp/ssu056   PMID 24838002
+
+   Cover BR (cite BOTH):
+
+     file                genes
+     BR.csv               4987
+     BR_UP.csv            2678
+     BR_DN.csv            2376
+     BR_2K_list.csv       2160   = genes regulated in BOTH the RNA-seq and the
+                                   microarray experiment (the INTERSECTION of
+                                   the two papers), per README_hormone_reference.md
+
+   *** NOT verified gene-for-gene *** -- the two papers' supplements were never
+   compared directly. Supporting evidence only: BR.csv contains 98.6% of
+   BR_2K_list.csv (2130/2160), so BR.csv is most likely the UNION of the two
+   papers' BR-responsive genes while BR_2K_list is their intersection.
+   BR.csv is definitely NOT from Nemhauser: it shares only 6.8% (341 genes) with
+   Nemhauser's BL set (647 genes).
+   Also note BR.csv != BR_UP union BR_DN (4987 vs 5054; 67 union genes are
+   absent from BR.csv).
+
+================================================================================
+UNATTRIBUTED
+================================================================================
+
+   JA_UP.csv (1760) and JA_DN.csv (2555)
+     Source UNKNOWN. These are NOT Nemhauser's MJ set (only 19.9% / 7.8%
+     overlap with MJ up/down), and NOT Hickman (union of 4315 vs 3611, 1159
+     shared). They also carry 30 organellar (ATCG*/ATMG*) genes, which the
+     2006 ATH1 array did not assay -- so they are from a later, RNA-seq-era
+     experiment. There is no JA.csv. Use Hickman_2017_JA.csv for JA.
+
+================================================================================
+DO NOT CONFUSE: UNLABELLED vs LABELLED FILES
+================================================================================
+
+Files named <HORMONE>.csv and files named <Author>_<Year>_<HORMONE>.csv are
+DIFFERENT DATASETS, not copies. They barely overlap:
+
+   ABA.csv (2914)  vs  song_2016_ABA.csv (3061)   shared 1025   Jaccard 0.207
+   ACC.csv (532)   vs  Zhang_2018_ET.csv (1292)   shared  140   Jaccard 0.083
+   GA.csv  (122)   vs  Bai_2012_GA.csv   (3570)   shared   37   Jaccard 0.010
+
+The labelled files are the "additional sets" described in
+README_hormone_reference.md and belong to the papers named in their filenames:
+
+   song_2016_ABA.csv   Song L, ..., Ecker JR (2016) Science 354(6312):aag1550
+                       DOI 10.1126/science.aag1550
+   Bai_2012_GA.csv     Bai MY, ..., Wang ZY (2012) Nat Cell Biol
+                       DOI 10.1038/ncb2546
+   Zhang_2018_ET.csv   Zhang F, Wang L, Ko EE, Shao K, Qiao H (2018) Plant Cell
+                       DOI 10.1105/tpc.17.00671
+   Hickman_2017_JA.csv Hickman R, ... (2017) Plant Cell  DOI 10.1105/tpc.16.00958
+
+Picking the wrong one silently changes every downstream enrichment result.
+
+================================================================================
+NOTE ON "Guo et al 2018 Current Biology"
+================================================================================
+
+README_hormone_reference.md states that the unlabelled csvs are "the same as
+those used in Guo et al 2018 Current Biology" -- Guo H, Nolan TM, Song G,
+Liu S, Xie Z, Chen J, Schnable PS, Walley JW, Yin Y (2018) Curr Biol
+28(20):3316-3324, DOI 10.1016/j.cub.2018.07.078.
+
+That paper is the COMPILATION these lists were inherited through; it did not
+generate them. Its own RNA-seq was the fer-4 transcriptome. Cite the PRIMARY
+papers listed above in a methods section, not Guo et al. 2018.
+
+================================================================================
+SCOPE
+================================================================================
+
+This file covers the eight HORMONE lists only. The stress datasets (heat.csv,
+salt.csv, Thomashow_cold.csv, Drought.csv, Liu_2016_PAC.csv) are documented in
+README_hormone_reference.md and summary.xlsx.
+
+Verification scripts and full comparison output:
+  /resnick/groups/NolanLab/cchen/Feronia/claude_script/
+    20260826_compare_familyA_vs_nemhauser.R
+    20260826_compare_SA_vs_pajerowska.R
+    20260826_hormone_list_provenance.R
+  /resnick/groups/NolanLab/cchen/Feronia/claude_result/
+    20260826_familyA_vs_nemhauser_comparison.txt
+    20260826_SA_vs_pajerowska_comparison.txt
+    20260826_hormone_gene_list_long.csv   (GeneID, Hormone, source_file, reference)
+================================================================================

@@ -1,0 +1,7 @@
+# Versions used to build the figures (macOS arm64, 20 Oct 2026). pymupdf is needed only for the before/after pages.
+matplotlib==3.11.0
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+PyYAML==6.0.3
+pymupdf==1.28.0

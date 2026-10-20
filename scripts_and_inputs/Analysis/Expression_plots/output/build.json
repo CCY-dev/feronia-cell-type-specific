@@ -1,0 +1,253 @@
+{
+ "inputs": {
+  "cells": "data/si_expression_cells.csv.gz",
+  "cells_sha256": "466cefec6bd9a36d87b036449d9993ab1d5c11268046bf8ea33d767c0d5ecab3",
+  "config": "config.yaml",
+  "config_sha256": "0c754a9c2a25733e95fa8dcad18fee8f277fdd3b530b4b680d497faf51802166",
+  "palette_sha256": "f76d8cde9ab8384c75af7f9c2641c12ad85b6bdff6d71826bd8c1ca7013b6efa",
+  "de_table_sha256": "2551854bab2bb6a895dc387f954a00a6bde01a43cff30cd0362a2c173f61575c",
+  "nomination_table_sha256": "82ed126001ebf9ca47b24f7b850a12b395a30986db5d051af6ae8de14a785f58"
+ },
+ "code_sha256": {
+  "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "colour.py": "c9415baa445abbe3384eb689692c334273913e4a856d9c7ac04abdcc37df6681",
+  "compare.py": "9ba2d16fbf0645c05a1c53345353e16c03dc5e46d4975013067bd18955f1c74f",
+  "data.py": "bded695265df550aff6c2a75b153ca7f777246802b149fa4ab9ba7ab2619cf53",
+  "figures.py": "7e682bfeacde555ddc7725104d6ada51cc09841e04cfa017386b866f535fdeee",
+  "page.py": "3a0582096371495cd6839c2102d46fb9edb266d702bdd64e3e9bf82c1a21fa0d",
+  "panels.py": "cc08f9b5fe6f5e4994f23ccc0fb333fc2cc6a10c68b67d62d0f6fe21f5ec05b6",
+  "build.py": "06f5cfbaeeb19c2eeabcb48e04f53fd3fbc07ec1868da95c0653af0d1552e6f5"
+ },
+ "environment": {
+  "python": "3.11.15",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "matplotlib": "3.11.0",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1",
+  "pyyaml": "6.0.3"
+ },
+ "data": {
+  "n_cells": 44664,
+  "n_by_genotype": {
+   "fer4": 23009,
+   "WT": 21655
+  },
+  "n_by_sample": {
+   "sc_294": 12714,
+   "sc_293": 10911,
+   "sc_291": 10744,
+   "sc_292": 10295
+  },
+  "n_clusters": 37,
+  "dot_mean_max": 1.798569217395409,
+  "gene_ranges": {
+   "YUC5": [
+    0.0,
+    3.55534806148941
+   ],
+   "DOF4.6": [
+    0.0,
+    2.70805020110221
+   ],
+   "CDF4": [
+    0.0,
+    2.77258872223978
+   ],
+   "COG1": [
+    0.0,
+    3.71357206670431
+   ],
+   "OBP3": [
+    0.0,
+    2.19722457733622
+   ],
+   "DOF6": [
+    0.0,
+    4.04305126783455
+   ],
+   "DOF4.1": [
+    0.0,
+    2.19722457733622
+   ],
+   "DOF2.2": [
+    0.0,
+    2.56494935746154
+   ],
+   "DAG1": [
+    0.0,
+    3.13549421592915
+   ],
+   "OBP1": [
+    0.0,
+    2.07944154167984
+   ],
+   "OBP2": [
+    0.0,
+    2.77258872223978
+   ]
+  },
+  "umap_frame": [
+   [
+    -15.473848508187164,
+    14.920770785025763
+   ],
+   [
+    -15.065268696730367,
+    13.508066187913167
+   ]
+  ]
+ },
+ "source_data": {
+  "path": "source_data/si_expression_cluster_summary.csv",
+  "sha256": "415eca133cec701114c4eeabc74861a03a7bb4c3279f0688a9c847cf20bffeb1"
+ },
+ "figures": [
+  {
+   "id": "ED7d_YUC5_UMAP",
+   "layout": "ed7_d_slot",
+   "genes": [
+    "YUC5"
+   ],
+   "size_mm": [
+    92.5,
+    47.87
+   ],
+   "outputs": {
+    "ED7d_YUC5_UMAP.pdf": "27c75a63544f5f42ece4ef16beb74a8946b6e7271ccb4ee8b0fd016af1f19b28",
+    "ED7d_YUC5_UMAP.png": "8955a1d18d30f159531318e6f5de5ec5100e387ad4b43126906b018fbdd4b846"
+   },
+   "checks": [
+    {
+     "check": "text inside page",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "no overlapping text boxes",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "images",
+     "ok": true,
+     "detail": "3 images placed at native pixel size"
+    }
+   ]
+  },
+  {
+   "id": "ED7e_YUC5_dotplot",
+   "layout": "ed7_e_strip",
+   "genes": [
+    "YUC5"
+   ],
+   "size_mm": [
+    180,
+    34.51
+   ],
+   "outputs": {
+    "ED7e_YUC5_dotplot.pdf": "e87fcff02a5cbaaa9b7b4715cdce14c34079d07ac1f096336d98a82e79fb42cf",
+    "ED7e_YUC5_dotplot.png": "c2bb679fdce641986a3467ab082c3ca52479650d8ff57c0cb10f1e23b4e604de"
+   },
+   "checks": [
+    {
+     "check": "text inside page",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "no overlapping text boxes",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "images",
+     "ok": true,
+     "detail": "1 images placed at native pixel size"
+    }
+   ]
+  },
+  {
+   "id": "SupplFig1_DOF_expression",
+   "layout": "si_dof_strip",
+   "genes": [
+    "DOF4.6",
+    "CDF4",
+    "COG1",
+    "OBP3",
+    "DOF6",
+    "DOF4.1",
+    "DOF2.2",
+    "DAG1",
+    "OBP1",
+    "OBP2"
+   ],
+   "size_mm": [
+    180,
+    137.44
+   ],
+   "outputs": {
+    "SupplFig1_DOF_expression.pdf": "2dc6cecb0e209a315cc25b7159b10d48d1287c94f8032bf44d8a9b80b8039b39",
+    "SupplFig1_DOF_expression.png": "dbf4cee411642a9ed32b28d2fb59a3e9753b3ac4979a0c2f5cf649301197d8b9"
+   },
+   "checks": [
+    {
+     "check": "text inside page",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "no overlapping text boxes",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "images",
+     "ok": true,
+     "detail": "31 images placed at native pixel size"
+    }
+   ]
+  },
+  {
+   "id": "SupplFig2_DOF_DE_and_network",
+   "layout": "si_de_and_nominations",
+   "genes": [
+    "DOF4.6",
+    "CDF4",
+    "COG1",
+    "OBP3",
+    "DOF6",
+    "DOF4.1",
+    "DOF2.2",
+    "DAG1",
+    "OBP1",
+    "OBP2"
+   ],
+   "size_mm": [
+    180,
+    116.25
+   ],
+   "outputs": {
+    "SupplFig2_DOF_DE_and_network.pdf": "c564e76c25601e300f4f62a9cd0149420d681fa0afe707fec815cb6526881a6b",
+    "SupplFig2_DOF_DE_and_network.png": "1ae59ab8e6e512d0d06d3bd44aa7a97b835c671450a91d5453f2972d308a117f"
+   },
+   "checks": [
+    {
+     "check": "text inside page",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "no overlapping text boxes",
+     "ok": true,
+     "detail": []
+    },
+    {
+     "check": "images",
+     "ok": true,
+     "detail": "1 images placed at native pixel size"
+    }
+   ]
+  }
+ ]
+}

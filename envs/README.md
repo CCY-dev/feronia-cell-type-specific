@@ -41,7 +41,7 @@ conda create -p ./muscat --file envs/muscat.linux-64.explicit.txt
 
 The recipe needs linux-64. On macOS or Windows, run it in a Linux container or on a cluster.
 
-**Rebuild test (20 Oct 2026).** The `muscat` environment was rebuilt on Resnick from `muscat.linux-64.explicit.txt` and `install_R_packages_muscat.R` in an empty `HOME` with no access to the original environment. All 411 of 411 recorded R packages were installed at the recorded version (about 55 minutes with 8 compile jobs). The install scripts in this folder are the version used in that test: they remove stale `00LOCK` folders and reinstall, at the recorded version, packages that R had installed over a conda copy.
+**Rebuild test (20 Oct 2026).** The `muscat` environment was rebuilt on Resnick from `muscat.linux-64.explicit.txt` and `install_R_packages_muscat.R` in an empty `HOME`, without activating or reading the original environment (the cluster's shared conda package cache was readable). All 411 of 411 recorded R packages were installed at the recorded version (about 55 minutes with 8 compile jobs). The install scripts in this folder are the version used in that test: they remove stale `00LOCK` folders and reinstall, at the recorded version, packages that R had installed over a conda copy.
 
 ## CellOracle: set `PYTHONHASHSEED`
 
@@ -52,4 +52,15 @@ export PYTHONHASHSEED=0
 python 20260317_..._slurmArray_run_celloracle_grn.py
 ```
 
-We checked this on the columella input: with `PYTHONHASHSEED=0` two runs gave identical coefficients, and with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run.
+We checked this on 25 target genes of the WT Distal Columella network (12,243 coefficients): with `PYTHONHASHSEED=0`, two runs in separate processes gave identical coefficients; with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run. The other networks were not tested.
+
+## `cell_oracle`: Python packages from pip
+
+`cell_oracle.pip_freeze.txt` lists 188 packages. 105 are `file://` entries, packages that conda installed and the explicit list already restores. The other 83 were installed by pip, and the explicit list does not restore them. After `conda create`, install them with:
+
+```bash
+grep -v ' @ file://' envs/cell_oracle.pip_freeze.txt > cell_oracle.pip.txt
+./cell_oracle/bin/python -m pip install --no-deps -r cell_oracle.pip.txt
+```
+
+The conda-pack archive includes these packages already. The pip step has not been tested from the recipe.

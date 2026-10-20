@@ -1,0 +1,404 @@
+object: /resnick/groups/NolanLab/shared_resources/annotated_objects/rds/integrated/Feronia_salinity_timecourse_4S_20251226_seu3_sc291suspiciousClusterRemoved.rds 
+file size (bytes): 19549746309 
+mtime: 2025-12-27 16:15:52 
+object class: Seurat  version slot: 3.1.5 
+cells in object: 44664 
+
+sc_291 sc_292 sc_293 sc_294 
+ 10744  10295  10911  12714 
+assays: RNA, SCT, integrated  active: integrated 
+  assay RNA data dims: 29411 44664 
+  assay SCT data dims: 24907 44664 
+  assay integrated data dims: 17768 44664 
+reductions: pca, umap, umap_3D, umap_2D 
+  reduction pca dims 44664 50 cols PC_1 PC_2 PC_3 
+  reduction umap dims 44664 2 cols UMAP_1 UMAP_2 
+  reduction umap_3D dims 44664 3 cols UMAP_1 UMAP_2 UMAP_3 
+  reduction umap_2D dims 44664 2 cols UMAP_1 UMAP_2 
+meta columns:
+  [1] "orig.ident"                                                       
+  [2] "nCount_RNA"                                                       
+  [3] "nFeature_RNA"                                                     
+  [4] "nCount_spliced_RNA"                                               
+  [5] "nFeature_spliced_RNA"                                             
+  [6] "nCount_unspliced_RNA"                                             
+  [7] "nFeature_unspliced_RNA"                                           
+  [8] "percent.mt"                                                       
+  [9] "percent.cp"                                                       
+ [10] "nCount_SCT"                                                       
+ [11] "nFeature_SCT"                                                     
+ [12] "nCount_spliced_SCT"                                               
+ [13] "nFeature_spliced_SCT"                                             
+ [14] "nCount_unspliced_SCT"                                             
+ [15] "nFeature_unspliced_SCT"                                           
+ [16] "pANN_0.25_0.15_943"                                               
+ [17] "DF.classifications_0.25_0.15_943"                                 
+ [18] "celltype.ID"                                                      
+ [19] "timezone.ID"                                                      
+ [20] "celltype.cor"                                                     
+ [21] "timezone.cor"                                                     
+ [22] "celltype.pvalue"                                                  
+ [23] "timezone.pvalue"                                                  
+ [24] "celltype.ID.P"                                                    
+ [25] "timezone.ID.P"                                                    
+ [26] "celltype.cor.P"                                                   
+ [27] "timezone.cor.P"                                                   
+ [28] "celltype.pvalue.P"                                                
+ [29] "timezone.pvalue.P"                                                
+ [30] "Rad.ID"                                                           
+ [31] "Long.ID"                                                          
+ [32] "Rad.cor"                                                          
+ [33] "Long.cor"                                                         
+ [34] "Rad.pvalue"                                                       
+ [35] "Long.pvalue"                                                      
+ [36] "Rad.ID.P"                                                         
+ [37] "Long.ID.P"                                                        
+ [38] "Rad.cor.P"                                                        
+ [39] "Long.cor.P"                                                       
+ [40] "Rad.pvalue.P"                                                     
+ [41] "Long.pvalue.P"                                                    
+ [42] "SCT_snn_res.5"                                                    
+ [43] "seurat_clusters"                                                  
+ [44] "seucluster.celltype.cor"                                          
+ [45] "seucluster.celltype.pvalue"                                       
+ [46] "seucluster.celltype.ID"                                           
+ [47] "seucluster.celltype.cor.P"                                        
+ [48] "seucluster.celltype.pvalue.P"                                     
+ [49] "seucluster.celltype.ID.P"                                         
+ [50] "seucluster.timezone.cor"                                          
+ [51] "seucluster.timezone.pvalue"                                       
+ [52] "seucluster.timezone.ID"                                           
+ [53] "seucluster.timezone.cor.P"                                        
+ [54] "seucluster.timezone.pvalue.P"                                     
+ [55] "seucluster.timezone.ID.P"                                         
+ [56] "seucluster.Rad.cor"                                               
+ [57] "seucluster.Rad.pvalue"                                            
+ [58] "seucluster.Rad.ID"                                                
+ [59] "seucluster.Rad.cor.P"                                             
+ [60] "seucluster.Rad.pvalue.P"                                          
+ [61] "seucluster.Rad.ID.P"                                              
+ [62] "seucluster.Long.cor"                                              
+ [63] "seucluster.Long.pvalue"                                           
+ [64] "seucluster.Long.ID"                                               
+ [65] "seucluster.Long.cor.P"                                            
+ [66] "seucluster.Long.pvalue.P"                                         
+ [67] "seucluster.Long.ID.P"                                             
+ [68] "predicted.id"                                                     
+ [69] "prediction.score.Meristem.Atrichoblast"                           
+ [70] "prediction.score.Elongation.Atrichoblast"                         
+ [71] "prediction.score.Elongation.Cortex"                               
+ [72] "prediction.score.Maturation.Columella"                            
+ [73] "prediction.score.Meristem.Lateral.Root.Cap"                       
+ [74] "prediction.score.Elongation.Pericycle"                            
+ [75] "prediction.score.Elongation.Xylem"                                
+ [76] "prediction.score.Elongation.Lateral.Root.Cap"                     
+ [77] "prediction.score.Maturation.Pericycle"                            
+ [78] "prediction.score.Elongation.Endodermis"                           
+ [79] "prediction.score.Elongation.Phloem"                               
+ [80] "prediction.score.Maturation.Procambium"                           
+ [81] "prediction.score.Meristem.Putative.Quiescent.Center"              
+ [82] "prediction.score.Maturation.Endodermis"                           
+ [83] "prediction.score.Maturation.Trichoblast"                          
+ [84] "prediction.score.Maturation.Atrichoblast"                         
+ [85] "prediction.score.Maturation.Cortex"                               
+ [86] "prediction.score.Meristem.Phloem"                                 
+ [87] "prediction.score.Elongation.Columella"                            
+ [88] "prediction.score.Elongation.Procambium"                           
+ [89] "prediction.score.Meristem.Endodermis"                             
+ [90] "prediction.score.Maturation.Xylem"                                
+ [91] "prediction.score.Elongation.Trichoblast"                          
+ [92] "prediction.score.Maturation.Lateral.Root.Cap"                     
+ [93] "prediction.score.Meristem.Columella"                              
+ [94] "prediction.score.Maturation.Phloem"                               
+ [95] "prediction.score.Meristem.Stem.Cell.Niche"                        
+ [96] "prediction.score.Meristem.Procambium"                             
+ [97] "prediction.score.Meristem.Trichoblast"                            
+ [98] "prediction.score.Meristem.Pericycle"                              
+ [99] "prediction.score.Meristem.Cortex"                                 
+[100] "prediction.score.Meristem.Xylem"                                  
+[101] "prediction.score.max"                                             
+[102] "time.celltype.anno"                                               
+[103] "prediction.score.Atrichoblast"                                    
+[104] "prediction.score.Cortex"                                          
+[105] "prediction.score.Columella"                                       
+[106] "prediction.score.Lateral.Root.Cap"                                
+[107] "prediction.score.Pericycle"                                       
+[108] "prediction.score.Xylem"                                           
+[109] "prediction.score.Endodermis"                                      
+[110] "prediction.score.Phloem"                                          
+[111] "prediction.score.Procambium"                                      
+[112] "prediction.score.Putative.Quiescent.Center"                       
+[113] "prediction.score.Trichoblast"                                     
+[114] "prediction.score.Stem.Cell.Niche"                                 
+[115] "celltype.anno"                                                    
+[116] "prediction.score.Meristem"                                        
+[117] "prediction.score.Elongation"                                      
+[118] "prediction.score.Maturation"                                      
+[119] "time.anno"                                                        
+[120] "prediction.score.T3"                                              
+[121] "prediction.score.T7"                                              
+[122] "prediction.score.T6"                                              
+[123] "prediction.score.T2"                                              
+[124] "prediction.score.T9"                                              
+[125] "prediction.score.T4"                                              
+[126] "prediction.score.T8"                                              
+[127] "prediction.score.T0"                                              
+[128] "prediction.score.T5"                                              
+[129] "prediction.score.T1"                                              
+[130] "consensus.time.group"                                             
+[131] "pANN_0.25_0.15_93"                                                
+[132] "DF.classifications_0.25_0.15_93"                                  
+[133] "pANN_0.25_0.15_88"                                                
+[134] "DF.classifications_0.25_0.15_88"                                  
+[135] "pANN_0.25_0.15_894"                                               
+[136] "DF.classifications_0.25_0.15_894"                                 
+[137] "SCT_snn_res.0.5"                                                  
+[138] "prediction.score.Transition.Domain_Atrichoblast"                  
+[139] "prediction.score.Elongation_Atrichoblast"                         
+[140] "prediction.score.Elongation_Cortex"                               
+[141] "prediction.score.Distal.Columella"                                
+[142] "prediction.score.Proximal.Lateral.Root.Cap"                       
+[143] "prediction.score.Maturation_Cortex"                               
+[144] "prediction.score.Elongation_Phloem.Pole.Pericycle"                
+[145] "prediction.score.Elongation_Protoxylem"                           
+[146] "prediction.score.Maturation_Xylem.Pole.Pericycle"                 
+[147] "prediction.score.Elongation_Endodermis"                           
+[148] "prediction.score.Elongation_Metaphloem...Companion.Cell"          
+[149] "prediction.score.Maturation_Procambium"                           
+[150] "prediction.score.Elongation_Procambium"                           
+[151] "prediction.score.Proliferation.Domain_Atrichoblast"               
+[152] "prediction.score.Elongation_Xylem.Pole.Pericycle"                 
+[153] "prediction.score.Maturation_Trichoblast"                          
+[154] "prediction.score.Maturation_Atrichoblast"                         
+[155] "prediction.score.Distal.Lateral.Root.Cap"                         
+[156] "prediction.score.Proliferation.Domain_Phloem.Pole.Pericycle"      
+[157] "prediction.score.Transition.Domain_Endodermis"                    
+[158] "prediction.score.Transition.Domain_Trichoblast"                   
+[159] "prediction.score.Elongation_Trichoblast"                          
+[160] "prediction.score.Transition.Domain_Cortex"                        
+[161] "prediction.score.Maturation_Phloem.Pole.Pericycle"                
+[162] "prediction.score.Elongation_Metaxylem"                            
+[163] "prediction.score.Transition.Domain_Phloem.Pole.Pericycle"         
+[164] "prediction.score.Proliferation.Domain_Metaphloem...Companion.Cell"
+[165] "prediction.score.Proximal.Columella"                              
+[166] "prediction.score.Maturation_Protoxylem"                           
+[167] "prediction.score.Proliferation.Domain_Cortex"                     
+[168] "prediction.score.Proliferation.Domain_Trichoblast"                
+[169] "prediction.score.Maturation_Metaphloem...Companion.Cell"          
+[170] "prediction.score.Maturation_Endodermis"                           
+[171] "prediction.score.Transition.Domain_Metaphloem...Companion.Cell"   
+[172] "prediction.score.Maturation_Protophloem"                          
+[173] "prediction.score.Proliferation.Domain_Endodermis"                 
+[174] "prediction.score.Proliferation.Domain_Quiescent.Center"           
+[175] "prediction.score.Transition.Domain_Xylem.Pole.Pericycle"          
+[176] "prediction.score.Proliferation.Domain_Metaxylem"                  
+[177] "prediction.score.Proliferation.Domain_Xylem.Pole.Pericycle"       
+[178] "prediction.score.Transition.Domain_Metaxylem"                     
+[179] "prediction.score.Proliferation.Domain_Procambium"                 
+[180] "prediction.score.Transition.Domain_Procambium"                    
+[181] "prediction.score.Transition.Domain_Protophloem"                   
+[182] "prediction.score.Proliferation.Domain_Protoxylem"                 
+[183] "prediction.score.Elongation_Protophloem"                          
+[184] "prediction.score.Transition.Domain_Protoxylem"                    
+[185] "prediction.score.Proliferation.Domain_Protophloem"                
+[186] "time.celltype.anno.Li"                                            
+[187] "prediction.score.Elongation_Pericycle"                            
+[188] "prediction.score.Elongation_Xylem"                                
+[189] "prediction.score.Maturation_Pericycle"                            
+[190] "prediction.score.Elongation_Phloem"                               
+[191] "prediction.score.Proliferation.Domain_Pericycle"                  
+[192] "prediction.score.Transition.Domain_Pericycle"                     
+[193] "prediction.score.Proliferation.Domain_Phloem"                     
+[194] "prediction.score.Maturation_Xylem"                                
+[195] "prediction.score.Maturation_Phloem"                               
+[196] "prediction.score.Transition.Domain_Phloem"                        
+[197] "prediction.score.Proliferation.Domain_Xylem"                      
+[198] "prediction.score.Transition.Domain_Xylem"                         
+[199] "time.celltype.anno.Li.crude"                                      
+[200] "prediction.score.Meristem_Atrichoblast"                           
+[201] "prediction.score.Meristem_Xylem.Pole.Pericycle"                   
+[202] "prediction.score.Meristem_Phloem.Pole.Pericycle"                  
+[203] "prediction.score.Meristem_Endodermis"                             
+[204] "prediction.score.Meristem_Trichoblast"                            
+[205] "prediction.score.Meristem_Cortex"                                 
+[206] "prediction.score.Meristem_Metaphloem...Companion.Cell"            
+[207] "prediction.score.Meristem_Quiescent.Center"                       
+[208] "prediction.score.Meristem_Protoxylem"                             
+[209] "prediction.score.Meristem_Metaxylem"                              
+[210] "prediction.score.Meristem_Procambium"                             
+[211] "prediction.score.Meristem_Protophloem"                            
+[212] "prediction.score.Meristem_Pericycle"                              
+[213] "prediction.score.Meristem_Phloem"                                 
+[214] "prediction.score.Meristem_Xylem"                                  
+[215] "time.celltype.anno.crude"                                         
+[216] "prediction.score.Phloem.Pole.Pericycle"                           
+[217] "prediction.score.Protoxylem"                                      
+[218] "prediction.score.Xylem.Pole.Pericycle"                            
+[219] "prediction.score.Metaphloem...Companion.Cell"                     
+[220] "prediction.score.Metaxylem"                                       
+[221] "prediction.score.Protophloem"                                     
+[222] "prediction.score.Quiescent.Center"                                
+[223] "celltype.anno.crude"                                              
+[224] "prediction.score.non_branch"                                      
+[225] "prediction.score.B2"                                              
+[226] "prediction.score.B1"                                              
+[227] "branch.anno"                                                      
+[228] "prediction.score.T14"                                             
+[229] "prediction.score.T38"                                             
+[230] "prediction.score.T23"                                             
+[231] "prediction.score.T26"                                             
+[232] "prediction.score.T35"                                             
+[233] "prediction.score.T12"                                             
+[234] "prediction.score.T33"                                             
+[235] "prediction.score.T24"                                             
+[236] "prediction.score.T46"                                             
+[237] "prediction.score.T21"                                             
+[238] "prediction.score.T25"                                             
+[239] "prediction.score.T49"                                             
+[240] "prediction.score.T29"                                             
+[241] "prediction.score.T44"                                             
+[242] "prediction.score.T34"                                             
+[243] "prediction.score.T17"                                             
+[244] "prediction.score.T30"                                             
+[245] "prediction.score.T36"                                             
+[246] "prediction.score.T47"                                             
+[247] "prediction.score.T41"                                             
+[248] "prediction.score.T18"                                             
+[249] "prediction.score.T13"                                             
+[250] "prediction.score.T15"                                             
+[251] "prediction.score.T10"                                             
+[252] "prediction.score.T19"                                             
+[253] "prediction.score.T22"                                             
+[254] "prediction.score.T32"                                             
+[255] "prediction.score.T42"                                             
+[256] "prediction.score.T48"                                             
+[257] "prediction.score.T43"                                             
+[258] "prediction.score.T37"                                             
+[259] "prediction.score.T27"                                             
+[260] "prediction.score.T16"                                             
+[261] "prediction.score.T40"                                             
+[262] "prediction.score.T28"                                             
+[263] "prediction.score.T11"                                             
+[264] "prediction.score.T39"                                             
+[265] "prediction.score.T45"                                             
+[266] "prediction.score.T31"                                             
+[267] "prediction.score.T20"                                             
+[268] "consensus.time.group.50"                                          
+[269] "pANN_0.25_0.15_464"                                               
+[270] "DF.classifications_0.25_0.15_464"                                 
+[271] "pANN_0.25_0.15_526"                                               
+[272] "DF.classifications_0.25_0.15_526"                                 
+[273] "pANN_0.25_0.15_726"                                               
+[274] "DF.classifications_0.25_0.15_726"                                 
+[275] "integrated_snn_res.0.5"                                           
+[276] "time.anno.Li"                                                     
+[277] "celltype.anno.Li"                                                 
+[278] "genotype"                                                         
+
+cells kept (sc_291..sc_294): 44664 
+
+meta 'genotype' vs orig.ident:
+      
+       sc_291 sc_292 sc_293 sc_294
+  WT    10744      0  10911      0
+  fer4      0  10295      0  12714
+meta genotype agrees with sc_291/sc_293 = WT, sc_292/sc_294 = fer4 for every kept cell
+
+== celltype.anno.Li (14 levels)
+factor levels: Quiescent Center | Columella | Lateral Root Cap | Atrichoblast | Trichoblast | Cortex | Endodermis | Metaphloem & Companion Cell | Protophloem | Procambium | Xylem Pole Pericycle | Phloem Pole Pericycle | Protoxylem | Metaxylem 
+                             gt
+                              fer4   WT
+  Quiescent Center               6   19
+  Columella                   1508  791
+  Lateral Root Cap            6212 3936
+  Atrichoblast                2446 2757
+  Trichoblast                 2793 4144
+  Cortex                      1708 2405
+  Endodermis                  2061 1989
+  Metaphloem & Companion Cell  548  442
+  Protophloem                  209  108
+  Procambium                  1570 1276
+  Xylem Pole Pericycle        2400 2337
+  Phloem Pole Pericycle        673  626
+  Protoxylem                   467  489
+  Metaxylem                    408  336
+
+== time.anno.Li (8 levels)
+                           gt
+                            fer4   WT
+  Distal Columella          1239  491
+  Distal Lateral Root Cap    897  318
+  Elongation                8789 9118
+  Maturation                1352 2221
+  Proliferation Domain      2221 2060
+  Proximal Columella         269  300
+  Proximal Lateral Root Cap 5315 3618
+  Transition Domain         2927 3529
+
+== time.celltype.anno.Li (46 levels)
+                                                  gt
+                                                   fer4   WT
+  Distal Columella                                 1239  491
+  Distal Lateral Root Cap                           897  318
+  Elongation_Atrichoblast                           795  860
+  Elongation_Cortex                                 921 1413
+  Elongation_Endodermis                            1294 1246
+  Elongation_Metaphloem & Companion Cell            279  326
+  Elongation_Metaxylem                              346  292
+  Elongation_Phloem Pole Pericycle                  652  595
+  Elongation_Procambium                            1327 1056
+  Elongation_Protophloem                            181  106
+  Elongation_Protoxylem                             296  319
+  Elongation_Trichoblast                            792  904
+  Elongation_Xylem Pole Pericycle                  1906 2001
+  Maturation_Atrichoblast                           143  235
+  Maturation_Cortex                                 210  397
+  Maturation_Endodermis                             330  596
+  Maturation_Metaphloem & Companion Cell             35   38
+  Maturation_Phloem Pole Pericycle                    3   26
+  Maturation_Procambium                             189  182
+  Maturation_Protoxylem                             135  138
+  Maturation_Trichoblast                            222  513
+  Maturation_Xylem Pole Pericycle                    85   96
+  Proliferation Domain_Atrichoblast                 943  959
+  Proliferation Domain_Cortex                       183  133
+  Proliferation Domain_Endodermis                   386  118
+  Proliferation Domain_Metaphloem & Companion Cell   57   25
+  Proliferation Domain_Metaxylem                     26   24
+  Proliferation Domain_Phloem Pole Pericycle          2    2
+  Proliferation Domain_Procambium                     4    0
+  Proliferation Domain_Protoxylem                     0    1
+  Proliferation Domain_Quiescent Center               6   19
+  Proliferation Domain_Trichoblast                  411  680
+  Proliferation Domain_Xylem Pole Pericycle         203   99
+  Proximal Columella                                269  300
+  Proximal Lateral Root Cap                        5315 3618
+  Transition Domain_Atrichoblast                    565  703
+  Transition Domain_Cortex                          394  462
+  Transition Domain_Endodermis                       51   29
+  Transition Domain_Metaphloem & Companion Cell     177   53
+  Transition Domain_Metaxylem                        36   20
+  Transition Domain_Phloem Pole Pericycle            16    3
+  Transition Domain_Procambium                       50   38
+  Transition Domain_Protophloem                      28    2
+  Transition Domain_Protoxylem                       36   31
+  Transition Domain_Trichoblast                    1368 2047
+  Transition Domain_Xylem Pole Pericycle            206  141
+
+SCT data class: dgCMatrix 
+genes missing from SCT data rows: none 
+
+SCT data-slot summary per gene (kept cells):
+  YUC5    AT5G43890  min 0.0000  max 3.5553  mean 0.1153  frac>0 0.1062 | WT mean 0.1062 frac>0 0.0965 | fer4 mean 0.1238 frac>0 0.1153
+  DOF4.6  AT4G24060  min 0.0000  max 2.7081  mean 0.1487  frac>0 0.1570 | WT mean 0.1559 frac>0 0.1575 | fer4 mean 0.1420 frac>0 0.1566
+  CDF4    AT2G34140  min 0.0000  max 2.7726  mean 0.0744  frac>0 0.0814 | WT mean 0.0783 frac>0 0.0828 | fer4 mean 0.0707 frac>0 0.0801
+  COG1    AT1G29160  min 0.0000  max 3.7136  mean 0.2573  frac>0 0.2354 | WT mean 0.2541 frac>0 0.2314 | fer4 mean 0.2603 frac>0 0.2392
+  OBP3    AT3G55370  min 0.0000  max 2.1972  mean 0.0665  frac>0 0.0746 | WT mean 0.0681 frac>0 0.0749 | fer4 mean 0.0650 frac>0 0.0743
+  DOF6    AT3G45610  min 0.0000  max 4.0431  mean 0.0306  frac>0 0.0255 | WT mean 0.0269 frac>0 0.0229 | fer4 mean 0.0342 frac>0 0.0279
+  DOF4.1  AT4G00940  min 0.0000  max 2.1972  mean 0.0102  frac>0 0.0124 | WT mean 0.0144 frac>0 0.0169 | fer4 mean 0.0063 frac>0 0.0081
+  DOF2.2  AT2G28810  min 0.0000  max 2.5649  mean 0.0479  frac>0 0.0532 | WT mean 0.0465 frac>0 0.0499 | fer4 mean 0.0493 frac>0 0.0564
+  DAG1    AT3G61850  min 0.0000  max 3.1355  mean 0.1948  frac>0 0.1784 | WT mean 0.1941 frac>0 0.1738 | fer4 mean 0.1955 frac>0 0.1828
+  OBP1    AT3G50410  min 0.0000  max 2.0794  mean 0.0152  frac>0 0.0187 | WT mean 0.0199 frac>0 0.0241 | fer4 mean 0.0107 frac>0 0.0136
+  OBP2    AT1G07640  min 0.0000  max 2.7726  mean 0.0589  frac>0 0.0595 | WT mean 0.0545 frac>0 0.0530 | fer4 mean 0.0631 frac>0 0.0657
+
+FER (AT3G51550) SCT data, for comparison with the kit's fig1a export: min 0 max 3.044522 sum 16604.6 

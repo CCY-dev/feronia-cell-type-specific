@@ -1,0 +1,2 @@
+Rows of the muscat result (repository scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/sig_de.csv.gz, sha256 1ac6978ad1ca4d2ce1073d28835573bb62d04897261bc453da8b230a8b4123bc) for the ten assayed DOFs and YUC5: every gene x cluster pair that muscat tested (fer_4-WT).
+DE = p_adj.loc <= 0.05 and |logFC| > log2(1.5) and (WT.frq >= 0.1 or fer_4.frq >= 0.1), the notebook's sig_DE_fil rule (applied to the whole table it gives the published 5,466 DEGs in 34 clusters). Pairs absent from this table were not tested.

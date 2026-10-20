@@ -1,0 +1,38 @@
+# cluster_id values in muscat sig_de.csv.gz (all tested gene x cluster rows; repo outputs/sig_de.csv.gz)
+Distal Columella
+Distal Lateral Root Cap
+Elongation_Atrichoblast
+Elongation_Cortex
+Elongation_Endodermis
+Elongation_Metaphloem & Companion Cell
+Elongation_Metaxylem
+Elongation_Phloem Pole Pericycle
+Elongation_Procambium
+Elongation_Protophloem
+Elongation_Protoxylem
+Elongation_Trichoblast
+Elongation_Xylem Pole Pericycle
+Maturation_Atrichoblast
+Maturation_Cortex
+Maturation_Endodermis
+Maturation_Metaphloem & Companion Cell
+Maturation_Procambium
+Maturation_Protoxylem
+Maturation_Trichoblast
+Maturation_Xylem Pole Pericycle
+Proliferation Domain_Atrichoblast
+Proliferation Domain_Cortex
+Proliferation Domain_Endodermis
+Proliferation Domain_Metaphloem & Companion Cell
+Proliferation Domain_Trichoblast
+Proliferation Domain_Xylem Pole Pericycle
+Proximal Columella
+Proximal Lateral Root Cap
+Transition Domain_Atrichoblast
+Transition Domain_Cortex
+Transition Domain_Endodermis
+Transition Domain_Metaphloem & Companion Cell
+Transition Domain_Procambium
+Transition Domain_Protoxylem
+Transition Domain_Trichoblast
+Transition Domain_Xylem Pole Pericycle

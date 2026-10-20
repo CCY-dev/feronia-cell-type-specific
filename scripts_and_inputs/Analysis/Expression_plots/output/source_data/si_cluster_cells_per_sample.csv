@@ -1,0 +1,47 @@
+time.celltype.anno.Li,n_sc_291,n_sc_292,n_sc_293,n_sc_294,de_eligible
+Proliferation Domain_Quiescent Center,7,4,12,2,False
+Proximal Columella,148,109,152,160,True
+Distal Columella,252,577,239,662,True
+Proximal Lateral Root Cap,1903,2326,1715,2989,True
+Distal Lateral Root Cap,235,415,83,482,True
+Proliferation Domain_Atrichoblast,483,465,476,478,True
+Transition Domain_Atrichoblast,269,217,434,348,True
+Elongation_Atrichoblast,390,266,470,529,True
+Maturation_Atrichoblast,108,42,127,101,True
+Proliferation Domain_Trichoblast,336,183,344,228,True
+Transition Domain_Trichoblast,850,536,1197,832,True
+Elongation_Trichoblast,370,285,534,507,True
+Maturation_Trichoblast,284,80,229,142,True
+Proliferation Domain_Cortex,93,79,40,104,True
+Transition Domain_Cortex,232,163,230,231,True
+Elongation_Cortex,575,311,838,610,True
+Maturation_Cortex,213,67,184,143,True
+Proliferation Domain_Endodermis,85,319,33,67,True
+Transition Domain_Endodermis,15,28,14,23,True
+Elongation_Endodermis,571,583,675,711,True
+Maturation_Endodermis,358,151,238,179,True
+Proliferation Domain_Metaphloem & Companion Cell,6,34,19,23,True
+Transition Domain_Metaphloem & Companion Cell,22,86,31,91,True
+Elongation_Metaphloem & Companion Cell,176,144,150,135,True
+Maturation_Metaphloem & Companion Cell,18,17,20,18,True
+Transition Domain_Protophloem,0,13,2,15,False
+Elongation_Protophloem,52,93,54,88,True
+Proliferation Domain_Procambium,0,2,0,2,False
+Transition Domain_Procambium,14,28,24,22,True
+Elongation_Procambium,521,623,535,704,True
+Maturation_Procambium,153,97,29,92,True
+Proliferation Domain_Xylem Pole Pericycle,61,101,38,102,True
+Transition Domain_Xylem Pole Pericycle,73,132,68,74,True
+Elongation_Xylem Pole Pericycle,1041,921,960,985,True
+Maturation_Xylem Pole Pericycle,60,48,36,37,True
+Proliferation Domain_Phloem Pole Pericycle,0,2,2,0,False
+Transition Domain_Phloem Pole Pericycle,1,12,2,4,False
+Elongation_Phloem Pole Pericycle,349,324,246,328,True
+Maturation_Phloem Pole Pericycle,13,1,13,2,False
+Proliferation Domain_Protoxylem,0,0,1,0,False
+Transition Domain_Protoxylem,17,11,14,25,True
+Elongation_Protoxylem,165,149,154,147,True
+Maturation_Protoxylem,69,55,69,80,True
+Proliferation Domain_Metaxylem,22,13,2,13,False
+Transition Domain_Metaxylem,3,21,17,15,False
+Elongation_Metaxylem,131,162,161,184,True

@@ -1,0 +1,15 @@
+host: hpc-90-33.cm.cluster  start: 2026-10-19T22:36:21-07:00  env: /resnick/groups/NolanLab/cchen/miniconda3/envs/scKB_copilot
+rows written: 44664  columns: 21 
+done in 2.650683 mins 
+466cefec6bd9a36d87b036449d9993ab1d5c11268046bf8ea33d767c0d5ecab3  si_expression_cells.csv.gz
+end: 2026-10-19T22:39:05-07:00
+JobID           Elapsed     MaxRSS      State 
+------------ ---------- ---------- ---------- 
+5098874        00:02:45               RUNNING 
+5098874.bat+   00:02:45               RUNNING 
+5098874.ext+   00:02:45               RUNNING 
+-rw-r-----. 1 nolan faculty 1.6M Oct 19 22:39 si_expression_cells.csv.gz
+-rw-r-----. 1 nolan faculty  183 Oct 19 22:39 si_expression_cells.csv.gz.sha256
+-rw-r-----. 1 nolan faculty  323 Oct 19 22:39 si_expression_extract.log
+-rw-r-----. 1 nolan faculty  27K Oct 19 22:39 si_expression_object_summary.txt
+-rw-r-----. 1 nolan faculty 2.5K Oct 19 22:39 si_expression_sessionInfo.txt

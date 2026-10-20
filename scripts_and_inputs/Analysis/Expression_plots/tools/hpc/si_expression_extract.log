@@ -1,0 +1,8 @@
+rows written: 44664  columns: 21 
+done in 2.650683 mins 
+end: 2026-10-19T22:39:05-07:00
+JobID           Elapsed     MaxRSS      State 
+------------ ---------- ---------- ---------- 
+5098874        00:02:45               RUNNING 
+5098874.bat+   00:02:45               RUNNING 
+5098874.ext+   00:02:45               RUNNING 

@@ -1,0 +1,1013 @@
+gene,agi,cluster,celltype,stage,genotype,n_cells,n_expressing,pct_expressing,mean_sct,mean_seurat_dotplot,median_sct,max_sct,de_eligible
+YUC5,AT5G43890,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,1,5.26316,0.0364814,0.0512933,0,0.693147,False
+YUC5,AT5G43890,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+YUC5,AT5G43890,Proximal Columella,Columella,Proximal Columella,WT,300,5,1.66667,0.0142556,0.0230653,0,1.09861,True
+YUC5,AT5G43890,Proximal Columella,Columella,Proximal Columella,fer4,269,9,3.34572,0.0322346,0.0542629,0,1.09861,True
+YUC5,AT5G43890,Distal Columella,Columella,Distal Columella,WT,491,7,1.42566,0.0107077,0.016162,0,1.09861,True
+YUC5,AT5G43890,Distal Columella,Columella,Distal Columella,fer4,1239,17,1.37207,0.0104922,0.0160132,0,1.09861,True
+YUC5,AT5G43890,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,483,13.3499,0.12133,0.19886,0,2.94444,True
+YUC5,AT5G43890,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,652,12.2672,0.110189,0.179024,0,2.19722,True
+YUC5,AT5G43890,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,12,3.77358,0.0274315,0.040067,0,1.09861,True
+YUC5,AT5G43890,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,67,7.46934,0.0627245,0.101675,0,1.79176,True
+YUC5,AT5G43890,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,55,5.73514,0.0457265,0.0723934,0,2.07944,True
+YUC5,AT5G43890,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,61,6.46872,0.0498593,0.0755461,0,1.60944,True
+YUC5,AT5G43890,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,22,3.12945,0.023422,0.0349442,0,1.09861,True
+YUC5,AT5G43890,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,31,5.48673,0.0430545,0.0650915,0,1.09861,True
+YUC5,AT5G43890,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,19,2.2093,0.0163792,0.0252597,0,1.60944,True
+YUC5,AT5G43890,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,21,2.64151,0.0203496,0.0309622,0,1.09861,True
+YUC5,AT5G43890,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,4,1.70213,0.0117982,0.016878,0,0.693147,True
+YUC5,AT5G43890,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,1,0.699301,0.00484718,0.00696867,0,0.693147,True
+YUC5,AT5G43890,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,21,3.08824,0.0231948,0.0346856,0,1.09861,True
+YUC5,AT5G43890,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,11,2.6764,0.0195379,0.028779,0,1.09861,True
+YUC5,AT5G43890,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,76,3.71275,0.0297418,0.0467642,0,1.60944,True
+YUC5,AT5G43890,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,70,5.11696,0.0418165,0.0650866,0,1.38629,True
+YUC5,AT5G43890,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,25,2.76549,0.0226268,0.0358539,0,1.38629,True
+YUC5,AT5G43890,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,17,2.14646,0.0148782,0.0212375,0,0.693147,True
+YUC5,AT5G43890,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,9,1.75439,0.014302,0.0250254,0,1.79176,True
+YUC5,AT5G43890,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,0,0,0,0,0,0,True
+YUC5,AT5G43890,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,2,1.50376,0.0165205,0.0296318,0,1.09861,True
+YUC5,AT5G43890,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,2,1.0929,0.0120067,0.0216225,0,1.09861,True
+YUC5,AT5G43890,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,15,3.24675,0.026638,0.0423792,0,1.38629,True
+YUC5,AT5G43890,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,10,2.53807,0.0224391,0.0373642,0,1.38629,True
+YUC5,AT5G43890,Elongation_Cortex,Cortex,Elongation,WT,1413,25,1.76929,0.0139855,0.0217019,0,1.09861,True
+YUC5,AT5G43890,Elongation_Cortex,Cortex,Elongation,fer4,921,17,1.84582,0.0136747,0.0204198,0,1.09861,True
+YUC5,AT5G43890,Maturation_Cortex,Cortex,Maturation,WT,397,4,1.00756,0.00800517,0.0125158,0,1.09861,True
+YUC5,AT5G43890,Maturation_Cortex,Cortex,Maturation,fer4,210,0,0,0,0,0,0,True
+YUC5,AT5G43890,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,1,0.847458,0.00587413,0.00843887,0,0.693147,True
+YUC5,AT5G43890,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,37,9.58549,0.0811154,0.126382,0,1.60944,True
+YUC5,AT5G43890,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+YUC5,AT5G43890,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,2,3.92157,0.0351325,0.0571584,0,1.09861,True
+YUC5,AT5G43890,Elongation_Endodermis,Endodermis,Elongation,WT,1246,53,4.25361,0.0355103,0.0569355,0,1.60944,True
+YUC5,AT5G43890,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,67,5.17774,0.0468363,0.085142,0,2.77259,True
+YUC5,AT5G43890,Maturation_Endodermis,Endodermis,Maturation,WT,596,13,2.18121,0.0183229,0.0297543,0,1.38629,True
+YUC5,AT5G43890,Maturation_Endodermis,Endodermis,Maturation,fer4,330,1,0.30303,0.00210045,0.00302572,0,0.693147,True
+YUC5,AT5G43890,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,2,8,0.0831777,0.14842,0,1.38629,True
+YUC5,AT5G43890,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,11,19.2982,0.162001,0.247408,0,1.60944,True
+YUC5,AT5G43890,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,11,20.7547,0.228997,0.360441,0,1.38629,True
+YUC5,AT5G43890,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,49,27.6836,0.300574,0.500604,0,2.48491,True
+YUC5,AT5G43890,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,143,43.865,0.618586,1.00095,0,3.09104,True
+YUC5,AT5G43890,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,127,45.5197,0.647195,1.01648,0,2.63906,True
+YUC5,AT5G43890,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,36,94.7368,1.79857,2.10221,1.86883,3.55535,True
+YUC5,AT5G43890,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,30,85.7143,1.40865,1.75786,1.60944,3.04452,True
+YUC5,AT5G43890,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,0,0,0,0,0,0,False
+YUC5,AT5G43890,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,2,7.14286,0.0887467,0.164303,0,1.38629,False
+YUC5,AT5G43890,Elongation_Protophloem,Protophloem,Elongation,WT,106,16,15.0943,0.18238,0.347196,0,2.30259,True
+YUC5,AT5G43890,Elongation_Protophloem,Protophloem,Elongation,fer4,181,27,14.9171,0.194939,0.407305,0,2.63906,True
+YUC5,AT5G43890,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+YUC5,AT5G43890,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,1,25,0.173287,0.223144,0,0.693147,False
+YUC5,AT5G43890,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,5,13.1579,0.0912036,0.123614,0,0.693147,True
+YUC5,AT5G43890,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,9,18,0.146739,0.215111,0,1.38629,True
+YUC5,AT5G43890,Elongation_Procambium,Procambium,Elongation,WT,1056,304,28.7879,0.344228,0.614366,0,3.21888,True
+YUC5,AT5G43890,Elongation_Procambium,Procambium,Elongation,fer4,1327,374,28.1839,0.337248,0.605382,0,3.21888,True
+YUC5,AT5G43890,Maturation_Procambium,Procambium,Maturation,WT,182,84,46.1538,0.69569,1.13635,0,2.94444,True
+YUC5,AT5G43890,Maturation_Procambium,Procambium,Maturation,fer4,189,124,65.6085,1.03169,1.43281,1.09861,3.43399,True
+YUC5,AT5G43890,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,7,7.07071,0.0823017,0.167054,0,1.79176,True
+YUC5,AT5G43890,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,13,6.40394,0.0713094,0.142115,0,1.94591,True
+YUC5,AT5G43890,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,3,2.12766,0.0147478,0.0210534,0,0.693147,True
+YUC5,AT5G43890,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,16,7.76699,0.0709794,0.114542,0,1.38629,True
+YUC5,AT5G43890,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,271,13.5432,0.150271,0.308087,0,3.52636,True
+YUC5,AT5G43890,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,374,19.6222,0.190033,0.316257,0,3.04452,True
+YUC5,AT5G43890,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,41,42.7083,0.527688,0.815549,0,2.3979,True
+YUC5,AT5G43890,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,26,30.5882,0.303218,0.470004,0,1.94591,True
+YUC5,AT5G43890,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,1,50,0.346574,0.405465,0.346574,0.693147,False
+YUC5,AT5G43890,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,0,0,0,0,0,0,False
+YUC5,AT5G43890,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,1,33.3333,0.231049,0.287682,0,0.693147,False
+YUC5,AT5G43890,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,7,43.75,0.497847,0.723919,0,1.79176,False
+YUC5,AT5G43890,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,228,38.3193,0.512031,0.883142,0,3.43399,True
+YUC5,AT5G43890,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,294,45.092,0.658183,1.13722,0,3.3322,True
+YUC5,AT5G43890,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,21,80.7692,1.56336,1.90669,2.01268,2.89037,False
+YUC5,AT5G43890,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,2,66.6667,0.462098,0.510826,0.693147,0.693147,False
+YUC5,AT5G43890,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+YUC5,AT5G43890,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+YUC5,AT5G43890,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,2,6.45161,0.0447192,0.0625204,0,0.693147,True
+YUC5,AT5G43890,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,2,5.55556,0.0497711,0.0800427,0,1.09861,True
+YUC5,AT5G43890,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,5,1.5674,0.0130373,0.0217063,0,1.38629,True
+YUC5,AT5G43890,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,7,2.36486,0.0251849,0.0494335,0,1.79176,True
+YUC5,AT5G43890,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,3,2.17391,0.0180066,0.0285734,0,1.09861,True
+YUC5,AT5G43890,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,1,0.740741,0.00513442,0.00738011,0,0.693147,True
+YUC5,AT5G43890,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,0,0,0,0,0,0,False
+YUC5,AT5G43890,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,3,11.5385,0.0955733,0.143101,0,1.09861,False
+YUC5,AT5G43890,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,1,5,0.0549306,0.0953102,0,1.09861,False
+YUC5,AT5G43890,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,3,8.33333,0.0577623,0.0800427,0,0.693147,False
+YUC5,AT5G43890,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,53,18.1507,0.182305,0.309698,0,2.48491,True
+YUC5,AT5G43890,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,57,16.474,0.147631,0.244871,0,2.19722,True
+DOF4.6,AT4G24060,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,2,10.5263,0.0729629,0.100083,0,0.693147,False
+DOF4.6,AT4G24060,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,1,16.6667,0.231049,0.405465,0,1.38629,False
+DOF4.6,AT4G24060,Proximal Columella,Columella,Proximal Columella,WT,300,7,2.33333,0.0225386,0.0392207,0,1.38629,True
+DOF4.6,AT4G24060,Proximal Columella,Columella,Proximal Columella,fer4,269,8,2.97398,0.025136,0.0400782,0,1.09861,True
+DOF4.6,AT4G24060,Distal Columella,Columella,Distal Columella,WT,491,10,2.03666,0.0149428,0.022156,0,1.09861,True
+DOF4.6,AT4G24060,Distal Columella,Columella,Distal Columella,fer4,1239,22,1.77563,0.0129622,0.0191852,0,1.09861,True
+DOF4.6,AT4G24060,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,75,2.07297,0.0167982,0.0267264,0,1.60944,True
+DOF4.6,AT4G24060,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,149,2.80339,0.022084,0.0345787,0,1.94591,True
+DOF4.6,AT4G24060,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,7,2.20126,0.016533,0.024846,0,1.09861,True
+DOF4.6,AT4G24060,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,23,2.5641,0.0195811,0.0296562,0,1.09861,True
+DOF4.6,AT4G24060,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,19,1.98123,0.0158468,0.024718,0,1.09861,True
+DOF4.6,AT4G24060,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,23,2.43902,0.0186259,0.0282298,0,1.09861,True
+DOF4.6,AT4G24060,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,6,0.853485,0.00591591,0.00849863,0,0.693147,True
+DOF4.6,AT4G24060,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,15,2.65487,0.0217819,0.0347861,0,1.38629,True
+DOF4.6,AT4G24060,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,24,2.7907,0.021701,0.0331648,0,1.09861,True
+DOF4.6,AT4G24060,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,25,3.14465,0.0223071,0.032181,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,5,2.12766,0.0164732,0.0252114,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,8,5.59441,0.0416129,0.0610359,0,1.09861,True
+DOF4.6,AT4G24060,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,15,2.20588,0.0182714,0.0289875,0,1.09861,True
+DOF4.6,AT4G24060,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,6,1.45985,0.0111055,0.0168882,0,1.09861,True
+DOF4.6,AT4G24060,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,64,3.12653,0.0244445,0.0373965,0,1.09861,True
+DOF4.6,AT4G24060,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,58,4.23977,0.0345035,0.0540672,0,1.60944,True
+DOF4.6,AT4G24060,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,8,0.884956,0.00747962,0.0120947,0,1.09861,True
+DOF4.6,AT4G24060,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,26,3.28283,0.02363,0.0347429,0,1.38629,True
+DOF4.6,AT4G24060,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,11,2.14425,0.0156532,0.0231224,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,1,0.45045,0.00312228,0.00449439,0,0.693147,True
+DOF4.6,AT4G24060,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,5,3.7594,0.03953,0.0724955,0,1.38629,True
+DOF4.6,AT4G24060,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,14,7.65027,0.0663216,0.10372,0,1.09861,True
+DOF4.6,AT4G24060,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,15,3.24675,0.0277706,0.0444518,0,1.09861,True
+DOF4.6,AT4G24060,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,12,3.04569,0.0231693,0.0349163,0,1.09861,True
+DOF4.6,AT4G24060,Elongation_Cortex,Cortex,Elongation,WT,1413,36,2.54777,0.0190946,0.0286033,0,1.09861,True
+DOF4.6,AT4G24060,Elongation_Cortex,Cortex,Elongation,fer4,921,17,1.84582,0.0136747,0.0204198,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Cortex,Cortex,Maturation,WT,397,6,1.51134,0.0125184,0.0199508,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Cortex,Cortex,Maturation,fer4,210,4,1.90476,0.0132028,0.0188685,0,0.693147,True
+DOF4.6,AT4G24060,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,33,27.9661,0.24583,0.347309,0,1.38629,True
+DOF4.6,AT4G24060,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,109,28.2383,0.250529,0.357711,0,1.60944,True
+DOF4.6,AT4G24060,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,23,79.3103,0.657528,0.727049,0.693147,1.38629,True
+DOF4.6,AT4G24060,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,35,68.6275,0.626258,0.750306,0.693147,1.79176,True
+DOF4.6,AT4G24060,Elongation_Endodermis,Endodermis,Elongation,WT,1246,595,47.7528,0.466171,0.624212,0,2.07944,True
+DOF4.6,AT4G24060,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,501,38.7172,0.344225,0.466908,0,1.94591,True
+DOF4.6,AT4G24060,Maturation_Endodermis,Endodermis,Maturation,WT,596,195,32.7181,0.291812,0.405465,0,1.79176,True
+DOF4.6,AT4G24060,Maturation_Endodermis,Endodermis,Maturation,fer4,330,50,15.1515,0.118181,0.169615,0,1.38629,True
+DOF4.6,AT4G24060,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,17,68,0.713128,0.875469,0.693147,1.60944,True
+DOF4.6,AT4G24060,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,39,68.4211,0.632583,0.74444,0.693147,1.38629,True
+DOF4.6,AT4G24060,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,22,41.5094,0.382731,0.507045,0,1.38629,True
+DOF4.6,AT4G24060,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,75,42.3729,0.385785,0.517582,0,1.79176,True
+DOF4.6,AT4G24060,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,95,29.1411,0.346986,0.591529,0,2.3979,True
+DOF4.6,AT4G24060,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,108,38.7097,0.423202,0.626456,0,2.19722,True
+DOF4.6,AT4G24060,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,35,92.1053,1.67154,1.89184,1.60944,2.70805,True
+DOF4.6,AT4G24060,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,34,97.1429,1.6394,1.78219,1.79176,2.56495,True
+DOF4.6,AT4G24060,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,2,100,1.03972,1.09861,1.03972,1.38629,False
+DOF4.6,AT4G24060,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,8,28.5714,0.262033,0.381368,0,1.38629,False
+DOF4.6,AT4G24060,Elongation_Protophloem,Protophloem,Elongation,WT,106,22,20.7547,0.17224,0.263815,0,1.79176,True
+DOF4.6,AT4G24060,Elongation_Protophloem,Protophloem,Elongation,fer4,181,38,20.9945,0.186715,0.277967,0,1.60944,True
+DOF4.6,AT4G24060,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+DOF4.6,AT4G24060,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,4,100,0.794513,0.81093,0.693147,1.09861,False
+DOF4.6,AT4G24060,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,36,94.7368,0.922321,0.997143,0.693147,1.94591,True
+DOF4.6,AT4G24060,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,41,82,0.749686,0.850151,0.693147,1.79176,True
+DOF4.6,AT4G24060,Elongation_Procambium,Procambium,Elongation,WT,1056,317,30.0189,0.292588,0.433478,0,2.07944,True
+DOF4.6,AT4G24060,Elongation_Procambium,Procambium,Elongation,fer4,1327,371,27.9578,0.250545,0.363659,0,1.94591,True
+DOF4.6,AT4G24060,Maturation_Procambium,Procambium,Maturation,WT,182,160,87.9121,1.11739,1.27143,1.09861,2.30259,True
+DOF4.6,AT4G24060,Maturation_Procambium,Procambium,Maturation,fer4,189,135,71.4286,0.760684,0.915232,0.693147,1.79176,True
+DOF4.6,AT4G24060,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,72,72.7273,0.689624,0.807558,0.693147,1.79176,True
+DOF4.6,AT4G24060,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,129,63.5468,0.57057,0.685731,0.693147,1.60944,True
+DOF4.6,AT4G24060,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,88,62.4113,0.628155,0.778088,0.693147,2.19722,True
+DOF4.6,AT4G24060,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,107,51.9417,0.453301,0.572021,0.693147,1.79176,True
+DOF4.6,AT4G24060,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,766,38.2809,0.372908,0.52482,0,2.07944,True
+DOF4.6,AT4G24060,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,751,39.4019,0.347925,0.468166,0,1.94591,True
+DOF4.6,AT4G24060,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,81,84.375,0.934971,1.0811,1.09861,2.19722,True
+DOF4.6,AT4G24060,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,60,70.5882,0.657784,0.783095,0.693147,1.79176,True
+DOF4.6,AT4G24060,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,1.03972,1.09861,1.03972,1.38629,False
+DOF4.6,AT4G24060,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,0.693147,0.693147,0.693147,0.693147,False
+DOF4.6,AT4G24060,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,2,66.6667,0.462098,0.510826,0.693147,0.693147,False
+DOF4.6,AT4G24060,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,14,87.5,0.776533,0.838329,0.693147,1.38629,False
+DOF4.6,AT4G24060,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,236,39.6639,0.378982,0.528154,0,1.94591,True
+DOF4.6,AT4G24060,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,241,36.9632,0.337193,0.468853,0,1.94591,True
+DOF4.6,AT4G24060,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,20,76.9231,1.10856,1.31661,1.38629,2.19722,False
+DOF4.6,AT4G24060,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,3,100,0.963457,0.980829,1.09861,1.09861,False
+DOF4.6,AT4G24060,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,1,100,1.09861,1.09861,1.09861,1.09861,False
+DOF4.6,AT4G24060,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+DOF4.6,AT4G24060,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,24,77.4194,1.01853,1.19099,1.09861,1.79176,True
+DOF4.6,AT4G24060,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,28,77.7778,0.852627,1.0116,0.693147,1.94591,True
+DOF4.6,AT4G24060,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,87,27.2727,0.281435,0.447415,0,1.94591,True
+DOF4.6,AT4G24060,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,87,29.3919,0.294509,0.443039,0,1.79176,True
+DOF4.6,AT4G24060,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,9,6.52174,0.0481434,0.0699586,0,1.09861,True
+DOF4.6,AT4G24060,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,9,6.66667,0.0492133,0.071459,0,1.09861,True
+DOF4.6,AT4G24060,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,17,70.8333,0.818016,1.02664,0.693147,2.19722,False
+DOF4.6,AT4G24060,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,21,80.7692,0.769117,0.852777,0.693147,1.38629,False
+DOF4.6,AT4G24060,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,18,90,0.909643,0.993252,0.89588,1.60944,False
+DOF4.6,AT4G24060,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,29,80.5556,0.760725,0.859132,0.693147,1.38629,False
+DOF4.6,AT4G24060,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,120,41.0959,0.418766,0.605513,0,2.07944,True
+DOF4.6,AT4G24060,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,162,46.8208,0.457273,0.615029,0,2.30259,True
+CDF4,AT2G34140,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,2,10.5263,0.115643,0.191055,0,1.09861,False
+CDF4,AT2G34140,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+CDF4,AT2G34140,Proximal Columella,Columella,Proximal Columella,WT,300,71,23.6667,0.255966,0.427444,0,2.19722,True
+CDF4,AT2G34140,Proximal Columella,Columella,Proximal Columella,fer4,269,44,16.3569,0.157431,0.260361,0,1.94591,True
+CDF4,AT2G34140,Distal Columella,Columella,Distal Columella,WT,491,64,13.0346,0.118588,0.195473,0,2.07944,True
+CDF4,AT2G34140,Distal Columella,Columella,Distal Columella,fer4,1239,205,16.5456,0.144783,0.227171,0,2.19722,True
+CDF4,AT2G34140,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,519,14.3449,0.121322,0.188384,0,1.94591,True
+CDF4,AT2G34140,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,628,11.8156,0.0949846,0.142825,0,1.79176,True
+CDF4,AT2G34140,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,6,1.88679,0.0156283,0.024846,0,1.09861,True
+CDF4,AT2G34140,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,16,1.78372,0.0131366,0.0198682,0,1.38629,True
+CDF4,AT2G34140,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,29,3.02398,0.0233746,0.0358461,0,1.38629,True
+CDF4,AT2G34140,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,31,3.28738,0.0248114,0.0374654,0,1.38629,True
+CDF4,AT2G34140,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,13,1.84922,0.0155341,0.0252822,0,1.38629,True
+CDF4,AT2G34140,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,3,0.530973,0.00368043,0.00529569,0,0.693147,True
+CDF4,AT2G34140,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,11,1.27907,0.00967182,0.0150032,0,1.38629,True
+CDF4,AT2G34140,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,5,0.628931,0.00486944,0.00751883,0,1.09861,True
+CDF4,AT2G34140,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,4,1.70213,0.0117982,0.016878,0,0.693147,True
+CDF4,AT2G34140,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,0,0,0,0,0,0,True
+CDF4,AT2G34140,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,7,1.02941,0.00832788,0.0131485,0,1.09861,True
+CDF4,AT2G34140,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,5,1.21655,0.00941898,0.014493,0,1.09861,True
+CDF4,AT2G34140,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,51,2.49145,0.0194483,0.0298386,0,1.09861,True
+CDF4,AT2G34140,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,17,1.24269,0.0106884,0.0173917,0,1.09861,True
+CDF4,AT2G34140,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,18,1.99115,0.0138016,0.0197159,0,0.693147,True
+CDF4,AT2G34140,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,7,0.883838,0.00663825,0.0100503,0,1.09861,True
+CDF4,AT2G34140,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,10,1.94932,0.014302,0.0212158,0,1.09861,True
+CDF4,AT2G34140,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,0,0,0,0,0,0,True
+CDF4,AT2G34140,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,14,10.5263,0.0790601,0.113597,0,1.09861,True
+CDF4,AT2G34140,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,17,9.28962,0.0738291,0.113524,0,1.60944,True
+CDF4,AT2G34140,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,6,1.2987,0.00987954,0.0150379,0,1.09861,True
+CDF4,AT2G34140,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,2,0.507614,0.00351851,0.0050633,0,0.693147,True
+CDF4,AT2G34140,Elongation_Cortex,Cortex,Elongation,WT,1413,22,1.55697,0.011653,0.0175382,0,1.09861,True
+CDF4,AT2G34140,Elongation_Cortex,Cortex,Elongation,fer4,921,7,0.760043,0.00526822,0.0075717,0,0.693147,True
+CDF4,AT2G34140,Maturation_Cortex,Cortex,Maturation,WT,397,7,1.76322,0.0122217,0.0174786,0,0.693147,True
+CDF4,AT2G34140,Maturation_Cortex,Cortex,Maturation,fer4,210,4,1.90476,0.0132028,0.0188685,0,0.693147,True
+CDF4,AT2G34140,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,6,5.08475,0.0386809,0.0576291,0,1.09861,True
+CDF4,AT2G34140,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,16,4.14508,0.0308323,0.0455775,0,1.09861,True
+CDF4,AT2G34140,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+CDF4,AT2G34140,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,0,0,0,0,0,0,True
+CDF4,AT2G34140,Elongation_Endodermis,Endodermis,Elongation,WT,1246,29,2.32745,0.0177889,0.0284829,0,1.94591,True
+CDF4,AT2G34140,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,15,1.1592,0.00866162,0.013052,0,1.09861,True
+CDF4,AT2G34140,Maturation_Endodermis,Endodermis,Maturation,WT,596,5,0.838926,0.0080327,0.0149878,0,1.60944,True
+CDF4,AT2G34140,Maturation_Endodermis,Endodermis,Maturation,fer4,330,7,2.12121,0.0147031,0.0209903,0,0.693147,True
+CDF4,AT2G34140,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,13,52,0.404381,0.494696,0.693147,1.38629,True
+CDF4,AT2G34140,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,19,33.3333,0.27671,0.375789,0,1.38629,True
+CDF4,AT2G34140,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,13,24.5283,0.226775,0.333773,0,1.38629,True
+CDF4,AT2G34140,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,29,16.3842,0.132852,0.194488,0,1.38629,True
+CDF4,AT2G34140,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,72,22.0859,0.219957,0.359432,0,2.19722,True
+CDF4,AT2G34140,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,54,19.3548,0.175747,0.271422,0,1.79176,True
+CDF4,AT2G34140,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,15,39.4737,0.393311,0.581922,0,1.94591,True
+CDF4,AT2G34140,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,23,65.7143,0.648717,0.8141,0.693147,2.19722,True
+CDF4,AT2G34140,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,0,0,0,0,0,0,False
+CDF4,AT2G34140,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,1,3.57143,0.0247553,0.0350913,0,0.693147,False
+CDF4,AT2G34140,Elongation_Protophloem,Protophloem,Elongation,WT,106,12,11.3208,0.100309,0.156842,0,1.38629,True
+CDF4,AT2G34140,Elongation_Protophloem,Protophloem,Elongation,fer4,181,13,7.18232,0.058676,0.0948078,0,1.60944,True
+CDF4,AT2G34140,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+CDF4,AT2G34140,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,0,0,0,0,0,0,False
+CDF4,AT2G34140,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,7,18.4211,0.127685,0.169076,0,0.693147,True
+CDF4,AT2G34140,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,11,22,0.174465,0.24686,0,1.38629,True
+CDF4,AT2G34140,Elongation_Procambium,Procambium,Elongation,WT,1056,166,15.7197,0.154589,0.266145,0,2.48491,True
+CDF4,AT2G34140,Elongation_Procambium,Procambium,Elongation,fer4,1327,198,14.9209,0.144523,0.245352,0,2.3979,True
+CDF4,AT2G34140,Maturation_Procambium,Procambium,Maturation,WT,182,135,74.1758,1.07039,1.34421,1.09861,2.48491,True
+CDF4,AT2G34140,Maturation_Procambium,Procambium,Maturation,fer4,189,135,71.4286,0.868836,1.09331,0.693147,2.3979,True
+CDF4,AT2G34140,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,15,15.1515,0.163951,0.272415,0,1.60944,True
+CDF4,AT2G34140,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,17,8.37438,0.0722851,0.11614,0,1.38629,True
+CDF4,AT2G34140,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,2,1.41844,0.00983187,0.0140847,0,0.693147,True
+CDF4,AT2G34140,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,5,2.42718,0.0201888,0.033416,0,1.38629,True
+CDF4,AT2G34140,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,144,7.1964,0.064692,0.109251,0,2.07944,True
+CDF4,AT2G34140,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,107,5.61385,0.045047,0.0699019,0,1.79176,True
+CDF4,AT2G34140,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,72,75,0.878081,1.09513,1.09861,2.70805,True
+CDF4,AT2G34140,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,49,57.6471,0.597664,0.766835,0.693147,1.79176,True
+CDF4,AT2G34140,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,0,0,0,0,0,0,False
+CDF4,AT2G34140,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,0,0,0,0,0,0,False
+CDF4,AT2G34140,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,1,33.3333,0.366204,0.510826,0,1.09861,False
+CDF4,AT2G34140,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,7,43.75,0.424871,0.628609,0,1.94591,False
+CDF4,AT2G34140,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,185,31.0924,0.289682,0.44447,0,2.3979,True
+CDF4,AT2G34140,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,117,17.9448,0.164806,0.258108,0,1.79176,True
+CDF4,AT2G34140,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,19,73.0769,1.06412,1.36688,1.24245,2.77259,False
+CDF4,AT2G34140,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,3,100,1.70799,1.7346,1.79176,1.94591,False
+CDF4,AT2G34140,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+CDF4,AT2G34140,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+CDF4,AT2G34140,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,1,3.22581,0.0223596,0.0317487,0,0.693147,True
+CDF4,AT2G34140,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,0,0,0,0,0,0,True
+CDF4,AT2G34140,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,8,2.50784,0.0195559,0.0308666,0,1.38629,True
+CDF4,AT2G34140,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,4,1.35135,0.0107367,0.0167508,0,1.09861,True
+CDF4,AT2G34140,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,1,0.724638,0.00502281,0.00722025,0,0.693147,True
+CDF4,AT2G34140,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,2,1.48148,0.0102688,0.0147061,0,0.693147,True
+CDF4,AT2G34140,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,1,4.16667,0.0288811,0.040822,0,0.693147,False
+CDF4,AT2G34140,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,0,0,0,0,0,0,False
+CDF4,AT2G34140,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+CDF4,AT2G34140,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,1,2.77778,0.0192541,0.027399,0,0.693147,False
+CDF4,AT2G34140,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,18,6.16438,0.0464906,0.0694494,0,1.38629,True
+CDF4,AT2G34140,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,18,5.20231,0.0480469,0.0831504,0,1.60944,True
+COG1,AT1G29160,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,3,15.7895,0.130785,0.191055,0,1.09861,False
+COG1,AT1G29160,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+COG1,AT1G29160,Proximal Columella,Columella,Proximal Columella,WT,300,21,7,0.0610355,0.0983359,0,1.60944,True
+COG1,AT1G29160,Proximal Columella,Columella,Proximal Columella,fer4,269,13,4.83271,0.041426,0.0682491,0,1.60944,True
+COG1,AT1G29160,Distal Columella,Columella,Distal Columella,WT,491,30,6.10998,0.0487176,0.0745443,0,1.38629,True
+COG1,AT1G29160,Distal Columella,Columella,Distal Columella,fer4,1239,65,5.24617,0.0384122,0.0564856,0,1.60944,True
+COG1,AT1G29160,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,1081,29.8784,0.283085,0.415184,0,2.19722,True
+COG1,AT1G29160,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,1301,24.4779,0.222982,0.331892,0,2.19722,True
+COG1,AT1G29160,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,167,52.5157,0.635578,0.902358,0.693147,2.56495,True
+COG1,AT1G29160,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,567,63.2107,0.723954,0.93856,0.693147,2.70805,True
+COG1,AT1G29160,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,279,29.0928,0.234553,0.31798,0,1.60944,True
+COG1,AT1G29160,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,218,23.1177,0.189051,0.268139,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,266,37.8378,0.319409,0.421924,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,153,27.0796,0.223955,0.310863,0,1.60944,True
+COG1,AT1G29160,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,133,15.4651,0.126176,0.191005,0,2.48491,True
+COG1,AT1G29160,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,95,11.9497,0.0972107,0.147118,0,1.60944,True
+COG1,AT1G29160,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,19,8.08511,0.067117,0.104935,0,1.38629,True
+COG1,AT1G29160,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,7,4.8951,0.0339303,0.0477907,0,0.693147,True
+COG1,AT1G29160,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,90,13.2353,0.10484,0.15373,0,1.60944,True
+COG1,AT1G29160,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,50,12.1655,0.0905,0.129875,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,280,13.6786,0.111752,0.165324,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,162,11.8421,0.101158,0.155403,0,1.60944,True
+COG1,AT1G29160,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,66,7.30088,0.0602128,0.0928937,0,1.38629,True
+COG1,AT1G29160,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,44,5.55556,0.0438422,0.0671393,0,1.38629,True
+COG1,AT1G29160,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,31,6.04288,0.0456793,0.071459,0,1.94591,True
+COG1,AT1G29160,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,8,3.6036,0.0268047,0.0397403,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,9,6.76692,0.0560505,0.0863846,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,8,4.37158,0.0347328,0.053204,0,1.09861,True
+COG1,AT1G29160,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,30,6.49351,0.0581471,0.0949166,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,11,2.79188,0.0234682,0.0373642,0,1.09861,True
+COG1,AT1G29160,Elongation_Cortex,Cortex,Elongation,WT,1413,70,4.954,0.0399942,0.061748,0,1.38629,True
+COG1,AT1G29160,Elongation_Cortex,Cortex,Elongation,fer4,921,37,4.01737,0.0325611,0.0508046,0,1.38629,True
+COG1,AT1G29160,Maturation_Cortex,Cortex,Maturation,WT,397,14,3.52645,0.0264861,0.0395113,0,1.09861,True
+COG1,AT1G29160,Maturation_Cortex,Cortex,Maturation,fer4,210,8,3.80952,0.032198,0.0510552,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,12,10.1695,0.0842341,0.127155,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,70,18.1347,0.160875,0.244672,0,1.60944,True
+COG1,AT1G29160,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+COG1,AT1G29160,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,1,1.96078,0.0135911,0.0194181,0,0.693147,True
+COG1,AT1G29160,Elongation_Endodermis,Endodermis,Elongation,WT,1246,70,5.61798,0.0477363,0.0779415,0,1.94591,True
+COG1,AT1G29160,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,70,5.40958,0.0463006,0.0758728,0,2.07944,True
+COG1,AT1G29160,Maturation_Endodermis,Endodermis,Maturation,WT,596,31,5.20134,0.0451821,0.0727888,0,1.38629,True
+COG1,AT1G29160,Maturation_Endodermis,Endodermis,Maturation,fer4,330,24,7.27273,0.0577828,0.0870114,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,25,100,1.45255,1.59331,1.38629,2.48491,True
+COG1,AT1G29160,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,53,92.9825,1.5526,1.76509,1.60944,2.77259,True
+COG1,AT1G29160,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,35,66.0377,1.01727,1.34783,1.38629,2.89037,True
+COG1,AT1G29160,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,147,83.0508,1.21789,1.52949,1.09861,3.2581,True
+COG1,AT1G29160,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,234,71.7791,1.09803,1.44004,1.09861,3.04452,True
+COG1,AT1G29160,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,194,69.5341,0.984064,1.29635,1.09861,2.94444,True
+COG1,AT1G29160,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,36,94.7368,1.73062,1.97554,1.79176,2.99573,True
+COG1,AT1G29160,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,32,91.4286,1.63205,1.88273,1.79176,2.94444,True
+COG1,AT1G29160,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,1,50,0.693147,0.916291,0.693147,1.38629,False
+COG1,AT1G29160,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,5,17.8571,0.232509,0.428996,0,1.94591,False
+COG1,AT1G29160,Elongation_Protophloem,Protophloem,Elongation,WT,106,26,24.5283,0.296004,0.512711,0,2.30259,True
+COG1,AT1G29160,Elongation_Protophloem,Protophloem,Elongation,fer4,181,32,17.6796,0.214,0.39249,0,1.94591,True
+COG1,AT1G29160,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+COG1,AT1G29160,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,3,75,0.794513,0.916291,0.89588,1.38629,False
+COG1,AT1G29160,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,25,65.7895,0.665667,0.816761,0.693147,1.79176,True
+COG1,AT1G29160,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,28,56,0.672037,0.908259,0.693147,2.19722,True
+COG1,AT1G29160,Elongation_Procambium,Procambium,Elongation,WT,1056,529,50.0947,0.612418,0.892526,0.693147,3.04452,True
+COG1,AT1G29160,Elongation_Procambium,Procambium,Elongation,fer4,1327,689,51.9216,0.630194,0.902786,0.693147,2.83321,True
+COG1,AT1G29160,Maturation_Procambium,Procambium,Maturation,WT,182,137,75.2747,1.03386,1.3485,1.09861,3.13549,True
+COG1,AT1G29160,Maturation_Procambium,Procambium,Maturation,fer4,189,114,60.3175,0.80281,1.14513,0.693147,2.89037,True
+COG1,AT1G29160,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,15,15.1515,0.142409,0.225162,0,1.38629,True
+COG1,AT1G29160,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,27,13.3005,0.105013,0.154854,0,1.38629,True
+COG1,AT1G29160,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,21,14.8936,0.116778,0.169234,0,1.38629,True
+COG1,AT1G29160,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,51,24.7573,0.222852,0.331606,0,1.60944,True
+COG1,AT1G29160,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,550,27.4863,0.264129,0.400957,0,2.07944,True
+COG1,AT1G29160,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,553,29.0136,0.273878,0.405465,0,2.3979,True
+COG1,AT1G29160,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,54,56.25,0.725071,1.0811,0.693147,2.77259,True
+COG1,AT1G29160,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,49,57.6471,0.722181,1.0748,0.693147,3.04452,True
+COG1,AT1G29160,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,1.03972,1.09861,1.03972,1.38629,False
+COG1,AT1G29160,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,1.44519,1.50408,1.44519,1.79176,False
+COG1,AT1G29160,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,3,100,1.38104,1.46634,1.09861,1.94591,False
+COG1,AT1G29160,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,16,100,2.08571,2.15466,2.07944,2.56495,False
+COG1,AT1G29160,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,532,89.4118,1.58692,1.87451,1.60944,3.71357,True
+COG1,AT1G29160,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,549,84.2025,1.32331,1.60913,1.38629,3.09104,True
+COG1,AT1G29160,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,26,100,1.92876,2.18864,2.01268,3.4012,False
+COG1,AT1G29160,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,3,100,2.62006,2.66259,2.77259,2.89037,False
+COG1,AT1G29160,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+COG1,AT1G29160,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+COG1,AT1G29160,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,1,3.22581,0.0354391,0.0625204,0,1.09861,True
+COG1,AT1G29160,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,2,5.55556,0.0497711,0.0800427,0,1.09861,True
+COG1,AT1G29160,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,29,9.09091,0.0719107,0.106927,0,1.09861,True
+COG1,AT1G29160,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,12,4.05405,0.0353056,0.0590335,0,1.60944,True
+COG1,AT1G29160,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,7,5.07246,0.0439741,0.0699586,0,1.09861,True
+COG1,AT1G29160,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,8,5.92593,0.0440788,0.0645385,0,1.09861,True
+COG1,AT1G29160,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,4,16.6667,0.132419,0.189242,0,1.09861,False
+COG1,AT1G29160,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,2,7.69231,0.053319,0.074108,0,0.693147,False
+COG1,AT1G29160,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,1,5,0.0346574,0.0487902,0,0.693147,False
+COG1,AT1G29160,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+COG1,AT1G29160,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,17,5.82192,0.0427283,0.0630391,0,1.38629,True
+COG1,AT1G29160,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,20,5.78035,0.04842,0.077817,0,1.38629,True
+OBP3,AT3G55370,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+OBP3,AT3G55370,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+OBP3,AT3G55370,Proximal Columella,Columella,Proximal Columella,WT,300,0,0,0,0,0,0,True
+OBP3,AT3G55370,Proximal Columella,Columella,Proximal Columella,fer4,269,1,0.371747,0.00408406,0.00740744,0,1.09861,True
+OBP3,AT3G55370,Distal Columella,Columella,Distal Columella,WT,491,4,0.814664,0.00647261,0.0101318,0,1.09861,True
+OBP3,AT3G55370,Distal Columella,Columella,Distal Columella,fer4,1239,9,0.726392,0.00568947,0.00883895,0,1.09861,True
+OBP3,AT3G55370,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,18,0.497512,0.00389677,0.00606229,0,1.09861,True
+OBP3,AT3G55370,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,43,0.809031,0.00611962,0.00936336,0,1.38629,True
+OBP3,AT3G55370,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,2,0.628931,0.00563446,0.00938974,0,1.09861,True
+OBP3,AT3G55370,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,6,0.668896,0.00540918,0.00887908,0,1.38629,True
+OBP3,AT3G55370,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,9,0.938478,0.00650503,0.00934101,0,0.693147,True
+OBP3,AT3G55370,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,8,0.848356,0.00674031,0.0105486,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,3,0.426743,0.00353472,0.00567377,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,3,0.530973,0.00439806,0.0070547,0,1.09861,True
+OBP3,AT3G55370,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,13,1.51163,0.0109493,0.016148,0,1.09861,True
+OBP3,AT3G55370,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,5,0.628931,0.00435942,0.00626961,0,0.693147,True
+OBP3,AT3G55370,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,1,0.425532,0.00294956,0.00424629,0,0.693147,True
+OBP3,AT3G55370,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,1,0.699301,0.00484718,0.00696867,0,0.693147,True
+OBP3,AT3G55370,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,5,0.735294,0.00569294,0.00878483,0,1.09861,True
+OBP3,AT3G55370,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,1,0.243309,0.00168649,0.00243013,0,0.693147,True
+OBP3,AT3G55370,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,25,1.2213,0.00925771,0.0140677,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,9,0.657895,0.00515296,0.00800878,0,1.09861,True
+OBP3,AT3G55370,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,6,0.663717,0.00460053,0.00661524,0,0.693147,True
+OBP3,AT3G55370,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,2,0.252525,0.00175037,0.00252207,0,0.693147,True
+OBP3,AT3G55370,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,8,1.55945,0.0108093,0.0154742,0,0.693147,True
+OBP3,AT3G55370,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,1,0.45045,0.00312228,0.00449439,0,0.693147,True
+OBP3,AT3G55370,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,3,2.25564,0.0156349,0.0223058,0,0.693147,True
+OBP3,AT3G55370,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,3,1.63934,0.0135787,0.0216225,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,3,0.649351,0.00537859,0.00862074,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,0,0,0,0,0,0,True
+OBP3,AT3G55370,Elongation_Cortex,Cortex,Elongation,WT,1413,8,0.566171,0.00449831,0.00705222,0,1.09861,True
+OBP3,AT3G55370,Elongation_Cortex,Cortex,Elongation,fer4,921,2,0.217155,0.00150521,0.0021692,0,0.693147,True
+OBP3,AT3G55370,Maturation_Cortex,Cortex,Maturation,WT,397,1,0.251889,0.00276729,0.00502514,0,1.09861,True
+OBP3,AT3G55370,Maturation_Cortex,Cortex,Maturation,fer4,210,0,0,0,0,0,0,True
+OBP3,AT3G55370,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,0,0,0,0,0,0,True
+OBP3,AT3G55370,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,30,7.77202,0.0609194,0.0915348,0,1.38629,True
+OBP3,AT3G55370,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,1,3.44828,0.0239016,0.0339016,0,0.693147,True
+OBP3,AT3G55370,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,1,1.96078,0.0135911,0.0194181,0,0.693147,True
+OBP3,AT3G55370,Elongation_Endodermis,Endodermis,Elongation,WT,1246,24,1.92616,0.0146528,0.0222231,0,1.09861,True
+OBP3,AT3G55370,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,18,1.39104,0.00995527,0.0145764,0,1.09861,True
+OBP3,AT3G55370,Maturation_Endodermis,Endodermis,Maturation,WT,596,11,1.84564,0.0141536,0.0215776,0,1.09861,True
+OBP3,AT3G55370,Maturation_Endodermis,Endodermis,Maturation,fer4,330,3,0.909091,0.00753002,0.0120483,0,1.09861,True
+OBP3,AT3G55370,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,21,84,0.883059,1.00063,1.09861,1.79176,True
+OBP3,AT3G55370,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,43,75.4386,0.779882,0.912776,0.693147,1.94591,True
+OBP3,AT3G55370,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,30,56.6038,0.607991,0.791882,0.693147,1.94591,True
+OBP3,AT3G55370,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,99,55.9322,0.57006,0.731933,0.693147,1.94591,True
+OBP3,AT3G55370,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,138,42.3313,0.395769,0.539252,0,1.94591,True
+OBP3,AT3G55370,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,124,44.4444,0.389498,0.510826,0,1.79176,True
+OBP3,AT3G55370,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,13,34.2105,0.25847,0.332706,0,1.09861,True
+OBP3,AT3G55370,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,18,51.4286,0.419254,0.522189,0.693147,1.38629,True
+OBP3,AT3G55370,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,2,100,1.24245,1.25276,1.24245,1.38629,False
+OBP3,AT3G55370,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,13,46.4286,0.476458,0.638087,0,1.60944,False
+OBP3,AT3G55370,Elongation_Protophloem,Protophloem,Elongation,WT,106,51,48.1132,0.542288,0.739238,0,1.79176,True
+OBP3,AT3G55370,Elongation_Protophloem,Protophloem,Elongation,fer4,181,81,44.7514,0.438964,0.585328,0,1.79176,True
+OBP3,AT3G55370,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+OBP3,AT3G55370,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,2,50,0.44794,0.559616,0.346574,1.09861,False
+OBP3,AT3G55370,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,12,31.5789,0.250899,0.332706,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,17,34,0.257642,0.336472,0,1.38629,True
+OBP3,AT3G55370,Elongation_Procambium,Procambium,Elongation,WT,1056,307,29.072,0.260951,0.372086,0,1.79176,True
+OBP3,AT3G55370,Elongation_Procambium,Procambium,Elongation,fer4,1327,317,23.8885,0.200959,0.289752,0,2.19722,True
+OBP3,AT3G55370,Maturation_Procambium,Procambium,Maturation,WT,182,83,45.6044,0.391423,0.503104,0,1.60944,True
+OBP3,AT3G55370,Maturation_Procambium,Procambium,Maturation,fer4,189,74,39.1534,0.333815,0.441833,0,1.60944,True
+OBP3,AT3G55370,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,6,6.06061,0.0420089,0.0588405,0,0.693147,True
+OBP3,AT3G55370,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,21,10.3448,0.077697,0.111744,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,24,17.0213,0.129485,0.181139,0,1.09861,True
+OBP3,AT3G55370,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,39,18.932,0.156182,0.228952,0,1.60944,True
+OBP3,AT3G55370,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,346,17.2914,0.141569,0.206514,0,1.60944,True
+OBP3,AT3G55370,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,324,16.999,0.138737,0.203005,0,1.60944,True
+OBP3,AT3G55370,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,34,35.4167,0.303393,0.405465,0,1.38629,True
+OBP3,AT3G55370,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,23,27.0588,0.206638,0.275848,0,1.09861,True
+OBP3,AT3G55370,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,1.24245,1.25276,1.24245,1.38629,False
+OBP3,AT3G55370,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,0.693147,0.693147,0.693147,0.693147,False
+OBP3,AT3G55370,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,3,100,1.32966,1.38629,1.09861,1.79176,False
+OBP3,AT3G55370,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,16,100,1.05041,1.11923,1.09861,1.79176,False
+OBP3,AT3G55370,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,379,63.6975,0.658147,0.820779,0.693147,2.07944,True
+OBP3,AT3G55370,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,343,52.6074,0.496668,0.642015,0.693147,2.07944,True
+OBP3,AT3G55370,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,16,61.5385,0.593087,0.730888,0.693147,1.60944,False
+OBP3,AT3G55370,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,2,66.6667,0.597253,0.693147,0.693147,1.09861,False
+OBP3,AT3G55370,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+OBP3,AT3G55370,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+OBP3,AT3G55370,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,0,0,0,0,0,0,True
+OBP3,AT3G55370,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,1,2.77778,0.0192541,0.027399,0,0.693147,True
+OBP3,AT3G55370,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,3,0.940439,0.00651863,0.00936044,0,0.693147,True
+OBP3,AT3G55370,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,2,0.675676,0.00468343,0.00673403,0,0.693147,True
+OBP3,AT3G55370,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,2,1.44928,0.0100456,0.0143887,0,0.693147,True
+OBP3,AT3G55370,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,0,0,0,0,0,0,True
+OBP3,AT3G55370,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,1,4.16667,0.0288811,0.040822,0,0.693147,False
+OBP3,AT3G55370,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,1,3.84615,0.0422543,0.074108,0,1.09861,False
+OBP3,AT3G55370,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,1,5,0.0346574,0.0487902,0,0.693147,False
+OBP3,AT3G55370,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+OBP3,AT3G55370,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,3,1.0274,0.00850995,0.0136057,0,1.09861,True
+OBP3,AT3G55370,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,1,0.289017,0.00200332,0.002886,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+DOF6,AT3G45610,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,1,16.6667,0.115525,0.154151,0,0.693147,False
+DOF6,AT3G45610,Proximal Columella,Columella,Proximal Columella,WT,300,0,0,0,0,0,0,True
+DOF6,AT3G45610,Proximal Columella,Columella,Proximal Columella,fer4,269,1,0.371747,0.00257676,0.00371058,0,0.693147,True
+DOF6,AT3G45610,Distal Columella,Columella,Distal Columella,WT,491,1,0.203666,0.00141171,0.00203459,0,0.693147,True
+DOF6,AT3G45610,Distal Columella,Columella,Distal Columella,fer4,1239,1,0.0807103,0.000886693,0.0016129,0,1.09861,True
+DOF6,AT3G45610,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,13,0.359315,0.00316299,0.00523778,0,1.09861,True
+DOF6,AT3G45610,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,34,0.639699,0.0047392,0.00712414,0,1.09861,True
+DOF6,AT3G45610,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,1,0.314465,0.00217971,0.00313972,0,0.693147,True
+DOF6,AT3G45610,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,4,0.445931,0.00309096,0.0044494,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,6,0.625652,0.00518229,0.00830742,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,7,0.742312,0.00514531,0.0073957,0,0.693147,True
+DOF6,AT3G45610,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,2,0.284495,0.00197197,0.00284091,0,0.693147,True
+DOF6,AT3G45610,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,3,0.530973,0.00368043,0.00529569,0,0.693147,True
+DOF6,AT3G45610,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,5,0.581395,0.0045014,0.00695252,0,1.09861,True
+DOF6,AT3G45610,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,2,0.251572,0.00174377,0.00251256,0,0.693147,True
+DOF6,AT3G45610,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,3,1.2766,0.0105741,0.016878,0,1.09861,True
+DOF6,AT3G45610,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,0,0,0,0,0,0,True
+DOF6,AT3G45610,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,5,0.735294,0.00509667,0.00732604,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,1,0.243309,0.00267302,0.00485438,0,1.09861,True
+DOF6,AT3G45610,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,21,1.02589,0.00835088,0.0135858,0,1.60944,True
+DOF6,AT3G45610,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,11,0.804094,0.00586994,0.00873368,0,1.09861,True
+DOF6,AT3G45610,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,3,0.331858,0.00331386,0.00661524,0,1.60944,True
+DOF6,AT3G45610,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,1,0.126263,0.000875186,0.00126183,0,0.693147,True
+DOF6,AT3G45610,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,1,0.194932,0.00135116,0.00194742,0,0.693147,True
+DOF6,AT3G45610,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,0,0,0,0,0,0,True
+DOF6,AT3G45610,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,3,2.25564,0.0217321,0.0369046,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,0,0,0,0,0,0,True
+DOF6,AT3G45610,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,7,1.51515,0.0142408,0.0256424,0,1.60944,True
+DOF6,AT3G45610,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,2,0.507614,0.00351851,0.0050633,0,0.693147,True
+DOF6,AT3G45610,Elongation_Cortex,Cortex,Elongation,WT,1413,6,0.424628,0.00343385,0.00564575,0,1.38629,True
+DOF6,AT3G45610,Elongation_Cortex,Cortex,Elongation,fer4,921,3,0.325733,0.00225781,0.00325204,0,0.693147,True
+DOF6,AT3G45610,Maturation_Cortex,Cortex,Maturation,WT,397,1,0.251889,0.00174596,0.00251572,0,0.693147,True
+DOF6,AT3G45610,Maturation_Cortex,Cortex,Maturation,fer4,210,1,0.47619,0.0033007,0.0047506,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,1,0.847458,0.00931027,0.0168071,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,7,1.81347,0.0182623,0.0381241,0,2.07944,True
+DOF6,AT3G45610,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+DOF6,AT3G45610,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,0,0,0,0,0,0,True
+DOF6,AT3G45610,Elongation_Endodermis,Endodermis,Elongation,WT,1246,3,0.24077,0.00222519,0.00400481,0,1.38629,True
+DOF6,AT3G45610,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,11,0.850077,0.00620563,0.00923083,0,1.09861,True
+DOF6,AT3G45610,Maturation_Endodermis,Endodermis,Maturation,WT,596,2,0.33557,0.002326,0.00335009,0,0.693147,True
+DOF6,AT3G45610,Maturation_Endodermis,Endodermis,Maturation,fer4,330,3,0.909091,0.00753002,0.0120483,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,5,20,0.154848,0.215111,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,5,8.77193,0.0750292,0.115832,0,1.09861,True
+DOF6,AT3G45610,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,9,16.9811,0.138433,0.204095,0,1.38629,True
+DOF6,AT3G45610,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,30,16.9492,0.163452,0.279171,0,2.30259,True
+DOF6,AT3G45610,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,119,36.5031,0.492051,0.869829,0,3.13549,True
+DOF6,AT3G45610,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,102,36.5591,0.47319,0.812919,0,2.94444,True
+DOF6,AT3G45610,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,30,78.9474,1.36585,1.70952,1.38629,2.63906,True
+DOF6,AT3G45610,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,29,82.8571,1.55645,2.06867,1.60944,3.7612,True
+DOF6,AT3G45610,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,1,50,0.804719,1.09861,0.804719,1.60944,False
+DOF6,AT3G45610,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,21,75,1.11363,1.34993,1.38629,2.30259,False
+DOF6,AT3G45610,Elongation_Protophloem,Protophloem,Elongation,WT,106,82,77.3585,1.19168,1.53707,1.38629,3.09104,True
+DOF6,AT3G45610,Elongation_Protophloem,Protophloem,Elongation,fer4,181,159,87.8453,1.54712,1.94354,1.60944,4.04305,True
+DOF6,AT3G45610,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+DOF6,AT3G45610,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,1,25,0.173287,0.223144,0,0.693147,False
+DOF6,AT3G45610,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,3,7.89474,0.0653923,0.100083,0,1.09861,True
+DOF6,AT3G45610,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,3,6,0.0415888,0.0582689,0,0.693147,True
+DOF6,AT3G45610,Elongation_Procambium,Procambium,Elongation,WT,1056,15,1.42045,0.0135622,0.0270918,0,2.30259,True
+DOF6,AT3G45610,Elongation_Procambium,Procambium,Elongation,fer4,1327,19,1.4318,0.0115803,0.0186642,0,1.38629,True
+DOF6,AT3G45610,Maturation_Procambium,Procambium,Maturation,WT,182,1,0.549451,0.0038085,0.00547947,0,0.693147,True
+DOF6,AT3G45610,Maturation_Procambium,Procambium,Maturation,fer4,189,2,1.0582,0.00733489,0.0105264,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,4,4.0404,0.0350074,0.0588405,0,1.38629,True
+DOF6,AT3G45610,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,6,2.95567,0.0224845,0.0339016,0,1.09861,True
+DOF6,AT3G45610,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,3,2.12766,0.0147478,0.0210534,0,0.693147,True
+DOF6,AT3G45610,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,7,3.39806,0.0235535,0.033416,0,0.693147,True
+DOF6,AT3G45610,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,31,1.54923,0.0137451,0.0232167,0,1.38629,True
+DOF6,AT3G45610,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,41,2.1511,0.0168249,0.0258948,0,1.09861,True
+DOF6,AT3G45610,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,9,9.375,0.0920939,0.154151,0,1.38629,True
+DOF6,AT3G45610,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,2,2.35294,0.0210795,0.0346856,0,1.09861,True
+DOF6,AT3G45610,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,0,0,0,0,0,0,False
+DOF6,AT3G45610,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,1,50,0.346574,0.405465,0.346574,0.693147,False
+DOF6,AT3G45610,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,2,66.6667,0.732408,0.847298,1.09861,1.09861,False
+DOF6,AT3G45610,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,1,6.25,0.0433217,0.0606246,0,0.693147,False
+DOF6,AT3G45610,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,44,7.39496,0.0646473,0.108214,0,2.07944,True
+DOF6,AT3G45610,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,43,6.59509,0.0566262,0.0908384,0,1.38629,True
+DOF6,AT3G45610,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,3,11.5385,0.0955733,0.143101,0,1.09861,False
+DOF6,AT3G45610,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,1,33.3333,0.462098,0.693147,0,1.38629,False
+DOF6,AT3G45610,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+DOF6,AT3G45610,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+DOF6,AT3G45610,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,2,6.45161,0.0966365,0.279585,0,2.30259,True
+DOF6,AT3G45610,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,3,8.33333,0.0690252,0.105361,0,1.09861,True
+DOF6,AT3G45610,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,44,13.7931,0.159118,0.317028,0,2.3979,True
+DOF6,AT3G45610,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,66,22.2973,0.252205,0.489657,0,2.83321,True
+DOF6,AT3G45610,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,1,0.724638,0.00502281,0.00722025,0,0.693147,True
+DOF6,AT3G45610,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,2,1.48148,0.0102688,0.0147061,0,0.693147,True
+DOF6,AT3G45610,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,1,4.16667,0.0288811,0.040822,0,0.693147,False
+DOF6,AT3G45610,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,1,3.84615,0.0266595,0.0377403,0,0.693147,False
+DOF6,AT3G45610,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+DOF6,AT3G45610,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+DOF6,AT3G45610,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,3,1.0274,0.00850995,0.0136057,0,1.09861,True
+DOF6,AT3G45610,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,4,1.15607,0.010357,0.0171924,0,1.09861,True
+DOF4.1,AT4G00940,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,1,5.26316,0.0364814,0.0512933,0,0.693147,False
+DOF4.1,AT4G00940,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Proximal Columella,Columella,Proximal Columella,WT,300,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proximal Columella,Columella,Proximal Columella,fer4,269,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Distal Columella,Columella,Distal Columella,WT,491,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Distal Columella,Columella,Distal Columella,fer4,1239,3,0.242131,0.00167832,0.00241838,0,0.693147,True
+DOF4.1,AT4G00940,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,7,0.193477,0.00145315,0.00220873,0,1.09861,True
+DOF4.1,AT4G00940,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,12,0.225776,0.00169537,0.00263059,0,1.38629,True
+DOF4.1,AT4G00940,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,1,0.111483,0.00122476,0.00222717,0,1.09861,True
+DOF4.1,AT4G00940,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,1,0.104275,0.000722781,0.00104221,0,0.693147,True
+DOF4.1,AT4G00940,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,2,0.284495,0.00197197,0.00284091,0,0.693147,True
+DOF4.1,AT4G00940,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,1,0.116279,0.00127746,0.00232288,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,1,0.125786,0.000871883,0.00125707,0,0.693147,True
+DOF4.1,AT4G00940,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,1,0.699301,0.00484718,0.00696867,0,0.693147,True
+DOF4.1,AT4G00940,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,1,0.147059,0.00101933,0.00146951,0,0.693147,True
+DOF4.1,AT4G00940,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,1,0.243309,0.00168649,0.00243013,0,0.693147,True
+DOF4.1,AT4G00940,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,8,0.390816,0.00290701,0.00438704,0,1.09861,True
+DOF4.1,AT4G00940,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,1,0.0730994,0.000506687,0.000730727,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,1,0.110619,0.000766756,0.00110558,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,3,0.584795,0.00484387,0.00776703,0,1.09861,True
+DOF4.1,AT4G00940,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,1,0.253807,0.00175926,0.00253486,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Cortex,Cortex,Elongation,WT,1413,4,0.283086,0.0019622,0.00282686,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Cortex,Cortex,Elongation,fer4,921,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Cortex,Cortex,Maturation,WT,397,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Cortex,Cortex,Maturation,fer4,210,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,2,0.518135,0.00359144,0.00516797,0,0.693147,True
+DOF4.1,AT4G00940,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Endodermis,Endodermis,Elongation,WT,1246,9,0.722311,0.00533209,0.00799365,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,1,0.0772798,0.000535662,0.000772499,0,0.693147,True
+DOF4.1,AT4G00940,Maturation_Endodermis,Endodermis,Maturation,WT,596,219,36.745,0.335571,0.468324,0,2.19722,True
+DOF4.1,AT4G00940,Maturation_Endodermis,Endodermis,Maturation,fer4,330,69,20.9091,0.168077,0.241162,0,1.79176,True
+DOF4.1,AT4G00940,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,1,0.306748,0.00212622,0.00306279,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Elongation_Protophloem,Protophloem,Elongation,WT,106,1,0.943396,0.00653912,0.00938974,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Protophloem,Protophloem,Elongation,fer4,181,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+DOF4.1,AT4G00940,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Procambium,Procambium,Elongation,WT,1056,6,0.568182,0.00470626,0.00754721,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Procambium,Procambium,Elongation,fer4,1327,5,0.37679,0.00261171,0.00376082,0,0.693147,True
+DOF4.1,AT4G00940,Maturation_Procambium,Procambium,Maturation,WT,182,2,1.0989,0.007617,0.0109291,0,0.693147,True
+DOF4.1,AT4G00940,Maturation_Procambium,Procambium,Maturation,fer4,189,3,1.5873,0.0131477,0.0209432,0,1.09861,True
+DOF4.1,AT4G00940,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,4,4.0404,0.0280059,0.0396091,0,0.693147,True
+DOF4.1,AT4G00940,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,6,2.95567,0.0224845,0.0339016,0,1.09861,True
+DOF4.1,AT4G00940,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,47,2.34883,0.0187124,0.0290589,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,22,1.15425,0.00821338,0.0119949,0,1.09861,True
+DOF4.1,AT4G00940,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,15,15.625,0.112528,0.154151,0,1.09861,True
+DOF4.1,AT4G00940,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,11,12.9412,0.116937,0.182322,0,1.38629,True
+DOF4.1,AT4G00940,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,2,0.336134,0.00232991,0.00335571,0,0.693147,True
+DOF4.1,AT4G00940,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,10,1.53374,0.011253,0.0167304,0,1.09861,True
+DOF4.1,AT4G00940,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,2,7.69231,0.053319,0.074108,0,0.693147,False
+DOF4.1,AT4G00940,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+DOF4.1,AT4G00940,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,13,4.07524,0.0307895,0.0459499,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,9,3.04054,0.0210754,0.0299523,0,0.693147,True
+DOF4.1,AT4G00940,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,0,0,0,0,0,0,True
+DOF4.1,AT4G00940,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,2,1.48148,0.0102688,0.0147061,0,0.693147,True
+DOF4.1,AT4G00940,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,2,8.33333,0.0577623,0.0800427,0,0.693147,False
+DOF4.1,AT4G00940,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+DOF4.1,AT4G00940,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,1,2.77778,0.0192541,0.027399,0,0.693147,False
+DOF4.1,AT4G00940,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,14,4.79452,0.0346217,0.0500939,0,1.09861,True
+DOF4.1,AT4G00940,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,24,6.93642,0.0564332,0.0884554,0,1.38629,True
+DOF2.2,AT2G28810,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Proximal Columella,Columella,Proximal Columella,WT,300,1,0.333333,0.00231049,0.00332779,0,0.693147,True
+DOF2.2,AT2G28810,Proximal Columella,Columella,Proximal Columella,fer4,269,3,1.11524,0.00773027,0.0110907,0,0.693147,True
+DOF2.2,AT2G28810,Distal Columella,Columella,Distal Columella,WT,491,0,0,0,0,0,0,True
+DOF2.2,AT2G28810,Distal Columella,Columella,Distal Columella,fer4,1239,11,0.887813,0.0071356,0.0112361,0,1.09861,True
+DOF2.2,AT2G28810,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,14,0.386954,0.00313044,0.00496279,0,1.09861,True
+DOF2.2,AT2G28810,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,34,0.639699,0.00517476,0.00824438,0,1.38629,True
+DOF2.2,AT2G28810,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,3,0.943396,0.00781417,0.0125002,0,1.09861,True
+DOF2.2,AT2G28810,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,5,0.557414,0.0038637,0.00555866,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,5,0.521376,0.00403671,0.00623703,0,1.09861,True
+DOF2.2,AT2G28810,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,4,0.424178,0.00294018,0.00423281,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,1,0.142248,0.000985985,0.00142146,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,4,0.707965,0.00490724,0.0070547,0,0.693147,True
+DOF2.2,AT2G28810,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,6,0.697674,0.00530738,0.00810659,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,5,0.628931,0.00435942,0.00626961,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,0,0,0,0,0,0,True
+DOF2.2,AT2G28810,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,0,0,0,0,0,0,True
+DOF2.2,AT2G28810,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,2,0.294118,0.00323121,0.00586512,0,1.09861,True
+DOF2.2,AT2G28810,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,1,0.243309,0.00168649,0.00243013,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,14,0.683928,0.00513678,0.00778593,0,1.09861,True
+DOF2.2,AT2G28810,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,7,0.511696,0.0038432,0.00583092,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,8,0.884956,0.00734932,0.0120947,0,1.38629,True
+DOF2.2,AT2G28810,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,7,0.883838,0.0061263,0.00879955,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,7,1.36452,0.0102485,0.0154742,0,1.09861,True
+DOF2.2,AT2G28810,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,2,0.900901,0.00624457,0.00896867,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,1,0.75188,0.00521163,0.00749067,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,0,0,0,0,0,0,True
+DOF2.2,AT2G28810,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,4,0.865801,0.00600127,0.00862074,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,3,0.761421,0.00527777,0.00758537,0,0.693147,True
+DOF2.2,AT2G28810,Elongation_Cortex,Cortex,Elongation,WT,1413,4,0.283086,0.0019622,0.00282686,0,0.693147,True
+DOF2.2,AT2G28810,Elongation_Cortex,Cortex,Elongation,fer4,921,2,0.217155,0.00150521,0.0021692,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Cortex,Cortex,Maturation,WT,397,1,0.251889,0.00174596,0.00251572,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Cortex,Cortex,Maturation,fer4,210,1,0.47619,0.0033007,0.0047506,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,3,2.54237,0.0176224,0.0251059,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,19,4.92228,0.0383204,0.0578778,0,1.09861,True
+DOF2.2,AT2G28810,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,1,3.44828,0.0239016,0.0339016,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,1,1.96078,0.0135911,0.0194181,0,0.693147,True
+DOF2.2,AT2G28810,Elongation_Endodermis,Endodermis,Elongation,WT,1246,7,0.561798,0.0042195,0.00640002,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,12,0.927357,0.00674129,0.00999624,0,1.09861,True
+DOF2.2,AT2G28810,Maturation_Endodermis,Endodermis,Maturation,WT,596,5,0.838926,0.00581499,0.00835427,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Endodermis,Endodermis,Maturation,fer4,330,1,0.30303,0.00210045,0.00302572,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,17,68,0.580159,0.672944,0.693147,1.38629,True
+DOF2.2,AT2G28810,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,39,68.4211,0.664733,0.793231,0.693147,1.60944,True
+DOF2.2,AT2G28810,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,21,39.6226,0.426862,0.624828,0,1.94591,True
+DOF2.2,AT2G28810,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,100,56.4972,0.550568,0.701586,0.693147,1.79176,True
+DOF2.2,AT2G28810,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,158,48.4663,0.483274,0.649253,0,2.07944,True
+DOF2.2,AT2G28810,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,126,45.1613,0.399813,0.532103,0,2.30259,True
+DOF2.2,AT2G28810,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,13,34.2105,0.293253,0.405465,0,1.60944,True
+DOF2.2,AT2G28810,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,17,48.5714,0.379645,0.470004,0,1.38629,True
+DOF2.2,AT2G28810,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,2,100,1.15129,1.25276,1.15129,1.60944,False
+DOF2.2,AT2G28810,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,14,50,0.404497,0.496437,0.346574,1.09861,False
+DOF2.2,AT2G28810,Elongation_Protophloem,Protophloem,Elongation,WT,106,36,33.9623,0.32437,0.454555,0,1.38629,True
+DOF2.2,AT2G28810,Elongation_Protophloem,Protophloem,Elongation,fer4,181,56,30.9392,0.275157,0.384999,0,1.60944,True
+DOF2.2,AT2G28810,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+DOF2.2,AT2G28810,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,2,50,0.346574,0.405465,0.346574,0.693147,False
+DOF2.2,AT2G28810,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,12,31.5789,0.240229,0.313658,0,1.09861,True
+DOF2.2,AT2G28810,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,15,30,0.224163,0.29267,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Procambium,Procambium,Elongation,WT,1056,171,16.1932,0.133321,0.197048,0,1.94591,True
+DOF2.2,AT2G28810,Elongation_Procambium,Procambium,Elongation,fer4,1327,221,16.6541,0.133397,0.193313,0,1.60944,True
+DOF2.2,AT2G28810,Maturation_Procambium,Procambium,Maturation,WT,182,13,7.14286,0.0539662,0.079197,0,1.09861,True
+DOF2.2,AT2G28810,Maturation_Procambium,Procambium,Maturation,fer4,189,15,7.93651,0.0651151,0.100587,0,1.38629,True
+DOF2.2,AT2G28810,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,1,1.0101,0.00700149,0.0100503,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,3,1.47783,0.0122409,0.0195128,0,1.09861,True
+DOF2.2,AT2G28810,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,4,2.83688,0.0225394,0.0348467,0,1.09861,True
+DOF2.2,AT2G28810,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,12,5.82524,0.0482506,0.0748012,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,118,5.89705,0.0477767,0.0746076,0,1.94591,True
+DOF2.2,AT2G28810,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,145,7.60756,0.0592026,0.0883222,0,1.38629,True
+DOF2.2,AT2G28810,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,6,6.25,0.0433217,0.0606246,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,1,1.17647,0.00815467,0.011696,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,0.693147,0.693147,0.693147,0.693147,False
+DOF2.2,AT2G28810,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,0.693147,0.693147,0.693147,0.693147,False
+DOF2.2,AT2G28810,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,2,66.6667,0.828302,0.980829,1.09861,1.38629,False
+DOF2.2,AT2G28810,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,16,100,0.94982,0.988611,0.89588,1.38629,False
+DOF2.2,AT2G28810,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,386,64.8739,0.679798,0.845616,0.693147,2.56495,True
+DOF2.2,AT2G28810,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,372,57.0552,0.554974,0.702308,0.693147,1.79176,True
+DOF2.2,AT2G28810,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,14,53.8462,0.451207,0.548566,0.693147,1.09861,False
+DOF2.2,AT2G28810,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,1,33.3333,0.231049,0.287682,0,0.693147,False
+DOF2.2,AT2G28810,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+DOF2.2,AT2G28810,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,1,3.22581,0.0223596,0.0317487,0,0.693147,True
+DOF2.2,AT2G28810,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,0,0,0,0,0,0,True
+DOF2.2,AT2G28810,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,3,0.940439,0.00651863,0.00936044,0,0.693147,True
+DOF2.2,AT2G28810,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,2,0.675676,0.00468343,0.00673403,0,0.693147,True
+DOF2.2,AT2G28810,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,1,0.724638,0.00796096,0.0143887,0,1.09861,True
+DOF2.2,AT2G28810,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,1,0.740741,0.00513442,0.00738011,0,0.693147,True
+DOF2.2,AT2G28810,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+DOF2.2,AT2G28810,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,13,4.45205,0.0322479,0.0468313,0,1.09861,True
+DOF2.2,AT2G28810,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,15,4.33526,0.0312216,0.0452054,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+DAG1,AT3G61850,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+DAG1,AT3G61850,Proximal Columella,Columella,Proximal Columella,WT,300,8,2.66667,0.0248491,0.0456105,0,1.79176,True
+DAG1,AT3G61850,Proximal Columella,Columella,Proximal Columella,fer4,269,8,2.97398,0.0266433,0.0436433,0,1.09861,True
+DAG1,AT3G61850,Distal Columella,Columella,Distal Columella,WT,491,15,3.05499,0.0220014,0.0320669,0,1.09861,True
+DAG1,AT3G61850,Distal Columella,Columella,Distal Columella,fer4,1239,47,3.79338,0.0272755,0.0395621,0,1.09861,True
+DAG1,AT3G61850,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,95,2.62576,0.0221567,0.0376994,0,2.3979,True
+DAG1,AT3G61850,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,175,3.29257,0.0268609,0.0425439,0,1.79176,True
+DAG1,AT3G61850,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,10,3.14465,0.0217971,0.0309622,0,0.693147,True
+DAG1,AT3G61850,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,26,2.89855,0.0218993,0.0328977,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,24,2.50261,0.0194607,0.0297916,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,29,3.07529,0.0247561,0.0384863,0,1.09861,True
+DAG1,AT3G61850,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,18,2.56046,0.0206315,0.0321931,0,1.09861,True
+DAG1,AT3G61850,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,22,3.89381,0.0346753,0.056765,0,1.38629,True
+DAG1,AT3G61850,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,29,3.37209,0.0282858,0.0521069,0,2.19722,True
+DAG1,AT3G61850,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,30,3.77358,0.0308792,0.0490896,0,1.60944,True
+DAG1,AT3G61850,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,6,2.55319,0.0211481,0.0334759,0,1.09861,True
+DAG1,AT3G61850,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,5,3.4965,0.0242359,0.0343676,0,0.693147,True
+DAG1,AT3G61850,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,19,2.79412,0.022945,0.036105,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,13,3.16302,0.0238974,0.0358461,0,1.09861,True
+DAG1,AT3G61850,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,97,4.73864,0.0405387,0.0647828,0,1.38629,True
+DAG1,AT3G61850,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,77,5.62865,0.0487363,0.0786923,0,1.94591,True
+DAG1,AT3G61850,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,31,3.4292,0.027097,0.0432968,0,1.79176,True
+DAG1,AT3G61850,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,31,3.91414,0.0302025,0.0456588,0,1.09861,True
+DAG1,AT3G61850,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,18,3.50877,0.0280433,0.0438583,0,1.38629,True
+DAG1,AT3G61850,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,9,4.05405,0.0281006,0.0397403,0,0.693147,True
+DAG1,AT3G61850,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,6,4.51128,0.037367,0.0584108,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,14,7.65027,0.0685372,0.108634,0,1.09861,True
+DAG1,AT3G61850,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,22,4.7619,0.0456616,0.0770412,0,1.38629,True
+DAG1,AT3G61850,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,9,2.28426,0.0178915,0.0275362,0,1.09861,True
+DAG1,AT3G61850,Elongation_Cortex,Cortex,Elongation,WT,1413,58,4.10474,0.0339409,0.0537319,0,1.38629,True
+DAG1,AT3G61850,Elongation_Cortex,Cortex,Elongation,fer4,921,31,3.36591,0.0237709,0.0341549,0,1.09861,True
+DAG1,AT3G61850,Maturation_Cortex,Cortex,Maturation,WT,397,15,3.77834,0.0272108,0.0395113,0,1.09861,True
+DAG1,AT3G61850,Maturation_Cortex,Cortex,Maturation,fer4,210,10,4.7619,0.0349378,0.0510552,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,12,10.1695,0.080798,0.119665,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,70,18.1347,0.15386,0.228312,0,1.60944,True
+DAG1,AT3G61850,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,3,10.3448,0.0717049,0.0984401,0,0.693147,True
+DAG1,AT3G61850,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,4,7.84314,0.0543645,0.0755076,0,0.693147,True
+DAG1,AT3G61850,Elongation_Endodermis,Endodermis,Elongation,WT,1246,192,15.4093,0.129768,0.196137,0,1.79176,True
+DAG1,AT3G61850,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,180,13.9104,0.116352,0.17599,0,1.79176,True
+DAG1,AT3G61850,Maturation_Endodermis,Endodermis,Maturation,WT,596,128,21.4765,0.174319,0.252246,0,1.94591,True
+DAG1,AT3G61850,Maturation_Endodermis,Endodermis,Maturation,fer4,330,23,6.9697,0.0519963,0.0758381,0,1.09861,True
+DAG1,AT3G61850,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,19,76,0.838166,0.985817,1.09861,1.79176,True
+DAG1,AT3G61850,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,43,75.4386,0.860235,1.03212,1.09861,2.07944,True
+DAG1,AT3G61850,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,32,60.3774,0.671545,0.858022,0.693147,1.60944,True
+DAG1,AT3G61850,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,122,68.9266,0.844604,1.06217,0.693147,2.3979,True
+DAG1,AT3G61850,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,199,61.0429,0.794579,1.07795,0.693147,2.56495,True
+DAG1,AT3G61850,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,193,69.1756,0.884297,1.13152,1.09861,2.70805,True
+DAG1,AT3G61850,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,36,94.7368,1.56981,1.76509,1.7006,2.83321,True
+DAG1,AT3G61850,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,35,100,1.53883,1.66501,1.60944,2.48491,True
+DAG1,AT3G61850,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,1,50,0.693147,0.916291,0.693147,1.38629,False
+DAG1,AT3G61850,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,15,53.5714,0.659457,0.901902,0.693147,1.94591,False
+DAG1,AT3G61850,Elongation_Protophloem,Protophloem,Elongation,WT,106,57,53.7736,0.673575,0.908715,0.693147,2.07944,True
+DAG1,AT3G61850,Elongation_Protophloem,Protophloem,Elongation,fer4,181,105,58.011,0.752339,1.04178,0.693147,2.63906,True
+DAG1,AT3G61850,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+DAG1,AT3G61850,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,4,100,0.794513,0.81093,0.693147,1.09861,False
+DAG1,AT3G61850,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,30,78.9474,0.808493,0.926762,0.693147,1.60944,True
+DAG1,AT3G61850,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,44,88,0.907392,1.00796,1.09861,1.94591,True
+DAG1,AT3G61850,Elongation_Procambium,Procambium,Elongation,WT,1056,626,59.2803,0.705627,0.945776,0.693147,2.63906,True
+DAG1,AT3G61850,Elongation_Procambium,Procambium,Elongation,fer4,1327,776,58.4778,0.673415,0.908271,0.693147,2.70805,True
+DAG1,AT3G61850,Maturation_Procambium,Procambium,Maturation,WT,182,170,93.4066,1.61752,1.81708,1.60944,3.04452,True
+DAG1,AT3G61850,Maturation_Procambium,Procambium,Maturation,fer4,189,183,96.8254,1.63719,1.79352,1.60944,2.94444,True
+DAG1,AT3G61850,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,62,62.6263,0.577017,0.723,0.693147,2.19722,True
+DAG1,AT3G61850,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,132,65.0246,0.576038,0.702951,0.693147,2.19722,True
+DAG1,AT3G61850,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,92,65.2482,0.638157,0.78134,0.693147,1.94591,True
+DAG1,AT3G61850,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,117,56.7961,0.529498,0.663588,0.693147,1.79176,True
+DAG1,AT3G61850,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,970,48.4758,0.544894,0.790228,0,2.77259,True
+DAG1,AT3G61850,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,917,48.1112,0.48684,0.667372,0,3.13549,True
+DAG1,AT3G61850,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,82,85.4167,1.12741,1.34915,1.09861,2.77259,True
+DAG1,AT3G61850,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,76,89.4118,1.01963,1.14834,1.09861,2.07944,True
+DAG1,AT3G61850,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,1.03972,1.09861,1.03972,1.38629,False
+DAG1,AT3G61850,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,1.09861,1.09861,1.09861,1.09861,False
+DAG1,AT3G61850,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,1,33.3333,0.366204,0.510826,0,1.09861,False
+DAG1,AT3G61850,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,15,93.75,1.13274,1.23474,1.24245,1.94591,False
+DAG1,AT3G61850,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,355,59.6639,0.774558,1.05452,0.693147,2.77259,True
+DAG1,AT3G61850,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,387,59.3558,0.72565,1.00095,0.693147,2.63906,True
+DAG1,AT3G61850,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,25,96.1538,1.3705,1.48684,1.38629,2.19722,False
+DAG1,AT3G61850,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,3,100,1.59583,1.67398,1.60944,2.07944,False
+DAG1,AT3G61850,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+DAG1,AT3G61850,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+DAG1,AT3G61850,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,9,29.0323,0.214316,0.279585,0,1.09861,True
+DAG1,AT3G61850,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,11,30.5556,0.242312,0.328504,0,1.38629,True
+DAG1,AT3G61850,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,48,15.047,0.125256,0.190646,0,1.60944,True
+DAG1,AT3G61850,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,45,15.2027,0.130073,0.204043,0,1.94591,True
+DAG1,AT3G61850,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,7,5.07246,0.0380978,0.0563529,0,1.09861,True
+DAG1,AT3G61850,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,2,1.48148,0.0154033,0.0291992,0,1.38629,True
+DAG1,AT3G61850,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,6,25,0.190181,0.255933,0,1.09861,False
+DAG1,AT3G61850,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,8,30.7692,0.28672,0.405465,0,1.38629,False
+DAG1,AT3G61850,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,6,30,0.248491,0.336472,0,1.09861,False
+DAG1,AT3G61850,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,20,55.5556,0.434853,0.527355,0.693147,1.38629,False
+DAG1,AT3G61850,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,122,41.7808,0.379907,0.51151,0,2.19722,True
+DAG1,AT3G61850,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,138,39.8844,0.355386,0.485063,0,2.07944,True
+OBP1,AT3G50410,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+OBP1,AT3G50410,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+OBP1,AT3G50410,Proximal Columella,Columella,Proximal Columella,WT,300,15,5,0.046995,0.0800427,0,1.38629,True
+OBP1,AT3G50410,Proximal Columella,Columella,Proximal Columella,fer4,269,17,6.3197,0.0558633,0.0888684,0,1.09861,True
+OBP1,AT3G50410,Distal Columella,Columella,Distal Columella,WT,491,0,0,0,0,0,0,True
+OBP1,AT3G50410,Distal Columella,Columella,Distal Columella,fer4,1239,4,0.322841,0.00223776,0.00322321,0,0.693147,True
+OBP1,AT3G50410,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,42,1.16086,0.00879841,0.0134525,0,1.38629,True
+OBP1,AT3G50410,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,26,0.489182,0.00420774,0.00693731,0,1.38629,True
+OBP1,AT3G50410,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,1,0.314465,0.00345476,0.00626961,0,1.09861,True
+OBP1,AT3G50410,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,4,0.445931,0.00309096,0.0044494,0,0.693147,True
+OBP1,AT3G50410,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,2,0.208551,0.00144556,0.00208333,0,0.693147,True
+OBP1,AT3G50410,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,4,0.424178,0.00294018,0.00423281,0,0.693147,True
+OBP1,AT3G50410,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,4,0.56899,0.0045207,0.0070872,0,1.09861,True
+OBP1,AT3G50410,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,2,0.353982,0.00317126,0.00529569,0,1.09861,True
+OBP1,AT3G50410,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,2,0.232558,0.00161197,0.00232288,0,0.693147,True
+OBP1,AT3G50410,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,4,0.503145,0.00399755,0.00626961,0,1.09861,True
+OBP1,AT3G50410,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,1,0.425532,0.00294956,0.00424629,0,0.693147,True
+OBP1,AT3G50410,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,0,0,0,0,0,0,True
+OBP1,AT3G50410,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,2,0.294118,0.00263494,0.00440206,0,1.09861,True
+OBP1,AT3G50410,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,1,0.243309,0.00168649,0.00243013,0,0.693147,True
+OBP1,AT3G50410,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,9,0.439668,0.00383986,0.00633068,0,1.09861,True
+OBP1,AT3G50410,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,1,0.0730994,0.000506687,0.000730727,0,0.693147,True
+OBP1,AT3G50410,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,6,0.663717,0.00460053,0.00661524,0,0.693147,True
+OBP1,AT3G50410,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,1,0.126263,0.000875186,0.00126183,0,0.693147,True
+OBP1,AT3G50410,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,3,0.584795,0.00484387,0.00776703,0,1.09861,True
+OBP1,AT3G50410,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,0,0,0,0,0,0,True
+OBP1,AT3G50410,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,1,0.75188,0.00826024,0.0149257,0,1.09861,True
+OBP1,AT3G50410,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,2,0.4329,0.00387827,0.00647251,0,1.09861,True
+OBP1,AT3G50410,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,1,0.253807,0.00278836,0.0050633,0,1.09861,True
+OBP1,AT3G50410,Elongation_Cortex,Cortex,Elongation,WT,1413,31,2.19391,0.0152071,0.0217019,0,0.693147,True
+OBP1,AT3G50410,Elongation_Cortex,Cortex,Elongation,fer4,921,20,2.17155,0.0159325,0.0236062,0,1.09861,True
+OBP1,AT3G50410,Maturation_Cortex,Cortex,Maturation,WT,397,48,12.0907,0.0878915,0.123087,0,1.09861,True
+OBP1,AT3G50410,Maturation_Cortex,Cortex,Maturation,fer4,210,10,4.7619,0.0349378,0.0510552,0,1.09861,True
+OBP1,AT3G50410,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,1,0.847458,0.00587413,0.00843887,0,0.693147,True
+OBP1,AT3G50410,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,2,0.518135,0.00464186,0.00774197,0,1.09861,True
+OBP1,AT3G50410,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,1,1.96078,0.0135911,0.0194181,0,0.693147,True
+OBP1,AT3G50410,Elongation_Endodermis,Endodermis,Elongation,WT,1246,31,2.48796,0.0182215,0.0269217,0,1.09861,True
+OBP1,AT3G50410,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,14,1.08192,0.00749927,0.0107611,0,0.693147,True
+OBP1,AT3G50410,Maturation_Endodermis,Endodermis,Maturation,WT,596,24,4.02685,0.0285923,0.0410904,0,1.09861,True
+OBP1,AT3G50410,Maturation_Endodermis,Endodermis,Maturation,fer4,330,2,0.606061,0.00420089,0.00604231,0,0.693147,True
+OBP1,AT3G50410,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,0,0,0,0,0,0,True
+OBP1,AT3G50410,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,0,0,0,0,0,0,True
+OBP1,AT3G50410,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,11,3.37423,0.0258759,0.0391027,0,1.09861,True
+OBP1,AT3G50410,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,6,2.15054,0.0188441,0.0317487,0,1.38629,True
+OBP1,AT3G50410,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,11,28.9474,0.25847,0.387766,0,1.79176,True
+OBP1,AT3G50410,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,7,20,0.164809,0.251314,0,1.60944,True
+OBP1,AT3G50410,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,0,0,0,0,0,0,False
+OBP1,AT3G50410,Elongation_Protophloem,Protophloem,Elongation,WT,106,0,0,0,0,0,0,True
+OBP1,AT3G50410,Elongation_Protophloem,Protophloem,Elongation,fer4,181,0,0,0,0,0,0,True
+OBP1,AT3G50410,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+OBP1,AT3G50410,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,0,0,0,0,0,0,True
+OBP1,AT3G50410,Elongation_Procambium,Procambium,Elongation,WT,1056,21,1.98864,0.0172892,0.029853,0,1.79176,True
+OBP1,AT3G50410,Elongation_Procambium,Procambium,Elongation,fer4,1327,15,1.13037,0.00896856,0.0142165,0,1.38629,True
+OBP1,AT3G50410,Maturation_Procambium,Procambium,Maturation,WT,182,56,30.7692,0.28565,0.416394,0,2.07944,True
+OBP1,AT3G50410,Maturation_Procambium,Procambium,Maturation,fer4,189,47,24.8677,0.202339,0.283706,0,1.60944,True
+OBP1,AT3G50410,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,11,11.1111,0.10675,0.175565,0,1.60944,True
+OBP1,AT3G50410,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,10,4.92611,0.0426537,0.0712891,0,1.60944,True
+OBP1,AT3G50410,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,2,0.970874,0.00672958,0.00966191,0,0.693147,True
+OBP1,AT3G50410,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,78,3.89805,0.0351704,0.059654,0,1.79176,True
+OBP1,AT3G50410,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,40,2.09864,0.0163994,0.0253834,0,1.38629,True
+OBP1,AT3G50410,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,56,58.3333,0.516462,0.628609,0.693147,1.38629,True
+OBP1,AT3G50410,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,43,50.5882,0.400352,0.491823,0.693147,1.38629,True
+OBP1,AT3G50410,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,0,0,0,0,0,0,False
+OBP1,AT3G50410,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,0,0,0,0,0,0,False
+OBP1,AT3G50410,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,18,3.02521,0.0223321,0.0330609,0,1.09861,True
+OBP1,AT3G50410,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,10,1.53374,0.0106311,0.015221,0,0.693147,True
+OBP1,AT3G50410,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,10,38.4615,0.375281,0.526093,0,1.60944,False
+OBP1,AT3G50410,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,1,33.3333,0.231049,0.287682,0,0.693147,False
+OBP1,AT3G50410,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+OBP1,AT3G50410,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+OBP1,AT3G50410,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,0,0,0,0,0,0,True
+OBP1,AT3G50410,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,0,0,0,0,0,0,True
+OBP1,AT3G50410,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,10,3.1348,0.0217288,0.0308666,0,0.693147,True
+OBP1,AT3G50410,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,5,1.68919,0.0117086,0.0167508,0,0.693147,True
+OBP1,AT3G50410,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,3,2.17391,0.0150684,0.0215062,0,0.693147,True
+OBP1,AT3G50410,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,3,2.22222,0.0154033,0.0219789,0,0.693147,True
+OBP1,AT3G50410,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,0,0,0,0,0,0,False
+OBP1,AT3G50410,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+OBP1,AT3G50410,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+OBP1,AT3G50410,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,12,4.10959,0.0322479,0.0500939,0,1.38629,True
+OBP1,AT3G50410,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,11,3.17919,0.0232083,0.0340942,0,1.09861,True
+OBP2,AT1G07640,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,WT,19,0,0,0,0,0,0,False
+OBP2,AT1G07640,Proliferation Domain_Quiescent Center,Quiescent Center,Proliferation Domain,fer4,6,0,0,0,0,0,0,False
+OBP2,AT1G07640,Proximal Columella,Columella,Proximal Columella,WT,300,1,0.333333,0.00231049,0.00332779,0,0.693147,True
+OBP2,AT1G07640,Proximal Columella,Columella,Proximal Columella,fer4,269,2,0.743494,0.00515351,0.00740744,0,0.693147,True
+OBP2,AT1G07640,Distal Columella,Columella,Distal Columella,WT,491,1,0.203666,0.00141171,0.00203459,0,0.693147,True
+OBP2,AT1G07640,Distal Columella,Columella,Distal Columella,fer4,1239,4,0.322841,0.00256502,0.00402739,0,1.09861,True
+OBP2,AT1G07640,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,WT,3618,26,0.718629,0.00587771,0.00935358,0,1.09861,True
+OBP2,AT1G07640,Proximal Lateral Root Cap,Lateral Root Cap,Proximal Lateral Root Cap,fer4,5315,43,0.809031,0.00598921,0.00899051,0,1.09861,True
+OBP2,AT1G07640,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,WT,318,2,0.628931,0.00563446,0.00938974,0,1.09861,True
+OBP2,AT1G07640,Distal Lateral Root Cap,Lateral Root Cap,Distal Lateral Root Cap,fer4,897,7,0.780379,0.00540918,0.0077735,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,WT,959,2,0.208551,0.00144556,0.00208333,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Atrichoblast,Atrichoblast,Proliferation Domain,fer4,943,5,0.530223,0.00367522,0.00528822,0,0.693147,True
+OBP2,AT1G07640,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,WT,703,6,0.853485,0.00822296,0.0141245,0,1.09861,True
+OBP2,AT1G07640,Transition Domain_Atrichoblast,Atrichoblast,Transition Domain,fer4,565,1,0.176991,0.00122681,0.00176835,0,0.693147,True
+OBP2,AT1G07640,Elongation_Atrichoblast,Atrichoblast,Elongation,WT,860,10,1.16279,0.00912531,0.0150032,0,1.60944,True
+OBP2,AT1G07640,Elongation_Atrichoblast,Atrichoblast,Elongation,fer4,795,7,0.880503,0.0066132,0.0100126,0,1.09861,True
+OBP2,AT1G07640,Maturation_Atrichoblast,Atrichoblast,Maturation,WT,235,3,1.2766,0.0105741,0.016878,0,1.09861,True
+OBP2,AT1G07640,Maturation_Atrichoblast,Atrichoblast,Maturation,fer4,143,1,0.699301,0.00484718,0.00696867,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,WT,680,3,0.441176,0.00425055,0.00732604,0,1.09861,True
+OBP2,AT1G07640,Proliferation Domain_Trichoblast,Trichoblast,Proliferation Domain,fer4,411,0,0,0,0,0,0,True
+OBP2,AT1G07640,Transition Domain_Trichoblast,Trichoblast,Transition Domain,WT,2047,16,0.781632,0.00581401,0.00875492,0,1.09861,True
+OBP2,AT1G07640,Transition Domain_Trichoblast,Trichoblast,Transition Domain,fer4,1368,12,0.877193,0.00696942,0.0109052,0,1.09861,True
+OBP2,AT1G07640,Elongation_Trichoblast,Trichoblast,Elongation,WT,904,3,0.331858,0.00306702,0.00551573,0,1.38629,True
+OBP2,AT1G07640,Elongation_Trichoblast,Trichoblast,Elongation,fer4,792,10,1.26263,0.00875186,0.0125472,0,0.693147,True
+OBP2,AT1G07640,Maturation_Trichoblast,Trichoblast,Maturation,WT,513,4,0.779727,0.00619504,0.0096994,0,1.09861,True
+OBP2,AT1G07640,Maturation_Trichoblast,Trichoblast,Maturation,fer4,222,1,0.45045,0.00312228,0.00449439,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Cortex,Cortex,Proliferation Domain,WT,133,4,3.00752,0.0208465,0.0296318,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Cortex,Cortex,Proliferation Domain,fer4,183,5,2.73224,0.0255854,0.0427873,0,1.09861,True
+OBP2,AT1G07640,Transition Domain_Cortex,Cortex,Transition Domain,WT,462,8,1.7316,0.0158808,0.0277499,0,1.38629,True
+OBP2,AT1G07640,Transition Domain_Cortex,Cortex,Transition Domain,fer4,394,5,1.26904,0.0108545,0.0176105,0,1.09861,True
+OBP2,AT1G07640,Elongation_Cortex,Cortex,Elongation,WT,1413,5,0.353857,0.00245275,0.00353232,0,0.693147,True
+OBP2,AT1G07640,Elongation_Cortex,Cortex,Elongation,fer4,921,8,0.868621,0.00690131,0.0107992,0,1.09861,True
+OBP2,AT1G07640,Maturation_Cortex,Cortex,Maturation,WT,397,1,0.251889,0.00174596,0.00251572,0,0.693147,True
+OBP2,AT1G07640,Maturation_Cortex,Cortex,Maturation,fer4,210,1,0.47619,0.00523149,0.00947874,0,1.09861,True
+OBP2,AT1G07640,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,WT,118,0,0,0,0,0,0,True
+OBP2,AT1G07640,Proliferation Domain_Endodermis,Endodermis,Proliferation Domain,fer4,386,16,4.14508,0.0336785,0.0529758,0,1.38629,True
+OBP2,AT1G07640,Transition Domain_Endodermis,Endodermis,Transition Domain,WT,29,0,0,0,0,0,0,True
+OBP2,AT1G07640,Transition Domain_Endodermis,Endodermis,Transition Domain,fer4,51,1,1.96078,0.0135911,0.0194181,0,0.693147,True
+OBP2,AT1G07640,Elongation_Endodermis,Endodermis,Elongation,WT,1246,13,1.04334,0.00755729,0.0111733,0,1.09861,True
+OBP2,AT1G07640,Elongation_Endodermis,Endodermis,Elongation,fer4,1294,11,0.850077,0.00651897,0.00999624,0,1.09861,True
+OBP2,AT1G07640,Maturation_Endodermis,Endodermis,Maturation,WT,596,7,1.1745,0.00814099,0.0116765,0,0.693147,True
+OBP2,AT1G07640,Maturation_Endodermis,Endodermis,Maturation,fer4,330,3,0.909091,0.00630134,0.00904984,0,0.693147,True
+OBP2,AT1G07640,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,WT,25,15,60,0.547092,0.693147,0.693147,1.94591,True
+OBP2,AT1G07640,Proliferation Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Proliferation Domain,fer4,57,44,77.193,0.830867,0.974229,0.693147,1.79176,True
+OBP2,AT1G07640,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,WT,53,25,47.1698,0.437031,0.594056,0,1.79176,True
+OBP2,AT1G07640,Transition Domain_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Transition Domain,fer4,177,108,61.0169,0.68396,0.885307,0.693147,2.30259,True
+OBP2,AT1G07640,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,WT,326,214,65.6442,0.800686,1.04506,0.693147,2.77259,True
+OBP2,AT1G07640,Elongation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Elongation,fer4,279,180,64.5161,0.717379,0.919869,0.693147,2.56495,True
+OBP2,AT1G07640,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,WT,38,32,84.2105,1.25047,1.43132,1.38629,2.30259,True
+OBP2,AT1G07640,Maturation_Metaphloem & Companion Cell,Metaphloem & Companion Cell,Maturation,fer4,35,31,88.5714,1.23175,1.38629,1.38629,2.19722,True
+OBP2,AT1G07640,Transition Domain_Protophloem,Protophloem,Transition Domain,WT,2,2,100,0.693147,0.693147,0.693147,0.693147,False
+OBP2,AT1G07640,Transition Domain_Protophloem,Protophloem,Transition Domain,fer4,28,15,53.5714,0.515694,0.65678,0.693147,1.60944,False
+OBP2,AT1G07640,Elongation_Protophloem,Protophloem,Elongation,WT,106,62,58.4906,0.672461,0.885637,0.693147,2.30259,True
+OBP2,AT1G07640,Elongation_Protophloem,Protophloem,Elongation,fer4,181,100,55.2486,0.543306,0.690381,0.693147,1.79176,True
+OBP2,AT1G07640,Proliferation Domain_Procambium,Procambium,Proliferation Domain,WT,0,0,,,,,,False
+OBP2,AT1G07640,Proliferation Domain_Procambium,Procambium,Proliferation Domain,fer4,4,1,25,0.173287,0.223144,0,0.693147,False
+OBP2,AT1G07640,Transition Domain_Procambium,Procambium,Transition Domain,WT,38,6,15.7895,0.109444,0.146603,0,0.693147,True
+OBP2,AT1G07640,Transition Domain_Procambium,Procambium,Transition Domain,fer4,50,15,30,0.238026,0.322083,0,1.38629,True
+OBP2,AT1G07640,Elongation_Procambium,Procambium,Elongation,WT,1056,156,14.7727,0.135652,0.216302,0,1.79176,True
+OBP2,AT1G07640,Elongation_Procambium,Procambium,Elongation,fer4,1327,249,18.7641,0.159073,0.238251,0,2.19722,True
+OBP2,AT1G07640,Maturation_Procambium,Procambium,Maturation,WT,182,89,48.9011,0.472142,0.624939,0,1.79176,True
+OBP2,AT1G07640,Maturation_Procambium,Procambium,Maturation,fer4,189,97,51.3228,0.495945,0.652656,0.693147,1.94591,True
+OBP2,AT1G07640,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,WT,99,2,2.0202,0.0180986,0.029853,0,1.09861,True
+OBP2,AT1G07640,Proliferation Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Proliferation Domain,fer4,203,13,6.40394,0.0566297,0.0939658,0,1.38629,True
+OBP2,AT1G07640,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,WT,141,1,0.70922,0.00491594,0.00706717,0,0.693147,True
+OBP2,AT1G07640,Transition Domain_Xylem Pole Pericycle,Xylem Pole Pericycle,Transition Domain,fer4,206,11,5.33981,0.0409493,0.0611956,0,1.09861,True
+OBP2,AT1G07640,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,WT,2001,59,2.94853,0.0249742,0.0425596,0,2.19722,True
+OBP2,AT1G07640,Elongation_Xylem Pole Pericycle,Xylem Pole Pericycle,Elongation,fer4,1906,118,6.19098,0.0514641,0.0810915,0,1.60944,True
+OBP2,AT1G07640,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,WT,96,17,17.7083,0.149856,0.223144,0,1.38629,True
+OBP2,AT1G07640,Maturation_Xylem Pole Pericycle,Xylem Pole Pericycle,Maturation,fer4,85,18,21.1765,0.185559,0.275848,0,1.38629,True
+OBP2,AT1G07640,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,WT,2,2,100,0.89588,0.916291,0.89588,1.09861,False
+OBP2,AT1G07640,Proliferation Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Proliferation Domain,fer4,2,2,100,0.89588,0.916291,0.89588,1.09861,False
+OBP2,AT1G07640,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,WT,3,1,33.3333,0.462098,0.693147,0,1.38629,False
+OBP2,AT1G07640,Transition Domain_Phloem Pole Pericycle,Phloem Pole Pericycle,Transition Domain,fer4,16,16,100,1.14364,1.1977,1.24245,1.60944,False
+OBP2,AT1G07640,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,WT,595,315,52.9412,0.548995,0.729455,0.693147,2.07944,True
+OBP2,AT1G07640,Elongation_Phloem Pole Pericycle,Phloem Pole Pericycle,Elongation,fer4,652,342,52.454,0.520165,0.683902,0.693147,2.07944,True
+OBP2,AT1G07640,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,WT,26,22,84.6154,1.19033,1.38629,1.38629,2.3979,False
+OBP2,AT1G07640,Maturation_Phloem Pole Pericycle,Phloem Pole Pericycle,Maturation,fer4,3,3,100,1.2904,1.29928,1.38629,1.38629,False
+OBP2,AT1G07640,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,WT,1,0,0,0,0,0,0,False
+OBP2,AT1G07640,Proliferation Domain_Protoxylem,Protoxylem,Proliferation Domain,fer4,0,0,,,,,,False
+OBP2,AT1G07640,Transition Domain_Protoxylem,Protoxylem,Transition Domain,WT,31,2,6.45161,0.0447192,0.0625204,0,0.693147,True
+OBP2,AT1G07640,Transition Domain_Protoxylem,Protoxylem,Transition Domain,fer4,36,0,0,0,0,0,0,True
+OBP2,AT1G07640,Elongation_Protoxylem,Protoxylem,Elongation,WT,319,6,1.88088,0.0143083,0.0217063,0,1.09861,True
+OBP2,AT1G07640,Elongation_Protoxylem,Protoxylem,Elongation,fer4,296,1,0.337838,0.00234171,0.00337268,0,0.693147,True
+OBP2,AT1G07640,Maturation_Protoxylem,Protoxylem,Maturation,WT,138,0,0,0,0,0,0,True
+OBP2,AT1G07640,Maturation_Protoxylem,Protoxylem,Maturation,fer4,135,0,0,0,0,0,0,True
+OBP2,AT1G07640,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,WT,24,1,4.16667,0.0457755,0.0800427,0,1.09861,False
+OBP2,AT1G07640,Proliferation Domain_Metaxylem,Metaxylem,Proliferation Domain,fer4,26,0,0,0,0,0,0,False
+OBP2,AT1G07640,Transition Domain_Metaxylem,Metaxylem,Transition Domain,WT,20,0,0,0,0,0,0,False
+OBP2,AT1G07640,Transition Domain_Metaxylem,Metaxylem,Transition Domain,fer4,36,0,0,0,0,0,0,False
+OBP2,AT1G07640,Elongation_Metaxylem,Metaxylem,Elongation,WT,292,3,1.0274,0.00712138,0.0102216,0,0.693147,True
+OBP2,AT1G07640,Elongation_Metaxylem,Metaxylem,Elongation,fer4,346,5,1.44509,0.0100166,0.0143474,0,0.693147,True

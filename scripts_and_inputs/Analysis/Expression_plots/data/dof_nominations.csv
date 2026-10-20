@@ -1,0 +1,46 @@
+symbol,agi,cluster,more_central_in,r_WT,r_fer4,drank,log2FC,p_adj,status,cells_WT,cells_fer4
+CDF4,AT2G34140,Maturation_Endodermis,WT,91,489,398,-0.372,0.896,"tested, not DE",596,330
+COG1,AT1G29160,Maturation_Endodermis,WT,47,489,442,0.481,0.543,"tested, not DE",596,330
+COG1,AT1G29160,Maturation_Phloem Pole Pericycle,WT,53,364,311,,,cluster not DE-eligible,26,3
+COG1,AT1G29160,Proliferation Domain_Endodermis,WT,41,207,166,0.821,1.0,"tested, not DE",118,386
+COG1,AT1G29160,Proximal Columella,fer-4,203,32,-171,-0.247,0.923,"tested, not DE",300,269
+COG1,AT1G29160,Transition Domain_Xylem Pole Pericycle,fer-4,417,28,-389,1.08,0.000418,DE,141,206
+DAG1,AT3G61850,Maturation_Phloem Pole Pericycle,WT,83,230,147,,,cluster not DE-eligible,26,3
+DAG1,AT3G61850,Maturation_Endodermis,fer-4,183,39,-144,-1.28,0.000159,DE,596,330
+DAG1,AT3G61850,Proliferation Domain_Cortex,fer-4,215,14,-201,1.42,0.577,"tested, not DE",133,183
+DOF2.2,AT2G28810,Elongation_Protoxylem,WT,22,195,173,0.456,0.994,"tested, not DE",319,296
+DOF2.2,AT2G28810,Maturation_Phloem Pole Pericycle,WT,44,667,623,,,cluster not DE-eligible,26,3
+DOF2.2,AT2G28810,Proliferation Domain_Endodermis,WT,14,481,467,1.34,1.0,"tested, not DE",118,386
+DOF2.2,AT2G28810,Transition Domain_Endodermis,WT,5,495,490,-0.168,1.0,"tested, not DE",29,51
+DOF2.2,AT2G28810,Maturation_Cortex,fer-4,394,68,-326,1.15,0.896,"tested, not DE",397,210
+DOF2.2,AT2G28810,Proliferation Domain_Metaxylem,fer-4,324,62,-262,,,cluster not DE-eligible,24,26
+DOF2.2,AT2G28810,Transition Domain_Xylem Pole Pericycle,fer-4,357,6,-351,1.38,0.0859,"tested, not DE",141,206
+DOF4.1,AT4G00940,Elongation_Endodermis,WT,55,521,466,-1.04,1.0,"tested, not DE",1246,1294
+DOF4.1,AT4G00940,Maturation_Cortex,WT,86,363,277,2.59,0.859,"tested, not DE",397,210
+DOF4.1,AT4G00940,Maturation_Phloem Pole Pericycle,WT,66,381,315,,,cluster not DE-eligible,26,3
+DOF4.1,AT4G00940,Proximal Columella,WT,6,204,198,,,gene not tested here,300,269
+DOF4.1,AT4G00940,Maturation_Metaphloem & Companion Cell,fer-4,180,29,-151,,,gene not tested here,38,35
+DOF4.1,AT4G00940,Transition Domain_Cortex,fer-4,491,12,-479,2.55,0.961,"tested, not DE",462,394
+DOF4.6,AT4G24060,Distal Lateral Root Cap,WT,72,610,538,0.223,0.983,"tested, not DE",318,897
+DOF4.6,AT4G24060,Proliferation Domain_Endodermis,WT,10,340,330,0.2,1.0,"tested, not DE",118,386
+DOF4.6,AT4G24060,Maturation_Endodermis,fer-4,258,49,-209,-0.812,0.00756,DE,596,330
+DOF4.6,AT4G24060,Proximal Columella,fer-4,295,78,-217,-0.247,0.956,"tested, not DE",300,269
+DOF4.6,AT4G24060,Transition Domain_Atrichoblast,fer-4,247,45,-202,1.48,0.206,"tested, not DE",703,565
+DOF6,AT3G45610,Proliferation Domain_Phloem Pole Pericycle,fer-4,408,36,-372,,,cluster not DE-eligible,2,2
+DOF6,AT3G45610,Transition Domain_Protophloem,fer-4,631,72,-559,,,cluster not DE-eligible,2,28
+DOF6,AT3G45610,Transition Domain_Protoxylem,fer-4,230,1,-229,-0.459,0.994,"tested, not DE",31,36
+OBP1,AT3G50410,Distal Columella,fer-4,286,61,-225,3.53,0.944,"tested, not DE",491,1239
+OBP1,AT3G50410,Elongation_Protophloem,fer-4,279,38,-241,2.4,1.0,"tested, not DE",106,181
+OBP2,AT1G07640,Maturation_Phloem Pole Pericycle,WT,4,295,291,,,cluster not DE-eligible,26,3
+OBP2,AT1G07640,Maturation_Protoxylem,WT,81,214,133,2.24,0.999,"tested, not DE",138,135
+OBP2,AT1G07640,Proliferation Domain_Endodermis,WT,13,503,490,6.6,1.0,"tested, not DE",118,386
+OBP2,AT1G07640,Maturation_Trichoblast,fer-4,160,30,-130,-1.07,0.961,"tested, not DE",513,222
+OBP2,AT1G07640,Transition Domain_Atrichoblast,fer-4,275,80,-195,-1.38,0.987,"tested, not DE",703,565
+OBP2,AT1G07640,Transition Domain_Protophloem,fer-4,244,89,-155,,,cluster not DE-eligible,2,28
+OBP2,AT1G07640,Transition Domain_Xylem Pole Pericycle,fer-4,749,49,-700,1.9,0.0514,"tested, not DE",141,206
+OBP3,AT3G55370,Maturation_Protoxylem,WT,20,256,236,-1.46,0.999,"tested, not DE",138,135
+OBP3,AT3G55370,Proliferation Domain_Endodermis,WT,35,695,660,7.63,0.116,"tested, not DE",118,386
+OBP3,AT3G55370,Transition Domain_Endodermis,WT,47,753,706,-0.0866,1.0,"tested, not DE",29,51
+OBP3,AT3G55370,Elongation_Trichoblast,fer-4,602,51,-551,-0.662,0.899,"tested, not DE",904,792
+OBP3,AT3G55370,Proliferation Domain_Xylem Pole Pericycle,fer-4,329,44,-285,0.418,0.954,"tested, not DE",99,203
+OBP3,AT3G55370,Transition Domain_Protoxylem,fer-4,254,90,-164,0.47,0.994,"tested, not DE",31,36

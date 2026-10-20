@@ -1,0 +1,395 @@
+symbol,agi,cluster,logFC,p_adj.loc,WT.frq,fer_4.frq,DE
+DOF6,AT3G45610,Elongation_Protoxylem,1.39,4.98e-05,0.144,0.236,True
+DAG1,AT3G61850,Maturation_Endodermis,-1.28,0.000161,0.295,0.0848,True
+YUC5,AT5G43890,Elongation_Phloem Pole Pericycle,0.548,0.000222,0.405,0.463,False
+YUC5,AT5G43890,Maturation_Xylem Pole Pericycle,-1.29,0.000377,0.552,0.506,True
+COG1,AT1G29160,Transition Domain_Xylem Pole Pericycle,1.08,0.000421,0.206,0.369,True
+OBP2,AT1G07640,Elongation_Xylem Pole Pericycle,1.1,0.000729,0.0395,0.086,False
+CDF4,AT2G34140,Elongation_Phloem Pole Pericycle,-0.633,0.00239,0.345,0.209,True
+OBP2,AT1G07640,Transition Domain_Metaphloem & Companion Cell,0.98,0.00533,0.472,0.61,True
+DOF4.1,AT4G00940,Elongation_Metaxylem,1.32,0.0075,0.089,0.127,True
+DOF4.6,AT4G24060,Maturation_Endodermis,-0.812,0.0076,0.409,0.182,True
+OBP1,AT3G50410,Elongation_Xylem Pole Pericycle,-0.899,0.00798,0.0465,0.0357,False
+COG1,AT1G29160,Transition Domain_Cortex,-1.73,0.00892,0.11,0.0381,True
+YUC5,AT5G43890,Transition Domain_Atrichoblast,1.24,0.0128,0.0469,0.085,False
+CDF4,AT2G34140,Proliferation Domain_Xylem Pole Pericycle,-1.11,0.0144,0.253,0.128,True
+YUC5,AT5G43890,Transition Domain_Procambium,1.88,0.0162,0.184,0.26,True
+OBP1,AT3G50410,Maturation_Cortex,-1.59,0.0211,0.209,0.0619,True
+YUC5,AT5G43890,Transition Domain_Metaphloem & Companion Cell,1.19,0.0216,0.226,0.294,True
+YUC5,AT5G43890,Distal Lateral Root Cap,1.69,0.0307,0.0377,0.0747,False
+OBP2,AT1G07640,Transition Domain_Xylem Pole Pericycle,1.9,0.0514,0.0355,0.0825,False
+YUC5,AT5G43890,Maturation_Procambium,1.06,0.0707,0.467,0.688,False
+OBP1,AT3G50410,Proximal Lateral Root Cap,-1.05,0.0711,0.0119,0.00546,False
+OBP3,AT3G55370,Proliferation Domain_Endodermis,7.64,0.073,0,0.101,False
+DOF2.2,AT2G28810,Transition Domain_Xylem Pole Pericycle,1.38,0.0857,0.0567,0.102,False
+CDF4,AT2G34140,Elongation_Xylem Pole Pericycle,-0.364,0.111,0.095,0.0813,False
+COG1,AT1G29160,Transition Domain_Metaphloem & Companion Cell,0.473,0.114,0.66,0.831,False
+DAG1,AT3G61850,Transition Domain_Metaphloem & Companion Cell,0.598,0.114,0.604,0.695,False
+YUC5,AT5G43890,Transition Domain_Xylem Pole Pericycle,1.49,0.118,0.0496,0.117,False
+COG1,AT1G29160,Elongation_Phloem Pole Pericycle,-0.245,0.122,0.896,0.842,False
+OBP1,AT3G50410,Transition Domain_Xylem Pole Pericycle,5.98,0.141,0,0.0194,False
+DOF2.2,AT2G28810,Elongation_Xylem Pole Pericycle,0.451,0.152,0.075,0.095,False
+DOF6,AT3G45610,Maturation_Xylem Pole Pericycle,-1.4,0.158,0.115,0.118,False
+DAG1,AT3G61850,Elongation_Xylem Pole Pericycle,-0.233,0.159,0.511,0.519,False
+OBP3,AT3G55370,Elongation_Phloem Pole Pericycle,-0.322,0.165,0.652,0.548,False
+OBP2,AT1G07640,Proliferation Domain_Xylem Pole Pericycle,1.25,0.174,0.0909,0.108,False
+CDF4,AT2G34140,Proximal Lateral Root Cap,-0.225,0.185,0.156,0.132,False
+YUC5,AT5G43890,Proliferation Domain_Endodermis,4.38,0.191,0.00847,0.119,False
+CDF4,AT2G34140,Elongation_Metaxylem,0.68,0.2,0.0925,0.11,False
+YUC5,AT5G43890,Elongation_Endodermis,0.651,0.22,0.0682,0.0757,False
+CDF4,AT2G34140,Elongation_Endodermis,-1.14,0.223,0.0345,0.0155,False
+OBP3,AT3G55370,Elongation_Procambium,-0.299,0.247,0.302,0.261,False
+OBP3,AT3G55370,Proximal Lateral Root Cap,0.778,0.268,0.00608,0.00978,False
+COG1,AT1G29160,Maturation_Trichoblast,-0.971,0.302,0.138,0.0991,False
+COG1,AT1G29160,Elongation_Metaphloem & Companion Cell,-0.322,0.31,0.718,0.717,False
+DOF6,AT3G45610,Elongation_Procambium,-0.703,0.314,0.0189,0.0158,False
+OBP1,AT3G50410,Maturation_Trichoblast,-5.56,0.318,0.0156,0,False
+DOF2.2,AT2G28810,Proximal Lateral Root Cap,0.85,0.326,0.00442,0.00696,False
+DOF4.1,AT4G00940,Elongation_Phloem Pole Pericycle,1.89,0.33,0.00504,0.0153,False
+DOF4.1,AT4G00940,Elongation_Xylem Pole Pericycle,-0.534,0.354,0.0305,0.0226,False
+COG1,AT1G29160,Proximal Lateral Root Cap,-0.137,0.359,0.322,0.277,False
+DOF4.6,AT4G24060,Proximal Lateral Root Cap,0.376,0.366,0.0238,0.0309,False
+CDF4,AT2G34140,Transition Domain_Xylem Pole Pericycle,1.49,0.368,0.0496,0.0631,False
+CDF4,AT2G34140,Elongation_Trichoblast,-1.06,0.374,0.0321,0.0114,False
+OBP1,AT3G50410,Maturation_Endodermis,-1.48,0.379,0.0503,0.00909,False
+COG1,AT1G29160,Distal Lateral Root Cap,0.624,0.4,0.525,0.635,False
+DOF4.6,AT4G24060,Transition Domain_Atrichoblast,1.21,0.412,0.0171,0.0389,False
+OBP2,AT1G07640,Transition Domain_Procambium,1.2,0.416,0.237,0.34,False
+YUC5,AT5G43890,Maturation_Cortex,-5.09,0.419,0.0252,0,False
+OBP1,AT3G50410,Elongation_Trichoblast,-2.88,0.439,0.00996,0.00126,False
+DOF2.2,AT2G28810,Distal Columella,5.21,0.442,0,0.00888,False
+DOF4.6,AT4G24060,Elongation_Xylem Pole Pericycle,-0.148,0.464,0.419,0.43,False
+OBP2,AT1G07640,Elongation_Procambium,0.234,0.469,0.161,0.216,False
+YUC5,AT5G43890,Elongation_Procambium,0.205,0.482,0.305,0.301,False
+DOF2.2,AT2G28810,Elongation_Metaphloem & Companion Cell,-0.377,0.49,0.497,0.484,False
+CDF4,AT2G34140,Distal Columella,0.346,0.493,0.13,0.166,False
+COG1,AT1G29160,Maturation_Endodermis,0.51,0.504,0.0822,0.0788,False
+COG1,AT1G29160,Elongation_Metaxylem,0.573,0.506,0.137,0.153,False
+OBP1,AT3G50410,Proliferation Domain_Xylem Pole Pericycle,-0.754,0.509,0.152,0.0739,False
+DOF4.1,AT4G00940,Maturation_Endodermis,-0.307,0.513,0.388,0.221,False
+CDF4,AT2G34140,Maturation_Xylem Pole Pericycle,-0.558,0.534,0.823,0.706,False
+CDF4,AT2G34140,Transition Domain_Metaphloem & Companion Cell,-0.86,0.535,0.264,0.175,False
+DOF4.6,AT4G24060,Maturation_Xylem Pole Pericycle,-0.551,0.542,0.917,0.859,False
+DAG1,AT3G61850,Proliferation Domain_Cortex,1.43,0.545,0.0526,0.0765,False
+DAG1,AT3G61850,Elongation_Cortex,-0.46,0.558,0.0566,0.0597,False
+DOF6,AT3G45610,Maturation_Endodermis,2.06,0.56,0.00671,0.00909,False
+DOF6,AT3G45610,Elongation_Trichoblast,-2.68,0.565,0.00553,0.00126,False
+YUC5,AT5G43890,Maturation_Trichoblast,-1.76,0.571,0.039,0.018,False
+COG1,AT1G29160,Elongation_Trichoblast,-0.424,0.573,0.119,0.0947,False
+DOF6,AT3G45610,Maturation_Cortex,3.13,0.59,0.00252,0.00476,False
+OBP3,AT3G55370,Elongation_Atrichoblast,-1.32,0.601,0.0186,0.0101,False
+YUC5,AT5G43890,Elongation_Trichoblast,-0.689,0.605,0.0387,0.0227,False
+DOF4.6,AT4G24060,Elongation_Trichoblast,0.672,0.614,0.0288,0.0391,False
+DOF4.6,AT4G24060,Proliferation Domain_Trichoblast,-1.01,0.62,0.0412,0.0243,False
+YUC5,AT5G43890,Proximal Lateral Root Cap,-0.125,0.633,0.141,0.136,False
+DOF6,AT3G45610,Proximal Lateral Root Cap,0.547,0.634,0.00359,0.00659,False
+DOF4.6,AT4G24060,Elongation_Procambium,-0.15,0.647,0.316,0.306,False
+YUC5,AT5G43890,Elongation_Protoxylem,1.07,0.656,0.0313,0.0372,False
+OBP2,AT1G07640,Maturation_Cortex,1.98,0.665,0.00756,0.0286,False
+YUC5,AT5G43890,Elongation_Xylem Pole Pericycle,-0.162,0.673,0.169,0.239,False
+DOF4.6,AT4G24060,Transition Domain_Xylem Pole Pericycle,-0.319,0.68,0.688,0.621,False
+DOF4.1,AT4G00940,Proximal Lateral Root Cap,0.782,0.683,0.00193,0.00245,False
+OBP2,AT1G07640,Elongation_Metaphloem & Companion Cell,-0.272,0.689,0.66,0.649,False
+DOF2.2,AT2G28810,Elongation_Phloem Pole Pericycle,-0.16,0.704,0.657,0.581,False
+OBP1,AT3G50410,Elongation_Phloem Pole Pericycle,-0.569,0.705,0.0403,0.0215,False
+COG1,AT1G29160,Elongation_Cortex,-0.349,0.711,0.0679,0.0651,False
+DOF4.1,AT4G00940,Elongation_Trichoblast,-2.39,0.724,0.00442,0.00126,False
+OBP3,AT3G55370,Maturation_Trichoblast,-2.61,0.726,0.0273,0.0045,False
+DOF6,AT3G45610,Elongation_Metaxylem,1.38,0.729,0.0103,0.0145,False
+OBP1,AT3G50410,Elongation_Procambium,-0.328,0.748,0.0237,0.0234,False
+DOF2.2,AT2G28810,Proliferation Domain_Xylem Pole Pericycle,1.73,0.748,0.0303,0.0394,False
+DAG1,AT3G61850,Elongation_Phloem Pole Pericycle,0.121,0.761,0.608,0.604,False
+OBP3,AT3G55370,Maturation_Cortex,-3.87,0.771,0.0101,0,False
+OBP2,AT1G07640,Elongation_Cortex,1.1,0.772,0.00495,0.013,False
+DOF4.1,AT4G00940,Elongation_Cortex,-1.44,0.772,0.00425,0.00326,False
+DOF4.6,AT4G24060,Maturation_Cortex,0.783,0.773,0.0403,0.0333,False
+DOF4.6,AT4G24060,Maturation_Atrichoblast,1.2,0.785,0.034,0.0769,False
+OBP2,AT1G07640,Proximal Lateral Root Cap,0.266,0.804,0.00719,0.00884,False
+DOF2.2,AT2G28810,Transition Domain_Metaphloem & Companion Cell,0.411,0.815,0.396,0.565,False
+DAG1,AT3G61850,Elongation_Procambium,0.0793,0.822,0.599,0.597,False
+YUC5,AT5G43890,Maturation_Endodermis,-0.673,0.823,0.0302,0.00909,False
+OBP1,AT3G50410,Elongation_Cortex,0.303,0.829,0.0382,0.0478,False
+COG1,AT1G29160,Elongation_Procambium,0.0707,0.831,0.518,0.551,False
+DAG1,AT3G61850,Transition Domain_Cortex,-0.838,0.837,0.0541,0.0381,False
+DOF6,AT3G45610,Elongation_Phloem Pole Pericycle,-0.17,0.842,0.0958,0.092,False
+COG1,AT1G29160,Elongation_Xylem Pole Pericycle,0.0534,0.842,0.336,0.356,False
+DAG1,AT3G61850,Proliferation Domain_Xylem Pole Pericycle,0.228,0.846,0.747,0.783,False
+DOF4.1,AT4G00940,Maturation_Trichoblast,-2.32,0.856,0.0136,0.0045,False
+YUC5,AT5G43890,Elongation_Cortex,0.409,0.86,0.0184,0.0304,False
+DOF4.1,AT4G00940,Maturation_Cortex,2.59,0.861,0,0.00476,False
+OBP2,AT1G07640,Elongation_Phloem Pole Pericycle,0.0968,0.863,0.541,0.541,False
+OBP2,AT1G07640,Elongation_Metaxylem,0.971,0.871,0.024,0.0462,False
+CDF4,AT2G34140,Transition Domain_Atrichoblast,-1.23,0.874,0.0228,0.00885,False
+DAG1,AT3G61850,Transition Domain_Xylem Pole Pericycle,-0.249,0.874,0.73,0.621,False
+DOF2.2,AT2G28810,Elongation_Procambium,-0.0743,0.878,0.176,0.188,False
+OBP2,AT1G07640,Proliferation Domain_Trichoblast,-1.55,0.878,0.00588,0.00487,False
+DOF6,AT3G45610,Elongation_Xylem Pole Pericycle,0.126,0.886,0.022,0.0278,False
+OBP3,AT3G55370,Elongation_Cortex,-0.95,0.887,0.00566,0.00326,False
+CDF4,AT2G34140,Elongation_Cortex,-0.432,0.887,0.0177,0.0152,False
+CDF4,AT2G34140,Maturation_Cortex,0.502,0.892,0.0252,0.0286,False
+DOF4.6,AT4G24060,Elongation_Metaxylem,0.211,0.895,0.476,0.54,False
+CDF4,AT2G34140,Maturation_Endodermis,-0.372,0.896,0.0168,0.0212,False
+CDF4,AT2G34140,Proximal Columella,-0.517,0.896,0.24,0.175,False
+OBP3,AT3G55370,Elongation_Trichoblast,-0.752,0.897,0.0133,0.0101,False
+DOF2.2,AT2G28810,Maturation_Cortex,1.15,0.897,0.00504,0.00952,False
+DAG1,AT3G61850,Proximal Lateral Root Cap,0.0716,0.897,0.0304,0.0374,False
+CDF4,AT2G34140,Proliferation Domain_Cortex,0.561,0.899,0.158,0.153,False
+CDF4,AT2G34140,Proliferation Domain_Trichoblast,-0.781,0.902,0.0176,0.017,False
+OBP2,AT1G07640,Transition Domain_Cortex,-1.35,0.902,0.0195,0.0127,False
+DOF4.6,AT4G24060,Elongation_Phloem Pole Pericycle,-0.0657,0.904,0.42,0.403,False
+OBP2,AT1G07640,Elongation_Trichoblast,0.433,0.904,0.0111,0.0152,False
+DOF2.2,AT2G28810,Elongation_Trichoblast,-0.544,0.904,0.0144,0.0101,False
+OBP3,AT3G55370,Maturation_Endodermis,-0.317,0.904,0.0252,0.0121,False
+DOF2.2,AT2G28810,Maturation_Endodermis,-0.733,0.904,0.0101,0.00303,False
+CDF4,AT2G34140,Elongation_Procambium,0.0526,0.905,0.177,0.172,False
+CDF4,AT2G34140,Maturation_Trichoblast,-1.17,0.906,0.0312,0.018,False
+COG1,AT1G29160,Transition Domain_Atrichoblast,-0.29,0.908,0.445,0.368,False
+DOF4.6,AT4G24060,Elongation_Endodermis,-0.329,0.911,0.523,0.437,False
+YUC5,AT5G43890,Proximal Columella,0.741,0.912,0.02,0.0372,False
+DOF6,AT3G45610,Proximal Columella,2.31,0.912,0,0.00372,False
+OBP1,AT3G50410,Proximal Columella,0.382,0.912,0.0533,0.0743,False
+OBP3,AT3G55370,Proximal Columella,2.33,0.912,0,0.00372,False
+DAG1,AT3G61850,Proximal Columella,-0.551,0.912,0.03,0.0372,False
+DOF2.2,AT2G28810,Proximal Columella,1.44,0.912,0.00333,0.0112,False
+DOF6,AT3G45610,Elongation_Cortex,-0.614,0.915,0.00495,0.00434,False
+DOF4.6,AT4G24060,Elongation_Cortex,-0.183,0.915,0.0318,0.0347,False
+OBP3,AT3G55370,Elongation_Xylem Pole Pericycle,-0.0372,0.917,0.197,0.193,False
+DOF6,AT3G45610,Proliferation Domain_Trichoblast,-0.993,0.917,0.0132,0.0073,False
+OBP3,AT3G55370,Proliferation Domain_Trichoblast,-1.13,0.917,0.0132,0.0073,False
+CDF4,AT2G34140,Elongation_Atrichoblast,-0.664,0.918,0.014,0.0126,False
+COG1,AT1G29160,Maturation_Cortex,0.174,0.92,0.0756,0.0762,False
+OBP2,AT1G07640,Elongation_Atrichoblast,-0.569,0.921,0.014,0.0126,False
+YUC5,AT5G43890,Elongation_Atrichoblast,0.31,0.921,0.0279,0.0365,False
+DOF6,AT3G45610,Elongation_Atrichoblast,-1.56,0.921,0.00581,0.00252,False
+OBP1,AT3G50410,Elongation_Atrichoblast,0.871,0.921,0.00233,0.00629,False
+DOF4.6,AT4G24060,Elongation_Atrichoblast,0.263,0.921,0.0302,0.0428,False
+COG1,AT1G29160,Proliferation Domain_Trichoblast,-0.0956,0.922,0.325,0.35,False
+YUC5,AT5G43890,Proliferation Domain_Trichoblast,-0.191,0.922,0.0779,0.073,False
+DAG1,AT3G61850,Maturation_Cortex,0.155,0.923,0.106,0.1,False
+DOF4.1,AT4G00940,Elongation_Atrichoblast,1.23,0.926,0.00116,0.00377,False
+DAG1,AT3G61850,Elongation_Trichoblast,-0.151,0.928,0.0597,0.0631,False
+DOF2.2,AT2G28810,Elongation_Metaxylem,0.468,0.93,0.0719,0.0751,False
+COG1,AT1G29160,Proliferation Domain_Atrichoblast,-0.219,0.931,0.416,0.366,False
+DAG1,AT3G61850,Proliferation Domain_Atrichoblast,0.246,0.931,0.0386,0.0467,False
+DOF4.1,AT4G00940,Proliferation Domain_Atrichoblast,-1.53,0.931,0.00417,0.00106,False
+DOF4.6,AT4G24060,Proliferation Domain_Atrichoblast,0.326,0.931,0.0334,0.0371,False
+DOF2.2,AT2G28810,Elongation_Cortex,-0.497,0.932,0.00495,0.00434,False
+YUC5,AT5G43890,Elongation_Metaxylem,-0.158,0.932,0.243,0.237,False
+OBP3,AT3G55370,Elongation_Metaxylem,-0.716,0.932,0.0137,0.0116,False
+OBP3,AT3G55370,Transition Domain_Xylem Pole Pericycle,0.34,0.932,0.213,0.218,False
+DAG1,AT3G61850,Elongation_Metaphloem & Companion Cell,0.13,0.937,0.61,0.695,False
+CDF4,AT2G34140,Elongation_Metaphloem & Companion Cell,-0.156,0.937,0.242,0.233,False
+DAG1,AT3G61850,Elongation_Atrichoblast,-0.141,0.939,0.0407,0.0503,False
+OBP2,AT1G07640,Maturation_Endodermis,-0.277,0.94,0.0151,0.00909,False
+COG1,AT1G29160,Proximal Columella,-0.237,0.944,0.0733,0.0632,False
+OBP1,AT3G50410,Distal Columella,3.55,0.948,0,0.00323,False
+DOF4.1,AT4G00940,Distal Columella,3.27,0.948,0,0.00242,False
+OBP2,AT1G07640,Distal Columella,0.809,0.949,0.00204,0.00404,False
+COG1,AT1G29160,Distal Columella,-0.205,0.949,0.0611,0.0549,False
+DAG1,AT3G61850,Distal Columella,0.191,0.949,0.0326,0.0387,False
+COG1,AT1G29160,Proliferation Domain_Xylem Pole Pericycle,-0.213,0.953,0.273,0.251,False
+YUC5,AT5G43890,Proliferation Domain_Xylem Pole Pericycle,0.352,0.953,0.101,0.133,False
+OBP3,AT3G55370,Proliferation Domain_Xylem Pole Pericycle,0.419,0.953,0.121,0.163,False
+DOF4.6,AT4G24060,Proliferation Domain_Xylem Pole Pericycle,-0.138,0.953,0.788,0.749,False
+DOF4.6,AT4G24060,Distal Columella,-0.194,0.955,0.0204,0.0178,False
+DOF4.6,AT4G24060,Maturation_Trichoblast,-0.642,0.955,0.0565,0.0495,False
+OBP2,AT1G07640,Maturation_Xylem Pole Pericycle,0.471,0.956,0.323,0.494,False
+OBP2,AT1G07640,Maturation_Trichoblast,-1.2,0.957,0.0156,0.00901,False
+DOF6,AT3G45610,Maturation_Trichoblast,-3.09,0.957,0.00585,0,False
+DAG1,AT3G61850,Maturation_Trichoblast,-0.346,0.957,0.119,0.14,False
+DOF6,AT3G45610,Transition Domain_Metaphloem & Companion Cell,0.189,0.961,0.189,0.169,False
+OBP3,AT3G55370,Transition Domain_Metaphloem & Companion Cell,-0.172,0.961,0.585,0.565,False
+DOF4.6,AT4G24060,Transition Domain_Metaphloem & Companion Cell,0.344,0.961,0.453,0.429,False
+OBP1,AT3G50410,Maturation_Procambium,-0.633,0.962,0.308,0.27,False
+OBP2,AT1G07640,Proliferation Domain_Cortex,1.04,0.962,0.0301,0.0383,False
+COG1,AT1G29160,Proliferation Domain_Cortex,-0.36,0.962,0.113,0.071,False
+DOF6,AT3G45610,Proliferation Domain_Cortex,-1.28,0.962,0.0226,0.0109,False
+DOF2.2,AT2G28810,Proliferation Domain_Cortex,-2.33,0.962,0.00752,0,False
+DOF4.1,AT4G00940,Proliferation Domain_Cortex,2.99,0.962,0,0.0109,False
+DOF4.6,AT4G24060,Proliferation Domain_Cortex,0.521,0.962,0.0451,0.082,False
+YUC5,AT5G43890,Transition Domain_Cortex,-0.351,0.963,0.0411,0.0305,False
+DOF6,AT3G45610,Transition Domain_Cortex,-1.01,0.963,0.0152,0.00508,False
+OBP1,AT3G50410,Transition Domain_Cortex,0.804,0.963,0.00649,0.00761,False
+OBP3,AT3G55370,Transition Domain_Cortex,-1.67,0.963,0.00866,0.00254,False
+CDF4,AT2G34140,Transition Domain_Cortex,-1.6,0.963,0.0195,0.00508,False
+DOF4.1,AT4G00940,Transition Domain_Cortex,2.55,0.963,0,0.00254,False
+DOF4.6,AT4G24060,Transition Domain_Cortex,0.368,0.963,0.0455,0.0508,False
+DAG1,AT3G61850,Elongation_Metaxylem,0.0714,0.965,0.459,0.503,False
+COG1,AT1G29160,Elongation_Atrichoblast,-0.0707,0.966,0.185,0.184,False
+DOF2.2,AT2G28810,Elongation_Atrichoblast,0.242,0.967,0.00814,0.00755,False
+OBP1,AT3G50410,Proliferation Domain_Atrichoblast,0.713,0.968,0.00209,0.0053,False
+COG1,AT1G29160,Maturation_Xylem Pole Pericycle,0.198,0.969,0.76,0.729,False
+OBP1,AT3G50410,Maturation_Xylem Pole Pericycle,-0.249,0.969,0.729,0.682,False
+OBP3,AT3G55370,Maturation_Xylem Pole Pericycle,-0.303,0.969,0.427,0.435,False
+DOF2.2,AT2G28810,Maturation_Xylem Pole Pericycle,-1.33,0.969,0.115,0.0353,False
+DOF4.1,AT4G00940,Maturation_Xylem Pole Pericycle,0.302,0.969,0.302,0.259,False
+DOF6,AT3G45610,Proliferation Domain_Xylem Pole Pericycle,-0.235,0.969,0.0606,0.0542,False
+OBP2,AT1G07640,Proximal Columella,0.823,0.97,0.00333,0.00743,False
+DOF4.6,AT4G24060,Proximal Columella,-0.237,0.97,0.0267,0.0372,False
+DOF4.1,AT4G00940,Elongation_Metaphloem & Companion Cell,-1.09,0.973,0.00307,0.00358,False
+DOF2.2,AT2G28810,Proliferation Domain_Atrichoblast,0.455,0.973,0.00626,0.00742,False
+DOF6,AT3G45610,Proliferation Domain_Atrichoblast,-0.333,0.975,0.00938,0.0117,False
+COG1,AT1G29160,Maturation_Atrichoblast,-0.697,0.977,0.106,0.0629,False
+DOF6,AT3G45610,Maturation_Atrichoblast,-3.02,0.977,0.0128,0,False
+OBP1,AT3G50410,Maturation_Atrichoblast,-2.4,0.977,0.00426,0,False
+CDF4,AT2G34140,Maturation_Atrichoblast,-3.86,0.977,0.017,0,False
+DOF4.1,AT4G00940,Maturation_Atrichoblast,2.3,0.977,0,0.00699,False
+OBP1,AT3G50410,Proliferation Domain_Trichoblast,-0.328,0.978,0.00588,0.00487,False
+DOF2.2,AT2G28810,Proliferation Domain_Trichoblast,-0.219,0.978,0.0103,0.00973,False
+DOF4.1,AT4G00940,Proliferation Domain_Trichoblast,0.459,0.978,0.00147,0.00243,False
+DOF4.1,AT4G00940,Elongation_Procambium,-0.0752,0.979,0.00663,0.00603,False
+DAG1,AT3G61850,Distal Lateral Root Cap,0.256,0.98,0.0314,0.0312,False
+DOF2.2,AT2G28810,Distal Lateral Root Cap,-0.583,0.98,0.00943,0.00557,False
+CDF4,AT2G34140,Distal Lateral Root Cap,0.445,0.98,0.0189,0.0178,False
+DOF4.1,AT4G00940,Distal Lateral Root Cap,1.54,0.98,0,0.00111,False
+DOF4.6,AT4G24060,Distal Lateral Root Cap,0.237,0.98,0.022,0.0268,False
+OBP1,AT3G50410,Elongation_Metaxylem,0.0926,0.982,0.0479,0.0723,False
+DOF6,AT3G45610,Transition Domain_Xylem Pole Pericycle,0.204,0.982,0.0426,0.0583,False
+OBP3,AT3G55370,Distal Columella,-0.17,0.983,0.00815,0.00726,False
+DOF4.6,AT4G24060,Elongation_Metaphloem & Companion Cell,0.0536,0.983,0.301,0.409,False
+DOF6,AT3G45610,Distal Columella,0.239,0.984,0.00204,0.000807,False
+DOF6,AT3G45610,Elongation_Metaphloem & Companion Cell,0.0489,0.984,0.371,0.38,False
+OBP3,AT3G55370,Proliferation Domain_Cortex,0.343,0.984,0.0301,0.0383,False
+DAG1,AT3G61850,Proliferation Domain_Trichoblast,-0.0333,0.984,0.0529,0.0584,False
+OBP2,AT1G07640,Transition Domain_Atrichoblast,-1.39,0.985,0.0142,0.00531,False
+DOF6,AT3G45610,Transition Domain_Atrichoblast,1.25,0.985,0.00569,0.00708,False
+OBP3,AT3G55370,Transition Domain_Atrichoblast,0.794,0.985,0.00711,0.0106,False
+DAG1,AT3G61850,Transition Domain_Atrichoblast,0.323,0.985,0.0398,0.0478,False
+DOF2.2,AT2G28810,Transition Domain_Atrichoblast,1.06,0.985,0.00427,0.00885,False
+DOF2.2,AT2G28810,Transition Domain_Cortex,-0.491,0.985,0.013,0.00761,False
+DOF2.2,AT2G28810,Maturation_Trichoblast,-0.265,0.986,0.0136,0.0135,False
+OBP1,AT3G50410,Elongation_Metaphloem & Companion Cell,0.133,0.987,0.0491,0.0394,False
+DOF6,AT3G45610,Distal Lateral Root Cap,0.47,0.988,0.00314,0.00446,False
+OBP1,AT3G50410,Distal Lateral Root Cap,0.56,0.988,0.00314,0.00446,False
+OBP3,AT3G55370,Maturation_Atrichoblast,0.936,0.988,0.00426,0.00699,False
+OBP2,AT1G07640,Maturation_Metaphloem & Companion Cell,-0.146,0.989,0.842,0.886,False
+COG1,AT1G29160,Maturation_Metaphloem & Companion Cell,-0.163,0.989,0.947,0.914,False
+YUC5,AT5G43890,Maturation_Metaphloem & Companion Cell,-0.645,0.989,0.947,0.857,False
+DOF6,AT3G45610,Maturation_Metaphloem & Companion Cell,0.596,0.989,0.789,0.829,False
+OBP1,AT3G50410,Maturation_Metaphloem & Companion Cell,-0.826,0.989,0.289,0.229,False
+OBP3,AT3G55370,Maturation_Metaphloem & Companion Cell,0.563,0.989,0.342,0.543,False
+DAG1,AT3G61850,Maturation_Metaphloem & Companion Cell,-0.218,0.989,0.947,1,False
+DOF2.2,AT2G28810,Maturation_Metaphloem & Companion Cell,0.311,0.989,0.342,0.514,False
+CDF4,AT2G34140,Maturation_Metaphloem & Companion Cell,0.646,0.989,0.395,0.686,False
+DOF4.6,AT4G24060,Maturation_Metaphloem & Companion Cell,-0.212,0.989,0.921,0.971,False
+DOF4.1,AT4G00940,Transition Domain_Atrichoblast,-0.982,0.989,0.00284,0.00177,False
+YUC5,AT5G43890,Distal Columella,-0.0365,0.991,0.0143,0.0145,False
+OBP2,AT1G07640,Distal Lateral Root Cap,0.127,0.993,0.00629,0.0078,False
+OBP2,AT1G07640,Maturation_Atrichoblast,-0.647,0.993,0.0128,0.00699,False
+YUC5,AT5G43890,Proliferation Domain_Cortex,-0.466,0.993,0.0226,0.0164,False
+OBP1,AT3G50410,Transition Domain_Atrichoblast,-0.539,0.993,0.00711,0.00531,False
+OBP2,AT1G07640,Elongation_Protoxylem,-1.6,0.994,0.0251,0.00338,False
+COG1,AT1G29160,Elongation_Protoxylem,-0.587,0.994,0.1,0.0608,False
+OBP1,AT3G50410,Elongation_Protoxylem,-0.27,0.994,0.0439,0.0372,False
+OBP3,AT3G55370,Elongation_Protoxylem,-0.791,0.994,0.0188,0.0101,False
+DAG1,AT3G61850,Elongation_Protoxylem,0.154,0.994,0.207,0.226,False
+DOF2.2,AT2G28810,Elongation_Protoxylem,0.455,0.994,0.0094,0.0101,False
+CDF4,AT2G34140,Elongation_Protoxylem,-0.76,0.994,0.0439,0.0135,False
+DOF4.1,AT4G00940,Elongation_Protoxylem,-0.2,0.994,0.0596,0.0405,False
+DOF4.6,AT4G24060,Elongation_Protoxylem,0.0443,0.994,0.32,0.314,False
+DAG1,AT3G61850,Maturation_Atrichoblast,0.0947,0.994,0.0298,0.049,False
+OBP3,AT3G55370,Proliferation Domain_Atrichoblast,-0.129,0.994,0.0167,0.0148,False
+OBP1,AT3G50410,Proliferation Domain_Cortex,0.551,0.994,0.00752,0.0109,False
+COG1,AT1G29160,Transition Domain_Procambium,0.195,0.994,0.789,0.72,False
+DOF6,AT3G45610,Transition Domain_Procambium,-0.0872,0.994,0.0789,0.1,False
+OBP3,AT3G55370,Transition Domain_Procambium,-0.114,0.994,0.395,0.36,False
+DAG1,AT3G61850,Transition Domain_Procambium,-0.00443,0.994,0.868,0.9,False
+DOF2.2,AT2G28810,Transition Domain_Procambium,0.0918,0.994,0.395,0.42,False
+CDF4,AT2G34140,Transition Domain_Procambium,0.0917,0.994,0.263,0.28,False
+DOF4.1,AT4G00940,Transition Domain_Procambium,2.09,0.994,0,0.02,False
+DOF4.6,AT4G24060,Transition Domain_Procambium,-0.382,0.994,1,0.86,False
+OBP2,AT1G07640,Transition Domain_Protoxylem,-1.2,0.994,0.0645,0.0278,False
+COG1,AT1G29160,Transition Domain_Protoxylem,-0.537,0.994,0.0323,0.0833,False
+DOF6,AT3G45610,Transition Domain_Protoxylem,-0.459,0.994,0.0645,0.111,False
+OBP3,AT3G55370,Transition Domain_Protoxylem,0.47,0.994,0.0323,0.0556,False
+DAG1,AT3G61850,Transition Domain_Protoxylem,0.635,0.994,0.419,0.417,False
+DOF2.2,AT2G28810,Transition Domain_Protoxylem,-2.33,0.994,0.0323,0,False
+CDF4,AT2G34140,Transition Domain_Protoxylem,-2.33,0.994,0.0323,0,False
+DOF4.6,AT4G24060,Transition Domain_Protoxylem,-0.159,0.994,0.774,0.778,False
+YUC5,AT5G43890,Elongation_Metaphloem & Companion Cell,0.0257,0.995,0.454,0.477,False
+YUC5,AT5G43890,Maturation_Atrichoblast,0.122,0.995,0.0213,0.021,False
+DOF2.2,AT2G28810,Maturation_Atrichoblast,0.0902,0.995,0.00426,0.00699,False
+OBP2,AT1G07640,Maturation_Procambium,0.201,0.996,0.5,0.587,False
+COG1,AT1G29160,Maturation_Procambium,-0.237,0.996,0.775,0.683,False
+DOF6,AT3G45610,Maturation_Procambium,0.755,0.996,0.00549,0.0106,False
+OBP3,AT3G55370,Maturation_Procambium,0.119,0.996,0.456,0.439,False
+DAG1,AT3G61850,Maturation_Procambium,0.471,0.996,0.934,0.968,False
+DOF2.2,AT2G28810,Maturation_Procambium,0.828,0.996,0.0769,0.148,False
+CDF4,AT2G34140,Maturation_Procambium,-0.247,0.996,0.742,0.735,False
+DOF4.1,AT4G00940,Maturation_Procambium,1.27,0.996,0.011,0.0212,False
+DOF4.6,AT4G24060,Maturation_Procambium,-0.41,0.996,0.89,0.746,False
+OBP2,AT1G07640,Proliferation Domain_Metaphloem & Companion Cell,0.999,0.998,0.6,0.807,False
+COG1,AT1G29160,Proliferation Domain_Metaphloem & Companion Cell,0.486,0.998,1,0.93,False
+YUC5,AT5G43890,Proliferation Domain_Metaphloem & Companion Cell,1.17,0.998,0.12,0.281,False
+DOF6,AT3G45610,Proliferation Domain_Metaphloem & Companion Cell,-1.05,0.998,0.2,0.123,False
+OBP3,AT3G55370,Proliferation Domain_Metaphloem & Companion Cell,-0.15,0.998,0.84,0.772,False
+DAG1,AT3G61850,Proliferation Domain_Metaphloem & Companion Cell,0.317,0.998,0.84,0.754,False
+DOF2.2,AT2G28810,Proliferation Domain_Metaphloem & Companion Cell,0.428,0.998,0.68,0.684,False
+CDF4,AT2G34140,Proliferation Domain_Metaphloem & Companion Cell,-0.198,0.998,0.52,0.386,False
+DOF4.6,AT4G24060,Proliferation Domain_Metaphloem & Companion Cell,0.0974,0.998,0.68,0.702,False
+YUC5,AT5G43890,Transition Domain_Protoxylem,0.026,0.998,0.0645,0.0556,False
+OBP3,AT3G55370,Distal Lateral Root Cap,-0.0021,0.999,0.00629,0.00669,False
+OBP3,AT3G55370,Elongation_Metaphloem & Companion Cell,-0.0232,0.999,0.445,0.477,False
+OBP2,AT1G07640,Maturation_Protoxylem,2.24,0.999,0,0.00741,False
+COG1,AT1G29160,Maturation_Protoxylem,0.397,0.999,0.0725,0.0741,False
+YUC5,AT5G43890,Maturation_Protoxylem,-0.444,0.999,0.0217,0.0148,False
+DOF6,AT3G45610,Maturation_Protoxylem,1.78,0.999,0.00725,0.0222,False
+OBP1,AT3G50410,Maturation_Protoxylem,0.359,0.999,0.0217,0.0296,False
+OBP3,AT3G55370,Maturation_Protoxylem,-1.46,0.999,0.0217,0.00741,False
+DAG1,AT3G61850,Maturation_Protoxylem,0.37,0.999,0.058,0.0148,False
+DOF2.2,AT2G28810,Maturation_Protoxylem,1.28,0.999,0.00725,0.00741,False
+CDF4,AT2G34140,Maturation_Protoxylem,2.99,0.999,0.00725,0.037,False
+DOF4.1,AT4G00940,Maturation_Protoxylem,3.2,0.999,0,0.0148,False
+DOF4.6,AT4G24060,Maturation_Protoxylem,1.1,0.999,0.0652,0.0741,False
+DAG1,AT3G61850,Maturation_Xylem Pole Pericycle,-0.0514,0.999,0.927,0.918,False
+OBP2,AT1G07640,Proliferation Domain_Atrichoblast,-0.0113,0.999,0.0104,0.00636,False
+YUC5,AT5G43890,Proliferation Domain_Atrichoblast,-0.0254,0.999,0.0938,0.12,False
+CDF4,AT2G34140,Proliferation Domain_Atrichoblast,-0.0203,0.999,0.0574,0.0509,False
+DOF4.1,AT4G00940,Proliferation Domain_Xylem Pole Pericycle,0.0294,0.999,0.111,0.0542,False
+OBP2,AT1G07640,Elongation_Endodermis,-0.354,1,0.0144,0.0108,False
+COG1,AT1G29160,Elongation_Endodermis,0.236,1,0.0843,0.0696,False
+DOF6,AT3G45610,Elongation_Endodermis,1,1,0.00321,0.01,False
+OBP1,AT3G50410,Elongation_Endodermis,-0.238,1,0.0369,0.0247,False
+OBP3,AT3G55370,Elongation_Endodermis,-0.58,1,0.0249,0.0216,False
+DAG1,AT3G61850,Elongation_Endodermis,-0.0437,1,0.224,0.194,False
+DOF2.2,AT2G28810,Elongation_Endodermis,0.528,1,0.0104,0.0116,False
+DOF4.1,AT4G00940,Elongation_Endodermis,-1.03,1,0.00963,0.00541,False
+OBP2,AT1G07640,Elongation_Protophloem,-0.239,1,0.585,0.552,False
+COG1,AT1G29160,Elongation_Protophloem,-0.488,1,0.245,0.177,False
+YUC5,AT5G43890,Elongation_Protophloem,0.82,1,0.16,0.16,False
+DOF6,AT3G45610,Elongation_Protophloem,0.974,1,0.774,0.884,False
+OBP1,AT3G50410,Elongation_Protophloem,2.4,1,0,0.00552,False
+OBP3,AT3G55370,Elongation_Protophloem,-0.407,1,0.481,0.453,False
+DAG1,AT3G61850,Elongation_Protophloem,0.434,1,0.538,0.58,False
+DOF2.2,AT2G28810,Elongation_Protophloem,-0.343,1,0.34,0.337,False
+CDF4,AT2G34140,Elongation_Protophloem,-0.187,1,0.113,0.0718,False
+DOF4.1,AT4G00940,Elongation_Protophloem,-2.36,1,0.00943,0,False
+DOF4.6,AT4G24060,Elongation_Protophloem,0.312,1,0.236,0.238,False
+OBP2,AT1G07640,Proliferation Domain_Endodermis,6.61,1,0,0.0622,False
+COG1,AT1G29160,Proliferation Domain_Endodermis,0.91,1,0.153,0.231,False
+DOF6,AT3G45610,Proliferation Domain_Endodermis,1.07,1,0.00847,0.0337,False
+OBP1,AT3G50410,Proliferation Domain_Endodermis,-0.00242,1,0.00847,0.00777,False
+DAG1,AT3G61850,Proliferation Domain_Endodermis,1.62,1,0.102,0.233,False
+DOF2.2,AT2G28810,Proliferation Domain_Endodermis,1.41,1,0.0254,0.0725,False
+CDF4,AT2G34140,Proliferation Domain_Endodermis,0.00841,1,0.0678,0.0699,False
+DOF4.1,AT4G00940,Proliferation Domain_Endodermis,-0.027,1,0.00847,0.00777,False
+DOF4.6,AT4G24060,Proliferation Domain_Endodermis,0.294,1,0.288,0.321,False
+OBP2,AT1G07640,Transition Domain_Endodermis,2.68,1,0,0.0196,False
+COG1,AT1G29160,Transition Domain_Endodermis,4.34,1,0,0.118,False
+YUC5,AT5G43890,Transition Domain_Endodermis,1.51,1,0.0345,0.0784,False
+OBP1,AT3G50410,Transition Domain_Endodermis,2.85,1,0,0.0392,False
+OBP3,AT3G55370,Transition Domain_Endodermis,-0.0866,1,0.0345,0.0392,False
+DAG1,AT3G61850,Transition Domain_Endodermis,0.444,1,0.138,0.176,False
+DOF2.2,AT2G28810,Transition Domain_Endodermis,-0.168,1,0.0345,0.0392,False
+DOF4.6,AT4G24060,Transition Domain_Endodermis,0.199,1,0.828,0.725,False
+OBP2,AT1G07640,Transition Domain_Trichoblast,-0.0767,1,0.0142,0.011,False
+COG1,AT1G29160,Transition Domain_Trichoblast,-0.466,1,0.194,0.159,False
+YUC5,AT5G43890,Transition Domain_Trichoblast,0.521,1,0.0567,0.0687,False
+DOF6,AT3G45610,Transition Domain_Trichoblast,-1.2,1,0.0122,0.00804,False
+OBP1,AT3G50410,Transition Domain_Trichoblast,-2.58,1,0.00635,0.000731,False
+OBP3,AT3G55370,Transition Domain_Trichoblast,-1.24,1,0.0161,0.00731,False
+DAG1,AT3G61850,Transition Domain_Trichoblast,0.0879,1,0.0635,0.0629,False
+DOF2.2,AT2G28810,Transition Domain_Trichoblast,-0.509,1,0.0103,0.00658,False
+CDF4,AT2G34140,Transition Domain_Trichoblast,-0.864,1,0.0308,0.0146,False
+DOF4.1,AT4G00940,Transition Domain_Trichoblast,-2.75,1,0.00635,0.000731,False
+DOF4.6,AT4G24060,Transition Domain_Trichoblast,0.0607,1,0.0464,0.0468,False
