@@ -52,8 +52,9 @@ write.csv(round(spear, 4), file.path(out_dir, "20260612_pseudobulk_sample_corr_s
 cat("\nPearson correlation matrix:\n"); print(round(pear, 3))
 
 # --- sample annotation (genotype / rep) from the sample sheet ---------------
+# Sample sheet for sc_291-sc_294, included in this repository; set FERONIA_REPO to your clone (default: current directory).
 samples <- suppressMessages(read_csv(
-  "/resnick/groups/NolanLab/cchen/Feronia/analysis/Nolan_single_cell_lab_samples.csv",
+  file.path(Sys.getenv("FERONIA_REPO", "."), "scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv"),
   col_names = TRUE, show_col_types = FALSE))
 sdict <- samples[match(colnames(pear), samples$sample), c(1, 6, 12)]
 colnames(sdict) <- c("sample", "genotype", "rep")

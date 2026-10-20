@@ -126,6 +126,7 @@ PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/An
 ## Running the code
 
 - **Paths.** Most notebooks and scripts were run on the lab's SLURM cluster and contain absolute paths (`/resnick/groups/NolanLab/...`). Edit these to point at your copies of the GEO objects and of this repository's `inputs/` folders. The Stage 5 scripts use relative paths and environment variables instead (see their [README](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/README.md)).
+- **Sample sheet.** The notebooks and scripts that need sample metadata read [`Nolan_single_cell_lab_samples_sc291-294.csv`](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv) from this repository (columns `sample`, `genotype`, `rep`). Set the environment variable `FERONIA_REPO` to your clone of the repository, or run from its top folder.
 - **Environments.** Each notebook names its conda environment at the top: `seu4_label_transfer` and `scKB_copilot` (Seurat 3/4) for Stage 1, `muscat` (Seurat 5, muscat, GeneOverlap, gprofiler2) for Stages 2–3, the CellOracle environment for Stage 4 step 1, and `mast` for step 2. Package versions are given in the Methods and in each script header.
 - **Heavy steps.** Stage 1, the Seurat-loading scripts in Stages 2–3, and Stage 4 step 1 need the full integrated object (about 20 GB in memory) or a cluster. Stage 3 steps 2–4 and all of Stage 5 run from the tables in this repository, except where noted below.
 

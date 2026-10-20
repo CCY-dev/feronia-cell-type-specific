@@ -50,7 +50,8 @@ seu_sub <- subset(seu, subset = orig.ident %in% c("sc_291", "sc_292", "sc_293", 
 rm(seu); gc()
 
 # --- attach genotype (geno) from the sample sheet ---------------------------
-samples <- read_csv("/resnick/groups/NolanLab/cchen/Feronia/analysis/Nolan_single_cell_lab_samples.csv",
+# Sample sheet for sc_291-sc_294, included in this repository; set FERONIA_REPO to your clone (default: current directory).
+samples <- read_csv(file.path(Sys.getenv("FERONIA_REPO", "."), "scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv"),
                     col_names = TRUE, show_col_types = FALSE)
 sdict <- samples[samples$sample %in% c("sc_291", "sc_292", "sc_293", "sc_294"), c(1, 6, 12)]
 
