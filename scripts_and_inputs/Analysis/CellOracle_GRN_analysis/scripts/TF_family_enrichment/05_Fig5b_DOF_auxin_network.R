@@ -1,15 +1,16 @@
 #!/usr/bin/env Rscript
-## 05 — Fig. 6b: bipartite network of the 10 DOFs tested in the pYUC5:LUC assay and their predicted auxin-gene
-## targets. Needs 04 (edge tables). Reproduces the PI's Fig. 6b layout (2026-10-19) from the published edge table.
+## 05 — Fig. 5b: bipartite network of the DOFs tested in the pYUC5:LUC assay that CellOracle nominated, and their
+## predicted auxin-gene targets. Needs 04 (edge tables). Same selection as the published Fig. 5b (drawn with the
+## authors' figure kit; this script reproduces its content: nodes, groups and edges).
 #
 # Selection rules (all derived from the data, asserted below):
-#   DOFs    = the 10 DOFs tested in the pYUC5:LUC assay ("selected 10 out of the 26 DOFs based on their expression
-#             levels and cell types"), keyed by AGI. The paper uses COMMON names and the gene annotation uses
+#   DOFs    = the 10 DOFs tested in the pYUC5:LUC assay, keyed by AGI, KEEPING those nominated (genotype-specific)
+#             in at least one genotype. In the seeded rerun this drops CDF4 (not nominated) and leaves 9. The paper uses COMMON names and the gene annotation uses
 #             SYSTEMATIC ones (DOF6 = DOF3.2, OBP1 = DOF3.4, COG1 = DOF1.5), so never join on a symbol.
-#   groups  = genotype-specific nomination (Δrank of out-degree), as in Fig. 6a: WT only / fer-4 only / Both.
+#   groups  = genotype-specific nomination (Δrank of out-degree), as in Fig. 5a: WT only / fer-4 only / Both
+#             (empty groups are not drawn).
 #   targets = every YUC/TAA1 and GH3 gene, the 5 Aux/IAA genes reached by the most of the 10 DOFs INCLUDING ties at
-#             the cut-off (IAA28 and IAA7 tie for 5th, so 6 are shown), and the 3 SAUR genes reached by the most DOFs
-#             (a tie at the SAUR cut-off would make the choice arbitrary, so it stops the script). Same rule as the Methods.
+#             the cut-off, and the 3 SAUR genes reached by the most DOFs, also INCLUDING ties at the cut-off.
 #   order   = targets by pathway class, then by number of DOFs reaching them (desc), then name; DOFs within a
 #             group with a YUC5 link first, then by name.
 # Encoding: DOF node size = number of the displayed targets it reaches; YUC5 edges dark, all others light grey.
@@ -33,9 +34,10 @@ grp_of <- function(v) ifelse(v %in% gWT & v %in% gFER, "Both",
 ## the 10 LUC-tested DOFs, with the names used in the manuscript
 DOF10 <- c(AT2G34140="CDF4", AT3G45610="DOF6",   AT3G50410="OBP1",   AT1G29160="COG1", AT3G61850="DAG1",
            AT4G00940="DOF4.1", AT4G24060="DOF4.6", AT1G07640="OBP2", AT3G55370="OBP3", AT2G28810="DOF2.2")
-k <- pr %>% filter(source %in% names(DOF10)) %>% left_join(sy, by="target")
-stopifnot("not every tested DOF has an auxin edge" = setequal(unique(k$source), names(DOF10)),
-          "a tested DOF was not nominated in either genotype" = !anyNA(grp_of(names(DOF10))))
+NOM <- names(DOF10)[!is.na(grp_of(names(DOF10)))]            # tested DOFs nominated in >=1 genotype
+cat("tested DOFs not nominated (not drawn):", paste(DOF10[setdiff(names(DOF10), NOM)], collapse=", "), "\n")
+k <- pr %>% filter(source %in% NOM) %>% left_join(sy, by="target")
+stopifnot("a nominated tested DOF has no auxin edge" = setequal(unique(k$source), NOM))
 
 ind <- k %>% count(tsym, class, name="indeg") %>% arrange(desc(indeg), tsym)
 topn <- function(cl, n, ties) {
@@ -45,7 +47,7 @@ topn <- function(cl, n, ties) {
   stopifnot("tie at a target cut-off" = x$indeg[n] > x$indeg[n + 1])
   head(x$tsym, n)
 }
-keep <- c(ind$tsym[ind$class %in% c("YUC/TAA1","GH3")], topn("Aux/IAA", 5, ties=TRUE), topn("SAUR", 3, ties=FALSE))
+keep <- c(ind$tsym[ind$class %in% c("YUC/TAA1","GH3")], topn("Aux/IAA", 5, ties=TRUE), topn("SAUR", 3, ties=TRUE))
 ks <- k %>% filter(tsym %in% keep)
 
 ## ---- layout: rows from the top, with a gap between groups; both tiers span the same height ----
@@ -54,7 +56,7 @@ ord <- c("YUC/TAA1","GH3","Aux/IAA","SAUR")
 tars <- ind %>% filter(tsym %in% keep) %>% mutate(class=factor(class, levels=ord)) %>%
         arrange(class, desc(indeg), tsym) %>%
         mutate(r = row_number() - 1 + GAP * (as.integer(class) - 1))
-GRP <- c("WT only","fer-4 only","Both")
+GRP <- c("WT only","fer-4 only","Both"); GRP <- GRP[GRP %in% grp_of(NOM)]   # drop empty groups
 yuc5_src <- unique(ks$source[ks$tsym == "YUC5"])
 dofs <- ks %>% count(source, name="size") %>%
         mutate(name=unname(DOF10[source]), grp=factor(grp_of(source), levels=GRP), yuc5=source %in% yuc5_src) %>%
@@ -98,16 +100,16 @@ p <- ggplot() +
   # that node size = number of displayed auxin genes reached (min/max in the stats CSV)
   theme(legend.position="none", plot.margin=margin(4, 4, 4, 4))
 
-ggsave(file.path(OUT_DIR,"Fig6b_DOF_auxin_network.pdf"), p, width=125, height=78, units="mm", device=cairo_pdf)
-ggsave(file.path(OUT_DIR,"Fig6b_DOF_auxin_network.png"), p, width=125, height=78, units="mm", dpi=400, bg="white")
+ggsave(file.path(OUT_DIR,"Fig5b_DOF_auxin_network.pdf"), p, width=125, height=78, units="mm", device=cairo_pdf)
+ggsave(file.path(OUT_DIR,"Fig5b_DOF_auxin_network.png"), p, width=125, height=78, units="mm", dpi=400, bg="white")
 
 ## stats for captions/text, so no number is typed by hand
-gc <- table(dofs$grp)
+gc <- table(factor(as.character(dofs$grp), levels=c("WT only","fer-4 only","Both")))
 st <- data.frame(n_dof=nrow(dofs), n_targets=nrow(tars), n_edges_drawn=nrow(ks),
                  n_edges_all_targets=nrow(k), n_WT_only=gc[["WT only"]], n_fer4_only=gc[["fer-4 only"]],
                  n_both=gc[["Both"]], n_dof_to_YUC5=length(yuc5_src),
                  dof_without_YUC5=paste(sort(dofs$name[!dofs$yuc5]), collapse="; "),
                  dofs=paste(dofs$name, collapse="; "), targets=paste(tars$tsym, collapse="; "),
                  min_targets_reached=min(dofs$size), max_targets_reached=max(dofs$size))
-write.csv(st, file.path(OUT_DIR,"Fig6b_DOF_auxin_network_stats.csv"), row.names=FALSE)
+write.csv(st, file.path(OUT_DIR,"Fig5b_DOF_auxin_network_stats.csv"), row.names=FALSE)
 print(t(st))

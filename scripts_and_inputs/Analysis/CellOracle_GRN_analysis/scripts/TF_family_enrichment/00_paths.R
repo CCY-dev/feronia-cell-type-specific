@@ -3,7 +3,7 @@
 ## with an environment variable.
 CO_DIR      <- Sys.getenv("CELLORACLE_DIR", file.path("..", "..", "outputs"))   # CellOracle outputs
 WIDE_TABLE  <- file.path(CO_DIR,
-  "20260317_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_all_metrics_rank_change_wide_TF_GE.txt")  # ranks, Δrank, Label, Is_TF
+  "20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_all_metrics_rank_change_wide_TF_GE.txt")  # seeded rerun (2026-10-20)  # ranks, Δrank, Label, Is_TF
 SCORE_GLOB  <- file.path(CO_DIR, "*_gene_score_iGRN.csv")                       # per-network centrality scores
 PLANTTFDB   <- Sys.getenv("PLANTTFDB_LIST", file.path("..", "..", "inputs", "Ath_TF_list.txt"))
               # https://planttfdb.gao-lab.org/download/TF_list/Ath_TF_list.txt.gz

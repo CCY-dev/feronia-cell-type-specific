@@ -1,0 +1,2 @@
+"n_dof","n_targets","n_edges_drawn","n_edges_all_targets","n_WT_only","n_fer4_only","n_both","n_dof_to_YUC5","dof_without_YUC5","dofs","targets","min_targets_reached","max_targets_reached"
+9,15,81,150,0,1,8,7,"DOF2.2; DOF4.1","OBP1; COG1; DAG1; DOF4.6; DOF6; OBP2; OBP3; DOF2.2; DOF4.1","YUC5; TAA1; YUC9; GH3.5; GH3.3; GH3.6; IAA13; IAA17; IAA2; IAA28; IAA4; SAUR78; SAUR76; SAUR32; SAUR50",7,13

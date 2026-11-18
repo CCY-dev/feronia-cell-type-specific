@@ -2,8 +2,9 @@
 
   data/de_dof_yuc5.csv     muscat rows (every tested gene x cluster) for the ten assayed DOFs and YUC5,
                            with DE = the notebook's sig_DE_fil rule
-  data/dof_nominations.csv CellOracle out-degree nominations of the ten DOFs (Methods: delta-rank < -123 -> more
-                           central in fer-4, > +132 -> more central in WT, among genes ranked top-100 in either network)
+  data/dof_nominations.csv CellOracle out-degree nominations of the ten DOFs (Methods: delta-rank below the 10th
+                           percentile -> more central in fer-4, above the 90th -> more central in WT, among genes ranked
+                           top-100 in either network; seeded rerun: -98 / +105)
 
 Run from this folder:  python tools/derive_de_tables.py  [--repo ../../..]
 """
@@ -14,7 +15,8 @@ GENES = {"DOF4.6": "AT4G24060", "CDF4": "AT2G34140", "COG1": "AT1G29160", "OBP3"
          "DOF6": "AT3G45610", "DOF4.1": "AT4G00940", "DOF2.2": "AT2G28810", "DAG1": "AT3G61850",
          "OBP1": "AT3G50410", "OBP2": "AT1G07640", "YUC5": "AT5G43890"}
 DE_P, DE_FC, DE_FRQ = 0.05, 1.5, 0.1          # muscat notebook: p_val_thres, FC_thres, filter_freq
-NOM_LO, NOM_HI = -123, 132                     # Methods: 10th / 90th percentile delta-rank thresholds
+WIDE = ("scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/"
+        "20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_all_metrics_rank_change_wide_TF_GE.txt")  # seeded rerun
 MIN_CELLS = 5                                  # muscat pbDS(min_cells = 5)
 
 ap = argparse.ArgumentParser(); ap.add_argument("--repo", default=str(pathlib.Path(__file__).resolve().parents[4]))
@@ -28,8 +30,14 @@ t["DE"] = (t["p_adj.loc"] <= DE_P) & (t.logFC.abs() > np.log2(DE_FC)) & ((t["fer
 t = t.rename(columns={"gene": "agi", "cluster_id": "cluster"})[["symbol", "agi", "cluster", "logFC", "p_adj.loc", "WT.frq", "fer_4.frq", "DE"]]
 t.to_csv(here / "data/de_dof_yuc5.csv", index=False, float_format="%.6g")
 
-rc = pd.read_csv(repo / "scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/"
-                 "20260317_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_all_metrics_rank_change_wide_TF_GE.txt", sep="\t")
+rc = pd.read_csv(repo / WIDE, sep="\t")
+# thresholds = 10th / 90th percentile of out-degree delta-rank over all rows (as the rank-change step computes them);
+# checked against the table's own Label column
+dr = rc.loc[rc.metric == "degree_centrality_out", "fer4_untreated-WT_untreated: rank_diff"]
+NOM_LO, NOM_HI = np.percentile(dr.dropna(), [10, 90])
+lab = rc.loc[rc.metric == "degree_centrality_out", "Label"]
+assert ((dr < NOM_LO) == (lab == "fer4_specific")).all() and ((dr > NOM_HI) == (lab == "WT_specific")).all(), "thresholds disagree with Label"
+print(f"delta-rank thresholds: {NOM_LO:g} / {NOM_HI:g}")
 od = rc[(rc.metric == "degree_centrality_out") & rc.gene.isin(set(GENES.values()) - {GENES["YUC5"]})].rename(columns={
     "fer4_untreated-WT_untreated: rank_diff": "drank", "fer4_untreated-WT_untreated: gene_rank_1": "r_fer4",
     "fer4_untreated-WT_untreated: gene_rank_2": "r_WT"})

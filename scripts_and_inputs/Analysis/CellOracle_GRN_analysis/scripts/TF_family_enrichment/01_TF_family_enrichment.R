@@ -1,12 +1,12 @@
 #!/usr/bin/env Rscript
-## 01 — TF-family enrichment among genotype-specific CellOracle regulators (Fig. 6a, Supplementary Table).
+## 01 — TF-family enrichment among genotype-specific CellOracle regulators (Fig. 5a, Source data).
 ##
 ## Genotype-specific TFs come from the CellOracle rank-change table: genes are ranked by out-degree centrality within
 ## each network; genes in the top 100 of at least one network (per cell type, either genotype) enter the ranking;
 ## Δrank = rank(fer-4) − rank(WT); below the 10th percentile → fer-4-specific, above the 90th → WT-specific; a TF is
 ## nominated if this holds in at least one cell type.
 ## Background: every TF that could have entered the ranking = TFs of the CellOracle TF list scored for out-degree in
-## BOTH genotypes in at least one cell type AND assigned a family by PlantTFDB (1,292 TFs).
+## BOTH genotypes in at least one cell type AND assigned a family by PlantTFDB (1,301 TFs in the seeded rerun).
 ## Test: per family and genotype, one-sided Fisher's exact test (family × nominated), two-sided 95% CI, BH across all
 ## 110 tests (55 families × 2 genotypes). Families with >=10 eligible TFs are displayed (filter applied after BH).
 suppressMessages({library(dplyr)})

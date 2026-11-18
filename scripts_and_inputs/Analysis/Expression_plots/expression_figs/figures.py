@@ -460,6 +460,14 @@ def cluster_strip(ctx, page, genes, top, sg, x0, x1, gene_rows):
                               ctx.dot_scale.rgb01(np.array([rec[ctx.mean_col]])),
                               edge=P.grey(st['dot']['dot_edge_grey']), lw=st['dot']['dot_edge_pt'], gid=f'strip-dot-{g}')
         x += w + sg['group_gap']
+    # white separator across the grey bands between the genotype blocks, so the two genotypes read as two blocks
+    # (CYC, 2 Nov 2026; the bands used to run straight through the block gap)
+    if gene_rows and len(ctx.gens) > 1:
+        for j in range(1, len(ctx.gens)):
+            y_prev = row_y[(ctx.gens[j - 1], genes[-1])] + sg['row_pitch'] / 2
+            y_next = row_y[(ctx.gens[j], genes[0])] - sg['row_pitch'] / 2
+            page.rect(x0 - sg['group_gap'], y_prev, x - x0 + sg['group_gap'], y_next - y_prev, fill='white',
+                      gid='strip-genotype-separator', zorder=0.5)
     return band_b, x - sg['group_gap'], pitch
 
 
@@ -748,12 +756,13 @@ def _nom_mark(page, m, x, y, d, colours, gid):
 
 
 def draw_nomination_grid(ctx, page, fig, top, x0, x1, letter='d'):
-    """Same columns as the DE heatmap (no header repeated): where each DOF was nominated by the network analysis."""
+    """Same columns as the DE heatmap, with the cell-type / stage header repeated (CYC, 2 Nov 2026): where each DOF
+    was nominated by the network analysis."""
     st = ctx.cfg['style']; hg = fig['heatmap']; sg = dict(fig['strip']); ng = fig['nominations']
     nom = pd.read_csv(ctx.cfg['nomination_table'])
     _letter(page, 0.0, top + 2.9, letter, st)
-    cols, pitch, groups, widths, _ = _column_header(ctx, page, top, sg, x0, x1, reserve_right=hg['count_w'], draw=False)
-    rp = hg['row_pitch']; y0 = top + ng['top_pad']
+    cols, pitch, groups, widths, y0 = _column_header(ctx, page, top, sg, x0, x1, reserve_right=hg['count_w'])
+    rp = hg['row_pitch']
     genes = fig['genes']
     y_end = y0 + len(genes) * rp
     x = x0

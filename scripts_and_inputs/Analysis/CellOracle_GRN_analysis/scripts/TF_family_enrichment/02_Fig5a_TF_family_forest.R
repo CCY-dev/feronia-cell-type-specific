@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## 02 — Fig. 6a: TF-family forest plot. Needs 01 to have run (reads TF_family_enrichment_all_tests.csv).
+## 02 — Fig. 5a: TF-family forest plot. Needs 01 to have run (reads TF_family_enrichment_all_tests.csv).
 # 20260923 — Panel A: TF-family enrichment among genotype-specific TFs, ANALYSIS 1 (gene level).
 # Odds ratio on a LOG scale (a ratio scale must be log or 4x and 1/4x look unequal), 95% CI whiskers,
 # reference line at OR = 1, nominated/eligible on the right, DOF bold.
@@ -9,10 +9,10 @@
 # from_Trevor/combined_forest_prototype.pdf — WT and fer-4 share each family row (WT above, fer-4
 # below), alternate rows shaded, two coloured nominated/eligible columns under a header on the right,
 # colour + fill keys underneath. Replaces the two side-by-side genotype panels.
-# Background = the 715 TFs that reach the top 100 by degree_centrality_out in >=1 genotype (the only
-# genes that could be nominated). Families with >=10 eligible TFs; BH applied across ALL families x
-# both genotypes upstream (84 tests), the >=10 filter AFTER (see 20260923_DOF_enrichment_report.R).
-# ⚠ The WT and fer-4 sets overlap (16 of 29 DOFs are in both) — the user handles that in the legend.
+# Background = every TF that could enter the ranking (01: scored for out-degree in both genotypes in >=1 cell type
+# and assigned a PlantTFDB family). Families with >=10 eligible TFs are shown; BH is applied across ALL families x
+# both genotypes in 01 (110 tests), the >=10 filter AFTER. The WT and fer-4 sets overlap (a TF can be WT-specific in
+# one cell type and fer-4-specific in another).
 suppressMessages({library(ggplot2);library(dplyr);library(patchwork);library(scales)})
 source("00_paths.R")
 COL_WT  <- "#2b6cb0"   # blue  = WT
@@ -27,7 +27,7 @@ d <- res %>% filter(family %in% top10) %>%
      mutate(genotype = factor(genotype, levels=c("WT","fer-4")),
             lab = paste0(nominated,"/",eligible),
             sig = q < 0.05)
-# 2026-10-02 (PI): background = the 1,292 TFs that could have entered the ranking. On this background an
+# On this background an
 # OR of 0 occurs (a family with no nominated member). A log axis cannot hold 0, so -- as in Trevor's
 # prototype -- such a row is drawn as a LEFT-POINTING ARROW labelled "0" and gets no point or whisker.
 # An infinite OR is not handled (no case yet): fail loudly rather than silently drop it.
@@ -123,9 +123,9 @@ build <- function(figw) {
   ((pF + pN + plot_layout(widths=c(1, 0.36))) / strip) + plot_layout(heights=c(1, 0.17))
 }
 
-ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest.pdf"), build(110), width=110, height=78, units="mm", device=cairo_pdf)
-ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest.png"), build(110), width=110, height=78, units="mm", dpi=400, bg="white")
-ggsave(file.path(OUT_DIR,"Fig6a_TF_family_forest_large.png"), build(176), width=176, height=125, units="mm", dpi=300, bg="white")
+ggsave(file.path(OUT_DIR,"Fig5a_TF_family_forest.pdf"), build(110), width=110, height=78, units="mm", device=cairo_pdf)
+ggsave(file.path(OUT_DIR,"Fig5a_TF_family_forest.png"), build(110), width=110, height=78, units="mm", dpi=400, bg="white")
+ggsave(file.path(OUT_DIR,"Fig5a_TF_family_forest_large.png"), build(176), width=176, height=125, units="mm", dpi=300, bg="white")
 cat("wrote panelA forest (pdf, png, large png)\n\n")
 print(d %>% arrange(desc(row), genotype) %>%
       mutate(across(c(OR,lo,hi),~round(.,2)), q=signif(q,3)) %>%

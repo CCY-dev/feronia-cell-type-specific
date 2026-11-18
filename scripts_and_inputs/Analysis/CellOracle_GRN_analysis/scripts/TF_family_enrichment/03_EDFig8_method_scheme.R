@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## 03 — Supplementary Fig SX: graphical method scheme (base version; the published figure was simplified by hand).
+## 03 — Extended Data Fig. 8: graphical method scheme (base version; the published figure was simplified by hand).
 ## Network glyphs are schematic; the Δrank density, thresholds and all counts are computed. Needs 01.
 # 20260924 — GRAPHICAL method scheme: real network pictures with arrows showing what is extracted
 # at each step, ending at the TF-family enrichment figure.
@@ -27,14 +27,11 @@ DOFg<- ELIG[!is.na(famv[ELIG]) & famv[ELIG]=="Dof"]
 res <- read.csv(file.path(OUT_DIR,"TF_family_enrichment_all_tests.csv"), stringsAsFactors=FALSE) %>% filter(eligible >= 10)
 dr  <- res %>% filter(genotype=="fer-4", family=="Dof")
 dw  <- res %>% filter(genotype=="WT",    family=="Dof")
-## 2026-10-02 (PI): enrichment background = the 1,292 TFs that could enter the ranking
+## enrichment background = every TF that could enter the ranking (written by 01)
 BGT <- read.csv(file.path(OUT_DIR,"enrichment_background_TFs.csv"), stringsAsFactors=FALSE)
-stopifnot(nrow(BGT) == 1292)
-## 2026-10-02: percentiles over ALL out-degree rows (TFs + the 10 non-TF gene rows), exactly as the pipeline
-## computed them. TF rows only gave 90th = 132.7, printed as "133"; the applied cut-off is 132.0 (same calls,
-## since Delta-rank is an integer).
+## percentiles over ALL out-degree rows (TFs + the few non-TF gene rows), exactly as the rank-change step computes
+## them (TF rows only can give a slightly different, non-integer percentile; the calls are the same).
 rdv <- w[w$metric=="degree_centrality_out", RDC]; rdv <- rdv[is.finite(rdv)]
-stopifnot(length(rdv) == 5534)
 q10 <- quantile(rdv,.10); q90 <- quantile(rdv,.90)
 cat(sprintf("cell types %d | eligible %d | fer4 %d | WT %d | DOF %d | q10 %.0f q90 %.0f\n",
     NCT, length(ELIG), length(gFER), length(gWT), length(DOFg), q10, q90))
@@ -194,9 +191,9 @@ p <- ggplot() +
   theme(plot.title=element_text(size=9, face="bold", hjust=0),
         legend.position="none", plot.margin=margin(6,5,4,5))
 
-ggsave(file.path(OUT_DIR,"SupplFigSX_method_scheme.pdf"), p, width=180, height=112, units="mm", device=cairo_pdf)
-ggsave(file.path(OUT_DIR,"SupplFigSX_method_scheme.png"), p, width=180, height=112, units="mm", dpi=400, bg="white")
+ggsave(file.path(OUT_DIR,"EDFig8_method_scheme.pdf"), p, width=180, height=112, units="mm", device=cairo_pdf)
+ggsave(file.path(OUT_DIR,"EDFig8_method_scheme.png"), p, width=180, height=112, units="mm", dpi=400, bg="white")
 write.csv(data.frame(n_ct=NCT, n_ctx=2*NCT, n_elig=length(ELIG), n_fer=length(gFER), n_wt=length(gWT),
                      n_dof=length(DOFg), q10=unname(q10), q90=unname(q90), dof_OR=dr$OR, dof_q=dr$q),
-          file.path(OUT_DIR,"SupplFigSX_method_scheme_stats.csv"), row.names=FALSE)
-cat("wrote 20260924_method_scheme_graphical.{pdf,png} + stats\n")
+          file.path(OUT_DIR,"EDFig8_method_scheme_stats.csv"), row.names=FALSE)
+cat("wrote EDFig8_method_scheme.{pdf,png} + stats\n")

@@ -1,4 +1,11 @@
 ### This script contains the entire CellOracle workflow, adapted to process one cell type based on the SLURM array index
+### 2026-10-20 rerun (Claude): copy of 20260317_..._slurmArray_run_celloracle_grn.py with four fixes, logic otherwise unchanged:
+###   1. each array task works in its OWN folder (output_dir/<task>) -- get_score() writes ./network_analysis/<k>/ and
+###      then rm -r's it, so tasks sharing one folder overwrote each other (3 fer-4 endodermis tables, job 61773808)
+###   2. phloem / xylem DE features exclude the Phloem/Xylem Pole Pericycle DE clusters (substring match picked them up)
+###   3. requires PYTHONHASHSEED=0 (set in the .q) so the GRN is reproducible
+###   4. after scoring, checks every network's degree_out == its number of filtered links (fails loudly if not)
+###   Task 10 = columella again in its own folder (columella_rep2): determinism test (must be identical to task 9).
 
 # Python
 # Don't change anything here
@@ -11,6 +18,10 @@ import numpy as np
 import pandas as pd
 import scanpy as sc
 import seaborn as sns
+
+# Fix 3: refuse to run without a fixed hash seed (it must be set before python starts, so it lives in the .q)
+if os.environ.get("PYTHONHASHSEED") != "0":
+    sys.exit("PYTHONHASHSEED must be 0 -- export it in the SLURM script before calling python")
 
 # Set the working dir
 # Change to your own directory
@@ -154,26 +165,30 @@ columella = ADATA.obs.index[
 # Important: include only the cell types you want to analyze! Comment out or remove the unwanted cell types
 celltypes = {
     'cortex': cortex,
-    #'endodermis': endodermis,
-    #'trichoblast': trichoblast,
+    'endodermis': endodermis,
+    'trichoblast': trichoblast,
     'atrichoblast': atrichoblast,
-    #'pericycle': pericycle, 
-    #'phloem': phloem,
-    #'xylem': xylem, 
-    #'procambium': procambium, 
-    #'lrc': lrc, 
+    'pericycle': pericycle, 
+    'phloem': phloem,
+    'xylem': xylem, 
+    'procambium': procambium, 
+    'lrc': lrc, 
     'columella': columella
 }
+# Task index -> (cell type, folder name). Index 10 reruns columella in a separate folder for the determinism test.
+tasks = [(k, k) for k in celltypes.keys()] + [('columella', 'columella_rep2')]
 
 # Define the directory where all the output will be stored
 # NOTE: lab cluster path below -- change it to your own path
-output_dir = '/resnick/groups/NolanLab/cchen/Feronia/analysis/CellOracle/CellOracle_output/20260317_feronia_salinity_timecourse_WT_untreated_fer4_untreated_newIntegratedSeurat3_NoSuspiciousCluster'
-os.makedirs(output_dir, exist_ok=True)  # Create output directory if it doesn’t exist
-os.chdir(output_dir)  # Change the current working directory
-
+output_dir = '/resnick/groups/NolanLab/cchen/Feronia/analysis/CellOracle/CellOracle_output/20261020_feronia_salinity_timecourse_WT_untreated_fer4_untreated_newIntegratedSeurat3_NoSuspiciousCluster_seeded_isolated'
 # Get cell type from SLURM array index
 cell_type_idx = int(sys.argv[1])
-x = list(celltypes.keys())[cell_type_idx]
+x, task_folder = tasks[cell_type_idx]
+
+# Fix 1: every task gets its own working folder, so CellOracle's ./network_analysis/ temp folder is never shared
+task_dir = os.path.join(output_dir, task_folder)
+os.makedirs(task_dir, exist_ok=False)  # fail rather than reuse a folder another run wrote into
+os.chdir(task_dir)
 
 # Runs CellOracle for the specified cell type
 # Don't change anything here
@@ -193,6 +208,11 @@ elif x == 'trichoblast':
 else:
     # All other celltypes
     my_cluster = DE['cluster_id'][DE['cluster_id'].str.contains(x, case=False, na=False)].unique()
+
+# Fix 2: phloem / xylem must not take DE genes from the Phloem/Xylem Pole Pericycle clusters
+# (their cells are already excluded above; pericycle has its own network)
+if x in ('phloem', 'xylem'):
+    my_cluster = [cluster for cluster in my_cluster if 'pericycle' not in cluster.lower()]
 
 print(f"Clusters for {x}: {my_cluster}")
 
@@ -290,6 +310,7 @@ links.filter_links(p=0.01, weight="coef_abs", threshold_number=20000)
 print('Calculate network scores. It takes several minutes')
 # Calculate scores for each regulatory interaction in the network.
 links.get_score()
+
 # Display the first few rows of the merged score table to check results.
 links.merged_score.head()
 
@@ -346,3 +367,15 @@ for i in df['target']:
 df.insert(3, 'target_name', name)
 # Save the final gene regulatory network data as a CSV file.  
 df.to_csv(x+"_rawRNA_celloracle_network_iGRN.csv")
+
+# Fix 4 (run last, after everything is saved): each network's scores must come from its own links (degree_out == number of filtered links per source gene)
+for i in links.filtered_links.keys():
+    n_links = links.filtered_links[i]['source'].value_counts()
+    sc_i = links.merged_score[links.merged_score['cluster'] == i]
+    stored = sc_i['degree_out']
+    expected = n_links.reindex(stored.index).fillna(0).astype(int)
+    genes_links = set(links.filtered_links[i]['source']) | set(links.filtered_links[i]['target'])
+    if not ((stored.astype(int) == expected).all() and set(stored.index) == genes_links):
+        sys.exit(f"Score table for {i} does not match its own links -- contamination? (outputs kept for inspection)")
+    print(f"{i}: score table matches its {len(links.filtered_links[i])} links")
+print("ALL NETWORK SCORE CHECKS PASSED")

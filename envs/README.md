@@ -52,7 +52,7 @@ export PYTHONHASHSEED=0
 python 20260317_..._slurmArray_run_celloracle_grn.py
 ```
 
-We checked this on 25 target genes of the WT Distal Columella network (12,243 coefficients): with `PYTHONHASHSEED=0`, two runs in separate processes gave identical coefficients; with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run. The other networks were not tested.
+We checked this on 25 target genes of the WT Distal Columella network (12,243 coefficients): with `PYTHONHASHSEED=0`, two runs in separate processes gave identical coefficients; with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run. The other networks were not tested here; the seeded rerun of all networks (Stage 4, Oct 2026) repeated a whole columella task and gave identical networks and centrality scores.
 
 ## `cell_oracle`: Python packages from pip
 

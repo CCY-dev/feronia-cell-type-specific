@@ -1,4 +1,5 @@
-# FER single-cell expression figures: Extended Data Fig. 7d,e (YUC5) and Supplementary Figs 1-2 (the ten assayed DOFs).
+# FER single-cell expression figures: Supplementary Figs 1-2 (the ten assayed DOFs) and a YUC5 UMAP / dot plot that is NOT used in the paper
+# (Extended Data Fig. 5d,e are drawn by ../YUC5_expression_ED5/).
 # Every number is drawn from data/ (per-cell export made read-only from the integrated Seurat v3 object by
 # tools/hpc/extract_si_expression.R; DE and nomination tables derived by tools/derive_de_tables.py); every word is here.
 # Rebuild everything:  python build.py

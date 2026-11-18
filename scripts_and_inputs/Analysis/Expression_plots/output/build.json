@@ -6,25 +6,25 @@
   "config_sha256": "0c754a9c2a25733e95fa8dcad18fee8f277fdd3b530b4b680d497faf51802166",
   "palette_sha256": "f76d8cde9ab8384c75af7f9c2641c12ad85b6bdff6d71826bd8c1ca7013b6efa",
   "de_table_sha256": "2551854bab2bb6a895dc387f954a00a6bde01a43cff30cd0362a2c173f61575c",
-  "nomination_table_sha256": "82ed126001ebf9ca47b24f7b850a12b395a30986db5d051af6ae8de14a785f58"
+  "nomination_table_sha256": "569551a16160429c18935130dba88ec9d75c534e4f6b3deb98121bdf6a8982d5"
  },
  "code_sha256": {
   "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "colour.py": "c9415baa445abbe3384eb689692c334273913e4a856d9c7ac04abdcc37df6681",
   "compare.py": "9ba2d16fbf0645c05a1c53345353e16c03dc5e46d4975013067bd18955f1c74f",
   "data.py": "bded695265df550aff6c2a75b153ca7f777246802b149fa4ab9ba7ab2619cf53",
-  "figures.py": "7e682bfeacde555ddc7725104d6ada51cc09841e04cfa017386b866f535fdeee",
+  "figures.py": "94b89d322d37974007f85524cc6be392347f280862d80bc6b64ad4011a04450e",
   "page.py": "3a0582096371495cd6839c2102d46fb9edb266d702bdd64e3e9bf82c1a21fa0d",
   "panels.py": "cc08f9b5fe6f5e4994f23ccc0fb333fc2cc6a10c68b67d62d0f6fe21f5ec05b6",
   "build.py": "06f5cfbaeeb19c2eeabcb48e04f53fd3fbc07ec1868da95c0653af0d1552e6f5"
  },
  "environment": {
-  "python": "3.11.15",
-  "platform": "macOS-26.5.2-arm64-arm-64bit",
-  "matplotlib": "3.11.0",
-  "numpy": "2.4.6",
-  "pandas": "2.3.3",
-  "scipy": "1.17.1",
+  "python": "3.13.5",
+  "platform": "Linux-5.14.0-427.13.1.el9_4.x86_64-x86_64-with-glibc2.34",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
   "pyyaml": "6.0.3"
  },
  "data": {
@@ -114,8 +114,8 @@
     47.87
    ],
    "outputs": {
-    "ED7d_YUC5_UMAP.pdf": "27c75a63544f5f42ece4ef16beb74a8946b6e7271ccb4ee8b0fd016af1f19b28",
-    "ED7d_YUC5_UMAP.png": "8955a1d18d30f159531318e6f5de5ec5100e387ad4b43126906b018fbdd4b846"
+    "ED7d_YUC5_UMAP.pdf": "bb2343b934cb230a3c415dcc55d1f715524374804498bd302c7709d98cec8118",
+    "ED7d_YUC5_UMAP.png": "93fb992a7caf3bbd5c423aa8ed47f72c9607a62281c8efc215bea8de040d6187"
    },
    "checks": [
     {
@@ -146,8 +146,8 @@
     34.51
    ],
    "outputs": {
-    "ED7e_YUC5_dotplot.pdf": "e87fcff02a5cbaaa9b7b4715cdce14c34079d07ac1f096336d98a82e79fb42cf",
-    "ED7e_YUC5_dotplot.png": "c2bb679fdce641986a3467ab082c3ca52479650d8ff57c0cb10f1e23b4e604de"
+    "ED7e_YUC5_dotplot.pdf": "7c36dfd294e545de85f09a0d8d68df74d93460fa769c2549de59e94cbbc39c50",
+    "ED7e_YUC5_dotplot.png": "9f753ab49fd229a5015e99e2ebd6e09d902ffff143c9107393f07b64e456794d"
    },
    "checks": [
     {
@@ -187,8 +187,8 @@
     137.44
    ],
    "outputs": {
-    "SupplFig1_DOF_expression.pdf": "2dc6cecb0e209a315cc25b7159b10d48d1287c94f8032bf44d8a9b80b8039b39",
-    "SupplFig1_DOF_expression.png": "dbf4cee411642a9ed32b28d2fb59a3e9753b3ac4979a0c2f5cf649301197d8b9"
+    "SupplFig1_DOF_expression.pdf": "60d8704886bed07e8e7be6cf25580c25e951499e7902f41e51cab40d93254765",
+    "SupplFig1_DOF_expression.png": "7923b9418401e0db0ef6542d84f6e4bb27305a179cad1a8a5215da1124d3d207"
    },
    "checks": [
     {
@@ -225,11 +225,11 @@
    ],
    "size_mm": [
     180,
-    116.25
+    135.39
    ],
    "outputs": {
-    "SupplFig2_DOF_DE_and_network.pdf": "c564e76c25601e300f4f62a9cd0149420d681fa0afe707fec815cb6526881a6b",
-    "SupplFig2_DOF_DE_and_network.png": "1ae59ab8e6e512d0d06d3bd44aa7a97b835c671450a91d5453f2972d308a117f"
+    "SupplFig2_DOF_DE_and_network.pdf": "4703607eea989b0ffbdbaf88a6c136e1f0ce87821f4c0079ccfa3058f9d43c37",
+    "SupplFig2_DOF_DE_and_network.png": "4d8984442e49aee3f3e7a455de313aca59d27b47bbfe46ea62a27d38d36dec19"
    },
    "checks": [
     {
