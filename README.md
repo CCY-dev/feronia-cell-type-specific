@@ -28,7 +28,6 @@ The analyses compare 5-day-old wild-type (WT, Col-0) and *fer-4* mutant Arabidop
 | (proposed ED Fig. 3 version) | Up- and down-regulated DEGs, 15 selected GO terms each | [`20260317_Feronia_GO_terms_plot_new_integrated_seu3.R`](scripts_and_inputs/Analysis/Differential_expression_analysis/scripts/20260317_Feronia_GO_terms_plot_new_integrated_seu3.R) | [GO tables](scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/GO), [term selections](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/GO_term_selection) |
 | Fig. 5a | TF-family enrichment among WT- and *fer-4*-nominated TFs | [Stage 5 – `02_Fig5a_TF_family_forest.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/02_Fig5a_TF_family_forest.R) | [`TF_family_enrichment_all_tests.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/TF_family_enrichment_all_tests.csv) |
 | Fig. 5b | DOF → auxin-gene network for the assayed DOFs that the network analysis nominated (9 of 10) | [Stage 5 – `05_Fig5b_DOF_auxin_network.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/05_Fig5b_DOF_auxin_network.R) | [`Fig5b_DOF_auxin_network_stats.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/Fig5b_DOF_auxin_network_stats.csv) |
-| Extended Data Fig. 8 | Scheme of the TF nomination and family-enrichment method | [Stage 5 – `03_EDFig8_method_scheme.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/03_EDFig8_method_scheme.R) (base version; the published scheme was simplified by hand) | [`EDFig8_method_scheme_stats.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/EDFig8_method_scheme_stats.csv) |
 | Supplementary Tables S6, S7; Fig. 5a source data | WT- and *fer-4*-specific TFs; all 110 family tests | [Stage 4 – `20261021_rank_change_and_specific_TFs.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/20261021_rank_change_and_specific_TFs.R); [Stage 5 – `01_TF_family_enrichment.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/01_TF_family_enrichment.R) | [`…_WT_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_WT_specific_TF.txt), [`…_fer4_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_fer4_specific_TF.txt), [`TF_family_enrichment_all_tests.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/TF_family_enrichment_all_tests.csv) |
 
 ---
@@ -48,7 +47,7 @@ Stage 1  Preprocessing ............ annotation transfer + integration with the r
         └──► Stage 4  CellOracle GRNs per cell type → network scores → genotype-specific TFs
                     │
                     ▼
-             Stage 5  TF-family enrichment + DOF → auxin network                         → Fig. 5a,b, ED Fig. 8
+             Stage 5  TF-family enrichment + DOF → auxin network                         → Fig. 5a,b
 
 Expression_plots     DOF expression, DE and nominations (Stages 1, 3, 4) → Suppl. Figs 1–2
 YUC5_expression_ED5  YUC5 UMAP and violin plot (Stage 1 object)        → ED Fig. 5d,e
@@ -122,7 +121,7 @@ Folder: [`scripts_and_inputs/Analysis/CellOracle_GRN_analysis/`](scripts_and_inp
 
 Inputs in [`inputs/`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs): [`Kay_TF_thalemine_annotations.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs/Kay_TF_thalemine_annotations.csv) (the TF list used to build the networks) and [`features.tsv.gz`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs/features.tsv.gz) (AGI → gene symbol).
 
-## Stage 5 – TF-family enrichment and the DOF → auxin network (Fig. 5a, b; Extended Data Fig. 8)
+## Stage 5 – TF-family enrichment and the DOF → auxin network (Fig. 5a, b)
 
 Folder: [`scripts/TF_family_enrichment/`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment). Its own **[README](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/README.md)** gives the run order, thresholds, background definition and package versions. In brief:
 
@@ -131,7 +130,6 @@ Folder: [`scripts/TF_family_enrichment/`](scripts_and_inputs/Analysis/CellOracle
 | 0 | [`00_paths.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/00_paths.R) | paths, which can be overridden by environment variables |
 | 1 | [`01_TF_family_enrichment.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/01_TF_family_enrichment.R) | family × genotype Fisher tests over 1,301 background TFs, BH over 110 tests |
 | 2 | [`02_Fig5a_TF_family_forest.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/02_Fig5a_TF_family_forest.R) | **Fig. 5a** |
-| 3 | [`03_EDFig8_method_scheme.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/03_EDFig8_method_scheme.R) | **Extended Data Fig. 8** (base version) |
 | 4 | [`04_extract_DOF_auxin_edges.py`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/04_extract_DOF_auxin_edges.py) | [`DOF_auxin_edges_all_contexts.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/DOF_auxin_edges_all_contexts.csv), [`DOF_auxin_pair_states.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/DOF_auxin_pair_states.csv) |
 | 5 | [`05_Fig5b_DOF_auxin_network.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/05_Fig5b_DOF_auxin_network.R) | **Fig. 5b** (same nodes, groups and edges as the published panel, which was drawn from these tables in the authors' figure style) |
 
