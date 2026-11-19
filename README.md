@@ -7,7 +7,7 @@ Code and processed data for the single-cell analyses in:
 The analyses compare 5-day-old wild-type (WT, Col-0) and *fer-4* mutant Arabidopsis roots by single-cell RNA-seq (scRNA-seq). They cover cell-type annotation and integration, sample quality checks, cell-type-resolved differential expression, and CellOracle gene regulatory networks (GRNs) leading to the DOF transcription factor (TF) analysis in Fig. 5. The figure kit draws the published figures, including every wet-lab chart from the paper's Source Data.
 
 - **Raw data:** NCBI GEO [GSE325470](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325470). This holds FASTQ files and the per-sample Seurat objects `sc_291`–`sc_294`, which are too large for this repository.
-- **Source Data** (wet-lab measurements behind Figs. 2–6 and the Extended Data charts): published with the paper, not in this repository. The scripts read it from `scripts_and_inputs/Analysis/Figure_kit/source_data/`.
+- **Source Data** (wet-lab measurements behind Figs. 2–6 and the Extended Data charts): published with the paper; the lab copy of this repository keeps it in `scripts_and_inputs/Analysis/Figure_kit/source_data/`, the public GitHub copy does not include it (put the workbook there).
 - **Samples:** `sc_291` WT rep 1, `sc_292` *fer-4* rep 1, `sc_293` WT rep 2, `sc_294` *fer-4* rep 2 ([sample sheet](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv)).
 
 ---

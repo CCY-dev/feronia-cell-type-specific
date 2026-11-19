@@ -37,8 +37,9 @@ system (or point `FER_FONT_DIR` at a folder with ARIAL.TTF, ARIALBD.TTF, ARIALI.
 Without it the kit falls back to Liberation Sans / DejaVu Sans and warns; text widths then differ slightly.
 
 ## What is and is not in this repository
-- **Source Data:** not included (published with the paper). `tools/source_data_to_long.py` reads it; every number
-  on a chart is computed from it at build time.
+- **Source Data:** the lab copy of this repository keeps the workbook in `source_data/` (`Source data-20261118.xlsx`);
+  the public GitHub copy does not include it (it is published with the paper; put it in `source_data/`).
+  `tools/source_data_to_long.py` reads it; every number on a chart is computed from it at build time.
 - **Images** (micrographs, seedling photographs, the EMSA gel): not included. `tools/make_placeholder_tiles.py`
   writes a uniformly grey tile of the same pixel size for every image listed in `data/figN/figN_image_sizes.csv`, so
   the figures build with every chart, label and scale bar at its published position. To rebuild the complete

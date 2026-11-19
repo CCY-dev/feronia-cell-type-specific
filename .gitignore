@@ -18,8 +18,9 @@ scripts_and_inputs/Analysis/Figure_kit/output/
 scripts_and_inputs/Analysis/Figure_kit/provenance/
 *.ttf
 *.TTF
-# Wet-lab figures: the Source Data workbook (published with the paper) and everything derived from it are never committed
-scripts_and_inputs/Analysis/Figure_kit/source_data/
+# Wet-lab figures: only the Source Data workbook itself is committed (lab GitLab only, see GITHUB_EXCLUDE.txt); everything derived from it is regenerated
+scripts_and_inputs/Analysis/Figure_kit/source_data/*
+!scripts_and_inputs/Analysis/Figure_kit/source_data/Source data-20261118.xlsx
 # Figure kit, wet-lab figures: measurement tables are regenerated from the Source Data (tools/fig*_tables.py) and the
 # original images are not distributed (tools/make_placeholder_tiles.py writes blank tiles; the colour keys are kept)
 scripts_and_inputs/Analysis/Figure_kit/data/fig2/fig2[dfg]_*[a-z0-9].csv
