@@ -1,0 +1,59 @@
+# Journal profile: Nature and Nature Plants (Nature Portfolio) final-figure requirements.
+# Checked 6 Oct 2026 against:
+#   Nature Plants, AIP and formatting (Figures; Extended Data; Source Data):
+#     https://www.nature.com/nplants/submission-guidelines/aip-and-formatting
+#   Nature Portfolio research figure guide (sizing, fonts, accessibility, image integrity):
+#     https://research-figure-guide.nature.com/figures/building-and-exporting-figure-panels/
+#     https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications
+#     https://research-figure-guide.nature.com/figures/image-integrity
+#   Nature, Final submission (lettering, sizing): https://www.nature.com/nature/for-authors/final-submission
+#   Nature, Initial submission (statistics, colour, 170 mm height): https://www.nature.com/nature/for-authors/initial-submission
+#   Nature Portfolio image integrity policy: https://www.nature.com/nature-portfolio/editorial-policies/image-integrity
+# `ferfigs check` reads this file; edit it (not the code) if a journal changes its numbers.
+name: nature_portfolio
+width_mm:
+  double_column: 180        # Nature Plants: saved at a maximum width of 180 mm (Nature final artwork: 183 mm)
+  one_and_half: [120, 136]
+  single_column: 88
+  max: 180                  # error above this
+height_mm:
+  target_max: 170           # Nature figure guide: maximum height 170 mm, to fit the legend underneath
+  hard_max: 247             # full depth of a Nature page; error above this
+text_pt:
+  min: 5.0
+  max: 7.0
+panel_label:
+  size_pt: 8.0
+  weight: bold
+  style: upright
+  case: lower
+fonts:
+  allowed: [Arial, Helvetica]          # one sans-serif typeface throughout all figures
+  allowed_monospace: [Courier, CourierNew, AndaleMono, DejaVuSansMono]   # sequences only
+  embed: truetype                      # Type 42 (TrueType) embedding; never outline text
+text_colour:
+  allowed: [[0, 0, 0], [1, 1, 1]]      # 'avoid coloured text': black, or white on dark images
+  tolerance: 0.02
+line_width_pt:
+  min: 0.25
+  max: 1.0
+images:
+  min_ppi: 300                          # at final printed size
+  colour_mode: RGB
+accessibility:
+  avoid_red_green: true                 # fluorescence: recolour to green/magenta where possible (disclose)
+  avoid_rainbow_scales: true
+integrity:
+  juxtaposed_images_gap_mm: 0.5         # separate (demarcate) images from different fields or samples
+  scale_bars: vector_layer              # not burned into pixels
+  no_generative_ai: true
+statistics:
+  define_error_bars: true               # in the legend
+  exact_n: true
+source_data:
+  statistics: "Excel workbook, one file per figure, one sheet per panel"
+  gels_blots: "full-length unprocessed images, one PDF per figure, linked panel noted in the file"
+extended_data:
+  max_items: 10
+  max_size_mm: [180, 170]
+display_items_max: 6

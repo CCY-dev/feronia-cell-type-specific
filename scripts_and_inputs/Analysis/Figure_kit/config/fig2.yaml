@@ -1,0 +1,226 @@
+# Figure 2: cell type-specific FER knockout (TSKO) lines and their root phenotypes.
+# a schematic | b FER-GFP images; c meristems | d meristem cell number; e root hairs | f root hair length;
+# g root length under 1 uM RALF23 | h seedlings.
+# Data: data/fig2/ (measurement tables from the Source Data by tools/fig2_tables.py; authors' labels in *_stats.csv).
+# Rebuild:  python build.py fig2
+label: Fig. 2
+output_stem: Fig2
+size_mm: [180, 245.7]
+manifest: data/fig2/fig2_images.csv     # one row per image tile (file, crop, um/px, scale bar, overlays)
+
+accepted:                  # author decisions, not journal waivers (bounded; see docs/COMPLIANCE.md)
+  - {match: "is above 170 mm", max_mm: 245.7, reason: "full-page layout, within Nature's 247-mm page depth but with no room for the legend underneath: at initial submission the legend goes on the same page (the submission PDF scales the figure to fit), and final placement is agreed with Nature production", decided_by: authors}
+
+letters:
+  a: [2.3, 1.674]
+  b: [95.3, 1.674]
+  c: [2.3, 53.885]
+  d: [95.3, 53.885]
+  e: [2.3, 118.482]
+  f: [95.3, 118.482]
+  g: [2.3, 180.482]
+  h: [95.3, 180.482]
+
+layout:
+  tile_gap: 0.6            # default white space between juxtaposed tiles (journal minimum 0.5)
+  min_label_gap: 0.5       # neighbouring tile labels closer than this stop the build with a message
+
+marks:
+  orange: {rgb: [230, 84, 0], length_mm: 1.27, width_mm: 1.46, lw: 0.925}  # b knockout tissue; c transition domain end
+  blue: {rgb: [0, 114, 178], length_mm: 1.67, width_mm: 1.92, lw: 0.925}   # c, e quiescent centre
+
+# Image labels: genotype names fully italic, as in config/labels.yaml (charts). b and c split the names over
+tile_labels:
+  b:
+    FER/fer-4: ["*FER/*", "*fer-4*"]
+    pWER-KO_L1: ["*pWER-*", "*KO_L1*"]
+    pCO2-KO_L1: ["*pCO2-*", "*KO_L1*"]
+    pSCR-KO_L1: ["*pSCR-*", "*KO_L1*"]
+    pSHR-KO_L1: ["*pSHR-*", "*KO_L1*"]
+    pSMB-KO_L1: ["*pSMB-*", "*KO_L1*"]
+  c:
+    Col-0: ["Col-0"]
+    fer-4: ["*fer-4*"]
+    FER/fer-4: ["*FER/*", "*fer-4*"]
+    pWER-KO_L1: ["*pWER-*", "*KO_L1*"]
+    pCO2-KO_L1: ["*pCO2-*", "*KO_L1*"]
+    pSCR-KO_L1: ["*pSCR-*", "*KO_L1*"]
+    pSHR-KO_L1: ["*pSHR-*", "*KO_L1*"]
+    pSMB-KO_L1: ["*pSMB-*", "*KO_L1*"]
+  one_line:
+    Col-0: ["Col-0"]
+    fer-4: ["*fer-4*"]
+    FER/fer-4: ["*FER/fer-4*"]
+    pWER-KO_L1: ["*pWER-KO_L1*"]
+    pCO2-KO_L1: ["*pCO2-KO_L1*"]
+    pSCR-KO_L1: ["*pSCR-KO_L1*"]
+    pSHR-KO_L1: ["*pSHR-KO_L1*"]
+    pSMB-KO_L1: ["*pSMB-KO_L1*"]
+
+schematic:
+  x: 4.5
+  y: 2.2
+  w: 82.1
+  text_pt: 6.5
+  promoter_pt: 6.0
+  box_pt: 6.3
+  line_pt: 0.7
+  line_colour: [64, 64, 64]
+  box_lw: 0.6
+  corner_frac: 0.18        # corner radius = 0.18 x the shorter side of each box
+  head_mm: [1.5, 1.26]     # arrowhead length, width
+  box_gap_mm: 1.4
+  label_dx_mm: 1.6
+  tint: 0.30               # box fill = genotype fill colour at 30 % over white
+  promoter_gap_mm: [1.76, 0.56]   # the arrow line is open this far above / below each promoter label baseline
+  geometry: {top_box: [0.0, 4.6], middle_box: [12.0, 16.6], bar: 26.0, ko_top: 36.5, ko_bottom: 49.21,
+             promoter_baseline: 31.0}
+  top: {text: ["*fer-4* mutant"], genotype: fer-4, w: 30.0, tint: 0.30}
+  middle: {text: ["*pFER:FER-GFP/fer-4*"], genotype: FER/fer-4, w: 38.0, tint: 0.50}
+  edge1: {text: ["Complementation"], baselines: [9.08]}
+  edge2: {text: ["Cell type-specific CRISPR", "*pAtU6-FERgRNA*"], baselines: [20.2, 23.0]}
+  branches:
+    - {promoter: "*pWER-CAS9*", genotype: pWER-KO, text: ["*pWER-KO*", "Epidermis/", "lateral root cap"]}
+    - {promoter: "*pCO2-CAS9*", genotype: pCO2-KO, text: ["*pCO2-KO*", "Cortex"]}
+    - {promoter: "*pSCR-CAS9*", genotype: pSCR-KO, text: ["*pSCR-KO*", "Endodermis/", "cortex"]}
+    - {promoter: "*pSHR-CAS9*", genotype: pSHR-KO, text: ["*pSHR-KO*", "Stele"]}
+    - {promoter: "*pSMB-CAS9*", genotype: pSMB-KO, text: ["*pSMB-KO*", "Root cap"]}
+
+images:                    # x, y = top-left of the first tile; one magnification per panel (um per printed mm).
+                           # smallest largest deviation: b 0.055, c 0.077, e 0.087, g 0.103 mm; see the notes and the
+  b:
+    x: 97.32
+    y: 7.666
+    um_per_mm: 17.99       # 50-um bar = 2.78 mm
+    col_gap: 1.12
+    valign: bottom
+    fit_row_height: [pshr-ko_l1]
+    bar_colour: white
+    labels: b
+    label_pt: 7.0
+    label_pitch: 3.05
+    label_gap_above: 0.85  # last label baseline above the tile tops
+  c:
+    x: 3.812
+    y: 63.743
+    um_per_mm: 18.35       # 50-um bar = 2.72 mm
+    col_gap: 0.72
+    bar_colour: black
+    frame_lw: 0.69
+    labels: c
+    label_pt: 7.0
+    label_pitch: 3.05
+    label_gap_above: 0.81
+  e:
+    x: 8.562
+    y: 124.434
+    um_per_mm: 61.4
+    col_gap: 0.92
+    row_gap: 1.2
+    bar_colour: black
+    frame_lw: 0.69
+    labels: one_line
+    label_pt: 7.0
+    label_gap_above: 1.35
+    label_gap_below: 3.47
+  h:
+    x: 112.4               # (white separators cut into tiles, row labels in roman/italic, ratios in white)
+    y: 188.3
+    um_per_mm: 1580.0      # 1-cm bar = 6.33 mm; 374 px tiles print 25.2 mm wide (424 ppi)
+    col_gap: 0.6
+    row_gap: 0.52
+    bar_colour: white
+    header_gap: 0.45       # header baseline above the tile tops
+    label_left: 110.8      # right edge of the left-column row labels
+    label_right_gap: 1.2   # right-column row labels start this far right of the tiles
+
+h_seedlings:
+  title: RALF23            # treatment named left of the column words, right-aligned at label_left
+  columns:                 # header words over each tile column; x in tile pixels
+    - {series: Mock, text: Mock, x_px: 105.0}
+    - {series: "1 µM RALF23", text: "1 µM", x_px: 290.0}
+  ratios: data/fig2/fig2h_ratios.csv
+  ratio_source: table      # table (as printed by the authors) | computed (mean 1 uM / mean Mock of the g table)
+  ratio_format: "{:.2f}"
+  ratio_x_px: 290.0        # under the 1 uM seedlings
+  ratio_baseline_px: 240.0 # from the top of each tile row
+  row_labels:
+    Col-0: "Col-0"
+    pWER-KO_L1: "*pWER-KO_L1*"
+    pCO2-KO_L1: "*pCO2-KO_L1*"
+    pSCR-KO_L1: "*pSCR-KO_L1*"
+    pSHR-KO_L1: "*pSHR-KO_L1*"
+    pSMB-KO_L1: "*pSMB-KO_L1*"
+  text_pt: 7.0
+
+panels:
+  a: {type: schematic, data_status: schematic, note: "line art drawn from the words in schematic: (no data)"}
+  b: {type: images, manifest: data/fig2/fig2_images.csv, data_status: original_images_from_deck}
+  c: {type: images, manifest: data/fig2/fig2_images.csv, data_status: original_images_from_deck}
+  d:
+    type: dotbar
+    data: data/fig2/fig2d_meristem_cell_number.csv
+    stats: data/fig2/fig2d_meristem_cell_number_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, fer-4, FER/fer-4, pWER-KO_L1, pCO2-KO_L1, pSCR-KO_L1, pSHR-KO_L1, pSMB-KO_L1]
+    series: [all]
+    colour_by: group
+    legend: false
+    y_label: "Meristem cell number"
+    y_max: 80
+    y_step: 20
+    x_rotation: 45
+    group_gap: 0.275
+    require_labels: true
+    unit: "cells"
+  e: {type: images, manifest: data/fig2/fig2_images.csv, data_status: original_images_from_deck}
+  f:
+    type: dotbar
+    data: data/fig2/fig2f_root_hair_length.csv
+    stats: data/fig2/fig2f_root_hair_length_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, fer-4, FER/fer-4, pWER-KO_L1, pCO2-KO_L1, pSCR-KO_L1, pSHR-KO_L1, pSMB-KO_L1]
+    series: [all]
+    colour_by: group
+    legend: false
+    y_label: "Root hair length (mm)"
+    y_max: 0.8
+    y_step: 0.2
+    y_tick_format: "{:.1f}"
+    x_rotation: 45
+    group_gap: 0.275
+    require_labels: true
+    unit: "mm"             # one point per hair (10 roots x 10 longest hairs), as the authors' chart and letters
+  g:
+    type: dotbar
+    data: data/fig2/fig2g_root_length_ralf23.csv
+    stats: data/fig2/fig2g_root_length_ralf23_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, pWER-KO_L1, pCO2-KO_L1, pSCR-KO_L1, pSHR-KO_L1, pSMB-KO_L1]
+    series: [Mock, 1 µM RALF23]
+    colour_by: series
+    legend: false
+    y_label: "Root length (mm)"
+    y_max: 30
+    y_step: 10
+    x_rotation: 45
+    star_rotation: 90
+    group_gap: 1.075
+    require_labels: false    # asterisks only over the RALF23 bars (each compared with Mock of its genotype)
+    frame: [16.85, 188.3, 64.7, 43.15]   # Fig. 2 chart size; left column, top level with the h tiles
+    key: {dy: 2.42, title: RALF23, items: [{series: Mock, text: Mock}, {series: 1 µM RALF23, text: 1 µM}]}
+    unit: "mm"
+  h: {type: images, manifest: data/fig2/fig2_images.csv, data_status: original_images_from_deck,
+      ratios_status: "as printed in the published figure; compared with the g table by tools/fig2_tables.py"}
+
+charts:
+  x: 109.85                # is level with the tile tops of its image row (c, e)
+  w: 64.7
+  h: 43.15
+  font_pt: 6.8
+  rows: {d: c, f: e}
+
+templates:
+  h:
+    - {name: ratios, role: printed_values, file: data/fig2/fig2h_ratios.csv, columns: [group, series, label, kind, source, notes],
+       note: "numbers printed on the seedling photograph; say in notes how each was calculated"}

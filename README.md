@@ -4,9 +4,10 @@ Code and processed data for the single-cell analyses in:
 
 **Cell type-specific gene manipulation uncovers FERONIA receptor kinase signaling specificity in Arabidopsis roots**
 
-The analyses compare 5-day-old wild-type (WT, Col-0) and *fer-4* mutant Arabidopsis roots by single-cell RNA-seq (scRNA-seq). They cover cell-type annotation and integration, sample quality checks, cell-type-resolved differential expression, and CellOracle gene regulatory networks (GRNs) leading to the DOF transcription factor (TF) analysis in Fig. 5.
+The analyses compare 5-day-old wild-type (WT, Col-0) and *fer-4* mutant Arabidopsis roots by single-cell RNA-seq (scRNA-seq). They cover cell-type annotation and integration, sample quality checks, cell-type-resolved differential expression, and CellOracle gene regulatory networks (GRNs) leading to the DOF transcription factor (TF) analysis in Fig. 5. The figure kit draws the published figures, including every wet-lab chart from the paper's Source Data.
 
 - **Raw data:** NCBI GEO [GSE325470](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325470). This holds FASTQ files and the per-sample Seurat objects `sc_291`–`sc_294`, which are too large for this repository.
+- **Source Data** (wet-lab measurements behind Figs. 2–6 and the Extended Data charts): published with the paper, not in this repository. The scripts read it from `scripts_and_inputs/Analysis/Figure_kit/source_data/`.
 - **Samples:** `sc_291` WT rep 1, `sc_292` *fer-4* rep 1, `sc_293` WT rep 2, `sc_294` *fer-4* rep 2 ([sample sheet](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv)).
 
 ---
@@ -28,6 +29,14 @@ The analyses compare 5-day-old wild-type (WT, Col-0) and *fer-4* mutant Arabidop
 | (proposed ED Fig. 3 version) | Up- and down-regulated DEGs, 15 selected GO terms each | [`20260317_Feronia_GO_terms_plot_new_integrated_seu3.R`](scripts_and_inputs/Analysis/Differential_expression_analysis/scripts/20260317_Feronia_GO_terms_plot_new_integrated_seu3.R) | [GO tables](scripts_and_inputs/Analysis/Differential_expression_analysis/outputs/GO), [term selections](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/GO_term_selection) |
 | Fig. 5a | TF-family enrichment among WT- and *fer-4*-nominated TFs | [Stage 5 – `02_Fig5a_TF_family_forest.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/02_Fig5a_TF_family_forest.R) | [`TF_family_enrichment_all_tests.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/TF_family_enrichment_all_tests.csv) |
 | Fig. 5b | DOF → auxin-gene network for the assayed DOFs that the network analysis nominated (9 of 10) | [Stage 5 – `05_Fig5b_DOF_auxin_network.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/05_Fig5b_DOF_auxin_network.R) | [`Fig5b_DOF_auxin_network_stats.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/Fig5b_DOF_auxin_network_stats.csv) |
+| Fig. 1 and Fig. 5a, b **as published** (layout, style) | The same panels drawn exactly as in the paper | [Figure kit – `build.py fig1`, `build.py fig5ab`](scripts_and_inputs/Analysis/Figure_kit/README.md) | tables in `Figure_kit/data/`, derived from the outputs above by its `tools/` scripts |
+| Fig. 2d, f, g (+ ratios in h) | TSKO lines: meristem cell number, root hair length, root length under RALF23 | [`tools/fig2_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig2_tables.py) → [`build.py fig2`](scripts_and_inputs/Analysis/Figure_kit/figures/fig2.py) | Source Data (`Fig_2*` sheets) |
+| Fig. 3b, d, g | pYUC5:GFP-GUS quantification (time course, Col-0 vs *fer-4*, TSKO lines) | [`tools/fig3_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig3_tables.py) → [`build.py fig3`](scripts_and_inputs/Analysis/Figure_kit/figures/fig3.py) | Source Data (`Fig_3*` sheets) |
+| Fig. 4b, d, e, g | DR5 quantification; root length with RALF23 ± PEO-IAA; *afb1*, *tir1-1/afb2-3* root length | [`tools/fig4_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig4_tables.py) → [`build.py fig4`](scripts_and_inputs/Analysis/Figure_kit/figures/fig4.py) | Source Data (`Fig_4*` sheets) |
+| Fig. 5c | *YUC5* promoter with predicted DOF sites and the EMSA probe | [`tools/fig5_promoter/`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_promoter) → [`build.py fig5`](scripts_and_inputs/Analysis/Figure_kit/figures/fig5.py) | TAIR10 / Araport11 records in `tools/fig5_promoter/sources/` |
+| Fig. 5d | pYUC5:LUC fold change per DOF | [`tools/fig5_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_tables.py) → [`build.py fig5`](scripts_and_inputs/Analysis/Figure_kit/figures/fig5.py) | Source Data (`Fig_5d LUC assay`) |
+| Fig. 6a, d, e, g | *dof* mutant root length, pYUC5:GFP-GUS in *dof* mutants, DOF qPCR, pDAG1/pDOF2.2 reporters | [`tools/fig6_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig6_tables.py) → [`build.py fig6`](scripts_and_inputs/Analysis/Figure_kit/figures/fig6.py) | Source Data (`Fig_6*` sheets) |
+| Extended Data Figs. 2b, c, e; 4a, b, d, f; 5g; 6c; 7b, d, f; 9d, e; 10c | All Extended Data quantification charts | [`tools/ed_charts.py`](scripts_and_inputs/Analysis/Figure_kit/tools/ed_charts.py) | Source Data (`Ext_Fig_*` sheets) |
 | Supplementary Tables S6, S7; Fig. 5a source data | WT- and *fer-4*-specific TFs; all 110 family tests | [Stage 4 – `20261021_rank_change_and_specific_TFs.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/20261021_rank_change_and_specific_TFs.R); [Stage 5 – `01_TF_family_enrichment.R`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/01_TF_family_enrichment.R) | [`…_WT_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_WT_specific_TF.txt), [`…_fer4_specific_TF.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/20261021_feronia_salinity_WT_untreated_fer4_untreated_CellOracle_fer4_specific_TF.txt), [`TF_family_enrichment_all_tests.csv`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/outputs/TF_family_enrichment/TF_family_enrichment_all_tests.csv) |
 
 ---
@@ -51,6 +60,8 @@ Stage 1  Preprocessing ............ annotation transfer + integration with the r
 
 Expression_plots     DOF expression, DE and nominations (Stages 1, 3, 4) → Suppl. Figs 1–2
 YUC5_expression_ED5  YUC5 UMAP and violin plot (Stage 1 object)        → ED Fig. 5d,e
+Figure_kit           journal layout of Fig. 1 and Fig. 5a,b (Stages 1, 3, 5)  → Fig. 1, Fig. 5a,b as published
+                     wet-lab charts from the Source Data                    → Figs. 2–6, Extended Data charts
 ```
 
 Each stage below lists its inputs, the scripts in run order, and its outputs.
@@ -135,6 +146,27 @@ Folder: [`scripts/TF_family_enrichment/`](scripts_and_inputs/Analysis/CellOracle
 
 PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/inputs/Ath_TF_list.txt).
 
+## Figure kit – published figures and wet-lab charts
+
+Folder: [`scripts_and_inputs/Analysis/Figure_kit/`](scripts_and_inputs/Analysis/Figure_kit) (Python 3.13; [`requirements.txt`](scripts_and_inputs/Analysis/Figure_kit/requirements.txt)). Its own **[README](scripts_and_inputs/Analysis/Figure_kit/README.md)** lists every table and its source. Run from the kit folder, in this order:
+
+1. Computational panels (from this repository's outputs):
+   - [`tools/fig1_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig1_tables.py) (`--check` compares with `data/fig1/`) and [`tools/hpc/extract_fig1a_umap.R`](scripts_and_inputs/Analysis/Figure_kit/tools/hpc/extract_fig1a_umap.R) (per-cell UMAP table; needs the integrated Seurat object) → `python build.py fig1` (**Fig. 1**).
+   - [`tools/fig5ab_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5ab_tables.py) (`--check`) → `python build.py fig5ab` (**Fig. 5a, b**).
+2. Source Data → tidy tables: [`tools/source_data_to_long.py`](scripts_and_inputs/Analysis/Figure_kit/tools/source_data_to_long.py) `"source_data/<Source Data>.xlsx"` → `source_data/long/` (one row per measurement, with its workbook cell).
+3. Measurement tables and statistics checks, one script per figure. Each writes `data/figN/` and `output/stats_checks/STATS_CHECK_figN.csv`, where the test named in the legend is re-run on the Source Data and compared with the printed labels:
+   - [`tools/fig2_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig2_tables.py) (**Fig. 2d, f, g**, and the h ratios checked against g)
+   - [`tools/fig3_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig3_tables.py) (**Fig. 3b, d, g**)
+   - [`tools/fig4_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig4_tables.py) (**Fig. 4b, d, e, g**)
+   - [`tools/fig5_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_tables.py) `"source_data/<Source Data>.xlsx"` (**Fig. 5d**)
+   - [`tools/fig6_tables.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig6_tables.py) (**Fig. 6a, d, e, g**)
+4. Fig. 5c promoter: [`tools/fig5_promoter/derive_coordinates.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_promoter/derive_coordinates.py) then [`make_promoter_table.py`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_promoter/make_promoter_table.py) (TAIR10 / Araport11 records in `sources/`; [`fetch_sources.sh`](scripts_and_inputs/Analysis/Figure_kit/tools/fig5_promoter/fetch_sources.sh) re-downloads them).
+5. Images: [`tools/make_placeholder_tiles.py`](scripts_and_inputs/Analysis/Figure_kit/tools/make_placeholder_tiles.py) writes a blank tile of the same pixel size for every micrograph and photograph (the images are not distributed), so every chart, label and scale bar lands at its published position.
+6. Figures: `python build.py fig2` … `fig6` (modules [`figures/fig2.py`](scripts_and_inputs/Analysis/Figure_kit/figures/fig2.py) – [`fig6.py`](scripts_and_inputs/Analysis/Figure_kit/figures/fig6.py), configs in [`config/`](scripts_and_inputs/Analysis/Figure_kit/config)) → `output/figures/`.
+7. Extended Data charts: [`tools/ed_charts.py`](scripts_and_inputs/Analysis/Figure_kit/tools/ed_charts.py) → `output/ed_charts/` (+ `STATS_CHECK_ED.csv`).
+
+The statistics labels (letters, asterisks and printed ratios) are the authors' and come from the published figures; they are not in the public GitHub copy of this repository (see the kit README). Checked on 19 Nov 2026: from the Source Data, Figs. 2–6 and all 22 Extended Data charts are pixel-identical to the published versions when the original images are present; with the blank tiles every chart, label and position is identical.
+
 ---
 
 ## Running the code
@@ -152,7 +184,7 @@ PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/An
   For each environment, `envs/` holds the conda specification (`.yml`), the exact package list for linux-64 (`.linux-64.explicit.txt`), every installed R package with its version and source (`.R_packages.csv`), `pip freeze`, and a script that reinstalls the R packages that were installed by R rather than conda (`install_R_packages_<env>.R`). Exact archives of the environments (conda-pack) are deposited with the data.
 - **Pinned external service.** GO enrichment uses g:Profiler release `e113_eg59_p19` (set in the muscat notebook).
 - **Determinism.** Seurat's PCA, UMAP and clustering use fixed default seeds. CellOracle 0.20.0 fixes `random_state = 123`, but its GRN fits repeat exactly only when `PYTHONHASHSEED` is fixed as well (the published networks were rerun with `PYTHONHASHSEED=0`, Stage 4). The muscat DE outputs were rerun on 20 Oct 2026 and were byte-identical to the published files; the SLURM job (5099036) ended as CANCELLED after the DE files had been written, so it is not a complete rerun of the notebook.
-- **Inputs and outputs.** Not every script is portable yet. The Stage 2 scripts and the 13-gene scripts read `FERONIA_REPO` (your clone; default the current folder) and write to `OUT_DIR`. The muscat notebook and the GO plotting script read `FERONIA_REPO`. The Stage 5 scripts and `Expression_plots` use paths relative to the repository. The two Stage 1 notebooks, the hormone overlap notebook and both Stage 4 scripts still use the lab's cluster paths (`/resnick/groups/NolanLab/...`), which must be edited to run elsewhere. Every such line is marked with `# NOTE: lab cluster path below -- change it to your own path`. The sample sheet is [`Nolan_single_cell_lab_samples_sc291-294.csv`](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv) (columns `sample`, `genotype`, `rep`).
+- **Inputs and outputs.** Not every script is portable yet. The Stage 2 scripts and the 13-gene scripts read `FERONIA_REPO` (your clone; default the current folder) and write to `OUT_DIR`. The muscat notebook and the GO plotting script read `FERONIA_REPO`. The Stage 5 scripts, `Expression_plots` and `Figure_kit` use paths relative to the repository (`Figure_kit` runs in Python 3.13 with its own [`requirements.txt`](scripts_and_inputs/Analysis/Figure_kit/requirements.txt)). The two Stage 1 notebooks, the hormone overlap notebook and both Stage 4 scripts still use the lab's cluster paths (`/resnick/groups/NolanLab/...`), which must be edited to run elsewhere. Every such line is marked with `# NOTE: lab cluster path below -- change it to your own path`. The sample sheet is [`Nolan_single_cell_lab_samples_sc291-294.csv`](scripts_and_inputs/Analysis/Differential_expression_analysis/inputs/Nolan_single_cell_lab_samples_sc291-294.csv) (columns `sample`, `genotype`, `rep`).
 - **Large objects.** Several notebooks and scripts read the Seurat objects and CellOracle inputs from the lab's cluster paths (`/resnick/groups/NolanLab/...`); point these at your downloaded copies (see below). The Stage 5 scripts use relative paths (see their [README](scripts_and_inputs/Analysis/CellOracle_GRN_analysis/scripts/TF_family_enrichment/README.md)).
 - **Heavy steps.** Stage 1, the Seurat-loading scripts in Stages 2–3, and Stage 4 step 1 need the integrated object (about 20 GB in memory) or a cluster. Stage 3 plotting and all of Stage 5 run from the tables in this repository.
 
@@ -170,3 +202,7 @@ PlantTFDB family assignments come from [`Ath_TF_list.txt`](scripts_and_inputs/An
 | Stage 1 label-transfer metadata (`seu4_metadata/sc_29{1..4}_seu4_metadata.csv`) | 46 MB | Stage 1 | data deposit (DOI to be added) |
 
 Sizes and SHA-256 checksums of the 37 files to deposit (49.0 GB in total) are in [`DATA_DEPOSIT_MANIFEST.tsv`](DATA_DEPOSIT_MANIFEST.tsv).
+
+## Licence
+
+The code in this repository is released under the [MIT License](LICENSE) (Copyright (c) 2026 Chia-Yu Chen, Trevor M. Nolan). Third-party data files included as inputs keep their original terms; please cite their sources: the PlantTFDB TF list (`Ath_TF_list.txt`), the TF list used to build the networks (`Kay_TF_thalemine_annotations.csv`), the gene annotation (`features.tsv`, `features.tsv.gz`), the hormone-regulated gene lists (sources in `20260826_hormone_list_reference.txt`) and the curated cell-type markers (Hsu et al. 2022).

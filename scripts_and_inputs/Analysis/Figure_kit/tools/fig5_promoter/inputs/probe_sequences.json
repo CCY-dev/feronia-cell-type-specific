@@ -1,0 +1,8 @@
+{
+  "gene": "YUC5",
+  "AGI": "AT5G43890",
+  "WT": "CGAAAGTAATATAAAGCGAATAACACCATAAAGGACAAAAAAATC",
+  "mutant": "CGAAAGTAATAACGCTCGAATAACACCAACCCTGACAAAAAAATC",
+  "source": "Original PPTX slide 27 text",
+  "source_length_conflict": "Legend says 2011 bp including 5-prime UTR, underlying promoter graphic says proYUC5 2014 bp. Resolve against construct sequence if available, otherwise flag and do not fabricate."
+}

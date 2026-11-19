@@ -1,0 +1,241 @@
+# Figure 1: cell type- and stage-resolved transcriptome of WT and fer-4 roots (UMAPs, DEG counts, hormone gene sets).
+# Layout = the published Fig. 1 page (180 x 236.5 mm); every position below is in mm on that page.
+# Every number comes from data/fig1/ (derived from this repository by tools/fig1_tables.py, which also verifies the
+# tables against the saved notebook outputs); every word is here.
+# Change words, order, colours, axis limits or geometry here; rebuild:  python build.py fig1
+label: Fig. 1
+output_stem: Fig1
+size_mm: [180, 236.5]                     # approved full-page layout (see accepted:)
+
+# Deliberate deviations from the journal checks, each with its reason (python build.py check lists them as accepted).
+accepted:                  # author decisions, not journal waivers (bounded; journal page depth)
+  - {match: "is above 170 mm", max_mm: 236.5, reason: "approved full-page layout (authors' full-page layout), within Nature's 247-mm page depth but with no room for the legend underneath: at initial submission the legend goes on the same page (the submission PDF scales the figure to fit), and final placement is agreed with Nature production", decided_by: Trevor}
+
+tables:                                   # read by figures/fig1.py (custom tables; schemas checked by the module)
+  umap: data/fig1/fig1a_umap_cells.csv.gz
+  palette: data/fig1/fig1a_palette.csv
+  b: data/fig1/fig1b_genes_by_n_subpopulations.csv
+  c: data/fig1/fig1c_deg_per_subpopulation.csv
+  d: data/fig1/fig1d_hormone_overlap.csv
+  d_q_proposed: data/fig1/fig1d_hormone_overlap_q_proposed.csv     # opt-in only (panels.d.statistic)
+  d_q_authors: data/fig1/fig1d_hormone_overlap_q_authors.csv       # only with panels.d.statistic: q_authors
+  d_colour_scale: data/fig1/fig1d_colour_scale.csv
+  summary: data/fig1/fig1_summary.csv
+
+panels:
+  a:
+    type: umap_grid
+    data_status: upstream_table           # per-cell values stored in the Seurat object her notebooks read (exported
+                                          # read-only by tools/hpc/extract_fig1a_umap.R); colours from her notebook
+    header: "5-day-old roots, {n_cells} cells"
+    genotypes: [WT, fer4]                 # data values of the genotype column, left to right
+    columns: {genotype: genotype, celltype: celltype.anno.Li, stage: time.anno.Li}
+    fer_column: FER_SCT                   # SCT-normalised FER (AT3G51550)
+    fer_order: value                      # expressing cells drawn on top (Seurat FeaturePlot order = TRUE), as in the SI expression figures; 'object' = table order
+    fer_colours: [lightgrey, blue]        # Seurat FeaturePlot defaults; scale = data minimum to maximum, all cells
+    fer_key_label: "*FER*"
+    rows:
+      - {map: celltype, label: "Cell type"}
+      - {map: stage, label: "Developmental stage"}
+      - {map: fer, label: "*FER* expression"}
+    glyph_labels: ["UMAP 1", "UMAP 2"]
+    key:
+      celltype: {title: "Cell type", rows_per_column: 7}
+      stage: {title: "Developmental stage", rows_per_column: 8}
+    # Colours come from her notebook (data/fig1/fig1a_palette.csv). Opt-in only: {celltype: {Name: "#rrggbb"}, ...}
+    # (e.g. for colour-vision safety). Empty = her palette.
+    palette_override: {}
+  b:
+    type: count_bars
+    data_status: computed_from_upstream
+    y_label: "DEGs"
+    x_label: "Number of subpopulations in which a gene is differentially expressed"
+    y_max: 3300
+    y_step: 1000
+    bin_labels: {"15+": "\u226515"}       # her bin name -> printed tick label
+    highlight_bins: ["1", "2"]
+    colours: {highlight: "#4D4D4D", other: "#B3B3B3"}
+    total_text: "{total} DEGs in total"
+    share_text: "{n12} ({pct}%) in one or two subpopulations"
+  c:
+    type: stacked_rows
+    data_status: computed_from_upstream
+    title: "DEGs per subpopulation"
+    x_max: 2700
+    x_step: 1000
+    colours: {down: "#0072B2", up: "#D55E00"}
+    key_labels: {down: "Down in *fer-4*", up: "Up in *fer-4*"}
+    bar_height: 0.70                      # fraction of the row pitch
+    band_colour: "#EFEFEF"
+  d:
+    type: overlap_heatmap
+    data_status: computed_from_upstream
+    # Colour statistic. Default p_as_coded = her notebook: -log10(P + 1e-200) of GeneOverlap's one-sided Fisher test,
+    # unadjusted. q_proposed = an alternative (per-subpopulation universe, BH over 272), not used in the paper;
+    # OFF by default and for discussion with Chia-Yu. The current candidate figure shows q_proposed.
+    # q_authors = an adjusted statistic Chia-Yu adopts in her repository and supplies through the template sheet
+    # Fig1d_overlap_q (columns subpopulation, hormone, overlap, n_universe, n_set_in_universe, p, q; commit hash in
+    # REQUESTS); colour = -log10(q + 1e-200) with the same scale. Used only when set here, never automatically.
+    statistic: q_authors                  # Trevor, 20 Oct 2026: BH q, tested-gene universe with lists restricted to it
+    key_titles:                           # markup: _{...} subscript, *...* italic
+      p_as_coded: "\u2212log_{10} *P*"
+      q_proposed: "\u2212log_{10} *q*"
+      q_authors: "\u2212log_{10} *q*"
+    title: "DEGs in hormone-response gene sets"
+    hormones: [IAA, BR, JA, ABA, CK, ACC, SA, GA]     # column order (her clustered column order)
+    hormone_labels: {}                    # printed names when they differ from the data names
+    tile_width: 0.92                      # fraction of the column pitch
+    tile_height: 0.84                     # fraction of the row pitch
+    tile_edge: "#CFCFCF"
+    tile_edge_pt: 0.3
+
+names:                                    # data name -> printed name (falls back to config/labels.yaml, then the name)
+  genotypes: {WT: WT, fer4: "*fer-4*"}
+  celltypes:
+    Quiescent Center: Quiescent center
+    Columella: Columella
+    Lateral Root Cap: Lateral root cap
+    Atrichoblast: Atrichoblast
+    Trichoblast: Trichoblast
+    Cortex: Cortex
+    Endodermis: Endodermis
+    Metaphloem & Companion Cell: Metaphloem & companion cell
+    Protophloem: Protophloem
+    Procambium: Procambium
+    Xylem Pole Pericycle: Xylem pole pericycle
+    Phloem Pole Pericycle: Phloem pole pericycle
+    Protoxylem: Protoxylem
+    Metaxylem: Metaxylem
+  stages:
+    Proliferation Domain: Proliferation domain
+    Transition Domain: Transition domain
+    Elongation: Elongation
+    Maturation: Maturation
+    Proximal Lateral Root Cap: Proximal lateral root cap
+    Distal Lateral Root Cap: Distal lateral root cap
+    Proximal Columella: Proximal columella
+    Distal Columella: Distal columella
+  subpopulations:
+    "Distal Columella": "Distal columella"
+    "Distal Lateral Root Cap": "Distal lateral root cap"
+    "Elongation_Atrichoblast": "Atrichoblast (elongation)"
+    "Elongation_Cortex": "Cortex (elongation)"
+    "Elongation_Endodermis": "Endodermis (elongation)"
+    "Elongation_Metaphloem & Companion Cell": "Metaphloem & companion cell (elongation)"
+    "Elongation_Metaxylem": "Metaxylem (elongation)"
+    "Elongation_Phloem Pole Pericycle": "Phloem pole pericycle (elongation)"
+    "Elongation_Procambium": "Procambium (elongation)"
+    "Elongation_Protoxylem": "Protoxylem (elongation)"
+    "Elongation_Trichoblast": "Trichoblast (elongation)"
+    "Elongation_Xylem Pole Pericycle": "Xylem pole pericycle (elongation)"
+    "Maturation_Atrichoblast": "Atrichoblast (maturation)"
+    "Maturation_Cortex": "Cortex (maturation)"
+    "Maturation_Endodermis": "Endodermis (maturation)"
+    "Maturation_Procambium": "Procambium (maturation)"
+    "Maturation_Protoxylem": "Protoxylem (maturation)"
+    "Maturation_Trichoblast": "Trichoblast (maturation)"
+    "Maturation_Xylem Pole Pericycle": "Xylem pole pericycle (maturation)"
+    "Proliferation Domain_Atrichoblast": "Atrichoblast (proliferation)"
+    "Proliferation Domain_Cortex": "Cortex (proliferation)"
+    "Proliferation Domain_Endodermis": "Endodermis (proliferation)"
+    "Proliferation Domain_Metaphloem & Companion Cell": "Metaphloem & companion cell (proliferation)"
+    "Proliferation Domain_Trichoblast": "Trichoblast (proliferation)"
+    "Proliferation Domain_Xylem Pole Pericycle": "Xylem pole pericycle (proliferation)"
+    "Proximal Lateral Root Cap": "Proximal lateral root cap"
+    "Transition Domain_Atrichoblast": "Atrichoblast (transition)"
+    "Transition Domain_Cortex": "Cortex (transition)"
+    "Transition Domain_Endodermis": "Endodermis (transition)"
+    "Transition Domain_Metaphloem & Companion Cell": "Metaphloem & companion cell (transition)"
+    "Transition Domain_Procambium": "Procambium (transition)"
+    "Transition Domain_Protoxylem": "Protoxylem (transition)"
+    "Transition Domain_Trichoblast": "Trichoblast (transition)"
+    "Transition Domain_Xylem Pole Pericycle": "Xylem pole pericycle (transition)"
+
+layout:                                   # millimetres from the top-left corner of the page, measured on the
+                                          # approved page (tools/fig1_geometry.py compares every box with it)
+  lines: {axis_pt: 0.5, tick_pt: 0.5, tick_len_pt: 2.0}   # approved page values (house style: 0.6, 0.6, 2.5)
+  letters_x: 1.4                          # a and c; every letter is 8 pt with its baseline on the approved baseline
+  a:
+    letter_baseline: 3.9                  # = header baseline
+    x_maps: 7.4                           # left edge of the WT maps
+    y_maps: 11.0                          # top of the first map row
+    map_w: 28.0                           # map width; the height follows the UMAP aspect (equal x/y scaling)
+    gap_x: 3.0
+    gap_y: 1.8
+    pad_frac: 0.02                        # data margin around all cells
+    ppi: 600                              # rasterized points (>= 300 ppi at print size)
+    point_size_pt2: 0.42                  # marker area (pt^2) of one cell
+    header: {baseline: 3.9, size_pt: 7.0, bracket_inset: 1.0, bracket_gap: 1.1, bracket_tick: 0.7, bracket_grey: 0.35}
+    genotype: {baseline: 9.7, size_pt: 7.0}           # approved 7.5 pt; journal maximum 7 pt
+    row_label: {x: 5.8, size_pt: 7.0}                 # baseline of the rotated row labels
+    fer_key: {gap: 1.6, w: 1.8, h: 15.0, bottom_inset: 1.0, tick_step: 1, tick_len: 0.7, label_dx: 1.0,
+              label_dy: 0.74, frame_pt: 0.3, title_gap: 1.6, size_pt: 6.5}
+    glyph: {arrow_mm: 5.5, head_mm: 0.9, head_half: 0.45, dx: 1.5, dy: 1.2, x_label_dx: 0.5, x_label_dy: 2.4,
+            y_label_dx: -0.9, y_label_dy: -0.4, size_pt: 6.0, bottom_pad: 3.0}
+  key:                                    # cell-type and stage key above b
+    x: 75.9
+    y: 9.7                                # title baseline (= genotype headers)
+    pitch: 3.15
+    marker_d: 1.6
+    marker_cx: 0.9                        # dot centre right of the entry x
+    marker_cy: 0.8                        # dot centre above the entry baseline
+    text_dx: 2.5
+    title_pt: 7.0
+    entry_pt: 6.5
+    celltype_col_dx: [0.0, 24.0]
+    stage_dx: 61.5
+    edge: {stage: [0.6, 0.25]}            # grey outline (grey level, pt) for the pale stage colours; none for cell types
+  b:
+    letter: [72.7, 40.7]                  # x, baseline
+    x0: 87.35                             # y axis
+    x1: 176.964                           # right end of the x axis
+    y_top: 39.795                         # level of y_max
+    axis_above_a_bottom: 7.448            # x axis this far above the bottom of panel a
+    x_pad_slots: 0.1
+    value_gap: 1.124                      # bar top to the baseline of its value
+    ytick_pad: 1.233                      # tick end to the right end of its label
+    ytick_dy: 0.834                       # label baseline below the tick
+    xtick_dy: 3.609                       # label baseline below the axis
+    xtitle_dy: 6.595                      # axis title baseline below the axis
+    ylabel_gap: 1.225                     # widest tick label to the rotated y title
+    title_pt: 7.0
+    summary_dy: [-2.159, 3.454]           # baselines of the two summary lines from the middle of the empty region
+    summary_pt: [7.0, 7.0]                # approved 8.5 pt bold and 7.5 pt; journal maximum 7 pt
+  cd:
+    gap_after_a: 3.0                      # top of the c/d block below the bottom of panel a
+    letter_baseline: 3.0                  # letters c and d, below the top of the block
+    d_letter_x: 105.08
+    rows_top: 11.0196                     # first row (= c axis line) below the top of the block
+    row_pitch: 3.46604
+    row_text_em: 0.2587                   # row labels, totals and counts: baseline = row centre + this x font size
+    title_pt: 7.0
+    c_title_dy: -5.151                    # baselines relative to the c axis line
+    c_tick_dy: -2.424
+    d_title_dy: -3.917
+    d_label_dy: -1.189
+    band_x0: 3.704
+    band_pad_right: 0.704
+    label_right: 49.112
+    c_x0: 50.168
+    c_w: 55.792
+    total_gap: 0.517
+    c_key: {x: 14.44, pitch: 17.248, swatch: [1.936, 0.972], swatch_dy: -5.964, text_dx: 0.704, text_dy: -4.899}
+    d_x0: 111.24
+    tile_w: 6.93
+    d_key: {gap: 3.872, w: 1.936, h: 25.929, center_frac: 0.45654, ppi: 600, frame_pt: 0.3, frame_grey: 0.0,
+            tick_len_pt: 1.5, label_dx: 0.882, label_dy: 0.835, extra_ticks: [5], cap_prefix: "\u2265",
+            title_dy: -2.852}
+
+# Collaborator templates (python build.py templates): header-only sheets for tables Chia-Yu may supply.
+templates:
+  a:
+    - {name: cells, role: upstream_table, file: data/fig1/fig1a_umap_cells.csv.gz, columns: [cell, orig.ident, genotype, celltype.anno.Li, time.anno.Li, umap_1, umap_2, FER_SCT],
+       note: "only if her own per-cell export replaces the read-only export (one row per cell); update n_cells, n_cells_WT and n_cells_fer4 in the Fig1a_summary sheet to match"}
+    - {name: summary, role: upstream_table, file: data/fig1/fig1_summary.csv, columns: [key, value, source], prefill: true,
+       note: "pre-filled with the current values; change only what a replaced table changes (e.g. n_cells)"}
+    - {name: palette, role: layout, file: data/fig1/fig1a_palette.csv, columns: [map, name, hex, level, draw_order, source], prefill: true,
+       note: "pre-filled with the current colours; only if the palette changes (needs Chia-Yu's agreement)"}
+  d:
+    - {name: overlap_q, role: upstream_table, file: data/fig1/fig1d_hormone_overlap_q_authors.csv, columns: [subpopulation, hormone, overlap, n_universe, n_set_in_universe, p, q],
+       used_when: "panels.d.statistic is q_authors in config/fig1.yaml (an explicit decision with Chia-Yu; the default stays her as-coded P)",
+       note: "only if the adjusted statistic is adopted in her repository; give the commit hash in REQUESTS"}

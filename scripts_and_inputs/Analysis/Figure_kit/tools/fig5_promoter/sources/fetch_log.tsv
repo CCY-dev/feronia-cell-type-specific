@@ -1,0 +1,16 @@
+utc_time	url	http_code	file
+2026-10-04T22:36:17Z	https://rest.ensembl.org/lookup/id/AT5G43890?species=arabidopsis_thaliana;expand=1;utr=1;content-type=application/json	200	ensembl_lookup_AT5G43890.json
+2026-10-04T22:36:19Z	https://rest.ensembl.org/info/assembly/arabidopsis_thaliana?content-type=application/json	200	ensembl_assembly_arabidopsis_thaliana.json
+2026-10-04T22:36:30Z	https://rest.ensembl.org/info/software?content-type=application/json	200	ensembl_info_software.json
+2026-10-04T22:36:31Z	https://rest.ensembl.org/info/eg_version?content-type=application/json	200	ensembl_info_eg_version.json
+2026-10-04T22:36:52Z	https://rest.ensembl.org/info/genomes/arabidopsis_thaliana?content-type=application/json	503	ensembl_info_genome_arabidopsis_thaliana.json
+2026-10-04T22:36:53Z	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&term=AT5G43890%5BGene%20Name%5D%20AND%20Arabidopsis%20thaliana%5BOrganism%5D&retmode=json	200	ncbi_gene_esearch_AT5G43890.json
+2026-10-04T22:37:30Z	https://rest.ensembl.org/sequence/region/arabidopsis_thaliana/5:17648376..17653875:1?content-type=text/x-fasta	200	ensembl_chr5_17648376-17653875_plus.fa
+2026-10-04T22:37:38Z	https://rest.ensembl.org/overlap/region/arabidopsis_thaliana/5:17646376-17655875?feature=gene;feature=transcript;feature=exon;feature=cds;content-type=application/json	200	ensembl_overlap_chr5_17646376-17655875.json
+2026-10-04T22:37:39Z	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=834411&retmode=json	200	ncbi_gene_esummary_834411.json
+2026-10-04T22:37:40Z	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_003076.8&seq_start=17648376&seq_stop=17653875&strand=1&rettype=gbwithparts&retmode=text	200	ncbi_NC_003076.8_17648376-17653875_plus.gb
+2026-10-04T22:37:42Z	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_003076.8&seq_start=17648376&seq_stop=17653875&strand=1&rettype=fasta&retmode=text	200	ncbi_NC_003076.8_17648376-17653875_plus.fa
+2026-10-04T22:41:15Z	https://www.arabidopsis.org/api/download-files/download?filePath=Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff	200	TAIR10_GFF3_genes_AT5G43890.gff (lines matching AT5G43890 extracted from full file; full-file sha256 in tair10_gff_fullfile_sha256.txt)
+2026-10-04T22:43:34Z	https://rest.ensembl.org/sequence/region/arabidopsis_thaliana/5:17650129..17652142:-1?content-type=text/x-fasta	200	ensembl_chr5_17650129-17652142_minus.fa
+2026-10-04T22:43:40Z	https://rest.ensembl.org/sequence/region/arabidopsis_thaliana/5:17651949..17651993:-1?content-type=text/x-fasta	200	ensembl_chr5_17651949-17651993_minus_probe.fa
+2026-10-04T22:43:42Z	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_003076.8&seq_start=17650129&seq_stop=17652142&strand=2&rettype=fasta&retmode=text	200	ncbi_NC_003076.8_17650129-17652142_minus.fa

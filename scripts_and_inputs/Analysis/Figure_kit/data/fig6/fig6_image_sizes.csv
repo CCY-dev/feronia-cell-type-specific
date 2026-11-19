@@ -1,0 +1,13 @@
+file,width_px,height_px,mode
+images/fig6b_seedlings.png,1234,767,RGB
+images/fig6c_cdf4_mock.png,238,783,RGB
+images/fig6c_cdf4_ralf23.png,238,783,RGB
+images/fig6c_col-0_mock.png,238,783,RGB
+images/fig6c_col-0_ralf23.png,238,783,RGB
+images/fig6c_dag1dof4.6_mock.png,238,784,RGB
+images/fig6c_dag1dof4.6_ralf23.png,238,783,RGB
+images/fig6f_pdag1_mock.png,238,780,RGB
+images/fig6f_pdag1_ralf23.png,238,779,RGB
+images/fig6f_pdof22_mock.png,238,779,RGB
+images/fig6f_pdof22_ralf23.png,238,779,RGB
+images/fig6h_root.png,477,963,RGB

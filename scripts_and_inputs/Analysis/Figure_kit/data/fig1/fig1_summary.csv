@@ -1,0 +1,18 @@
+key,value,source
+n_cells,44664,"rows of fig1a_umap_cells.csv.gz (= M cell 41: 21,655 WT + 23,009 fer-4)"
+n_cells_WT,21655,genotype == WT
+n_cells_fer4,23009,genotype == fer4
+n_deg_rows,12182,sig_de_fil.csv rows passing p_adj.loc <= 0.05 and |logFC| > log2(1.5)
+n_deg_rows_removed_by_filter,0,the filter of H cell 11 / M cell 54 removes nothing
+n_deg_unique,5466,M cell 63 total_de_gene_number
+n_deg_one_or_two_subpopulations,4167,bins 1 and 2 of fig1b
+n_subpopulations_with_deg,34,clusters in sig_de_fil.csv (H cell 17)
+n_subpopulations_tested,37,clusters in all_bg.csv
+genome_size,17554,H cell 15: length(unique(all_bg$gene))
+n_tests_d,272,subpopulations x hormone sets
+n_p_lt_0.05_as_coded,159,unadjusted one-sided Fisher P (as coded)
+n_mlog10p_capped,9,cells at the top colour (-log10 P >= 10)
+n_q_lt_0.05_proposed,168,OPT-IN proposal only
+n_mlog10q_capped_proposed,32,OPT-IN proposal only
+upstream_commit,d9d516eab98c6d043915c26328d3d4b83f35a3ff,CCY-dev/feronia-cell-type-specific
+umap_export_sha256,b3b5a61c902a022829db216e88c748eab6ab86c732eab24d1dd234b9728f58e0,data/fig1/fig1a_umap_cells.csv.gz (tools/hpc/extract_fig1a_umap.R)

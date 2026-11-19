@@ -1,0 +1,36 @@
+##gff-version 3
+##sequence-region 5 1 26975502
+# TAIR10 chr5 (NC_003076.8); derived by derive_coordinates.py
+5	derived	region	17650132	17652142	.	-	.	ID=reference_interval_2011bp;Name=reference_interval_2011bp
+5	derived	region	17650129	17652142	.	-	.	ID=reference_interval_with_ATG_2014bp;Name=reference_interval_with_ATG_2014bp
+5	derived	region	17650132	17650375	.	-	.	ID=five_prime_UTR;Name=five_prime_UTR
+5	derived	region	17650375	17650375	.	-	.	ID=TSS;Name=TSS
+5	derived	region	17650129	17650131	.	-	.	ID=ATG;Name=ATG
+5	derived	region	17648857	17650131	.	-	.	ID=CDS;Name=CDS
+5	derived	region	17648576	17650375	.	-	.	ID=transcript_AT5G43890.1;Name=transcript_AT5G43890.1
+5	derived	region	17651949	17651993	.	-	.	ID=EMSA_probe;Name=EMSA_probe
+5	motif_scan	TF_binding_site	17652128	17652132	.	-	.	ID=DOF01;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17652042	17652046	.	+	.	ID=DOF02;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17652016	17652020	.	-	.	ID=DOF03;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651978	17651982	.	-	.	ID=DOF04;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651961	17651965	.	-	.	ID=DOF05;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651939	17651943	.	-	.	ID=DOF06;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651625	17651629	.	-	.	ID=DOF07;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651603	17651607	.	-	.	ID=DOF08;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651493	17651497	.	+	.	ID=DOF09;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17651480	17651484	.	-	.	ID=DOF10;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651166	17651170	.	-	.	ID=DOF11;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17651076	17651080	.	+	.	ID=DOF12;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17650964	17650968	.	-	.	ID=DOF13;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650840	17650844	.	-	.	ID=DOF14;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650699	17650703	.	+	.	ID=DOF15;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17650625	17650629	.	-	.	ID=DOF16;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650540	17650544	.	-	.	ID=DOF17;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650513	17650517	.	-	.	ID=DOF18;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650508	17650512	.	+	.	ID=DOF19;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17650473	17650477	.	-	.	ID=DOF20;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650415	17650419	.	+	.	ID=DOF21;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17650248	17650252	.	-	.	ID=DOF22;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650220	17650224	.	+	.	ID=DOF23;Name=WAAAG;Note=predicted DOF motif on YUC5 antisense strand
+5	motif_scan	TF_binding_site	17650194	17650198	.	-	.	ID=DOF24;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand
+5	motif_scan	TF_binding_site	17650132	17650136	.	-	.	ID=DOF25;Name=WAAAG;Note=predicted DOF motif on YUC5 sense strand

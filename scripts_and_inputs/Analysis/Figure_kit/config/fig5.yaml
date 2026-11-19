@@ -1,0 +1,223 @@
+# Figure 5: network analysis identified the DOF family TFs that regulate YUC5 expression.
+# a, b: CellOracle analysis (tables from tools/fig5ab_tables.py); c: promoter schematic (tools/fig5_promoter/);
+# d: LUC heatmap (tools/fig5_tables.py, from the Source Data); e: EMSA gel. Rebuild: python build.py fig5
+label: Fig. 5
+output_stem: Fig5
+size_mm: [180, 129]
+manifest: data/fig5/fig5_images.csv     # e gel (crop, orientation)
+fonts:
+  sequence: [Arial]        # probe sequences in Arial (lab font), one character per fixed-pitch cell (c.seq_per_char)
+coloured_text: false      # true = the candidate's coloured labels (WT/fer-4 counts, red bases, tinted model labels);
+                          # the journal profile then warns 'coloured text'
+letters:
+  a: [0.1, 2.774]
+  b: [81.0, 2.774]
+  c: [0.1, 64.074]
+  d: [0.1, 92.574]
+  e: [109.52, 64.074]
+
+# Deliberate deviations from the journal profile, each with its reason (shown in output/REPORT.md).
+accepted: []
+
+panels:
+  a:
+    type: forest
+    table: data/fig5/fig5a_TF_family_enrichment_all_tests.csv   # CellOracle TF-family enrichment (Stage 5), unchanged
+    data_status: upstream_table
+    box: [0, 1.0, 79, 60]
+    rule: {min_eligible: 10, n_families: 10, order_by: fer-4, q_cut: 0.05}
+    genotypes:                          # top to bottom within each row
+      - {name: WT, label: WT, colour: '#2b6cb0'}
+      - {name: fer-4, label: '*fer-4*', colour: '#dd6b20'}
+    family_labels: {Dof: DOF, MIKC_MADS: MIKC MADS}
+    bold_families: [Dof]
+    header_names: TF family
+    header_counts: Nominated / eligible
+    axis_title: Odds ratio (95% CI)
+    key: [["q < 0.05", true], ["q \u2265 0.05", false]]
+    or_range: [0.15, 20]
+    ticks: [0.25, 1, 4, 16]
+    zero_arrow_to: 0.17                 # OR = 0: arrow from the upper CI towards zero, tip here
+    text_pt: 7.0
+    small_pt: 6.5                       # counts, tick labels, key
+    x_name: 17.0
+    x_axis: [19.6, 48.6]
+    x_counts: [57.6, 71.2]
+    band_x: [1.6, 78.0]
+    band_colour: '#f2f2f2'
+    key_x: [51.8, 65.8]                 # key markers; text key_text_gap to the right
+    key_text_gap: 1.4
+    key_colour: '#333333'
+    y_head: 4.4
+    y_sub: 7.75
+    y_row0: 11.0
+    pitch: 4.0
+    offset: 0.9
+    y_axis: 51.0
+    y_tick: 54.6                        # tick-label baseline
+    y_title: 58.4
+    point_d: 1.44
+    point_edge_pt: 0.6
+    ci_lw_pt: 0.75
+    arrow_shaft_gap: 0.9
+    ref_lw_pt: 0.6
+    ref_colour: '#8c8c8c'
+    ref_dashes: [3, 2]
+    axis_pt: 0.5
+    tick_pt: 0.5
+    tick_len: 0.8
+    axis_colour: '#333333'
+  b:
+    type: network
+    edges: data/fig5/fig5b_network_edges.csv
+    dof_nodes: data/fig5/fig5b_network_dof_nodes.csv
+    target_nodes: data/fig5/fig5b_network_target_nodes.csv
+    layout: data/fig5/fig5b_network_layout.csv
+    data_status: upstream_table
+    box: [82.0, 0, 98, 61]
+    header_dofs: DOFs
+    header_targets: Predicted DOF targets
+    header_targets_x: 72.925
+    highlight_target: YUC5
+    group_order: [WT only, fer-4 only, Both]
+    group_labels: {WT only: WT only, fer-4 only: '*fer-4* only', Both: Both}
+    class_order: [YUC/TAA, GH3, Aux/IAA, SAUR]
+    class_labels: {YUC/TAA: YUC/TAA1, GH3: GH3, Aux/IAA: Aux/IAA, SAUR: SAUR}
+    class_colours: {YUC/TAA: '#E69F00', GH3: '#CC79A7', Aux/IAA: '#0072B2', SAUR: '#009E73'}
+    dof_colour: '#595959'
+    node_d_per_sqrt: 0.68               # DOF node diameter (mm) = 0.68 x sqrt(displayed targets): area ~ targets
+    target_d: 1.49
+    target_edge_pt: 0.28
+    header_pt: 6.83
+    header_targets_pt: 7.0
+    dof_label_pt: 6.69
+    target_label_pt: 6.54
+    highlight_label_pt: 7.0
+    group_label_pt: 6.26
+    class_label_pt: 6.26
+    node_label_pt: 6.54
+    edge:
+      other: {lw_pt: 0.3, colour: '#adadad', alpha: 0.63}
+      highlight: {lw_pt: 0.66, colour: '#333333'}
+    group_bracket_pt: 0.53
+    group_bracket_colour: '#b3b3b3'
+    class_bracket_pt: 0.85
+    bracket_pad: 1.0
+    x: {group_label: 13.5, group_bracket: 14.7, dof_label: 28.8, dof_node: 31.0, target_node: 66.0,
+        target_label: 68.2, class_bracket: 82.5, class_label: 84.1}
+    y_head: 5.36
+    y_first: 9.5
+    y_last: 57.5
+    auto_layout: {target_pitch: 3.0, class_gap: 2.0, group_gap: 3.0}
+  c:
+    type: promoter
+    elements: data/fig5/fig5c_promoter_elements.csv         # tools/fig6_promoter/ (TAIR10 + Araport11), see notes
+    sequences: data/fig5/fig5c_probe_sequences.csv
+    data_status: computed_from_upstream
+    box: [3.2, 64.0, 100, 26]
+    title: '*pYUC5*'
+    key_text: ['Predicted DOF sites:', '(A/T)AAAG', 'CTTT(T/A)']
+    key_gaps: [1.5, 0.8, 2.2, 0.8]
+    key_tri_w: 1.1
+    atg_label: ATG
+    utr_label: "5\u2032 UTR"
+    seq_rows: [[probe, Probe], [mutant, Mutant]]
+    highlight: box                      # box = light red box behind black letters; text = red letters (candidate)
+    ticks: [-1500, -1000, -500, 1]
+    cds_stub_bp: 44                     # display only: start of the CDS after the ATG
+    track_x: [1.2, 1.2]                 # left offset and right margin of the track inside the box
+    text_pt: 7.0
+    seq_pt: 6.5                         # Arial at a fixed pitch is wider than mono; 6.5 pt fits the 100-mm panel
+    seq_per_char: true
+    y_head: 2.55
+    y_axlab: 5.4
+    y_axis: 6.35
+    y_arrow: 7.45
+    y_line: 10.0
+    y_seq: [19.9, 23.6]
+    seq_label_w: 9.4
+    box_h: 1.9
+    gap: 0.3
+    tri_h: 1.75
+    tri_w: 1.1
+    tri_edge_pt: 0.35
+    halo_pt: 1.0
+    probe_h: 1.0
+    axis_pt: 0.3
+    tick_pt: 0.4
+    dna_pt: 0.55
+    utr_edge_pt: 0.3
+    arrow_pt: 0.5
+    colours: {motif: '#1d7f9e', probe: '#d7191c', dna: '#3d3d3d', axis: '#9a9a9a', utr_fill: '#e3e3e3',
+              utr_edge: '#8a8a8a', cds: '#5f5f5f', zoom: '#efefef', highlight_box: '#f6c4c4'}
+  d:
+    type: heatmap
+    values_displayed: data/fig5/fig5d_luc_displayed_values.csv
+    values_measured: data/fig5/fig5d_luc.csv  # fold change per DOF x Rep from Source data sheet Fig_5d (25_fig5_tables.py)
+    data_status: displayed_values_from_deck     # becomes data_status_measured when luc.csv exists
+    data_status_measured: author_supplied
+    box: [3.2, 92.5, 100, 36.3]
+    title: 'Relative *pYUC5*-LUC activity'
+    effectors: [Control, DOF4.6, OBP1, OBP2, OBP3, DAG1, COG1, CDF4, DOF2.2, DOF6, DOF4.1]
+    replicates: [Rep1, Rep2]
+    replicate_labels: {Rep1: Rep1, Rep2: Rep2}
+    vmax: 2.2
+    colour_low: '#ffffff'
+    colour_high: '#0808ff'
+    bar_ticks: [0, 1, 2]
+    bar_title: 'log_{10}FC'
+    bar_title_right_pad: 0.3
+    text_pt: 7.0
+    small_pt: 6.5
+    x_tiles: 6.9
+    y_title: 2.6
+    y_tiles: 4.1
+    right_pad: 5.6                      # tiles fill x_tiles .. box width - right_pad (cell width 7.95 mm)
+    cell_h: 11.6
+    gutter: 0.4
+    radius: 0.5
+    name_gap: 0.85
+    name_angle: 45
+    bar_w: 1.5
+    bar_gap: 1.2
+    bar_frame_pt: 0.4
+    bar_tick_colour: '#262626'
+    white_tile_edge: '#c4c4c4'
+    white_tile_edge_pt: 0.45
+  e:
+    type: gel
+    manifest: data/fig5/fig5_images.csv
+    lanes: data/fig5/fig5e_emsa_lanes.csv
+    data_status: original_images_from_deck
+    gel_x: 132.39
+    gel_y: 79.0
+    gel_w: 45.0
+    rows:                               # condition rows, top to bottom: table column -> printed label
+      - {column: dag1, label: DAG1}     # cell values come from fig6e_emsa_lanes.csv ('-' prints as a true minus)
+      - {column: competitor, label: "Competitor (\u00d7)", values: {50x: '50', 100x: '100'}}   # fold excess under
+      - {column: antibody, label: Antibody}
+      - {column: probe, label: Probe}
+    row_baselines: [-9.63, -6.77, -3.91, -0.83]
+    groups: {probe: Probe, mutant: Mutant probe}    # lane group (table column 'group') -> label over its lanes ('Mutant' as in c)
+    group_baseline: -12.42
+    group_line_gap: 0.42
+    group_line_pad: 0.25                # line runs from the first to the last lane centre of the group, +- this
+    group_line_pt: 1.0
+    row_labels: {Free probe: 799}
+                                        # upper half of the free-probe band, which spans rows ~790-860)
+    lane_label: Lane
+    text_pt: 6.85
+    sign_pt: 6.85
+    word_pt: 6.85
+    amount_pt: 6.85                     # competitor amounts: moved apart as a block where they would touch
+    frame_pt: 0.65
+    frame_outset: 0.11
+    label_gap: 0.84
+    min_label_gap: 1.0
+    lane_number_gap: 2.9                # lane-number baseline below the gel bottom
+
+# Collaborator templates (python build.py templates): custom tables besides the values/stats sheets.
+templates:
+  d:
+    - {name: luc, role: measurements, file: data/fig5/fig5d_luc.csv, columns: [effector, replicate, luc, ren, fold_change, notes],
+       note: "one row per well: luc and ren (fold change computed by the kit) or fold_change only"}

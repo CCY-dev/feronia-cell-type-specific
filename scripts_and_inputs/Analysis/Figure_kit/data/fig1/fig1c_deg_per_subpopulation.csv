@@ -1,0 +1,35 @@
+rank,subpopulation,up,down,total
+1,Maturation_Endodermis,994,1329,2323
+2,Maturation_Cortex,210,954,1164
+3,Elongation_Trichoblast,347,385,732
+4,Elongation_Cortex,181,463,644
+5,Elongation_Phloem Pole Pericycle,334,225,559
+6,Elongation_Metaxylem,340,172,512
+7,Elongation_Xylem Pole Pericycle,203,284,487
+8,Proliferation Domain_Trichoblast,129,277,406
+9,Elongation_Metaphloem & Companion Cell,145,253,398
+10,Maturation_Trichoblast,145,240,385
+11,Distal Columella,159,213,372
+12,Transition Domain_Metaphloem & Companion Cell,247,109,356
+13,Elongation_Procambium,158,181,339
+14,Transition Domain_Cortex,82,205,287
+15,Proliferation Domain_Cortex,52,218,270
+16,Transition Domain_Atrichoblast,133,135,268
+17,Transition Domain_Xylem Pole Pericycle,192,73,265
+18,Proliferation Domain_Xylem Pole Pericycle,88,174,262
+19,Proximal Lateral Root Cap,140,120,260
+20,Proliferation Domain_Atrichoblast,65,178,243
+21,Elongation_Endodermis,60,170,230
+22,Elongation_Protoxylem,108,107,215
+23,Maturation_Xylem Pole Pericycle,127,80,207
+24,Distal Lateral Root Cap,95,95,190
+25,Elongation_Atrichoblast,55,114,169
+26,Maturation_Atrichoblast,73,79,152
+27,Maturation_Procambium,96,52,148
+28,Transition Domain_Procambium,103,29,132
+29,Transition Domain_Protoxylem,55,37,92
+30,Maturation_Protoxylem,17,29,46
+31,Transition Domain_Endodermis,16,10,26
+32,Proliferation Domain_Metaphloem & Companion Cell,20,2,22
+33,Proliferation Domain_Endodermis,10,4,14
+34,Transition Domain_Trichoblast,4,3,7

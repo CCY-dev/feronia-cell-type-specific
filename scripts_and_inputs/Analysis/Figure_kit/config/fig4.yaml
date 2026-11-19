@@ -1,0 +1,138 @@
+# Figure 4: RALF inhibits root growth through elevated auxin signaling in specific cell types.
+# Row 1 a + b, row 2 c + d, row 3 e chart, f seedlings, g chart.
+# Data: data/fig4/ (measurement tables from the Source Data by tools/fig4_tables.py; authors' labels in *_stats.csv).
+# Rebuild:  python build.py fig4
+label: Fig. 4
+output_stem: Fig4
+size_mm: [180, 239.0]
+manifest: data/fig4/fig4_images.csv
+letters:                                # [x, baseline] mm; baselines are set from the rows in the module
+  a: [2.4, null]
+  b: [86.0, null]
+  c: [2.4, null]
+  d: [2.4, null]
+  e: [92.0, null]
+  f: [2.4, null]
+  g: [52.0, null]
+images:
+  reporter: "*DR5rev::GFP*"
+  pm_label: RALF23
+  pm: {Mock: "-", RALF23: "+"}
+  within_gap: 0.5
+  between_gap: 1.06
+  reporter_gap: 1.0
+  header_offsets: {groups: 3.7, pm: 7.0, tiles: 8.4}
+  letter_dy: 0.3                        # letter baseline below the reporter baseline
+  rows:
+    a: {tile_w_mm: 15.0, x0: 13.0, y_reporter: 3.5}
+    c: {tile_w_mm: 12.6, x0: 13.0}                      # full-width row; y follows row 1
+  key: {file: images/fig4_lut_key.png, h: 13.81, labels: [Max, Min], gap: 4.0, bottom_offset: 3.0}
+panels:
+  a:
+    type: images
+    data_status: original_images_from_deck
+    groups: [Col-0, fer-4]
+  c:
+    type: images
+    data_status: original_images_from_deck
+    groups: [Col-0, pWER-KO, pCO2-KO, pSCR-KO, pSHR-KO, pSMB-KO]
+  b:
+    type: dotbar
+    unit: "a.u."
+    data: data/fig4/fig4b_dr5_col0_fer4.csv
+    stats: data/fig4/fig4b_dr5_col0_fer4_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*DR5rev::GFP* intensity", "per unit area (a.u.)"]
+    y_max: 25
+    y_step: 5
+    x_rotation: 0
+    require_labels: true
+  d:
+    type: dotbar
+    unit: "a.u."
+    data: data/fig4/fig4d_dr5_tsko.csv
+    stats: data/fig4/fig4d_dr5_tsko_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, pWER-KO, pCO2-KO, pSCR-KO, pSHR-KO, pSMB-KO]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*DR5rev::GFP* intensity", "per unit area (a.u.)"]
+    y_max: 40
+    y_step: 10
+    x_rotation: 45
+    require_labels: true
+  e:
+    type: dotbar
+    unit: "mm"
+    data: data/fig4/fig4e_root_length_peo_iaa_L3.csv
+    stats: data/fig4/fig4e_root_length_peo_iaa_L3_stats.csv
+                                        # recomputed two-way ANOVA + Dunnett agrees (data/fig4/STATS_CHECK_fig4.csv)
+    ratios: data/fig4/fig4e_ratios.csv
+    ratio_size_pt: 5.5
+    ratio_y_mm: 0.7                     # text starts this far above the x axis, reading bottom to top inside the bar
+    data_status: author_supplied
+    groups: [FER/fer-4, pWER-KO_L3, pCO2-KO_L3, pSCR-KO_L3, pSHR-KO_L3, pSMB-KO_L3]
+    series: [Mock, RALF23, RALF23 & PEO-IAA]
+    colour_by: series
+    y_label: "Root length (mm)"
+    y_max: 40
+    y_step: 10
+    x_rotation: 45
+    star_rotation: 90
+    require_labels: false               # brackets (vs RALF23) label every bar pair, not every single bar
+  g:
+    type: dotbar
+    unit: "mm"
+    data: data/fig4/fig4g_root_length_afb1_tir1.csv
+    stats: data/fig4/fig4g_root_length_afb1_tir1_stats.csv
+                                        # names a t test AND two-way ANOVA + Sidak: both give **** (STATS_CHECK_fig4.csv)
+    data_status: author_supplied
+    groups: [Col-0, afb1, tir1-1/afb2-3]
+    series: [Mock, RALF23]
+    bar_width: 0.45
+    colour_by: series
+    y_label: "Root length (mm)"
+    y_max: 40
+    y_step: 10
+    x_rotation: 0
+    star_rotation: 90
+    require_labels: false
+  f:
+    type: seedlings
+    manifest: data/fig4/fig4_images.csv
+    ratios: data/fig4/fig4f_root_length_ratios.csv     # numbers printed under the RALF23 seedlings, as printed
+    data_status: original_images_from_deck
+charts:
+  h: 34.37
+  boxes_x:                 # [frame left, frame width] mm
+    b: [95.0, 66.0]
+    d: [14.1, 68.0]
+    e: [105.5, 73.0]
+    g: [66.0, 112.0]
+  row2_gap: 4.0            # lowest row-1 label to the row-2 reporter baseline
+  row3_gap: 9.0            # c tile bottoms to the d/e frame top (room for letters and series keys)
+  row4_gap: 7.0            # lowest d/e x label to the f image top (room for the RALF23 -/+ line and g's key)
+seedlings:
+  x: 26.0                  # image left edge (mm)
+  h: 44.0                  # image height (mm); width follows the 403 x 914 px aspect
+  pm_label: RALF23         # over the image, like the a/c rows: "RALF23  -  +"
+  pm_x_px: {Mock: 100, RALF23: 302}         # sign centres (native px)
+  pm_gap: 1.3              # sign baseline above the image top (mm)
+  rows_px: [[0, 300], [305, 607], [612, 914]]   # genotype blocks (white separator rows between)
+  genotypes: [Col-0, afb1, tir1-1/afb2-3]
+  label_gap: 1.0           # genotype label right edge to the image (mm)
+  ratio_x_px: 302          # ratio centre (native px) = RALF23 seedlings
+  ratio_baseline_px: [263, 573, 870]        # ~46 px (2.3 mm) below the lowest RALF23 root tip of each block
+  ratio_colour: [255, 255, 255]
+
+# Collaborator templates (python build.py templates): custom tables besides the values/stats sheets.
+templates:
+  e:
+    - {name: ratios, role: printed_values, file: data/fig4/fig4e_ratios.csv, columns: [group, series, label, kind, group2, series2, test, source, notes],
+       note: "treatment/mock ratios printed in the treatment columns; say in notes how each was calculated"}
+  f:
+    - {name: ratios, role: printed_values, file: data/fig4/fig4f_root_length_ratios.csv, columns: [group, series, label, kind, group2, series2, test, source, notes],
+       note: "numbers printed under the RALF23 seedlings; say in notes how each was calculated"}

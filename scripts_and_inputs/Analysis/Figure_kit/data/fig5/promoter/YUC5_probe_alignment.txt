@@ -1,0 +1,10 @@
+EMSA probe vs mutant, YUC5 sense strand 5'->3' (chr5 minus strand)
+WT probe  chr5:17651949-17651993, TSS-relative -1618 to -1574, ATG-relative -1862 to -1818; 45 bp; exact single match (sense) in the 5.5-kb window
+
+WT      5'-CGAAAGTAATATAAAGCGAATAACACCATAAAGGACAAAAAAATC-3'
+                      |||||            |||||            
+Mutant  5'-CGAAAGTAATAACGCTCGAATAACACCAACCCTGACAAAAAAATC-3'
+
+Substituted positions (1-based within probe): [12, 13, 14, 15, 16, 29, 30, 31, 32, 33]
+Predicted (A/T)AAAG sites in WT probe: [('DOF04', 'TAAAG', -1607, -1603), ('DOF05', 'TAAAG', -1590, -1586)]
+Predicted sites remaining in mutant: 0

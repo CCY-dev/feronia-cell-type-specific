@@ -1,0 +1,167 @@
+{
+  "gene": "YUC5",
+  "agi": "AT5G43890",
+  "aliases_ncbi": "YUCCA5, SUPER1 (NCBI Gene 834411)",
+  "assembly": "TAIR10 (GCF_000001735.4; chromosome 5 = NC_003076.8)",
+  "annotation": "Araport11 (Ensembl Plants release 63 / Ensembl 116 REST; NCBI RefSeq NM_123756.2, curated by TAIR and Araport)",
+  "chromosome": "5",
+  "gene_strand": "-",
+  "displayed_orientation": "YUC5 sense strand 5'->3' (reverse complement of chr5 plus strand); upstream at left",
+  "transcript": "AT5G43890.1",
+  "transcript_chr5": [
+    17648576,
+    17650375
+  ],
+  "exons": 1,
+  "refseq_mrna": "NM_123756.2",
+  "refseq_protein": "NP_199202.1",
+  "tss_chr5": 17650375,
+  "tss_definition": "5' end of Araport11 AT5G43890.1 (= RefSeq NM_123756.2 5' end)",
+  "five_prime_utr_chr5": [
+    17650132,
+    17650375
+  ],
+  "five_prime_utr_length_bp": 244,
+  "five_prime_utr_tss_rel": [
+    1,
+    244
+  ],
+  "atg_chr5": [
+    17650129,
+    17650131
+  ],
+  "atg_tss_rel": [
+    245,
+    247
+  ],
+  "cds_chr5": [
+    17648857,
+    17650131
+  ],
+  "cds_length_bp": 1275,
+  "protein_length_aa": 424,
+  "stop_codon": "TAG",
+  "tair10_model": {
+    "mrna_chr5": [
+      17648857,
+      17650131
+    ],
+    "cds_chr5": [
+      17648857,
+      17650131
+    ],
+    "five_prime_utr_annotated": false,
+    "note": "TAIR10 AT5G43890.1 had no UTRs (mRNA = CDS); the TSS and 5'UTR come from Araport11"
+  },
+  "selected_reference_interval": {
+    "definition": "2011 bp immediately upstream of the ATG (distal promoter through the last 5'UTR base); length from the legend",
+    "chr5": [
+      17650132,
+      17652142
+    ],
+    "strand": "-",
+    "length_bp": 2011,
+    "tss_rel": [
+      -1767,
+      244
+    ],
+    "atg_rel": [
+      -2011,
+      -1
+    ],
+    "with_atg_chr5": [
+      17650129,
+      17652142
+    ],
+    "with_atg_length_bp": 2014,
+    "status": "reference candidate; assayed construct endpoints not confirmed by any supplied construct sequence"
+  },
+  "emsa_probe": {
+    "wt_sequence_5to3": "CGAAAGTAATATAAAGCGAATAACACCATAAAGGACAAAAAAATC",
+    "mutant_sequence_5to3": "CGAAAGTAATAACGCTCGAATAACACCAACCCTGACAAAAAAATC",
+    "length_bp": 45,
+    "mutant_length_bp": 45,
+    "strand_written": "YUC5 sense strand (chr5 minus strand)",
+    "exact_matches_in_5500bp_window": {
+      "sense": 1,
+      "antisense": 0
+    },
+    "chr5": [
+      17651949,
+      17651993
+    ],
+    "tss_rel": [
+      -1618,
+      -1574
+    ],
+    "atg_rel": [
+      -1862,
+      -1818
+    ],
+    "substituted_positions_1based": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "n_substitutions": 10,
+    "substitution_blocks_1based": [
+      [
+        12,
+        16
+      ],
+      [
+        29,
+        33
+      ]
+    ],
+    "substitution_blocks_text": [
+      "TAAAG>ACGCT",
+      "TAAAG>ACCCT"
+    ],
+    "predicted_sites_in_probe": [
+      "DOF04",
+      "DOF05"
+    ],
+    "predicted_sites_remaining_in_mutant": 0,
+    "mutant_exact_matches_in_window": 0,
+    "aaag_or_cttt_cores_in_wt_probe_1based": [
+      3,
+      13,
+      30
+    ],
+    "experimental_status": "region tested by EMSA (DAG1); the predicted sites themselves are motif matches"
+  },
+  "predicted_dof_motif": {
+    "definition": "(A/T)AAAG on either strand (legend: T/AAAAG or CTTTT/A)",
+    "n_sites_in_reference_with_atg": 25,
+    "n_sense": 18,
+    "n_antisense": 7,
+    "n_in_5utr": 4
+  },
+  "source_files_sha256": {
+    "TAIR10_GFF3_genes_AT5G43890.gff": "1fbb679df15596aa034d434dc06267911ae3fb7e6903de2cb7d03ed2dc131c17",
+    "ensembl_assembly_arabidopsis_thaliana.json": "549e3d6b5f85a7191de1f2734a5de7f5c906cb2fe26071cfecc4e34da8a0382e",
+    "ensembl_chr5_17648376-17653875_plus.fa": "0cc699846ef3f73bdaa94d022dddb62525d09d9d4795a79f0e5675e6f5cc6880",
+    "ensembl_chr5_17650129-17652142_minus.fa": "6a0f2e5c98a4f8798b7c41995e2e0eb3e86de02cd581de3e2d3f35c3d8235bb0",
+    "ensembl_chr5_17651949-17651993_minus_probe.fa": "6aeb7b53c1cb30cfcaa003385e230ec1b08becf22ae694c4ad8f73f4f09359b6",
+    "ensembl_info_eg_version.json": "4dd8a7c1862b39790e6bc5617ff239b83b5d104f9e8517bb28d08683b60a202a",
+    "ensembl_info_genome_arabidopsis_thaliana.json": "839488ebc08446a096a893996ed23eac321ac166724cd8c5d9092057834d2d79",
+    "ensembl_info_software.json": "2e56831cafd56ff6fa16980aff0e14aaaa928a385465fb48896d2c77ca095374",
+    "ensembl_lookup_AT5G43890.json": "5b1b7c7321b2d3c749cb2d3ea8470e674a46100ada97df84addd7221d6bd4e76",
+    "ensembl_overlap_chr5_17646376-17655875.json": "822954b61d1cec812a31a4f1e9628ea0fa04fee1b43a00069032f7c3673a0bcc",
+    "fetch_log.tsv": "d202e7c3d3b3f0d05056b347a133c88cff0a3745fe0d1e5ed0845227fadeee4d",
+    "ncbi_NC_003076.8_17648376-17653875_plus.fa": "831f7fddae9679989331d983956172ba1d6df88fb4c0eb89a01cffcf40954a06",
+    "ncbi_NC_003076.8_17648376-17653875_plus.gb": "375794fcac5b865d6774efaca7012813f2edc576296f5299487f54ddae43f000",
+    "ncbi_NC_003076.8_17650129-17652142_minus.fa": "3011b77ab9448392b3878d58966cb47319e7b38b28e349f708b20dfde065f78b",
+    "ncbi_gene_esearch_AT5G43890.json": "fbc99eacd653bb651dfd237a5b810322abcc2f361d69eed70ceb4f919a90224b",
+    "ncbi_gene_esummary_834411.json": "479a07873761e2b96b3ac00cd468b7f4b21bfa611ae989d58278d04a5a869618",
+    "tair10_gff_fullfile_sha256.txt": "d765700983bef2ca369f862c30dd80ccfab69f9f2fac7cb04a1742a9f65e6d1b"
+  }
+}

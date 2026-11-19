@@ -1,0 +1,97 @@
+# Figure 3: RALF23-FER signalling induces YUC5 in the stele (pYUC5:GFP-GUS). Rebuild:  python build.py fig3
+#
+# a time-course images, b their quantification, c Col-0 vs fer-4 images, d their quantification, e TSKO images,
+# f cross sections, g TSKO quantification. Layout: image rows a | c, then e, then f, and the charts b | d | g along
+# the bottom. Every position is in mm from the top-left of the figure.
+# Data: data/fig3/ (measurement tables from the Source Data by tools/fig3_tables.py; authors' letters in *_stats.csv).
+label: Fig. 3
+output_stem: Fig3
+size_mm: [180, 231.6]
+font_pt: 7.0
+accepted:                  # author decisions, not journal waivers (bounded; see docs/COMPLIANCE.md)
+  - {match: "is above 170 mm", max_mm: 231.6, reason: "full-page layout; within Nature's 247-mm page depth but with no room for the legend underneath: at initial submission the legend goes on the same page (the submission PDF scales the figure to fit), and final placement is agreed with Nature production", decided_by: authors}
+manifest: data/fig3/fig3_images.csv     # one row per image tile (file, crop, um/px, scale bar, overlays)
+letters:
+  a: [2.30, 3.80]
+  c: [108.39, 3.80]
+  e: [2.30, 79.66]
+  f: [2.30, 142.78]
+  b: [2.30, 176.05]
+  d: [56.89, 176.05]
+  g: [108.39, 176.05]
+images:
+  reporter: "*pYUC5:GFP-GUS*"
+  treatment_label: RALF23              # left of the -/+ row, 1.2 mm from the first tile
+  signs: {Mock: "-", RALF23: "+"}      # manifest treatment -> sign above the tile (true minus)
+  within_gap: 0.6                      # between the -/+ tiles of a pair (journal demarcation >= 0.5 mm)
+  key: {file: images/fig3_lut_key.png, h: 16.92, labels: [Max, Min], gap: 1.0, bottom_offset: 2.33, max_gap: 0.25}
+  # Rows a, c, e: one magnification per row (mm per px = tile_h / height in px of the row's first tile); a and c
+  a: {x0: 12.34, y: 12.92, tile_h: 58.57, between: 0.6, group_by: time,
+      y_reporter: 3.81, y_groups: 7.44, y_pm: 11.89}
+  c: {x0: 116.41, y: 12.92, tile_h: 58.57, between: 2.625, group_by: genotype,
+      y_reporter: 3.81, y_groups: 7.44, y_pm: 11.89}
+  e: {x0: 11.515, y: 87.48, tile_h: 50.70, between: 1.09, group_by: genotype,
+      y_reporter: 78.21, y_groups: 81.81, y_pm: 86.27}
+  # Row f: six optical cross sections at one display width (um/px confirmed only for Col-0; see the manifest notes)
+  f: {x0: 11.23, y: 144.70, tile_w: 25.8, gap: 1.225, y_labels: 143.41}
+image_rows: [a, c, e]      # tile rows with headers + colour key (figures/fig3.py)
+section_row: f             # cross-section row
+chart_panels: [b, d, g]    # charts, left to right
+panels:
+  a: {type: images, manifest: data/fig3/fig3_images.csv, data_status: original_images_from_deck}
+  c: {type: images, manifest: data/fig3/fig3_images.csv, data_status: original_images_from_deck}
+  e: {type: images, manifest: data/fig3/fig3_images.csv, data_status: original_images_from_deck}
+  f: {type: images, manifest: data/fig3/fig3_images.csv, data_status: original_images_from_deck}
+  b:
+    type: dotbar
+    unit: a.u.
+    data: data/fig3/fig3b_yuc5_reporter_timecourse.csv
+    stats: data/fig3/fig3b_yuc5_reporter_timecourse_stats.csv
+    data_status: author_supplied
+    groups: ["1 h", "3 h", "6 h"]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*pYUC5:GFP-GUS* intensity", "per unit area (a.u.)"]
+    y_max: 60              # largest value 55.49 (6 h RALF23)
+    y_step: 20
+    x_rotation: 0
+    group_gap: 1.1
+    legend_gap: 2.43
+    require_labels: true
+  d:
+    type: dotbar
+    unit: a.u.
+    data: data/fig3/fig3d_yuc5_reporter_col0_fer4.csv
+    stats: data/fig3/fig3d_yuc5_reporter_col0_fer4_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*pYUC5:GFP-GUS* intensity", "per unit area (a.u.)"]
+    y_max: 50              # largest value 46.90 (Col-0 RALF23)
+    y_step: 10
+    x_rotation: 0
+    group_gap: 1.1
+    legend_gap: 2.43
+    require_labels: true
+  g:
+    type: dotbar
+    unit: a.u.
+    data: data/fig3/fig3g_yuc5_reporter_tsko.csv
+    stats: data/fig3/fig3g_yuc5_reporter_tsko_stats.csv
+    data_status: author_supplied
+    groups: [Col-0, pWER-KO, pCO2-KO, pSCR-KO, pSHR-KO, pSMB-KO]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*pYUC5:GFP-GUS* intensity", "per unit area (a.u.)"]
+    y_max: 50              # largest value 42.40 (pWER-KO RALF23); pSHR-KO RALF23 (n = 49) max 23.18
+    y_step: 10
+    x_rotation: 45
+    group_gap: 1.1
+    legend_gap: 2.43
+    require_labels: true
+charts:
+  y: 177.73
+  h: 37.2
+  x: {b: 17.583, d: 70.197, g: 120.886}
+  w: {b: 37.145, d: 37.203, g: 55.901}

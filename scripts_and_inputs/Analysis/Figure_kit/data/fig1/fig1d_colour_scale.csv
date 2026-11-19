@@ -1,0 +1,4 @@
+value,colour,hex,note
+0,white,#FFFFFF,0
+1.3010299956639813,beige,#F5F5DC,-log10(0.05) (cutoff)
+10,red,#FF0000,cap: values above 10 take this colour

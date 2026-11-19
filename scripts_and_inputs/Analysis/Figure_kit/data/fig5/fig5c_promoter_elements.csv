@@ -1,0 +1,31 @@
+element,id,strand,tss_rel_start,tss_rel_end,note
+reference_interval,pYUC5_2011bp,,-1767,244,2011 bp immediately upstream of the ATG (distal promoter through the last 5'UTR base); length from the legend
+five_prime_utr,5UTR,,1,244,Araport11 AT5G43890.1
+tss,TSS,,1,1,5' end of Araport11 AT5G43890.1 (= RefSeq NM_123756.2 5' end)
+atg,ATG,,245,247,start codon
+emsa_probe,EMSA_probe,sense,-1618,-1574,chr5:17651949-17651993; 45 bp
+dof_site,DOF01,sense,-1757,-1753,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF02,antisense,-1671,-1667,AAAAG (CTTTT on the sense strand); upstream of TSS
+dof_site,DOF03,sense,-1645,-1641,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF04,sense,-1607,-1603,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF05,sense,-1590,-1586,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF06,sense,-1568,-1564,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF07,sense,-1254,-1250,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF08,sense,-1232,-1228,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF09,antisense,-1122,-1118,AAAAG (CTTTT on the sense strand); upstream of TSS
+dof_site,DOF10,sense,-1109,-1105,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF11,sense,-795,-791,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF12,antisense,-705,-701,AAAAG (CTTTT on the sense strand); upstream of TSS
+dof_site,DOF13,sense,-593,-589,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF14,sense,-469,-465,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF15,antisense,-328,-324,TAAAG (CTTTA on the sense strand); upstream of TSS
+dof_site,DOF16,sense,-254,-250,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF17,sense,-169,-165,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF18,sense,-142,-138,AAAAG (AAAAG on the sense strand); upstream of TSS
+dof_site,DOF19,antisense,-137,-133,TAAAG (CTTTA on the sense strand); upstream of TSS
+dof_site,DOF20,sense,-102,-98,TAAAG (TAAAG on the sense strand); upstream of TSS
+dof_site,DOF21,antisense,-44,-40,AAAAG (CTTTT on the sense strand); upstream of TSS
+dof_site,DOF22,sense,124,128,AAAAG (AAAAG on the sense strand); 5'UTR
+dof_site,DOF23,antisense,152,156,AAAAG (CTTTT on the sense strand); 5'UTR
+dof_site,DOF24,sense,178,182,TAAAG (TAAAG on the sense strand); 5'UTR
+dof_site,DOF25,sense,240,244,TAAAG (TAAAG on the sense strand); 5'UTR

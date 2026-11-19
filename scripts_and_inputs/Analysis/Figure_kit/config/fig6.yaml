@@ -1,0 +1,267 @@
+# Figure 6: RALF23 induces YUC5 expression through DOF TFs.
+# Data: data/fig6/ (measurement tables from the Source Data by tools/fig6_tables.py; labels in *_stats.csv).
+# Rebuild: python build.py fig6
+label: Fig. 6
+output_stem: Fig6
+size_mm: [180, 237.0]
+font_pt: 6.5
+manifest: data/fig6/fig6_images.csv
+accepted:                  # author decisions, not journal waivers (bounded; see docs/COMPLIANCE.md)
+  - {match: "is above 170 mm", max_mm: 237.0, reason: "full-page layout (eight panels), within Nature's 247-mm page depth; legend placement agreed with Nature production", decided_by: "authors"}
+  - {match: "below 300 ppi", min_ppi: 225, max_count: 1, reason: "h root image (222-px window) at its published size is ~230 ppi: source resolution", decided_by: "authors"}
+letters:                   # x, top of the 8-pt letter (mm)
+  a: [0.1, 0.4]
+  b: [94.0, 0.4]
+  c: [0.1, 60.4]
+  d: [104.0, 60.4]
+  e: [0.1, 124.2]
+  h: [119.6, 124.2]
+  f: [0.1, 176.6]
+  g: [63.0, 176.6]
+
+panels:
+  a:
+    type: dotbar
+    unit: mm
+    data: data/fig6/fig6a_root_length.csv
+    stats: data/fig6/fig6a_root_length_stats.csv
+    data_status: author_supplied
+    box: [11.0, 6.6, 78.0, 41.0]
+    groups: [Col-0, fer-4, dof4.6, cdf4, cog1, obp3]
+    series: [Mock, RALF23]
+    colour_by: series
+    error: sd
+    y_label: Root length (mm)
+    y_max: 40
+    y_step: 10
+    x_rotation: 0
+    star_rotation: 90
+    legend_gap: 2.43
+    require_labels: false   # labels only over the RALF23 bars (each vs its own Mock), as on the authors' chart
+  b:
+    type: images
+    manifest: data/fig6/fig6_images.csv
+    table: data/fig6/fig6b_seedlings.csv
+    data_status: original_images_from_deck
+    x_tiles: 104.6
+    y_tiles: 8.0
+    tile_w: 24.3
+    gap: 0.6
+    pm_label: RALF23
+    pm_label_gap: 1.2
+    text_pt: 6.5
+    sign_pt: 7.0
+    pm_above: 1.2
+    name_above_pm: 3.3
+    name_below: 1.18
+    ratio_inset: [1.2, 1.2]
+    scale_bar_pt: 1.0
+  c:
+    type: images
+    manifest: data/fig6/fig6_images.csv
+    data_status: original_images_from_deck
+    x0: 12.6
+    y: 72.4
+    tile_h: 47.4
+    within: 0.6
+    between: 1.6
+    reporter: "*pYUC5:GFP-GUS*"
+    y_reporter: 63.6
+    y_groups: 67.2
+    y_pm: 71.2
+    treatment_label: RALF23
+  d:
+    type: dotbar
+    unit: a.u.
+    data: data/fig6/fig6d_pyuc5_dof.csv
+    stats: data/fig6/fig6d_pyuc5_dof_stats.csv
+    data_status: author_supplied
+    box: [118.0, 68.4, 58.0, 47.78]
+    groups: [Col-0, cdf4, dag1dof4.6]
+    series: [Mock, RALF23]
+    colour_by: series
+    y_label: ["*pYUC5:GFP-GUS* intensity", "per unit area (a.u.)"]
+    y_max: 50
+    y_step: 10
+    x_rotation: 0
+    group_gap: 1.1
+    legend_gap: 2.43
+    require_labels: true
+  e:                        # one chart per gene (sub-panels e_<gene>); one shared key above the row
+    type: chart_row
+    y: 134.6
+    h: 33.0
+    title_gap: 1.6          # gene name baseline above the frame top
+    key_y: 129.0            # baseline of the shared Mock / RALF23 key
+    charts: [e_DOF4.6, e_CDF4, e_DOF2.2, e_DAG1]
+    x: {e_DOF4.6: 11.2, e_CDF4: 39.0, e_DOF2.2: 66.8, e_DAG1: 94.6}
+    w: 20.0
+  e_DOF4.6:
+    type: dotbar
+    unit: relative expression
+    title: "*DOF4.6*"
+    data: data/fig6/fig6e_qpcr_dof46.csv
+    stats: data/fig6/fig6e_qpcr_dof46_stats.csv
+    allow_proposed_stats: true
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: Relative expression level
+    y_max: 2
+    y_step: 0.5
+    y_tick_format: "{:.1f}"
+    x_rotation: 0
+    group_gap: 1.1
+    require_labels: true
+  e_CDF4:
+    type: dotbar
+    unit: relative expression
+    title: "*CDF4*"
+    data: data/fig6/fig6e_qpcr_cdf4.csv
+    stats: data/fig6/fig6e_qpcr_cdf4_stats.csv
+    allow_proposed_stats: true
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: ''
+    y_max: 4
+    y_step: 1
+    y_tick_format: "{:.1f}"
+    x_rotation: 0
+    group_gap: 1.1
+    require_labels: true
+  e_DOF2.2:
+    type: dotbar
+    unit: relative expression
+    title: "*DOF2.2*"
+    data: data/fig6/fig6e_qpcr_dof22.csv
+    stats: data/fig6/fig6e_qpcr_dof22_stats.csv
+    allow_proposed_stats: true
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: ''
+    y_max: 4
+    y_step: 1
+    y_tick_format: "{:.1f}"
+    x_rotation: 0
+    group_gap: 1.1
+    require_labels: true
+  e_DAG1:
+    type: dotbar
+    unit: relative expression
+    title: "*DAG1*"
+    data: data/fig6/fig6e_qpcr_dag1.csv
+    stats: data/fig6/fig6e_qpcr_dag1_stats.csv
+    allow_proposed_stats: true
+    data_status: author_supplied
+    groups: [Col-0, fer-4]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: ''
+    y_max: 4
+    y_step: 1
+    y_tick_format: "{:.1f}"
+    x_rotation: 0
+    group_gap: 1.1
+    require_labels: true
+  f:
+    type: images
+    manifest: data/fig6/fig6_images.csv
+    data_status: original_images_from_deck
+    x0: 12.6
+    y: 185.0
+    within: 0.6
+    between: 1.6
+    y_groups: 179.6
+    y_pm: 183.8
+    treatment_label: RALF23
+    key: true               # same Fire LUT key as c (the legend refers to the colour scale)
+  g:
+    type: chart_row
+    y: 185.0                # top tick level with the f image tops (kit house rule)
+    h: 47.71
+    key_y: 181.2
+    charts: [g_pDAG1, g_pDOF2.2]
+    x: {g_pDAG1: 76.0, g_pDOF2.2: 100.0}
+    w: 17.0
+  g_pDAG1:
+    type: dotbar
+    unit: a.u.
+    data: data/fig6/fig6g_pdag1.csv
+    stats: data/fig6/fig6g_pdag1_stats.csv
+    data_status: author_supplied
+    groups: [pDAG1:erGFP]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: ["GFP intensity", "per unit area (a.u.)"]
+    y_max: 20
+    y_step: 5
+    x_rotation: 0
+    require_labels: false   # one bracket (Student's t test) per chart, as on the authors' chart
+  g_pDOF2.2:
+    type: dotbar
+    unit: a.u.
+    data: data/fig6/fig6g_pdof22.csv
+    stats: data/fig6/fig6g_pdof22_stats.csv
+    data_status: author_supplied
+    groups: [pDOF2.2:erGFP]
+    series: [Mock, RALF23]
+    colour_by: series
+    legend: false
+    y_label: ''
+    y_max: 5
+    y_step: 1
+    x_rotation: 0
+    require_labels: false
+  h:
+    type: model
+    manifest: data/fig6/fig6_images.csv
+    data_status: original_images_from_deck
+    box: [124.0, 125.0, 56.0, 107.71]   # bottom = f tile bottoms (232.71 mm)
+    root_label:
+      lines: ['pYUC5:GFP-GUS']
+      status: as labelled in the published figure
+      size_pt: 6.0
+      inset_pt: 1.2
+      line_pt: 6.6
+      box_pad_pt: 4.0
+      alpha: 0.65
+      min_pad: 0.4
+    callout_colour: '#9098ff'
+    callout_pt: 0.8
+    callout_end_inset: 0.15
+    panel_colour: '#f1f2fd'
+    panel_radius: 2.2
+    panel_inset: 0.3
+    model_gap: 4.0
+    text_pt: 7.0
+    nodes:
+      - {label: RALF/FER, colour: '#8f4fa3'}
+      - {label: DOF TFs, colour: '#1d7f9e'}
+      - {label: YUC5, colour: '#e69f00'}
+      - {label: Auxin signaling, colour: '#0072b2'}
+      - {label: Root growth, colour: '#009e73'}
+    edges: [activates, activates, activates, inhibits]
+    node_h: 6.6
+    node_side_pad: 2.1
+    node_end_pad: 5.0
+    node_tint: 0.2
+    node_edge_pt: 1.0
+    arrow_colour: '#4d4d4d'
+    arrow_pt: 0.8
+    arrow_head: [1.6, 1.8]
+    tbar_pt: 1.0
+    tbar_half: 1.8
+    arrow_gap: 1.0
+images:
+  signs: {Mock: "-", RALF23: "+"}
+  key: {file: images/fig6_lut_key.png, h: 16.92, labels: [Max, Min], gap: 1.0, bottom_offset: 2.33, max_gap: 0.25}

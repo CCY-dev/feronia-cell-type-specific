@@ -1,0 +1,233 @@
+LOCUS       NC_003076               5500 bp    DNA     linear   CON 10-APR-2023
+DEFINITION  Arabidopsis thaliana chromosome 5, partial sequence.
+ACCESSION   NC_003076 REGION: 17648376..17653875
+VERSION     NC_003076.8
+DBLINK      BioProject: PRJNA116
+            BioSample: SAMN03081427
+            Assembly: GCF_000001735.4
+KEYWORDS    RefSeq.
+SOURCE      Arabidopsis thaliana (thale cress)
+  ORGANISM  Arabidopsis thaliana
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; malvids; Brassicales; Brassicaceae;
+            Camelineae; Arabidopsis.
+REFERENCE   1  (bases 1 to 5500)
+  AUTHORS   Tabata,S., Kaneko,T., Nakamura,Y., Kotani,H., Kato,T., Asamizu,E.,
+            Miyajima,N., Sasamoto,S., Kimura,T., Hosouchi,T., Kawashima,K.,
+            Kohara,M., Matsumoto,M., Matsuno,A., Muraki,A., Nakayama,S.,
+            Nakazaki,N., Naruo,K., Okumura,S., Shinpo,S., Takeuchi,C., Wada,T.,
+            Watanabe,A., Yamada,M., Yasuda,M., Sato,S., de la Bastide,M.,
+            Huang,E., Spiegel,L., Gnoj,L., O'Shaughnessy,A., Preston,R.,
+            Habermann,K., Murray,J., Johnson,D., Rohlfing,T., Nelson,J.,
+            Stoneking,T., Pepin,K., Spieth,J., Sekhon,M., Armstrong,J.,
+            Becker,M., Belter,E., Cordum,H., Cordes,M., Courtney,L.,
+            Courtney,W., Dante,M., Du,H., Edwards,J., Fryman,J., Haakensen,B.,
+            Lamar,E., Latreille,P., Leonard,S., Meyer,R., Mulvaney,E.,
+            Ozersky,P., Riley,A., Strowmatt,C., Wagner-McPherson,C., Wollam,A.,
+            Yoakum,M., Bell,M., Dedhia,N., Parnell,L., Shah,R., Rodriguez,M.,
+            See,L.H., Vil,D., Baker,J., Kirchoff,K., Toth,K., King,L.,
+            Bahret,A., Miller,B., Marra,M., Martienssen,R., McCombie,W.R.,
+            Wilson,R.K., Murphy,G., Bancroft,I., Volckaert,G., Wambutt,R.,
+            Dusterhoft,A., Stiekema,W., Pohl,T., Entian,K.D., Terryn,N.,
+            Hartley,N., Bent,E., Johnson,S., Langham,S.A., McCullagh,B.,
+            Robben,J., Grymonprez,B., Zimmermann,W., Ramsperger,U., Wedler,H.,
+            Balke,K., Wedler,E., Peters,S., van Staveren,M., Dirkse,W.,
+            Mooijman,P., Lankhorst,R.K., Weitzenegger,T., Bothe,G., Rose,M.,
+            Hauf,J., Berneiser,S., Hempel,S., Feldpausch,M., Lamberth,S.,
+            Villarroel,R., Gielen,J., Ardiles,W., Bents,O., Lemcke,K.,
+            Kolesov,G., Mayer,K., Rudd,S., Schoof,H., Schueller,C.,
+            Zaccaria,P., Mewes,H.W., Bevan,M. and Fransz,P.
+  CONSRTM   Kazusa DNA Research Institute; Cold Spring Harbor and Washington
+            University in St Louis Sequencing Consortium; European Union
+            Arabidopsis Genome Sequencing Consortium
+  TITLE     Sequence and analysis of chromosome 5 of the plant Arabidopsis
+            thaliana
+  JOURNAL   Nature 408 (6814), 823-826 (2000)
+   PUBMED   11130714
+REFERENCE   2  (bases 1 to 5500)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-OCT-2022) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 5500)
+  AUTHORS   Krishnakumar,V., Cheng,C.-Y., Chan,A.P., Schobel,S., Kim,M.,
+            Ferlanti,E.S., Belyaeva,I., Rosen,B.D., Micklem,G., Miller,J.R.,
+            Vaughn,M. and Town,C.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-MAY-2016) Plant Genomics, J. Craig Venter Institute,
+            9704 Medical Center Dr, Rockville, MD 20850, USA
+  REMARK    Protein update by submitter
+REFERENCE   4  (bases 1 to 5500)
+  AUTHORS   Swarbreck,D., Lamesch,P., Wilks,C. and Huala,E.
+  CONSRTM   TAIR
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-FEB-2011) Department of Plant Biology, Carnegie
+            Institution, 260 Panama Street, Stanford, CA, USA
+COMMENT     REVIEWED REFSEQ: This record has been curated by TAIR and Araport.
+            The reference sequence is identical to CP002688.
+            
+            On Jun 19, 2009 this sequence version replaced NC_003076.7.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider :: TAIR and Araport
+            Annotation Status   :: Full annotation
+            Annotation Pipeline :: Eukaryotic Annotation Propagation Pipeline
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5500
+                     /organism="Arabidopsis thaliana"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:3702"
+                     /chromosome="5"
+                     /ecotype="Columbia"
+     gene            complement(201..2000)
+                     /gene="YUC5"
+                     /locus_tag="AT5G43890"
+                     /gene_synonym="F6B6.3; F6B6_3; SUPER1; SUPPRESSOR OF ER 1;
+                     YUCCA5"
+                     /note="Encodes a YUCCA-like putative flavin monooxygenase,
+                     the activation tagging mutant has increased level of IAA,
+                     increased auxin response and phenotype of auxin
+                     overproduction, rescues erecta mutant phenotype"
+                     /db_xref="Araport:AT5G43890"
+                     /db_xref="GeneID:834411"
+                     /db_xref="TAIR:AT5G43890"
+     mRNA            complement(201..2000)
+                     /gene="YUC5"
+                     /locus_tag="AT5G43890"
+                     /gene_synonym="F6B6.3; F6B6_3; SUPER1; SUPPRESSOR OF ER 1;
+                     YUCCA5"
+                     /product="Flavin-binding monooxygenase family protein"
+                     /inference="similar to RNA sequence,
+                     mRNA:INSD:BX831848.1,INSD:BT029743.1,INSD:DQ159070.1"
+                     /transcript_id="NM_123756.2"
+                     /db_xref="GeneID:834411"
+                     /db_xref="TAIR:AT5G43890"
+                     /db_xref="Araport:AT5G43890"
+     CDS             complement(482..1756)
+                     /gene="YUC5"
+                     /locus_tag="AT5G43890"
+                     /gene_synonym="F6B6.3; F6B6_3; SUPER1; SUPPRESSOR OF ER 1;
+                     YUCCA5"
+                     /inference="similar to RNA sequence,
+                     mRNA:INSD:BX831848.1,INSD:BT029743.1,INSD:DQ159070.1"
+                     /note="YUCCA5 (YUC5); CONTAINS InterPro DOMAIN/s: Pyridine
+                     nucleotide-disulphide oxidoreductase, class-II
+                     (InterPro:IPR000103), FAD-dependent pyridine
+                     nucleotide-disulphide oxidoreductase (InterPro:IPR013027),
+                     Flavin-containing monooxygenase-like (InterPro:IPR020946);
+                     BEST Arabidopsis thaliana protein match is: YUCCA 9
+                     (TAIR:AT1G04180.1); Has 1807 Blast hits to 1807 proteins
+                     in 277 species: Archae - 0; Bacteria - 0; Metazoa - 736;
+                     Fungi - 347; Plants - 385; Viruses - 0; Other Eukaryotes -
+                     339 (source: NCBI BLink)."
+                     /codon_start=1
+                     /product="Flavin-binding monooxygenase family protein"
+                     /protein_id="NP_199202.1"
+                     /db_xref="GeneID:834411"
+                     /db_xref="TAIR:AT5G43890"
+                     /db_xref="Araport:AT5G43890"
+                     /translation="MENMFRLMGSEDSSDRRRCIWVNGPVIVGAGPSGLATAACLREE
+                     GVPFVVLERADCIASLWQKRTYDRIKLHLPKKVCQLPKMPFPEDYPEYPTKRQFIEYL
+                     ESYANKFEITPQFNECVQSARYDETSGLWRIKTTSSSSSGSEMEYICRWLVVATGENA
+                     EKVVPEIDGLTTEFEGEVIHSCEYKSGEKYRGKSVLVVGCGNSGMEVSLDLANHNANA
+                     SMVVRSSVHVLPREILGKSSFEISMMLMKWFPLWLVDKILLILAWLILGNLTKYGLKR
+                     PTMGPMELKIVSGKTPVLDIGAMEKIKSGEVEIVPGIKRFSRSHVELVDGQRLDLDAV
+                     VLATGYRSNVPSWLQENDLFSKNGFPKSPFPNAWKGKSGLYAAGFTRKGLAGASADAV
+                     NIAQDIGNVWREETKRQKMRTRVGHRRCISVA"
+ORIGIN      
+        1 ttacatagtt tagcttttta agtgggccaa atatttgggc ctttgagatc tcgtcaagtt
+       61 tgattaaggt ctcagaattt ctttctatat tcacttaata ttcatgttac gacttacatg
+      121 tcgtatttta ccccaaaaaa tacttatttt gcaggaaaaa aactcaaata aaggaaattt
+      181 aatttgatta gtcgaagatg ttaaaaagaa aaggacattt aattatgagt atgaatcttt
+      241 tattattaca tagatttttt aaaaaagtga aaaacagaag agaaaataat aatgaagaga
+      301 aatgccacgt catcctaagt tatacaaaac gcccaatcag ccttcaaaaa caacaccgtt
+      361 gggtcttcag gagagggctc tctttgtatc tttatacttt gtttacaaaa aaaaatgaaa
+      421 taatgaataa acactctttg gtaaaataaa ataaataatg gtatgagccc taacttgagc
+      481 cctaagcaac tgaaatgcat ctgcggtgac ccactcgtgt tctcattttc tgtcgtttgg
+      541 tttcttctct ccacacgttt ccaatatctt gagcgatgtt aacggcgtct gctgatgctc
+      601 cagccaatcc tttccttgtg aatccagccg cgtaaagtcc cgatttccct ttccacgcgt
+      661 ttggaaacgg cgatttcggg aacccgtttt tcgaaaacag atcattttct tggagccatg
+      721 atgggacgtt gctacggtaa cccgtggcca gaaccaccgc atcgagatct aatctctgac
+      781 cgtctactag ctccacgtga ctacgagaga accgtttaat tcccgggacg atttctactt
+      841 caccggattt gattttctcc atagctccga tgtctagaac tggagtctta cctgaaacaa
+      901 tcttgagctc cattgggccc atcgtgggcc tctttaggcc atactttgtc aaatttccta
+      961 aaatcagcca tgcaagaatc agtagaatct tgtctactag ccacagagga aaccacttca
+     1021 tcaacatcat ggagatttca aaactagatt tgcctaaaat ctctcttggt aacacatgaa
+     1081 ccgagctacg aacaaccatg gatgcattag cattgtgatt tgcgagatca agagagactt
+     1141 ccatgccgga gtttccacat ccgacgacaa gaacactctt tcctctgtat ttctcgccgg
+     1201 atttgtactc acacgagtgg atcacctcgc cttcaaactc cgttgtgagc ccatcgatct
+     1261 ctggaacaac tttctccgcg ttttctcccg tcgccaccac taaccaccgg cagatatatt
+     1321 ccatctccga ccccgaggaa gaggaagatg ttgtcttgat gcgccagaga ccacttgtct
+     1381 cgtcgtatcg agcagactgg acacactcgt tgaactgagg agtaatttcg aatttgtttg
+     1441 cgtaggactc aaggtactcg atgaactgtc gttttgttgg atattccggg tagtcttccg
+     1501 ggaagggcat tttgggtaat tgacaaactt tctttggtaa atgaagtttg attctatcgt
+     1561 aagttcgttt ttgccatagt gaagctatgc aatctgctct ctccaatacc acaaagggaa
+     1621 caccttcctc gcggaggcag gctgccgtgg ctagccccga tggcccggct ccgacgatta
+     1681 caggaccgtt aacccaaatg caccgtcttc tgtcggagga atcttcactt cccatgagcc
+     1741 taaacatgtt ctccatcttt aggggtgagt ttgatcgaat caagattaca agtagtgaaa
+     1801 atggaatagt ttaggtatct ttagaagatg attttgatcg aatcaaaaga ataggtagtg
+     1861 aaattgaata agcttttttt ttgtttgttt gttgatagag gaatgagatg ctttggaatg
+     1921 tgtttggagg aagaagtaat ggtggatgtg tttatatagt ggacgaagta agaggaactt
+     1981 gcatgtgatc ttgtgattag cgcgttctaa ggctaatttt taatcaattt aataaatgca
+     2041 aaagttcttc aataagtgtg tgtaataatt tatttaggtt tcccatttaa tcatatgctt
+     2101 tagctaaaaa tgcgaaatag tttaagttat tttaaagctt ttttccttat ggaatcattc
+     2161 gattcttttc ttccaaagtc tctgatggga ctttgattag agtccgtttt aatagtatta
+     2221 attagttggt gatgattata atataattgc tttatggtat atattgagat tgtacttact
+     2281 gattaaatag ctttgaatat tacaaagata tagtttcaaa atttaaagat gtgaaagggt
+     2341 aatcaactgg gcacaatgga ccaatcataa tgatattcat atcatccaaa ttcttctgat
+     2401 catatggtcc aaatgataat gatatgtaca tcatccaaat tcacccatga gcttgtagag
+     2461 atggcttttg gagaatataa ctggattggg aaaactactt gtcatataga tatatagaca
+     2521 tatttttaca agtgttaata gtagggaaca aaaaataaaa tcaatagaaa tacaagtact
+     2581 atggtgttct tttggtggat actttgacgt tatcattata gcataaaaca aaaactggca
+     2641 ctctcgtagg ataaacagaa aatcagatga aattttagta ggtatgttat aaactagatc
+     2701 aaaagccaat tttaggctta attattattt tttgagctat ttagagtaaa cctataatta
+     2761 taaatttgtt tacaattttt tttttgttaa ctttaaattc aaattaacca agtttatgtt
+     2821 gtattctaga gtttatctcg ttcaagttca ccatttaggg gtttgataat ctaggtgatg
+     2881 catttacatg ttttggtcca tcgataattg gtttggagta agaatggttg cgtcggtgat
+     2941 gaaaatattt gcataagcat ttaacgtatg taatattttt ctcgcatggt attaattaag
+     3001 ttttagtaga ttttcatgta tatttagtag atgattggca tgcagtacct atatgtgcgt
+     3061 ggttgtaaat cgttacacat caaacattaa tcaagcattc aagcctttaa gaactgtaaa
+     3121 agaattcgtc gatttatttg tctgaaacgg atctgatcgt gattgataaa ctattttccg
+     3181 gtctaactcg ttattcgttt tctattaatt gtgatctctt catttgtctt ttggagacaa
+     3241 gattatctcc ttttgaaacc gaatgaacaa cattttcaaa atgttcctaa acgagtagct
+     3301 tcattagtta acattttcgg ataaaattac tcggtaggta agttttgttc agtttgataa
+     3361 tctcgtggca atgtgtgctg acaagtatgc aaccacgtgg ataggatggt gagcccagag
+     3421 tgggggctca attttggccc acttcaactc gtctgccgac tgctgactgc ttaaccagta
+     3481 actacgtcaa atcaatttgc aattttgcta ataatacagt ttttttgttt aggtccattt
+     3541 attgtaagtt tgtttattat cgtcttttaa taggattttt ttgtccttta tggtgttatt
+     3601 cgctttatat tactttcgac gaatgttcca ttacaaagcg ctttttataa tatgaactct
+     3661 aaatggaaaa gttgttattt atattacaat ttttctaatt tgtgaagtta gtgcatgtac
+     3721 aacggacgct tgtggttgta catttatatt atcttttaag agttcatcag aattcataat
+     3781 agatatattg ttgaaactat atcaatatgc atactcgatg taatctgtat tatacgaaga
+     3841 aaaataaaga tagatatcaa atttaaaatt aaataatttg atgaaattgt tctactagga
+     3901 tttctatctt tttgaaataa gttgaaactc tccgccaaaa aaacggagca atagaatttg
+     3961 aaaacaaaca aaaggtacct tatggaagat gttatactat cgtttggcag tgtaaaactt
+     4021 gtgtgggaga tccgggtatg agctttcttc gatggtcata cacgtattag agtaatgtgt
+     4081 gtattcaata caaaactaaa tgacaataaa tagagatatt tatatttttt tatatattgt
+     4141 caggaatttt atccaacttc taatttttcg agatgatcat ttattaattt tagtgttctg
+     4201 gacaataatc gatagatcaa atttgggtca gaacgattat agatcggatt agaaaatgtg
+     4261 tagatcggat tctaatatca tattagaaaa acatatataa ttaatcaaga actaattagc
+     4321 aattagttga gaaacccata tctctgatat attgtcaaga tccttgtcta atttccggtg
+     4381 tggaatataa ttatacctaa taacacggtt cgacgaagca catgttttat tgatgttcac
+     4441 ggttgttaat ctcgtcattt gttggagagt ctgtttggat tggtcgtggt aaatcaattt
+     4501 taaatcgatg ttaggtgtcc attgattatg gattatgagt aaagaaccaa tgaaggtaga
+     4561 ttagattgaa actcactaac cggccttggt tagacttttc cataggcact tgagtttggt
+     4621 tggtggtatg tatactttag aattatgtaa aataataaac tcgatatcga atagtacaat
+     4681 aagactcttt tgtattcttt aagtattggt aaggttcaat gatcatctca ctagaaagct
+     4741 ccctttgtag ttgtagattt tgcaaattaa acgcttttgc aatgatcaca ttcttacata
+     4801 tatataacta attatccttt taggcgtaat aatggagact tttatacatg ttatcatcaa
+     4861 aaggatgtat ttgttttcgt tcacatggct acttgcttct cacaagctga gtctacaatc
+     4921 gacgaaaatc ttaacaatgt ccttaattat catttcccag ttgatatatt tatcctaaga
+     4981 aataataatc ctccataatt gccgaatttt ggtagttgaa agaatccaga ggtgttgacc
+     5041 aaatttgtgt caacggcctc tgcgcatata gacattaatg actcattgac tatagtagta
+     5101 gtatccatag aatgtgcata tacaaacaaa gatgagaaat aattagtgta taaaaatatg
+     5161 caaataccaa aacaagaaca atagtaattg gtatctaaca attaggtgaa gtgaccagat
+     5221 ttaagtagtt tgaaaaatat tttagaagta atttggaaag atttaagata tttaaatgag
+     5281 atgacctatc ttgttataac tttttattag aaatgaataa atttttttct aagaatattt
+     5341 tgattgtata tcaaaccgtt agttaaataa tataaagctt aatttggaca caaaatatat
+     5401 taaagcttaa catgatatta accaaaagtt tctaaaattt gtaacattta tattaatcta
+     5461 tgatatatac acaataaatt tatgattagt tattaactta
+//
+

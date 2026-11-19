@@ -1,0 +1,3 @@
+name,sequence_5to3,highlight_1based,note
+probe,CGAAAGTAATATAAAGCGAATAACACCATAAAGGACAAAAAAATC,12-16;29-33,EMSA probe (YUC5 sense strand); highlighted = the two TAAAG sites substituted in the mutant
+mutant,CGAAAGTAATAACGCTCGAATAACACCAACCCTGACAAAAAAATC,12-16;29-33,mutant probe; highlighted = substituted bases

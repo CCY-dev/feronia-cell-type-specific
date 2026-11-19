@@ -1,0 +1,63 @@
+# House style for every figure, kept inside the journal profile limits (ferfigs/profiles/nature_portfolio.yaml).
+# Change a value here and rebuild; `python build.py check` reports anything that leaves the journal limits.
+profile: nature_portfolio
+font:
+  family: [Arial, Helvetica, Liberation Sans, DejaVu Sans]   # first installed wins; check warns unless Arial/Helvetica
+  mono: [Andale Mono, Courier New, Courier, DejaVu Sans Mono]  # sequences only (Page.text(..., family='mono'))
+  size_pt: 6.5            # default text (tick labels, headers, labels)
+  small_pt: 6.0           # dense labels (UMAP cluster names, network nodes)
+  min_pt: 5.0
+  max_pt: 7.0
+  stats_pt: 7.0           # letters / asterisks over bars (CYC 17 Nov: larger, at the journal maximum)
+  panel_label_pt: 8.0     # Nature Portfolio: 8 pt bold, upright, lower case (Fig. 6 drafts used 10 pt)
+lines:
+  axis_pt: 0.6
+  tick_pt: 0.6
+  tick_len_pt: 2.5
+  bar_edge_pt: 0.35
+  error_pt: 0.6
+  bracket_pt: 0.5
+  marker_edge_pt: 0.5
+markers:
+  diameter_pt: 2.6        # open circles for individual values
+bars:
+  alpha: 0.5              # bar fill opacity (the Prism charts used 50 %)
+  width: 0.8              # fraction of one slot
+gaps_mm:
+  tile: 0.6               # white space between juxtaposed images (demarcation; profile minimum 0.5)
+  panel: 2.0
+colours:
+  text: [0, 0, 0]
+  # treatment / condition series (from the original Prism charts)
+  series:
+    Mock: [0, 134, 192]
+    RALF23: [223, 115, 0]
+    "1 µM RALF23": [223, 115, 0]
+    "2 µM RALF23": [139, 121, 243]
+    "RALF23 & PEO-IAA": [139, 121, 243]
+    "0.7% agar": [0, 134, 192]
+    "1.4% agar": [223, 115, 0]
+  # one genotype palette for schematic boxes and charts coloured by genotype (Fig. 2 candidate, chosen for the
+  # largest worst-case CIELAB difference under normal, deutan, protan and tritan simulation)
+  genotype_fill:
+    Col-0: [255, 255, 255]
+    fer-4: [40, 40, 40]
+    FER/fer-4: [180, 180, 180]
+    pWER-KO: [213, 94, 0]
+    pCO2-KO: [86, 180, 233]
+    pSCR-KO: [230, 159, 0]
+    pSHR-KO: [0, 158, 115]
+    pSMB-KO: [240, 228, 66]
+  genotype_stroke:
+    Col-0: [90, 90, 90]
+    fer-4: [40, 40, 40]
+    FER/fer-4: [120, 120, 120]
+    pWER-KO: [213, 94, 0]
+    pCO2-KO: [40, 140, 200]
+    pSCR-KO: [200, 135, 0]
+    pSHR-KO: [0, 158, 115]
+    pSMB-KO: [175, 160, 0]
+output:
+  formats: [pdf, svg, png]
+  png_dpi: 600
+  image_max_ppi: 600      # embedded micrographs are downsampled (Lanczos) only above this; never upsampled

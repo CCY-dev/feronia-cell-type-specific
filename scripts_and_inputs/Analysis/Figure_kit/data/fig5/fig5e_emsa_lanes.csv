@@ -1,0 +1,13 @@
+lane,x_px,group,dag1,competitor,antibody,probe
+1,50.4,probe,-,-,-,+
+2,114.2,probe,+,-,G,+
+3,171.0,probe,+,-,M,+
+4,227.8,probe,+,-,-,+
+5,288.0,probe,+,50x,-,+
+6,347.7,probe,+,100x,-,+
+7,408.3,mutant,-,-,-,+
+8,469.4,mutant,+,-,G,+
+9,527.6,mutant,+,-,M,+
+10,586.2,mutant,+,-,-,+
+11,647.8,mutant,+,50x,-,+
+12,708.4,mutant,+,100x,-,+

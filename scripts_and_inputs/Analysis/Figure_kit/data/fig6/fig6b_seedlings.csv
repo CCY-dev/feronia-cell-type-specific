@@ -1,0 +1,7 @@
+tile,genotype,row,col,ratio,minus_x_px,plus_x_px,source
+Col-0,Col-0,0,0,,90.9,310.6,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
+fer-4,fer-4,0,1,,100.5,310.0,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
+dof4.6,dof4.6,0,2,,104.5,313.6,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
+cdf4,cdf4,1,0,,99.9,301.1,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
+cog1,cog1,1,1,,101.1,313.4,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
+obp3,obp3,1,2,,108.7,306.7,"ratio printed under the RALF23 seedlings = mean(RALF23)/mean(Mock), Fig. 6a source data"
