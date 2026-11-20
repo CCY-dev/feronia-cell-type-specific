@@ -25,14 +25,7 @@ The package versions recorded here match the `sessionInfo()` output saved in the
 
 ## Recreating an environment
 
-**Exact copy (recommended):** download the conda-pack archive for the environment from the data deposit, then:
-
-```bash
-mkdir -p muscat && tar -xzf muscat.linux-64.condapack.tar.gz -C muscat
-source muscat/bin/activate && conda-unpack
-```
-
-**Rebuild from the recipe:**
+Rebuild from the recipe:
 
 ```bash
 conda create -p ./muscat --file envs/muscat.linux-64.explicit.txt
@@ -63,4 +56,4 @@ grep -v ' @ file://' envs/cell_oracle.pip_freeze.txt > cell_oracle.pip.txt
 ./cell_oracle/bin/python -m pip install --no-deps -r cell_oracle.pip.txt
 ```
 
-The conda-pack archive includes these packages already. The pip step has not been tested from the recipe.
+The pip step has not been tested from the recipe.
