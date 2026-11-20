@@ -37,9 +37,8 @@ system (or point `FER_FONT_DIR` at a folder with ARIAL.TTF, ARIALBD.TTF, ARIALI.
 Without it the kit falls back to Liberation Sans / DejaVu Sans and warns; text widths then differ slightly.
 
 ## What is and is not in this repository
-- **Source Data:** the lab copy of this repository keeps the workbook in `source_data/` (`Source data-20261118.xlsx`);
-  the public GitHub copy does not include it (it is published with the paper; put it in `source_data/`).
-  `tools/source_data_to_long.py` reads it; every number on a chart is computed from it at build time.
+- **Source Data:** published with the paper; put the workbook in `source_data/`. `tools/source_data_to_long.py` reads
+  it; every number on a chart is computed from it at build time.
 - **Images** (micrographs, seedling photographs, the EMSA gel): not included. `tools/make_placeholder_tiles.py`
   writes a uniformly grey tile of the same pixel size for every image listed in `data/figN/figN_image_sizes.csv`, so
   the figures build with every chart, label and scale bar at its published position. To rebuild the complete
@@ -48,9 +47,9 @@ Without it the kit falls back to Liberation Sans / DejaVu Sans and warns; text w
 - **Statistics labels** (letters and asterisks as printed by the authors, and the printed treatment/mock ratios):
   `data/figN/*_stats.csv`, `data/fig2/fig2h_ratios.csv`, `data/fig4/fig4[ef]_*ratios.csv`, the `ratio` column of `data/fig6/fig6b_seedlings.csv`,
   `data/fig5/fig5d_luc_displayed_values.csv` and `data/ed/ED_author_labels.csv`. Each table script re-runs the test
-  named in the figure legend on the Source Data and compares it with these labels (`output/stats_checks/`). The
-  public GitHub copy does not contain these label files; it carries `data/LABELS_NOT_INCLUDED`, and the charts are
-  then drawn without labels (take them from the published figures) and the checks list the computed labels only.
+  named in the figure legend on the Source Data and compares it with these labels (`output/stats_checks/`). Where
+  `data/LABELS_NOT_INCLUDED` is present, these label files are not included: the charts are drawn without labels
+  (take them from the published figures) and the checks list the computed labels only.
 
 ## Inputs → tables → figure
 | Figure | Tables (`data/`) | Made by | From |
@@ -79,13 +78,11 @@ alternative statistic that is not drawn (the config uses `statistic: q_authors`)
 - `tools/` – the table scripts above, `make_placeholder_tiles.py`, and `hpc/extract_fig1a_umap.R`.
 - `python build.py check` runs the journal checks on the built figures.
 
-## Verification (19 Nov 2026)
-- `tools/fig1_tables.py --check` and `tools/fig5ab_tables.py --check`: every table equals a fresh derivation from this
-  repository. With Arial installed, `Fig1.pdf` is pixel-identical to the published Fig. 1; `Fig5ab.pdf` has the same
-  text and positions as the top 62 mm of the published Fig. 5.
-- From the Source Data workbook: with the original images in place, Figs. 2–6 and all 22 Extended Data charts are
-  pixel-identical to the published versions. With the blank tiles, every vector element and text span of Figs. 2–6
-  (charts, axes, labels, scale bars) and every image position are identical; only the image pixels differ.
-- Statistics checks (legend test re-run on the Source Data vs the printed labels): Fig. 2 30 of 31 (the remaining row
-  is an alternative experimental unit, per-root means, shown for information), Fig. 3 25/25, Fig. 4 48/48,
-  Fig. 5 20/20, Fig. 6 36/36, Extended Data 135/135.
+## What the kit reproduces
+- `tools/fig1_tables.py --check` and `tools/fig5ab_tables.py --check` re-derive every table of Fig. 1 and Fig. 5a, b
+  from this repository and compare it with `data/`.
+- From the Source Data and the original images, the kit draws Figs. 2–6 and the 22 Extended Data charts as published.
+  With the blank tiles, every chart, axis, label, scale bar and image position is as published; only the image
+  pixels differ.
+- The statistics checks re-run the test named in each legend on the Source Data (`output/stats_checks/`). For Fig. 2,
+  one extra row tests an alternative experimental unit (per-root means) and is shown for information.

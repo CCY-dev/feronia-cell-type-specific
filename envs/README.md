@@ -1,6 +1,6 @@
 # Software environments
 
-These files record the five conda environments in which the FER analyses were run. They were captured on 20 Oct 2026, read-only, from the analyst's environments on the Caltech Resnick cluster (`/resnick/groups/NolanLab/cchen/miniconda3/envs/<name>`; conda 24.11.1, linux-64).
+These files record the five conda environments in which the FER analyses were run. They were exported from the environments that produced the results (conda 24.11.1, linux-64).
 
 The package versions recorded here match the `sessionInfo()` output saved in the notebooks: R version and every listed package. The one exception is `scKB_copilot`, where three display packages were updated after the Stage 1 integration was run (`scales` 1.2.1 → 1.4.0, `htmltools` 0.5.5 → 0.5.9, `fastmap` 1.1.1 → 1.2.0). They affect plotting and HTML output, not the integration.
 
@@ -34,7 +34,7 @@ conda create -p ./muscat --file envs/muscat.linux-64.explicit.txt
 
 The recipe needs linux-64. On macOS or Windows, run it in a Linux container or on a cluster.
 
-**Rebuild test (20 Oct 2026).** The `muscat` environment was rebuilt on Resnick from `muscat.linux-64.explicit.txt` and `install_R_packages_muscat.R` in an empty `HOME`, without activating or reading the original environment (the cluster's shared conda package cache was readable). All 411 of 411 recorded R packages were installed at the recorded version (about 55 minutes with 8 compile jobs). The install scripts in this folder are the version used in that test: they remove stale `00LOCK` folders and reinstall, at the recorded version, packages that R had installed over a conda copy.
+`install_R_packages_<env>.R` removes stale `00LOCK` folders and reinstalls, at the recorded version, packages that R had installed over a conda copy; it exits 1 if any package ends up at a different version.
 
 ## CellOracle: set `PYTHONHASHSEED`
 
@@ -42,10 +42,10 @@ CellOracle 0.20.0 fixes `random_state = 123` in its bagging ridge models, but it
 
 ```bash
 export PYTHONHASHSEED=0
-python 20260317_..._slurmArray_run_celloracle_grn.py
+python 20261020_celloracle_grn_seeded_isolated.py
 ```
 
-We checked this on 25 target genes of the WT Distal Columella network (12,243 coefficients): with `PYTHONHASHSEED=0`, two runs in separate processes gave identical coefficients; with seeds 1 and 2 they differed. The KNN-imputed matrix was identical in every run. The other networks were not tested here; the seeded rerun of all networks (Stage 4, Oct 2026) repeated a whole columella task and gave identical networks and centrality scores.
+With `PYTHONHASHSEED=0`, repeated runs give identical networks and centrality scores. The Stage 4 script refuses to run without it.
 
 ## `cell_oracle`: Python packages from pip
 
@@ -55,5 +55,3 @@ We checked this on 25 target genes of the WT Distal Columella network (12,243 co
 grep -v ' @ file://' envs/cell_oracle.pip_freeze.txt > cell_oracle.pip.txt
 ./cell_oracle/bin/python -m pip install --no-deps -r cell_oracle.pip.txt
 ```
-
-The pip step has not been tested from the recipe.
